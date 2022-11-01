@@ -1,0 +1,219 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`QualityIndicator component snapshot Should match when all parameters are specified 1`] = `
+<View
+  style={
+    Array [
+      Object {
+        "alignItems": "flex-end",
+        "borderRadius": 6,
+        "boxSizing": "border-box",
+        "flexDirection": "row",
+        "height": 20,
+        "justifyContent": "space-between",
+        "padding": 4,
+        "width": 26,
+      },
+      Object {
+        "backgroundColor": "#292930",
+      },
+    ]
+  }
+  testID="testID"
+>
+  <View
+    style={
+      Array [
+        Object {
+          "borderRadius": 2,
+          "width": 2,
+        },
+        Object {
+          "height": 4,
+        },
+        Object {
+          "backgroundColor": "#628EF4",
+        },
+      ]
+    }
+    testID="lineFirst"
+  />
+  <View
+    style={
+      Array [
+        Object {
+          "borderRadius": 2,
+          "width": 2,
+        },
+        Object {
+          "height": 6,
+        },
+        Object {
+          "backgroundColor": "#628EF4",
+        },
+      ]
+    }
+    testID="lineSecond"
+  />
+  <View
+    style={
+      Array [
+        Object {
+          "borderRadius": 2,
+          "width": 2,
+        },
+        Object {
+          "height": 8,
+        },
+        Object {
+          "backgroundColor": "#628EF4",
+        },
+      ]
+    }
+    testID="lineThird"
+  />
+  <View
+    style={
+      Array [
+        Object {
+          "borderRadius": 2,
+          "width": 2,
+        },
+        Object {
+          "height": 10,
+        },
+        Object {
+          "backgroundColor": "#8829CC",
+        },
+      ]
+    }
+    testID="lineFourth"
+  />
+  <View
+    style={
+      Array [
+        Object {
+          "borderRadius": 2,
+          "width": 2,
+        },
+        Object {
+          "height": 12,
+        },
+        Object {
+          "backgroundColor": "#8829CC",
+        },
+      ]
+    }
+    testID="lineFifth"
+  />
+</View>
+`;
+
+exports[`QualityIndicator component snapshot Should match when no optional parameters are specified 1`] = `
+<View
+  style={
+    Array [
+      Object {
+        "alignItems": "flex-end",
+        "borderRadius": 6,
+        "boxSizing": "border-box",
+        "flexDirection": "row",
+        "height": 20,
+        "justifyContent": "space-between",
+        "padding": 4,
+        "width": 26,
+      },
+      Object {
+        "backgroundColor": "rgba(255, 255, 255, 0.36)",
+      },
+    ]
+  }
+  testID="testID"
+>
+  <View
+    style={
+      Array [
+        Object {
+          "borderRadius": 2,
+          "width": 2,
+        },
+        Object {
+          "height": 4,
+        },
+        Object {
+          "backgroundColor": "#FFFFFF",
+        },
+      ]
+    }
+    testID="lineFirst"
+  />
+  <View
+    style={
+      Array [
+        Object {
+          "borderRadius": 2,
+          "width": 2,
+        },
+        Object {
+          "height": 6,
+        },
+        Object {
+          "backgroundColor": "#FFFFFF",
+        },
+      ]
+    }
+    testID="lineSecond"
+  />
+  <View
+    style={
+      Array [
+        Object {
+          "borderRadius": 2,
+          "width": 2,
+        },
+        Object {
+          "height": 8,
+        },
+        Object {
+          "backgroundColor": "#FFFFFF",
+        },
+      ]
+    }
+    testID="lineThird"
+  />
+  <View
+    style={
+      Array [
+        Object {
+          "borderRadius": 2,
+          "width": 2,
+        },
+        Object {
+          "height": 10,
+        },
+        Object {
+          "backgroundColor": "#535359",
+        },
+      ]
+    }
+    testID="lineFourth"
+  />
+  <View
+    style={
+      Array [
+        Object {
+          "borderRadius": 2,
+          "width": 2,
+        },
+        Object {
+          "height": 12,
+        },
+        Object {
+          "backgroundColor": "#535359",
+        },
+      ]
+    }
+    testID="lineFifth"
+  />
+</View>
+`;

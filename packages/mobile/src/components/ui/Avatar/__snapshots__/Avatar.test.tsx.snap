@@ -1,0 +1,143 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Avatar component snapshot should match default param configuration 1`] = `
+<View
+  style={
+    Array [
+      Object {
+        "alignItems": "center",
+        "borderWidth": 2,
+        "display": "flex",
+        "justifyContent": "center",
+      },
+      Object {
+        "backgroundColor": "#737D99",
+        "borderColor": "white",
+        "borderRadius": 40,
+        "height": 80,
+        "width": 80,
+      },
+    ]
+  }
+  testID="testID"
+>
+  <Text
+    style={
+      Array [
+        Object {
+          "letterSpacing": 1.22,
+        },
+        Object {
+          "fontSize": 32,
+          "fontWeight": "600",
+          "lineHeight": 40,
+        },
+        false,
+        Object {
+          "color": "#FFFFFF",
+          "fontFamily": "Roboto",
+          "textAlign": "left",
+        },
+      ]
+    }
+    testID="testID-text"
+  >
+    F
+  </Text>
+</View>
+`;
+
+exports[`Avatar component snapshot should match for medium size and string type participant 1`] = `
+<View
+  style={
+    Array [
+      Object {
+        "alignItems": "center",
+        "borderWidth": 2,
+        "display": "flex",
+        "justifyContent": "center",
+      },
+      Object {
+        "backgroundColor": "#F3A052",
+        "borderColor": "white",
+        "borderRadius": 24,
+        "height": 48,
+        "width": 48,
+      },
+    ]
+  }
+  testID="testID"
+>
+  <Text
+    style={
+      Array [
+        Object {
+          "letterSpacing": 1.22,
+        },
+        Object {
+          "fontSize": 20,
+          "fontWeight": "600",
+          "lineHeight": 28,
+        },
+        false,
+        Object {
+          "color": "#FFFFFF",
+          "fontFamily": "Roboto",
+          "textAlign": "left",
+        },
+      ]
+    }
+    testID="testID-text"
+  >
+    U
+    Q
+  </Text>
+</View>
+`;
+
+exports[`Avatar component snapshot should match for small size and Participant type participant 1`] = `
+<View
+  style={
+    Array [
+      Object {
+        "alignItems": "center",
+        "borderWidth": 2,
+        "display": "flex",
+        "justifyContent": "center",
+      },
+      Object {
+        "backgroundColor": "#FAC819",
+        "borderColor": "white",
+        "borderRadius": 20,
+        "height": 40,
+        "width": 40,
+      },
+    ]
+  }
+  testID="testID"
+>
+  <Text
+    style={
+      Array [
+        Object {
+          "letterSpacing": 1.22,
+        },
+        Object {
+          "fontSize": 16.6667,
+          "fontWeight": "600",
+          "lineHeight": 23,
+        },
+        false,
+        Object {
+          "color": "#FFFFFF",
+          "fontFamily": "Roboto",
+          "textAlign": "left",
+        },
+      ]
+    }
+    testID="testID-text"
+  >
+    D
+  </Text>
+</View>
+`;

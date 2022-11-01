@@ -1,0 +1,31 @@
+{
+  "name": "@dolbyio/comms-uikit-common",
+  "version": "1.0.0",
+  "main": "src/index.ts",
+  "license": "LicenseRef-LICENSE",
+  "scripts": {
+    "build": "rollup -c",
+    "lint": "eslint \"src/**/*.{js,ts,tsx}\"",
+    "test": "jest"
+  },
+  "typescript": {
+    "definition": "dist/@types/index.d.ts"
+  },
+  "dependencies": {
+    "react": "18.2.0"
+  },
+  "devDependencies": {
+    "@babel/runtime": "^7.18.6",
+    "jest": "^27.5.1",
+    "@types/react": "18.0.18",
+    "rollup": "^2.66.0",
+    "rollup-plugin-peer-deps-external": "^2.2.4",
+    "rollup-plugin-terser": "^7.0.2",
+    "ts-jest": "^27.1.3"
+  },
+  "eslintConfig": {
+    "env": {
+      "jest": true
+    }
+  }
+}

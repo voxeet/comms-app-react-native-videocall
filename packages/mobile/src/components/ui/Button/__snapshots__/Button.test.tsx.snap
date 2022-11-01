@@ -1,0 +1,1541 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Button component snapshot should match Primary Done button type 1`] = `
+<View
+  accessibilityState={
+    Object {
+      "disabled": false,
+    }
+  }
+  accessible={true}
+  collapsable={false}
+  focusable={true}
+  onBlur={[Function]}
+  onClick={[Function]}
+  onFocus={[Function]}
+  onResponderGrant={[Function]}
+  onResponderMove={[Function]}
+  onResponderRelease={[Function]}
+  onResponderTerminate={[Function]}
+  onResponderTerminationRequest={[Function]}
+  onStartShouldSetResponder={[Function]}
+  style={
+    Array [
+      Array [
+        Object {
+          "alignItems": "center",
+          "borderRadius": 6,
+          "justifyContent": "center",
+          "minHeight": 40,
+          "minWidth": 146,
+        },
+        Object {
+          "backgroundColor": "#AA33FF",
+        },
+      ],
+      Object {
+        "height": 48,
+        "paddingHorizontal": 44,
+      },
+      false,
+      false,
+    ]
+  }
+  testID="testID"
+>
+  <svg
+    data-file-name="SvgSuccess"
+    fill="#FFFFFF"
+    height={24}
+    width={24}
+  />
+</View>
+`;
+
+exports[`Button component snapshot should match Primary Loading button type 1`] = `
+<View
+  accessibilityState={
+    Object {
+      "disabled": false,
+    }
+  }
+  accessible={true}
+  collapsable={false}
+  focusable={true}
+  onBlur={[Function]}
+  onClick={[Function]}
+  onFocus={[Function]}
+  onResponderGrant={[Function]}
+  onResponderMove={[Function]}
+  onResponderRelease={[Function]}
+  onResponderTerminate={[Function]}
+  onResponderTerminationRequest={[Function]}
+  onStartShouldSetResponder={[Function]}
+  style={
+    Array [
+      Array [
+        Object {
+          "alignItems": "center",
+          "borderRadius": 6,
+          "justifyContent": "center",
+          "minHeight": 40,
+          "minWidth": 146,
+        },
+        Object {
+          "backgroundColor": "#AA33FF",
+        },
+      ],
+      Object {
+        "height": 48,
+        "paddingHorizontal": 44,
+      },
+      false,
+      false,
+    ]
+  }
+  testID="testID"
+>
+  <View
+    collapsable={false}
+    style={
+      Object {
+        "transform": Array [
+          Object {
+            "rotate": "0deg",
+          },
+        ],
+      }
+    }
+    testID="loader"
+  >
+    <svg
+      data-file-name="SvgLoader"
+      fill="#FFFFFF"
+      height={24}
+      width={24}
+    />
+  </View>
+</View>
+`;
+
+exports[`Button component snapshot should match Primary button - size medium 1`] = `
+<View
+  accessibilityState={
+    Object {
+      "disabled": false,
+    }
+  }
+  accessible={true}
+  collapsable={false}
+  focusable={true}
+  onBlur={[Function]}
+  onClick={[Function]}
+  onFocus={[Function]}
+  onResponderGrant={[Function]}
+  onResponderMove={[Function]}
+  onResponderRelease={[Function]}
+  onResponderTerminate={[Function]}
+  onResponderTerminationRequest={[Function]}
+  onStartShouldSetResponder={[Function]}
+  style={
+    Array [
+      Array [
+        Object {
+          "alignItems": "center",
+          "borderRadius": 6,
+          "justifyContent": "center",
+          "minHeight": 40,
+          "minWidth": 146,
+        },
+        Object {
+          "backgroundColor": "#AA33FF",
+        },
+      ],
+      false,
+      Object {
+        "height": 44,
+        "paddingHorizontal": 20,
+        "width": 272,
+      },
+      false,
+    ]
+  }
+  testID="testID"
+>
+  <View
+    style={
+      Object {
+        "flexDirection": "row",
+      }
+    }
+  >
+    <Text
+      style={
+        Array [
+          Object {
+            "fontFamily": "Roboto",
+            "fontSize": 15,
+            "fontWeight": "bold",
+            "letterSpacing": 0.25,
+            "lineHeight": 24,
+            "marginHorizontal": 4,
+            "textAlign": "center",
+          },
+          Object {
+            "textTransform": "uppercase",
+          },
+          Object {
+            "color": "#FFFFFF",
+          },
+        ]
+      }
+    >
+      Primary Medium Button
+    </Text>
+  </View>
+</View>
+`;
+
+exports[`Button component snapshot should match Primary button - size small 1`] = `
+<View
+  accessibilityState={
+    Object {
+      "disabled": false,
+    }
+  }
+  accessible={true}
+  collapsable={false}
+  focusable={true}
+  onBlur={[Function]}
+  onClick={[Function]}
+  onFocus={[Function]}
+  onResponderGrant={[Function]}
+  onResponderMove={[Function]}
+  onResponderRelease={[Function]}
+  onResponderTerminate={[Function]}
+  onResponderTerminationRequest={[Function]}
+  onStartShouldSetResponder={[Function]}
+  style={
+    Array [
+      Array [
+        Object {
+          "alignItems": "center",
+          "borderRadius": 6,
+          "justifyContent": "center",
+          "minHeight": 40,
+          "minWidth": 146,
+        },
+        Object {
+          "backgroundColor": "#AA33FF",
+        },
+      ],
+      false,
+      false,
+      Object {
+        "height": 40,
+        "paddingHorizontal": 20,
+        "width": 146,
+      },
+    ]
+  }
+  testID="testID"
+>
+  <View
+    style={
+      Object {
+        "flexDirection": "row",
+      }
+    }
+  >
+    <Text
+      style={
+        Array [
+          Object {
+            "fontFamily": "Roboto",
+            "fontSize": 15,
+            "fontWeight": "bold",
+            "letterSpacing": 0.25,
+            "lineHeight": 24,
+            "marginHorizontal": 4,
+            "textAlign": "center",
+          },
+          Object {
+            "textTransform": "uppercase",
+          },
+          Object {
+            "color": "#FFFFFF",
+          },
+        ]
+      }
+    >
+      Primary Small Button
+    </Text>
+  </View>
+</View>
+`;
+
+exports[`Button component snapshot should match Primary button with left and right icons 1`] = `
+<View
+  accessibilityState={
+    Object {
+      "disabled": false,
+    }
+  }
+  accessible={true}
+  collapsable={false}
+  focusable={true}
+  onBlur={[Function]}
+  onClick={[Function]}
+  onFocus={[Function]}
+  onResponderGrant={[Function]}
+  onResponderMove={[Function]}
+  onResponderRelease={[Function]}
+  onResponderTerminate={[Function]}
+  onResponderTerminationRequest={[Function]}
+  onStartShouldSetResponder={[Function]}
+  style={
+    Array [
+      Array [
+        Object {
+          "alignItems": "center",
+          "borderRadius": 6,
+          "justifyContent": "center",
+          "minHeight": 40,
+          "minWidth": 146,
+        },
+        Object {
+          "backgroundColor": "#AA33FF",
+        },
+      ],
+      Object {
+        "height": 48,
+        "paddingHorizontal": 44,
+      },
+      false,
+      false,
+    ]
+  }
+  testID="testID"
+>
+  <View
+    style={
+      Object {
+        "flexDirection": "row",
+      }
+    }
+  >
+    <svg
+      data-file-name="SvgArrowLeft"
+      fill="#FFFFFF"
+      height={24}
+      width={24}
+    />
+    <Text
+      style={
+        Array [
+          Object {
+            "fontFamily": "Roboto",
+            "fontSize": 15,
+            "fontWeight": "bold",
+            "letterSpacing": 0.25,
+            "lineHeight": 24,
+            "marginHorizontal": 4,
+            "textAlign": "center",
+          },
+          Object {
+            "textTransform": "uppercase",
+          },
+          Object {
+            "color": "#FFFFFF",
+          },
+        ]
+      }
+    >
+      Primary - Left & Right Icon
+    </Text>
+    <svg
+      data-file-name="SvgCopy"
+      fill="#FFFFFF"
+      height={24}
+      width={24}
+    />
+  </View>
+</View>
+`;
+
+exports[`Button component snapshot should match Primary button with left icon 1`] = `
+<View
+  accessibilityState={
+    Object {
+      "disabled": false,
+    }
+  }
+  accessible={true}
+  collapsable={false}
+  focusable={true}
+  onBlur={[Function]}
+  onClick={[Function]}
+  onFocus={[Function]}
+  onResponderGrant={[Function]}
+  onResponderMove={[Function]}
+  onResponderRelease={[Function]}
+  onResponderTerminate={[Function]}
+  onResponderTerminationRequest={[Function]}
+  onStartShouldSetResponder={[Function]}
+  style={
+    Array [
+      Array [
+        Object {
+          "alignItems": "center",
+          "borderRadius": 6,
+          "justifyContent": "center",
+          "minHeight": 40,
+          "minWidth": 146,
+        },
+        Object {
+          "backgroundColor": "#AA33FF",
+        },
+      ],
+      Object {
+        "height": 48,
+        "paddingHorizontal": 44,
+      },
+      false,
+      false,
+    ]
+  }
+  testID="testID"
+>
+  <View
+    style={
+      Object {
+        "flexDirection": "row",
+      }
+    }
+  >
+    <svg
+      data-file-name="SvgArrowLeft"
+      fill="#FFFFFF"
+      height={24}
+      width={24}
+    />
+    <Text
+      style={
+        Array [
+          Object {
+            "fontFamily": "Roboto",
+            "fontSize": 15,
+            "fontWeight": "bold",
+            "letterSpacing": 0.25,
+            "lineHeight": 24,
+            "marginHorizontal": 4,
+            "textAlign": "center",
+          },
+          Object {
+            "textTransform": "uppercase",
+          },
+          Object {
+            "color": "#FFFFFF",
+          },
+        ]
+      }
+    >
+      Primary - Left Icon
+    </Text>
+  </View>
+</View>
+`;
+
+exports[`Button component snapshot should match Primary button with right icon 1`] = `
+<View
+  accessibilityState={
+    Object {
+      "disabled": false,
+    }
+  }
+  accessible={true}
+  collapsable={false}
+  focusable={true}
+  onBlur={[Function]}
+  onClick={[Function]}
+  onFocus={[Function]}
+  onResponderGrant={[Function]}
+  onResponderMove={[Function]}
+  onResponderRelease={[Function]}
+  onResponderTerminate={[Function]}
+  onResponderTerminationRequest={[Function]}
+  onStartShouldSetResponder={[Function]}
+  style={
+    Array [
+      Array [
+        Object {
+          "alignItems": "center",
+          "borderRadius": 6,
+          "justifyContent": "center",
+          "minHeight": 40,
+          "minWidth": 146,
+        },
+        Object {
+          "backgroundColor": "#AA33FF",
+        },
+      ],
+      Object {
+        "height": 48,
+        "paddingHorizontal": 44,
+      },
+      false,
+      false,
+    ]
+  }
+  testID="testID"
+>
+  <View
+    style={
+      Object {
+        "flexDirection": "row",
+      }
+    }
+  >
+    <Text
+      style={
+        Array [
+          Object {
+            "fontFamily": "Roboto",
+            "fontSize": 15,
+            "fontWeight": "bold",
+            "letterSpacing": 0.25,
+            "lineHeight": 24,
+            "marginHorizontal": 4,
+            "textAlign": "center",
+          },
+          Object {
+            "textTransform": "uppercase",
+          },
+          Object {
+            "color": "#FFFFFF",
+          },
+        ]
+      }
+    >
+      Primary - Right Icon
+    </Text>
+    <svg
+      data-file-name="SvgCopy"
+      fill="#FFFFFF"
+      height={24}
+      width={24}
+    />
+  </View>
+</View>
+`;
+
+exports[`Button component snapshot should match Primary danger type 1`] = `
+<View
+  accessibilityState={
+    Object {
+      "disabled": false,
+    }
+  }
+  accessible={true}
+  collapsable={false}
+  focusable={true}
+  onBlur={[Function]}
+  onClick={[Function]}
+  onFocus={[Function]}
+  onResponderGrant={[Function]}
+  onResponderMove={[Function]}
+  onResponderRelease={[Function]}
+  onResponderTerminate={[Function]}
+  onResponderTerminationRequest={[Function]}
+  onStartShouldSetResponder={[Function]}
+  style={
+    Array [
+      Array [
+        Object {
+          "alignItems": "center",
+          "borderRadius": 6,
+          "justifyContent": "center",
+          "minHeight": 40,
+          "minWidth": 146,
+        },
+        Object {
+          "backgroundColor": "#E52222",
+        },
+      ],
+      Object {
+        "height": 48,
+        "paddingHorizontal": 44,
+      },
+      false,
+      false,
+    ]
+  }
+  testID="testID"
+>
+  <View
+    style={
+      Object {
+        "flexDirection": "row",
+      }
+    }
+  >
+    <Text
+      style={
+        Array [
+          Object {
+            "fontFamily": "Roboto",
+            "fontSize": 15,
+            "fontWeight": "bold",
+            "letterSpacing": 0.25,
+            "lineHeight": 24,
+            "marginHorizontal": 4,
+            "textAlign": "center",
+          },
+          Object {
+            "textTransform": "uppercase",
+          },
+          Object {
+            "color": "#FFFFFF",
+          },
+        ]
+      }
+    >
+      Primary Default
+    </Text>
+  </View>
+</View>
+`;
+
+exports[`Button component snapshot should match Primary default type 1`] = `
+<View
+  accessibilityState={
+    Object {
+      "disabled": false,
+    }
+  }
+  accessible={true}
+  collapsable={false}
+  focusable={true}
+  onBlur={[Function]}
+  onClick={[Function]}
+  onFocus={[Function]}
+  onResponderGrant={[Function]}
+  onResponderMove={[Function]}
+  onResponderRelease={[Function]}
+  onResponderTerminate={[Function]}
+  onResponderTerminationRequest={[Function]}
+  onStartShouldSetResponder={[Function]}
+  style={
+    Array [
+      Array [
+        Object {
+          "alignItems": "center",
+          "borderRadius": 6,
+          "justifyContent": "center",
+          "minHeight": 40,
+          "minWidth": 146,
+        },
+        Object {
+          "backgroundColor": "#AA33FF",
+        },
+      ],
+      Object {
+        "height": 48,
+        "paddingHorizontal": 44,
+      },
+      false,
+      false,
+    ]
+  }
+  testID="testID"
+>
+  <View
+    style={
+      Object {
+        "flexDirection": "row",
+      }
+    }
+  >
+    <Text
+      style={
+        Array [
+          Object {
+            "fontFamily": "Roboto",
+            "fontSize": 15,
+            "fontWeight": "bold",
+            "letterSpacing": 0.25,
+            "lineHeight": 24,
+            "marginHorizontal": 4,
+            "textAlign": "center",
+          },
+          Object {
+            "textTransform": "uppercase",
+          },
+          Object {
+            "color": "#FFFFFF",
+          },
+        ]
+      }
+    >
+      Primary Default
+    </Text>
+  </View>
+</View>
+`;
+
+exports[`Button component snapshot should match Primary disabled type 1`] = `
+<View
+  accessibilityState={
+    Object {
+      "disabled": true,
+    }
+  }
+  accessible={true}
+  collapsable={false}
+  focusable={true}
+  onBlur={[Function]}
+  onClick={[Function]}
+  onFocus={[Function]}
+  onResponderGrant={[Function]}
+  onResponderMove={[Function]}
+  onResponderRelease={[Function]}
+  onResponderTerminate={[Function]}
+  onResponderTerminationRequest={[Function]}
+  onStartShouldSetResponder={[Function]}
+  style={
+    Array [
+      Array [
+        Object {
+          "alignItems": "center",
+          "borderRadius": 6,
+          "justifyContent": "center",
+          "minHeight": 40,
+          "minWidth": 146,
+        },
+        Object {
+          "backgroundColor": "#BBBBBF",
+        },
+      ],
+      Object {
+        "height": 48,
+        "paddingHorizontal": 44,
+      },
+      false,
+      false,
+    ]
+  }
+  testID="testID"
+>
+  <View
+    style={
+      Object {
+        "flexDirection": "row",
+      }
+    }
+  >
+    <Text
+      style={
+        Array [
+          Object {
+            "fontFamily": "Roboto",
+            "fontSize": 15,
+            "fontWeight": "bold",
+            "letterSpacing": 0.25,
+            "lineHeight": 24,
+            "marginHorizontal": 4,
+            "textAlign": "center",
+          },
+          Object {
+            "color": "#FFFFFF",
+          },
+        ]
+      }
+    >
+      Primary Default
+    </Text>
+  </View>
+</View>
+`;
+
+exports[`Button component snapshot should match Secondary Done button type 1`] = `
+<View
+  accessibilityState={
+    Object {
+      "disabled": false,
+    }
+  }
+  accessible={true}
+  collapsable={false}
+  focusable={true}
+  onBlur={[Function]}
+  onClick={[Function]}
+  onFocus={[Function]}
+  onResponderGrant={[Function]}
+  onResponderMove={[Function]}
+  onResponderRelease={[Function]}
+  onResponderTerminate={[Function]}
+  onResponderTerminationRequest={[Function]}
+  onStartShouldSetResponder={[Function]}
+  style={
+    Array [
+      Array [
+        Object {
+          "alignItems": "center",
+          "borderRadius": 6,
+          "justifyContent": "center",
+          "minHeight": 40,
+          "minWidth": 146,
+        },
+        Object {
+          "backgroundColor": "#FFFFFF",
+          "borderColor": "#AA33FF",
+          "borderWidth": 2,
+        },
+      ],
+      Object {
+        "height": 48,
+        "paddingHorizontal": 44,
+      },
+      false,
+      false,
+    ]
+  }
+  testID="testID"
+>
+  <svg
+    data-file-name="SvgSuccess"
+    fill="#AA33FF"
+    height={24}
+    width={24}
+  />
+</View>
+`;
+
+exports[`Button component snapshot should match Secondary Loading button type 1`] = `
+<View
+  accessibilityState={
+    Object {
+      "disabled": false,
+    }
+  }
+  accessible={true}
+  collapsable={false}
+  focusable={true}
+  onBlur={[Function]}
+  onClick={[Function]}
+  onFocus={[Function]}
+  onResponderGrant={[Function]}
+  onResponderMove={[Function]}
+  onResponderRelease={[Function]}
+  onResponderTerminate={[Function]}
+  onResponderTerminationRequest={[Function]}
+  onStartShouldSetResponder={[Function]}
+  style={
+    Array [
+      Array [
+        Object {
+          "alignItems": "center",
+          "borderRadius": 6,
+          "justifyContent": "center",
+          "minHeight": 40,
+          "minWidth": 146,
+        },
+        Object {
+          "backgroundColor": "#FFFFFF",
+          "borderColor": "#AA33FF",
+          "borderWidth": 2,
+        },
+      ],
+      Object {
+        "height": 48,
+        "paddingHorizontal": 44,
+      },
+      false,
+      false,
+    ]
+  }
+  testID="testID"
+>
+  <View
+    collapsable={false}
+    style={
+      Object {
+        "transform": Array [
+          Object {
+            "rotate": "0deg",
+          },
+        ],
+      }
+    }
+    testID="loader"
+  >
+    <svg
+      data-file-name="SvgLoader"
+      fill="#AA33FF"
+      height={24}
+      width={24}
+    />
+  </View>
+</View>
+`;
+
+exports[`Button component snapshot should match Secondary danger type 1`] = `
+<View
+  accessibilityState={
+    Object {
+      "disabled": false,
+    }
+  }
+  accessible={true}
+  collapsable={false}
+  focusable={true}
+  onBlur={[Function]}
+  onClick={[Function]}
+  onFocus={[Function]}
+  onResponderGrant={[Function]}
+  onResponderMove={[Function]}
+  onResponderRelease={[Function]}
+  onResponderTerminate={[Function]}
+  onResponderTerminationRequest={[Function]}
+  onStartShouldSetResponder={[Function]}
+  style={
+    Array [
+      Array [
+        Object {
+          "alignItems": "center",
+          "borderRadius": 6,
+          "justifyContent": "center",
+          "minHeight": 40,
+          "minWidth": 146,
+        },
+        Object {
+          "backgroundColor": "#FFFFFF",
+          "borderColor": "#E52222",
+          "borderWidth": 2,
+        },
+      ],
+      Object {
+        "height": 48,
+        "paddingHorizontal": 44,
+      },
+      false,
+      false,
+    ]
+  }
+  testID="testID"
+>
+  <View
+    style={
+      Object {
+        "flexDirection": "row",
+      }
+    }
+  >
+    <Text
+      style={
+        Array [
+          Object {
+            "fontFamily": "Roboto",
+            "fontSize": 15,
+            "fontWeight": "bold",
+            "letterSpacing": 0.25,
+            "lineHeight": 24,
+            "marginHorizontal": 4,
+            "textAlign": "center",
+          },
+          Object {
+            "color": "#E52222",
+          },
+        ]
+      }
+    >
+      Secondary Default
+    </Text>
+  </View>
+</View>
+`;
+
+exports[`Button component snapshot should match Secondary default type 1`] = `
+<View
+  accessibilityState={
+    Object {
+      "disabled": false,
+    }
+  }
+  accessible={true}
+  collapsable={false}
+  focusable={true}
+  onBlur={[Function]}
+  onClick={[Function]}
+  onFocus={[Function]}
+  onResponderGrant={[Function]}
+  onResponderMove={[Function]}
+  onResponderRelease={[Function]}
+  onResponderTerminate={[Function]}
+  onResponderTerminationRequest={[Function]}
+  onStartShouldSetResponder={[Function]}
+  style={
+    Array [
+      Array [
+        Object {
+          "alignItems": "center",
+          "borderRadius": 6,
+          "justifyContent": "center",
+          "minHeight": 40,
+          "minWidth": 146,
+        },
+        Object {
+          "backgroundColor": "#FFFFFF",
+          "borderColor": "#AA33FF",
+          "borderWidth": 2,
+        },
+      ],
+      Object {
+        "height": 48,
+        "paddingHorizontal": 44,
+      },
+      false,
+      false,
+    ]
+  }
+  testID="testID"
+>
+  <View
+    style={
+      Object {
+        "flexDirection": "row",
+      }
+    }
+  >
+    <Text
+      style={
+        Array [
+          Object {
+            "fontFamily": "Roboto",
+            "fontSize": 15,
+            "fontWeight": "bold",
+            "letterSpacing": 0.25,
+            "lineHeight": 24,
+            "marginHorizontal": 4,
+            "textAlign": "center",
+          },
+          Object {
+            "textTransform": "uppercase",
+          },
+          Object {
+            "color": "#AA33FF",
+          },
+        ]
+      }
+    >
+      Secondary Default
+    </Text>
+  </View>
+</View>
+`;
+
+exports[`Button component snapshot should match Secondary disabled type 1`] = `
+<View
+  accessibilityState={
+    Object {
+      "disabled": true,
+    }
+  }
+  accessible={true}
+  collapsable={false}
+  focusable={true}
+  onBlur={[Function]}
+  onClick={[Function]}
+  onFocus={[Function]}
+  onResponderGrant={[Function]}
+  onResponderMove={[Function]}
+  onResponderRelease={[Function]}
+  onResponderTerminate={[Function]}
+  onResponderTerminationRequest={[Function]}
+  onStartShouldSetResponder={[Function]}
+  style={
+    Array [
+      Array [
+        Object {
+          "alignItems": "center",
+          "borderRadius": 6,
+          "justifyContent": "center",
+          "minHeight": 40,
+          "minWidth": 146,
+        },
+        Object {
+          "backgroundColor": "#FFFFFF",
+          "borderColor": "#BBBBBF",
+          "borderWidth": 2,
+        },
+      ],
+      Object {
+        "height": 48,
+        "paddingHorizontal": 44,
+      },
+      false,
+      false,
+    ]
+  }
+  testID="testID"
+>
+  <View
+    style={
+      Object {
+        "flexDirection": "row",
+      }
+    }
+  >
+    <Text
+      style={
+        Array [
+          Object {
+            "fontFamily": "Roboto",
+            "fontSize": 15,
+            "fontWeight": "bold",
+            "letterSpacing": 0.25,
+            "lineHeight": 24,
+            "marginHorizontal": 4,
+            "textAlign": "center",
+          },
+          Object {
+            "textTransform": "uppercase",
+          },
+          Object {
+            "color": "#BBBBBF",
+          },
+        ]
+      }
+    >
+      Secondary Default
+    </Text>
+  </View>
+</View>
+`;
+
+exports[`Button component snapshot should match SecondaryDark Done button type 1`] = `
+<View
+  accessibilityState={
+    Object {
+      "disabled": false,
+    }
+  }
+  accessible={true}
+  collapsable={false}
+  focusable={true}
+  onBlur={[Function]}
+  onClick={[Function]}
+  onFocus={[Function]}
+  onResponderGrant={[Function]}
+  onResponderMove={[Function]}
+  onResponderRelease={[Function]}
+  onResponderTerminate={[Function]}
+  onResponderTerminationRequest={[Function]}
+  onStartShouldSetResponder={[Function]}
+  style={
+    Array [
+      Array [
+        Object {
+          "alignItems": "center",
+          "borderRadius": 6,
+          "justifyContent": "center",
+          "minHeight": 40,
+          "minWidth": 146,
+        },
+        Object {
+          "backgroundColor": "#14141A",
+          "borderColor": "#AA33FF",
+          "borderWidth": 2,
+        },
+      ],
+      Object {
+        "height": 48,
+        "paddingHorizontal": 44,
+      },
+      false,
+      false,
+    ]
+  }
+  testID="testID"
+>
+  <svg
+    data-file-name="SvgSuccess"
+    fill="#FFFFFF"
+    height={24}
+    width={24}
+  />
+</View>
+`;
+
+exports[`Button component snapshot should match SecondaryDark Loading button type 1`] = `
+<View
+  accessibilityState={
+    Object {
+      "disabled": false,
+    }
+  }
+  accessible={true}
+  collapsable={false}
+  focusable={true}
+  onBlur={[Function]}
+  onClick={[Function]}
+  onFocus={[Function]}
+  onResponderGrant={[Function]}
+  onResponderMove={[Function]}
+  onResponderRelease={[Function]}
+  onResponderTerminate={[Function]}
+  onResponderTerminationRequest={[Function]}
+  onStartShouldSetResponder={[Function]}
+  style={
+    Array [
+      Array [
+        Object {
+          "alignItems": "center",
+          "borderRadius": 6,
+          "justifyContent": "center",
+          "minHeight": 40,
+          "minWidth": 146,
+        },
+        Object {
+          "backgroundColor": "#14141A",
+          "borderColor": "#AA33FF",
+          "borderWidth": 2,
+        },
+      ],
+      Object {
+        "height": 48,
+        "paddingHorizontal": 44,
+      },
+      false,
+      false,
+    ]
+  }
+  testID="testID"
+>
+  <View
+    collapsable={false}
+    style={
+      Object {
+        "transform": Array [
+          Object {
+            "rotate": "0deg",
+          },
+        ],
+      }
+    }
+    testID="loader"
+  >
+    <svg
+      data-file-name="SvgLoader"
+      fill="#FFFFFF"
+      height={24}
+      width={24}
+    />
+  </View>
+</View>
+`;
+
+exports[`Button component snapshot should match SecondaryDark danger type 1`] = `
+<View
+  accessibilityState={
+    Object {
+      "disabled": false,
+    }
+  }
+  accessible={true}
+  collapsable={false}
+  focusable={true}
+  onBlur={[Function]}
+  onClick={[Function]}
+  onFocus={[Function]}
+  onResponderGrant={[Function]}
+  onResponderMove={[Function]}
+  onResponderRelease={[Function]}
+  onResponderTerminate={[Function]}
+  onResponderTerminationRequest={[Function]}
+  onStartShouldSetResponder={[Function]}
+  style={
+    Array [
+      Array [
+        Object {
+          "alignItems": "center",
+          "borderRadius": 6,
+          "justifyContent": "center",
+          "minHeight": 40,
+          "minWidth": 146,
+        },
+        Object {
+          "backgroundColor": "#14141A",
+          "borderColor": "#E52222",
+          "borderWidth": 2,
+        },
+      ],
+      Object {
+        "height": 48,
+        "paddingHorizontal": 44,
+      },
+      false,
+      false,
+    ]
+  }
+  testID="testID"
+>
+  <View
+    style={
+      Object {
+        "flexDirection": "row",
+      }
+    }
+  >
+    <Text
+      style={
+        Array [
+          Object {
+            "fontFamily": "Roboto",
+            "fontSize": 15,
+            "fontWeight": "bold",
+            "letterSpacing": 0.25,
+            "lineHeight": 24,
+            "marginHorizontal": 4,
+            "textAlign": "center",
+          },
+          Object {
+            "textTransform": "uppercase",
+          },
+          Object {
+            "color": "#E52222",
+          },
+        ]
+      }
+    >
+      SecondaryDark Default
+    </Text>
+  </View>
+</View>
+`;
+
+exports[`Button component snapshot should match SecondaryDark default type 1`] = `
+<View
+  accessibilityState={
+    Object {
+      "disabled": false,
+    }
+  }
+  accessible={true}
+  collapsable={false}
+  focusable={true}
+  onBlur={[Function]}
+  onClick={[Function]}
+  onFocus={[Function]}
+  onResponderGrant={[Function]}
+  onResponderMove={[Function]}
+  onResponderRelease={[Function]}
+  onResponderTerminate={[Function]}
+  onResponderTerminationRequest={[Function]}
+  onStartShouldSetResponder={[Function]}
+  style={
+    Array [
+      Array [
+        Object {
+          "alignItems": "center",
+          "borderRadius": 6,
+          "justifyContent": "center",
+          "minHeight": 40,
+          "minWidth": 146,
+        },
+        Object {
+          "backgroundColor": "#14141A",
+          "borderColor": "#AA33FF",
+          "borderWidth": 2,
+        },
+      ],
+      Object {
+        "height": 48,
+        "paddingHorizontal": 44,
+      },
+      false,
+      false,
+    ]
+  }
+  testID="testID"
+>
+  <View
+    style={
+      Object {
+        "flexDirection": "row",
+      }
+    }
+  >
+    <Text
+      style={
+        Array [
+          Object {
+            "fontFamily": "Roboto",
+            "fontSize": 15,
+            "fontWeight": "bold",
+            "letterSpacing": 0.25,
+            "lineHeight": 24,
+            "marginHorizontal": 4,
+            "textAlign": "center",
+          },
+          Object {
+            "color": "#FFFFFF",
+          },
+        ]
+      }
+    >
+      SecondaryDark Default
+    </Text>
+  </View>
+</View>
+`;
+
+exports[`Button component snapshot should match SecondaryDark disabled type 1`] = `
+<View
+  accessibilityState={
+    Object {
+      "disabled": true,
+    }
+  }
+  accessible={true}
+  collapsable={false}
+  focusable={true}
+  onBlur={[Function]}
+  onClick={[Function]}
+  onFocus={[Function]}
+  onResponderGrant={[Function]}
+  onResponderMove={[Function]}
+  onResponderRelease={[Function]}
+  onResponderTerminate={[Function]}
+  onResponderTerminationRequest={[Function]}
+  onStartShouldSetResponder={[Function]}
+  style={
+    Array [
+      Array [
+        Object {
+          "alignItems": "center",
+          "borderRadius": 6,
+          "justifyContent": "center",
+          "minHeight": 40,
+          "minWidth": 146,
+        },
+        Object {
+          "backgroundColor": "#535359",
+          "borderColor": "#535359",
+          "borderWidth": 2,
+        },
+      ],
+      Object {
+        "height": 48,
+        "paddingHorizontal": 44,
+      },
+      false,
+      false,
+    ]
+  }
+  testID="testID"
+>
+  <View
+    style={
+      Object {
+        "flexDirection": "row",
+      }
+    }
+  >
+    <Text
+      style={
+        Array [
+          Object {
+            "fontFamily": "Roboto",
+            "fontSize": 15,
+            "fontWeight": "bold",
+            "letterSpacing": 0.25,
+            "lineHeight": 24,
+            "marginHorizontal": 4,
+            "textAlign": "center",
+          },
+          Object {
+            "textTransform": "uppercase",
+          },
+          Object {
+            "color": "#F0F0F2",
+          },
+        ]
+      }
+    >
+      SecondaryDark Default
+    </Text>
+  </View>
+</View>
+`;
+
+exports[`Button component snapshot should match default type 1`] = `
+<View
+  accessibilityState={
+    Object {
+      "disabled": false,
+    }
+  }
+  accessible={true}
+  collapsable={false}
+  focusable={true}
+  onBlur={[Function]}
+  onClick={[Function]}
+  onFocus={[Function]}
+  onResponderGrant={[Function]}
+  onResponderMove={[Function]}
+  onResponderRelease={[Function]}
+  onResponderTerminate={[Function]}
+  onResponderTerminationRequest={[Function]}
+  onStartShouldSetResponder={[Function]}
+  style={
+    Array [
+      Array [
+        Object {
+          "alignItems": "center",
+          "borderRadius": 6,
+          "justifyContent": "center",
+          "minHeight": 40,
+          "minWidth": 146,
+        },
+      ],
+      Object {
+        "height": 48,
+        "paddingHorizontal": 44,
+      },
+      false,
+      false,
+    ]
+  }
+  testID="testID"
+>
+  <View
+    style={
+      Object {
+        "flexDirection": "row",
+      }
+    }
+  >
+    <Text
+      style={
+        Array [
+          Object {
+            "fontFamily": "Roboto",
+            "fontSize": 15,
+            "fontWeight": "bold",
+            "letterSpacing": 0.25,
+            "lineHeight": 24,
+            "marginHorizontal": 4,
+            "textAlign": "center",
+          },
+          Object {
+            "textTransform": "uppercase",
+          },
+        ]
+      }
+    >
+      No Type
+    </Text>
+  </View>
+</View>
+`;

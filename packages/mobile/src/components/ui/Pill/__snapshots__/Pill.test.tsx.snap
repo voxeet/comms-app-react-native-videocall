@@ -1,0 +1,206 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Pill component snapshot should match default param configuration 1`] = `
+<View
+  style={
+    Array [
+      Object {
+        "alignItems": "center",
+        "alignSelf": "flex-start",
+        "borderRadius": 4,
+        "display": "flex",
+        "flexDirection": "row",
+        "height": 20,
+        "justifyContent": "center",
+        "maxWidth": 140,
+        "paddingBottom": 2,
+        "paddingLeft": 8,
+        "paddingRight": 8,
+        "paddingTop": 2,
+      },
+      Object {
+        "backgroundColor": "rgba(255, 255, 255, 0.04)",
+      },
+    ]
+  }
+  testID="testID"
+>
+  <View
+    style={
+      Object {
+        "flexShrink": 1,
+      }
+    }
+  >
+    <Text
+      numberOfLines={1}
+      style={
+        Array [
+          Object {
+            "letterSpacing": 1.22,
+          },
+          Object {
+            "fontSize": 12,
+            "fontWeight": "600",
+            "letterSpacing": 0.3,
+            "lineHeight": 16,
+          },
+          false,
+          Object {
+            "color": "#FFFFFF",
+            "fontFamily": "Roboto",
+            "textAlign": "left",
+          },
+        ]
+      }
+      testID="testID-text"
+    />
+  </View>
+</View>
+`;
+
+exports[`Pill component snapshot should match when size/active prop is s/true 1`] = `
+<View
+  style={
+    Array [
+      Object {
+        "alignItems": "center",
+        "alignSelf": "flex-start",
+        "borderRadius": 4,
+        "display": "flex",
+        "flexDirection": "row",
+        "height": 20,
+        "justifyContent": "center",
+        "maxWidth": 140,
+        "paddingBottom": 2,
+        "paddingLeft": 8,
+        "paddingRight": 8,
+        "paddingTop": 2,
+      },
+      Object {
+        "backgroundColor": "#FFFFFF",
+      },
+    ]
+  }
+  testID="testID"
+>
+  <View
+    style={
+      Object {
+        "flexShrink": 1,
+      }
+    }
+  >
+    <Text
+      numberOfLines={1}
+      style={
+        Array [
+          Object {
+            "letterSpacing": 1.22,
+          },
+          Object {
+            "fontSize": 10,
+            "fontWeight": "600",
+            "letterSpacing": 0.3,
+            "lineHeight": 16,
+          },
+          false,
+          Object {
+            "color": "#AA33FF",
+            "fontFamily": "Roboto",
+            "textAlign": "left",
+          },
+        ]
+      }
+      testID="testID-text"
+    >
+      TestPill
+    </Text>
+  </View>
+</View>
+`;
+
+exports[`Pill component snapshot should match when size/active/label prop is m/false/value 1`] = `
+<View
+  style={
+    Array [
+      Object {
+        "alignItems": "center",
+        "alignSelf": "flex-start",
+        "borderRadius": 4,
+        "display": "flex",
+        "flexDirection": "row",
+        "height": 20,
+        "justifyContent": "center",
+        "maxWidth": 140,
+        "paddingBottom": 2,
+        "paddingLeft": 8,
+        "paddingRight": 8,
+        "paddingTop": 2,
+      },
+      Object {
+        "backgroundColor": "rgba(255, 255, 255, 0.04)",
+      },
+    ]
+  }
+  testID="testID"
+>
+  <View
+    style={
+      Object {
+        "flexShrink": 1,
+      }
+    }
+  >
+    <Text
+      numberOfLines={1}
+      style={
+        Array [
+          Object {
+            "letterSpacing": 1.22,
+          },
+          Object {
+            "fontSize": 12,
+            "fontWeight": "600",
+            "letterSpacing": 0.3,
+            "lineHeight": 16,
+          },
+          false,
+          Object {
+            "color": "#FFFFFF",
+            "fontFamily": "Roboto",
+            "textAlign": "left",
+          },
+        ]
+      }
+      testID="testID-text"
+    >
+      TestPill
+    </Text>
+  </View>
+  <Text
+    style={
+      Array [
+        Object {
+          "letterSpacing": 1.22,
+        },
+        Object {
+          "fontSize": 12,
+          "fontWeight": "600",
+          "letterSpacing": 0.3,
+          "lineHeight": 16,
+        },
+        false,
+        Object {
+          "color": "#FFFFFF",
+          "fontFamily": "Roboto",
+          "textAlign": "left",
+        },
+      ]
+    }
+    testID="testID-text-local"
+  >
+    (TestLabel)
+  </Text>
+</View>
+`;

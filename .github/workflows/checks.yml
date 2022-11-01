@@ -1,0 +1,28 @@
+name: Continuous Integration Checks
+
+on:
+  pull_request:
+    branches:
+    - main
+  push:
+    branches:
+    - main
+
+jobs:
+  Run-Checks:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout source code
+        uses: actions/checkout@v3
+      - uses: actions/setup-node@master
+      - name: Install modules
+        run: yarn
+      - name: Run lint
+        run: |
+          yarn workspace @dolbyio/comms-uikit-common run lint
+          yarn workspace @dolbyio/comms-uikit-react-native run lint
+
+      - name: Run test
+        run: |
+          yarn workspace @dolbyio/comms-uikit-common run test
+          yarn workspace @dolbyio/comms-uikit-react-native run test
