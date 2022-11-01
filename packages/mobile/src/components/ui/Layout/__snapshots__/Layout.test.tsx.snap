@@ -1,0 +1,49 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Layout component snapshot should match default param configuration 1`] = `
+<View
+  style={
+    Array [
+      Object {
+        "flex": 1,
+        "paddingHorizontal": 20,
+        "paddingVertical": 20,
+      },
+      Object {
+        "backgroundColor": "#39393F",
+      },
+    ]
+  }
+  testID="testID"
+>
+  <Text
+    testID="say-hello"
+  >
+    Hello World
+  </Text>
+</View>
+`;
+
+exports[`Layout component snapshot should match with given backgroundColor 1`] = `
+<View
+  style={
+    Array [
+      Object {
+        "flex": 1,
+        "paddingHorizontal": 20,
+        "paddingVertical": 20,
+      },
+      Object {
+        "backgroundColor": "#292930",
+      },
+    ]
+  }
+  testID="testID"
+>
+  <Text
+    testID="say-hello"
+  >
+    Hello World
+  </Text>
+</View>
+`;

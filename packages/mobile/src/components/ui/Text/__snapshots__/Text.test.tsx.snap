@@ -1,0 +1,59 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Text component snapshot should match default param configuration 1`] = `
+<Text
+  style={
+    Array [
+      Object {
+        "letterSpacing": 1.22,
+      },
+      Object {
+        "fontSize": 15,
+        "fontWeight": "600",
+        "lineHeight": 24,
+      },
+      false,
+      Object {
+        "color": "#FFFFFF",
+        "fontFamily": "Roboto",
+        "textAlign": "left",
+      },
+    ]
+  }
+  testID="testID"
+>
+  Sample text
+</Text>
+`;
+
+exports[`Text component snapshot should match with children component 1`] = `
+<Text
+  style={
+    Array [
+      Object {
+        "letterSpacing": 1.22,
+      },
+      Object {
+        "fontSize": 13,
+        "fontWeight": "700",
+        "lineHeight": 16,
+      },
+      Object {
+        "textTransform": "uppercase",
+      },
+      Object {
+        "color": "#FFFFFF",
+        "fontFamily": "Roboto",
+        "textAlign": "right",
+      },
+    ]
+  }
+  testID="testID"
+>
+  <Text
+    testID="say-hello"
+  >
+    Hello World
+  </Text>
+</Text>
+`;

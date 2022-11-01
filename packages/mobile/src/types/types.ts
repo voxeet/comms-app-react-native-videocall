@@ -1,0 +1,3 @@
+interface NavigateTo {
+  navigateTo: () => void;
+}
