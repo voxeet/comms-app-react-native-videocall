@@ -1,0 +1,184 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`IconButton component snapshot Should match snapshot with button disable 1`] = `
+<View
+  accessibilityState={
+    Object {
+      "disabled": true,
+    }
+  }
+  accessible={true}
+  collapsable={false}
+  focusable={true}
+  onClick={[Function]}
+  onResponderGrant={[Function]}
+  onResponderMove={[Function]}
+  onResponderRelease={[Function]}
+  onResponderTerminate={[Function]}
+  onResponderTerminationRequest={[Function]}
+  onStartShouldSetResponder={[Function]}
+  style={
+    Object {
+      "alignItems": "center",
+      "backgroundColor": "#141418",
+      "borderColor": "transparent",
+      "borderRadius": 6,
+      "borderWidth": 1,
+      "height": 48,
+      "justifyContent": "center",
+      "opacity": 1,
+      "overflow": "hidden",
+      "width": 48,
+    }
+  }
+  testID="testID"
+>
+  <svg
+    data-file-name="SvgMicrophone"
+    fill="#808080"
+    height={24}
+    testID="Icon"
+    width={24}
+  />
+</View>
+`;
+
+exports[`IconButton component snapshot Should match with badge 1`] = `
+Array [
+  <View
+    accessibilityState={
+      Object {
+        "disabled": false,
+      }
+    }
+    accessible={true}
+    collapsable={false}
+    focusable={true}
+    onClick={[Function]}
+    onResponderGrant={[Function]}
+    onResponderMove={[Function]}
+    onResponderRelease={[Function]}
+    onResponderTerminate={[Function]}
+    onResponderTerminationRequest={[Function]}
+    onStartShouldSetResponder={[Function]}
+    style={
+      Object {
+        "alignItems": "center",
+        "backgroundColor": "#292930",
+        "borderColor": "purple.400",
+        "borderRadius": 6,
+        "borderWidth": 1,
+        "height": 48,
+        "justifyContent": "center",
+        "opacity": 1,
+        "overflow": "hidden",
+        "width": 48,
+      }
+    }
+    testID="testID"
+  >
+    <svg
+      data-file-name="SvgMicrophone"
+      fill="#FFFFFF"
+      height={24}
+      testID="Icon"
+      width={24}
+    />
+  </View>,
+  <View
+    style={
+      Object {
+        "position": "absolute",
+        "right": -8,
+        "top": -8,
+      }
+    }
+  >
+    <View
+      style={
+        Array [
+          Object {
+            "borderRadius": 12,
+            "letterSpacing": 0.3,
+            "paddingHorizontal": 8,
+            "paddingVertical": 0,
+          },
+          Object {
+            "backgroundColor": "#E65050",
+            "fontFamily": "Roboto",
+            "textAlign": "center",
+          },
+        ]
+      }
+      testID="IconButtonBadge"
+    >
+      <Text
+        style={
+          Array [
+            Object {
+              "letterSpacing": 1.22,
+            },
+            Object {
+              "fontSize": 12,
+              "fontWeight": "600",
+              "lineHeight": 20,
+            },
+            false,
+            Object {
+              "color": "#E65050",
+              "fontFamily": "Roboto",
+              "textAlign": "center",
+            },
+          ]
+        }
+        testID="badgeText"
+      >
+        testBadge
+      </Text>
+    </View>
+  </View>,
+]
+`;
+
+exports[`IconButton component snapshot Should match with button enable 1`] = `
+<View
+  accessibilityState={
+    Object {
+      "disabled": false,
+    }
+  }
+  accessible={true}
+  collapsable={false}
+  focusable={true}
+  onClick={[Function]}
+  onResponderGrant={[Function]}
+  onResponderMove={[Function]}
+  onResponderRelease={[Function]}
+  onResponderTerminate={[Function]}
+  onResponderTerminationRequest={[Function]}
+  onStartShouldSetResponder={[Function]}
+  style={
+    Object {
+      "alignItems": "center",
+      "backgroundColor": "#292930",
+      "borderColor": "transparent",
+      "borderRadius": 6,
+      "borderWidth": 1,
+      "height": 48,
+      "justifyContent": "center",
+      "opacity": 1,
+      "overflow": "hidden",
+      "width": 48,
+    }
+  }
+  testID="testID"
+>
+  <svg
+    data-file-name="SvgMicrophone"
+    fill="#FFFFFF"
+    height={24}
+    testID="Icon"
+    width={24}
+  />
+</View>
+`;

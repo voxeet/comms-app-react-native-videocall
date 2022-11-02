@@ -1,0 +1,11 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Icon component snapshot matches for dark colortone 1`] = `
+<svg
+  data-file-name="SvgSettings"
+  fill="#441466"
+  height={18}
+  testID="testID"
+  width={18}
+/>
+`;

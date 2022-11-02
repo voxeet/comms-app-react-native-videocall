@@ -1,0 +1,86 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Timer component snapshot should match default 1`] = `
+<View
+  style={
+    Array [
+      Object {
+        "display": "flex",
+        "flexDirection": "row",
+      },
+    ]
+  }
+  testID="testID"
+>
+  <Text
+    style={
+      Array [
+        Object {
+          "letterSpacing": 1.22,
+        },
+        Object {
+          "fontSize": 12,
+          "fontWeight": "600",
+          "letterSpacing": 0.3,
+          "lineHeight": 16,
+        },
+        false,
+        Object {
+          "color": "#FFFFFF",
+          "fontFamily": "Roboto",
+          "textAlign": "left",
+        },
+      ]
+    }
+    testID="testID-hour"
+  />
+  <Text
+    style={
+      Array [
+        Object {
+          "letterSpacing": 1.22,
+        },
+        Object {
+          "fontSize": 12,
+          "fontWeight": "600",
+          "letterSpacing": 0.3,
+          "lineHeight": 16,
+        },
+        false,
+        Object {
+          "color": "#FFFFFF",
+          "fontFamily": "Roboto",
+          "textAlign": "left",
+        },
+      ]
+    }
+    testID="testID-min"
+  >
+    00:
+  </Text>
+  <Text
+    style={
+      Array [
+        Object {
+          "letterSpacing": 1.22,
+        },
+        Object {
+          "fontSize": 12,
+          "fontWeight": "600",
+          "letterSpacing": 0.3,
+          "lineHeight": 16,
+        },
+        false,
+        Object {
+          "color": "#FFFFFF",
+          "fontFamily": "Roboto",
+          "textAlign": "left",
+        },
+      ]
+    }
+    testID="testID-sec"
+  >
+    00
+  </Text>
+</View>
+`;

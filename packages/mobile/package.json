@@ -1,0 +1,115 @@
+{
+  "name": "@dolbyio/comms-uikit-react-native",
+  "version": "1.0.0",
+  "description": "Dolby.IO UIKit React Native",
+  "main": "src/index.ts",
+  "files": [
+    "src",
+    "lib",
+    "android",
+    "ios",
+    "cpp",
+    "mobile.podspec",
+    "!lib/typescript/example",
+    "!android/build",
+    "!ios/build",
+    "!**/__tests__",
+    "!**/__fixtures__",
+    "!**/__mocks__"
+  ],
+  "scripts": {
+    "test": "jest",
+    "test:coverage": "jest --coverage=true",
+    "typescript": "tsc --noEmit",
+    "lint": "eslint \"src/**/*.{js,ts,tsx}\"",
+    "prepare": "bob build",
+    "release": "release-it",
+    "license-checker": "license-checker --json --out third-party-licenses.json --relativeLicensePath"
+  },
+  "keywords": [
+    "react-native",
+    "ios",
+    "android"
+  ],
+  "repository": "https://github.com/dolby",
+  "contributors": [
+    "Kwan Leung (Casper) Mok <casper.mok@dolby.com> (https://dolby.io)",
+    "Ramesh Prasad <ramesh.prasad@dolby.com> (https://dolby.io)",
+    "Liubov Danilina <liubov.danilina@dolby.com> (https://dolby.io)",
+    "Shivank Dubey <shivank.dubey@dolby.com> (https://dolby.io)",
+    "Aravind Raveendaran <aravind.raveendaran@dolby.com> (https://dolby.io)"
+  ],
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/dolby/issues"
+  },
+  "homepage": "https://github.com/dolby#readme",
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org/"
+  },
+  "dependencies": {
+    "@dolbyio/comms-sdk-react-native": "^3.6.0",
+    "@react-native-async-storage/async-storage": "^1.17.0",
+    "@types/color": "3.0.3",
+    "@dolbyio/comms-uikit-common": "1.0.0",
+    "color": "4.2.3",
+    "lodash.merge": "^4.6.2",
+    "lottie-react-native": "^5.0.1",
+    "react": "18.2.0",
+    "react-native": "0.67.2",
+    "react-native-linear-gradient": "^2.5.6",
+    "react-native-reanimated": "^2.5.0",
+    "@gorhom/bottom-sheet": "^4",
+    "react-intl": "~6.1.1"
+  },
+  "devDependencies": {
+    "@release-it/conventional-changelog": "^2.0.0",
+    "@testing-library/jest-native": "^4.0.4",
+    "@testing-library/react-native": "^9.1.0",
+    "@types/lodash.merge": "^4.6.2",
+    "@types/react": "18.0.18",
+    "@types/react-native": "0.67.2",
+    "babel-plugin-module-resolver": "^4.0.0",
+    "jest": "^27.5.1",
+    "pod-install": "^0.1.0",
+    "react-native-builder-bob": "^0.17.1",
+    "react-test-renderer": "18.2.0",
+    "release-it": "^14.2.2"
+  },
+  "release-it": {
+    "git": {
+      "commitMessage": "chore: release ${version}",
+      "tagName": "v${version}"
+    },
+    "npm": {
+      "publish": true
+    },
+    "github": {
+      "release": true
+    },
+    "plugins": {
+      "@release-it/conventional-changelog": {
+        "preset": "angular"
+      }
+    }
+  },
+  "react-native-builder-bob": {
+    "source": "src",
+    "output": "lib",
+    "targets": [
+      "commonjs",
+      "module",
+      [
+        "typescript",
+        {
+          "project": "tsconfig.build.json"
+        }
+      ]
+    ]
+  },
+  "eslintConfig": {
+    "env": {
+      "jest": true
+    }
+  }
+}

@@ -1,0 +1,498 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Input component snapshot should match default param configuration 1`] = `
+<View
+  style={
+    Object {
+      "marginBottom": 16,
+      "marginTop": 16,
+    }
+  }
+  testID="testID"
+>
+  <View
+    style={
+      Array [
+        Object {
+          "alignSelf": "flex-start",
+          "elevation": 1,
+          "marginStart": 16,
+          "position": "absolute",
+          "top": -8,
+          "zIndex": 1,
+        },
+        Object {
+          "backgroundColor": undefined,
+        },
+      ]
+    }
+  >
+    <Text
+      style={
+        Array [
+          Object {
+            "letterSpacing": 1.22,
+          },
+          Object {
+            "fontSize": 12,
+            "fontWeight": "600",
+            "lineHeight": 16,
+          },
+          false,
+          Object {
+            "color": "#6A6A6D",
+            "fontFamily": "Roboto",
+            "textAlign": "left",
+          },
+        ]
+      }
+    />
+  </View>
+  <View
+    style={
+      Array [
+        Object {
+          "borderRadius": 4,
+          "borderWidth": 2,
+          "paddingBottom": 12,
+          "paddingLeft": 16,
+          "paddingTop": 12,
+          "zIndex": 0,
+        },
+        Object {
+          "borderColor": "#E0E0E5",
+        },
+      ]
+    }
+  >
+    <TextInput
+      autoCapitalize="none"
+      autoCorrect={false}
+      onBlur={[Function]}
+      onFocus={[Function]}
+      style={
+        Object {
+          "color": "black",
+          "fontFamily": "Roboto",
+        }
+      }
+      value="foo"
+    />
+  </View>
+  <View
+    style={
+      Object {
+        "alignSelf": "flex-end",
+        "elevation": 1,
+        "position": "absolute",
+        "zIndex": 1,
+      }
+    }
+  >
+    <View
+      accessibilityState={
+        Object {
+          "disabled": false,
+        }
+      }
+      accessible={true}
+      collapsable={false}
+      focusable={true}
+      onClick={[Function]}
+      onResponderGrant={[Function]}
+      onResponderMove={[Function]}
+      onResponderRelease={[Function]}
+      onResponderTerminate={[Function]}
+      onResponderTerminationRequest={[Function]}
+      onStartShouldSetResponder={[Function]}
+      style={
+        Object {
+          "alignItems": "center",
+          "backgroundColor": "transparent",
+          "borderColor": "transparent",
+          "borderRadius": 20,
+          "borderWidth": 1,
+          "height": 40,
+          "justifyContent": "center",
+          "opacity": 1,
+          "overflow": "hidden",
+          "width": 40,
+        }
+      }
+    >
+      <svg
+        data-file-name="SvgClose"
+        fill="#14141A"
+        height={10}
+        testID="Icon"
+        width={10}
+      />
+    </View>
+  </View>
+</View>
+`;
+
+exports[`Input component snapshot should match with validation.message is not set 1`] = `
+<View
+  style={
+    Object {
+      "marginBottom": 16,
+      "marginTop": 16,
+    }
+  }
+  testID="testID"
+>
+  <View
+    style={
+      Array [
+        Object {
+          "alignSelf": "flex-start",
+          "elevation": 1,
+          "marginStart": 16,
+          "position": "absolute",
+          "top": -8,
+          "zIndex": 1,
+        },
+        Object {
+          "backgroundColor": "grey.800",
+        },
+      ]
+    }
+  >
+    <Text
+      style={
+        Array [
+          Object {
+            "letterSpacing": 1.22,
+          },
+          Object {
+            "fontSize": 12,
+            "fontWeight": "600",
+            "lineHeight": 16,
+          },
+          false,
+          Object {
+            "color": "#FFFFFF",
+            "fontFamily": "Roboto",
+            "textAlign": "left",
+          },
+        ]
+      }
+    >
+      testLabel
+    </Text>
+  </View>
+  <View
+    style={
+      Array [
+        Object {
+          "borderRadius": 4,
+          "borderWidth": 2,
+          "paddingBottom": 12,
+          "paddingLeft": 16,
+          "paddingTop": 12,
+          "zIndex": 0,
+        },
+        Object {
+          "borderColor": "#E0E0E5",
+        },
+      ]
+    }
+  >
+    <TextInput
+      autoCapitalize="none"
+      autoCorrect={false}
+      onBlur={[Function]}
+      onChange={[Function]}
+      onFocus={[Function]}
+      style={
+        Object {
+          "color": "#AA33FF",
+          "fontFamily": "Roboto",
+        }
+      }
+      value=""
+    />
+  </View>
+</View>
+`;
+
+exports[`Input component snapshot should match with validation.message is set & validation.valid is false & value.length == 0 1`] = `
+<View
+  style={
+    Object {
+      "marginBottom": 16,
+      "marginTop": 16,
+    }
+  }
+  testID="testID"
+>
+  <View
+    style={
+      Array [
+        Object {
+          "alignSelf": "flex-start",
+          "elevation": 1,
+          "marginStart": 16,
+          "position": "absolute",
+          "top": -8,
+          "zIndex": 1,
+        },
+        Object {
+          "backgroundColor": "grey.800",
+        },
+      ]
+    }
+  >
+    <Text
+      style={
+        Array [
+          Object {
+            "letterSpacing": 1.22,
+          },
+          Object {
+            "fontSize": 12,
+            "fontWeight": "600",
+            "lineHeight": 16,
+          },
+          false,
+          Object {
+            "color": "#FFFFFF",
+            "fontFamily": "Roboto",
+            "textAlign": "left",
+          },
+        ]
+      }
+    >
+      testLabel
+    </Text>
+  </View>
+  <View
+    style={
+      Array [
+        Object {
+          "borderRadius": 4,
+          "borderWidth": 2,
+          "paddingBottom": 12,
+          "paddingLeft": 16,
+          "paddingTop": 12,
+          "zIndex": 0,
+        },
+        Object {
+          "borderColor": "#E52222",
+        },
+      ]
+    }
+  >
+    <TextInput
+      autoCapitalize="none"
+      autoCorrect={false}
+      onBlur={[Function]}
+      onChange={[Function]}
+      onFocus={[Function]}
+      style={
+        Object {
+          "color": "#AA33FF",
+          "fontFamily": "Roboto",
+        }
+      }
+      value=""
+    />
+  </View>
+  <View
+    style={
+      Object {
+        "marginTop": 8,
+      }
+    }
+  >
+    <Text
+      style={
+        Array [
+          Object {
+            "letterSpacing": 1.22,
+          },
+          Object {
+            "fontSize": 12,
+            "fontWeight": "600",
+            "lineHeight": 16,
+          },
+          false,
+          Object {
+            "color": "#E52222",
+            "fontFamily": "Roboto",
+            "textAlign": "left",
+          },
+        ]
+      }
+    >
+      validationMsg
+    </Text>
+  </View>
+</View>
+`;
+
+exports[`Input component snapshot should match with validation.message is set & validation.valid is true & value.length > 0 1`] = `
+<View
+  style={
+    Object {
+      "marginBottom": 16,
+      "marginTop": 16,
+    }
+  }
+  testID="testID"
+>
+  <View
+    style={
+      Array [
+        Object {
+          "alignSelf": "flex-start",
+          "elevation": 1,
+          "marginStart": 16,
+          "position": "absolute",
+          "top": -8,
+          "zIndex": 1,
+        },
+        Object {
+          "backgroundColor": "grey.800",
+        },
+      ]
+    }
+  >
+    <Text
+      style={
+        Array [
+          Object {
+            "letterSpacing": 1.22,
+          },
+          Object {
+            "fontSize": 12,
+            "fontWeight": "600",
+            "lineHeight": 16,
+          },
+          false,
+          Object {
+            "color": "#FFFFFF",
+            "fontFamily": "Roboto",
+            "textAlign": "left",
+          },
+        ]
+      }
+    >
+      testLabel
+    </Text>
+  </View>
+  <View
+    style={
+      Array [
+        Object {
+          "borderRadius": 4,
+          "borderWidth": 2,
+          "paddingBottom": 12,
+          "paddingLeft": 16,
+          "paddingTop": 12,
+          "zIndex": 0,
+        },
+        Object {
+          "borderColor": "#E0E0E5",
+        },
+      ]
+    }
+  >
+    <TextInput
+      autoCapitalize="none"
+      autoCorrect={false}
+      onBlur={[Function]}
+      onChange={[Function]}
+      onFocus={[Function]}
+      style={
+        Object {
+          "color": "#AA33FF",
+          "fontFamily": "Roboto",
+        }
+      }
+      value="foo"
+    />
+  </View>
+  <View
+    style={
+      Object {
+        "alignSelf": "flex-end",
+        "elevation": 1,
+        "position": "absolute",
+        "zIndex": 1,
+      }
+    }
+  >
+    <View
+      accessibilityState={
+        Object {
+          "disabled": false,
+        }
+      }
+      accessible={true}
+      collapsable={false}
+      focusable={true}
+      onClick={[Function]}
+      onResponderGrant={[Function]}
+      onResponderMove={[Function]}
+      onResponderRelease={[Function]}
+      onResponderTerminate={[Function]}
+      onResponderTerminationRequest={[Function]}
+      onStartShouldSetResponder={[Function]}
+      style={
+        Object {
+          "alignItems": "center",
+          "backgroundColor": "transparent",
+          "borderColor": "transparent",
+          "borderRadius": 20,
+          "borderWidth": 1,
+          "height": 40,
+          "justifyContent": "center",
+          "opacity": 1,
+          "overflow": "hidden",
+          "width": 40,
+        }
+      }
+    >
+      <svg
+        data-file-name="SvgClose"
+        fill="#FFFFFF"
+        height={10}
+        testID="Icon"
+        width={10}
+      />
+    </View>
+  </View>
+  <View
+    style={
+      Object {
+        "marginTop": 8,
+      }
+    }
+  >
+    <Text
+      style={
+        Array [
+          Object {
+            "letterSpacing": 1.22,
+          },
+          Object {
+            "fontSize": 12,
+            "fontWeight": "600",
+            "lineHeight": 16,
+          },
+          false,
+          Object {
+            "color": "#535359",
+            "fontFamily": "Roboto",
+            "textAlign": "left",
+          },
+        ]
+      }
+    >
+      validationMsg
+    </Text>
+  </View>
+</View>
+`;
