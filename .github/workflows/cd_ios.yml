@@ -1,0 +1,81 @@
+name: iOS Build and Distribution
+
+on:
+  push:
+    branches:
+      - main
+    tags:
+      - '*'
+
+jobs:
+  Build-And-Deploy-To-Firebase:
+    runs-on: macos-12
+    steps:
+      - name: Checkout source code
+        uses: actions/checkout@v3
+
+      - name: Setup Node.js environment
+        uses: actions/setup-node@v3
+        with:
+          node-version: 16
+          cache: 'yarn'
+
+      - name: Install modules
+        run: yarn install
+
+      - name: Setup bundler
+        uses: actions/setup-ruby@v1
+        with:
+          ruby-version: 3.1.2
+
+      - name: Build App and Upload to Firebase
+        env:
+          IOS_FIREBASE_APP_ID: ${{ secrets.IOS_FIREBASE_APP_ID }}
+          IOS_TEMP_KEYCHAIN_NAME: ${{ secrets.IOS_TEMP_KEYCHAIN_NAME_ENTERPRISE }}
+          IOS_TEMP_KEYCHAIN_PASSWORD: ${{ secrets.IOS_TEMP_KEYCHAIN_PASSWORD_ENTERPRISE }}
+          IOS_CERTIFICATE_BASE64: ${{ secrets.IOS_CERTIFICATE_BASE64_ENTERPRISE }}
+          IOS_P12_PASSWORD: ${{ secrets.IOS_P12_PASSWORD_ENTERPRISE }}
+          IOS_PROVISIONING_PROFILE_BASE64: ${{ secrets.IOS_PROVISIONING_PROFILE_BASE64_ENTERPRISE }}
+          IOS_EXPORT_OPTIONS_PLIST_BASE64: ${{ secrets.IOS_EXPORT_OPTIONS_PLIST_BASE64_ENTERPRISE }}
+          IOS_GOOGLE_APPLICATION_CREDENTIALS_BASE64: ${{ secrets.IOS_GOOGLE_APPLICATION_CREDENTIALS_BASE64 }}
+        run: |
+          gem install bundler
+          cd examples/mobile/ios && bundle install
+          bundle exec fastlane build_and_deploy_to_firebase --env enterprise build_number:$GITHUB_RUN_NUMBER
+
+  Build-And-Deploy-To-Appstore:
+    if: github.event_name == 'push' && contains(github.ref, 'refs/tags/')
+    runs-on: macos-12
+    steps:
+      - name: Checkout source code
+        uses: actions/checkout@v3
+
+      - name: Setup Node.js environment
+        uses: actions/setup-node@v3
+        with:
+          node-version: 16
+          cache: 'yarn'
+
+      - name: Install modules
+        run: yarn install
+
+      - name: Setup bundler
+        uses: actions/setup-ruby@v1
+        with:
+          ruby-version: 3.1.2
+
+      - name: Build App and Upload to Appstore
+        env:
+          IOS_TEMP_KEYCHAIN_NAME: ${{ secrets.IOS_TEMP_KEYCHAIN_NAME_APPSTORE }}
+          IOS_TEMP_KEYCHAIN_PASSWORD: ${{ secrets.IOS_TEMP_KEYCHAIN_PASSWORD_APPSTORE }}
+          IOS_CERTIFICATE_BASE64: ${{ secrets.IOS_CERTIFICATE_BASE64_APPSTORE }}
+          IOS_P12_PASSWORD: ${{ secrets.IOS_P12_PASSWORD_APPSTORE }}
+          IOS_PROVISIONING_PROFILE_BASE64: ${{ secrets.IOS_PROVISIONING_PROFILE_BASE64_APPSTORE }}
+          IOS_EXPORT_OPTIONS_PLIST_BASE64: ${{ secrets.IOS_EXPORT_OPTIONS_PLIST_BASE64_APPSTORE }}
+          IOS_APPSTORE_CONNECT_KEY_ID: ${{ secrets.IOS_APPSTORE_CONNECT_KEY_ID }}
+          IOS_APPSTORE_CONNECT_ISSUER_ID: ${{ secrets.IOS_APPSTORE_CONNECT_ISSUER_ID }}
+          IOS_APPSTORE_CONNECT_KEY_CONTENT: ${{ secrets.IOS_APPSTORE_CONNECT_KEY_CONTENT }}
+        run: |
+          gem install bundler
+          cd examples/mobile/ios && bundle install
+          bundle exec fastlane build_and_deploy_to_appstore --env appstore build_number:$GITHUB_RUN_NUMBER
