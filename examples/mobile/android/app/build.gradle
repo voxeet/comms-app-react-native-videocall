@@ -1,5 +1,8 @@
-apply plugin: "com.android.application"
-apply plugin: 'com.google.firebase.appdistribution'
+plugins {
+  id 'com.android.application'
+  id 'com.google.firebase.appdistribution'
+  id "com.github.triplet.play" version "3.7.0-agp4.2"
+}
 
 apply from: 'plugins.gradle'
 
@@ -164,11 +167,6 @@ android {
           storePassword System.env.KEYSTORE_PASSWORD
           keyAlias System.env.KEY_ALIAS
           keyPassword System.env.KEY_PASSWORD
-          firebaseAppDistribution {
-            artifactType = "APK"
-            releaseNotes = "Release notes"
-            groups = "internal"
-          }
         }
     }
     buildTypes {
@@ -185,6 +183,15 @@ android {
             signingConfig signingConfigs.release
             minifyEnabled enableProguardInReleaseBuilds
             proguardFiles getDefaultProguardFile("proguard-android.txt"), "proguard-rules.pro"
+            firebaseAppDistribution {
+              artifactType = "APK"
+              releaseNotes = "Release notes"
+              groups = "internal"
+            }
+            play {
+              track.set("internal")
+              releaseName.set("Release notes")
+            }
         }
     }
 
