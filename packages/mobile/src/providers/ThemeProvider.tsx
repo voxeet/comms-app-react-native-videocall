@@ -17,7 +17,7 @@ export const ThemeContext = createContext<ThemeContext>({ theme: defaultTheme } 
 
 const ThemeProvider: React.FC<ThemeProviderProps> = ({ children, theme }) => {
   const [themeState, setThemeState] = useState(defaultTheme);
-  const [themeModeState, setThemeModeState] = useState<ThemeMode>('darkGraphite');
+  const [themeModeState, setThemeModeState] = useState<ThemeMode>('default');
 
   const setThemeMode = async (value: ThemeMode) => {
     setThemeModeState(value);
