@@ -336,8 +336,6 @@ PODS:
   - react-native-comms-sdk (3.6.0):
     - React-Core
     - VoxeetSDK (~> 3.6)
-  - react-native-encrypted-storage (4.0.2):
-    - React-Core
   - react-native-safe-area-context (4.3.3):
     - RCT-Folly
     - RCTRequired
@@ -500,7 +498,6 @@ DEPENDENCIES:
   - React-logger (from `../node_modules/react-native/ReactCommon/logger`)
   - react-native-camera (from `../node_modules/react-native-camera`)
   - "react-native-comms-sdk (from `../node_modules/@dolbyio/comms-sdk-react-native`)"
-  - react-native-encrypted-storage (from `../node_modules/react-native-encrypted-storage`)
   - react-native-safe-area-context (from `../node_modules/react-native-safe-area-context`)
   - React-perflogger (from `../node_modules/react-native/ReactCommon/reactperflogger`)
   - React-RCTActionSheet (from `../node_modules/react-native/Libraries/ActionSheetIOS`)
@@ -594,8 +591,6 @@ EXTERNAL SOURCES:
     :path: "../node_modules/react-native-camera"
   react-native-comms-sdk:
     :path: "../node_modules/@dolbyio/comms-sdk-react-native"
-  react-native-encrypted-storage:
-    :path: "../node_modules/react-native-encrypted-storage"
   react-native-safe-area-context:
     :path: "../node_modules/react-native-safe-area-context"
   React-perflogger:
@@ -682,7 +677,6 @@ SPEC CHECKSUMS:
   React-logger: 23de8ea0f44fa00ee77e96060273225607fd4d78
   react-native-camera: 3eae183c1d111103963f3dd913b65d01aef8110f
   react-native-comms-sdk: b908385edf21e68f99b880c3bf4c3a5438b55f26
-  react-native-encrypted-storage: e78d848ce0fb663c2ce306e37921d026809322e6
   react-native-safe-area-context: b456e1c40ec86f5593d58b275bd0e9603169daca
   React-perflogger: 3c9bb7372493e49036f07a82c44c8cf65cbe88db
   React-RCTActionSheet: 052606483045a408693aa7e864410b4a052f541a

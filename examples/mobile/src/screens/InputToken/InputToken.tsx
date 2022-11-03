@@ -1,29 +1,42 @@
-import {Button, Input} from '@dolbyio/comms-uikit-react-native';
+import {Button, Input, Text} from '@dolbyio/comms-uikit-react-native';
 import React, {useState} from 'react';
-import {View} from 'react-native';
+import {BarCodeReadEvent, RNCamera} from 'react-native-camera';
+import {ScrollView} from 'react-native-gesture-handler';
+import QRCodeScanner from 'react-native-qrcode-scanner';
 
 export type InputTokenProps = {
-  onToken: (token: string) => void;
+  setToken: (token: string) => void;
 };
 
-export const InputToken = ({onToken}: InputTokenProps) => {
+export const InputToken = ({route}) => {
+  const {setToken} = route.params;
   const [newTokenValue, setNewTokenValue] = useState('');
 
+  const onSuccess = (e: BarCodeReadEvent) => {
+    setNewTokenValue(e.data);
+    console.log(`data: ${e.data}`);
+    setToken(e.data);
+  };
   return (
-    <View>
+    <ScrollView>
+      <Text />
+      <QRCodeScanner
+        onRead={onSuccess}
+        flashMode={RNCamera.Constants.FlashMode.auto}
+      />
       <Input
         value={newTokenValue}
-        label="Demo token"
+        label="token"
         labelBackground="white"
         textColor="black"
         onChangeText={value => setNewTokenValue(value)}
       />
-      <View style={{height: 24}} />
       <Button
-        title="confirm"
-        onPress={() => onToken(newTokenValue)}
+        title="next"
+        onPress={() => setToken(newTokenValue)}
         type="primary"
       />
-    </View>
+      <Text />
+    </ScrollView>
   );
 };

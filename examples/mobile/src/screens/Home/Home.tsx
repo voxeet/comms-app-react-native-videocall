@@ -1,9 +1,4 @@
-import {
-  Layout,
-  Button,
-  Text,
-  useToken,
-} from '@dolbyio/comms-uikit-react-native';
+import {Layout, Button, Text} from '@dolbyio/comms-uikit-react-native';
 import React from 'react';
 import {useIntl} from 'react-intl';
 import {ScrollView, View} from 'react-native';
@@ -12,7 +7,6 @@ import {SafeAreaView} from 'react-native-safe-area-context';
 import ConferenceCreateHeader from '../../components/ConferenceCreateHeader';
 import ConferenceCreateFooter from '../../components/Footer';
 import {Routes} from '../../types/routes.types';
-import tokenStorage from '../../utils/tokenStorage.util';
 
 import makeStyles from './Home.style';
 
@@ -21,12 +15,10 @@ export enum ConferenceType {
   Create,
 }
 
-export const Home = ({navigation}) => {
+export const Home = ({route, navigation}) => {
   const intl = useIntl();
   const styles = makeStyles();
-  const {setToken} = useToken();
-  const {storeToken} = tokenStorage();
-
+  const {setToken} = route.params;
   return (
     <Layout testID="ConferenceCreateJoinScreen">
       <SafeAreaView style={styles.wrapper}>
@@ -67,9 +59,7 @@ export const Home = ({navigation}) => {
             title="logout"
             type="secondaryDark"
             onPress={() => {
-              storeToken('');
-              setToken('');
-              navigation.navigate(Routes.DemoToken);
+              setToken(null);
             }}
           />
         </ScrollView>

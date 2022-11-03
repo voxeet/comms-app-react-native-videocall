@@ -13,6 +13,9 @@ export const SHARE_SCHEME = 'dolbyio://';
 export const SHARE_PATH = 'conference';
 
 const App = () => {
+  const [token, setToken] = useState<string | null>(null);
+  console.log(`App token: ${token}`);
+
   const linking = {
     prefixes: [SHARE_SCHEME],
     config: {
@@ -24,9 +27,11 @@ const App = () => {
   return (
     <TranslationProvider>
       <NavigationContainer linking={linking} fallback={<Text>Loading...</Text>}>
-        <CommsProvider refreshToken={async () => Promise.reject()}>
+        <CommsProvider
+          token={token}
+          refreshToken={async () => Promise.reject()}>
           <ThemeProvider>
-            <Navigator />
+            <Navigator token={token} setToken={setToken} />
           </ThemeProvider>
         </CommsProvider>
       </NavigationContainer>

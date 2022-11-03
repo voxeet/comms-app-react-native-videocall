@@ -20,8 +20,6 @@ import sdkService from '../services/sdk';
 import sessionService from '../services/session';
 
 type CommsContext = {
-  token: string | null;
-  setToken: (value: string | null) => void;
   setMicPermissions: React.Dispatch<React.SetStateAction<boolean>>;
   setCameraPermissions: React.Dispatch<React.SetStateAction<boolean>>;
   openSession: (participantInfo: ParticipantInfo) => Promise<void>;
@@ -49,16 +47,16 @@ type CommsContext = {
 
 type CommsProviderProps = {
   children: ReactElement;
+  token: string;
   refreshToken: () => Promise<string>;
 };
 
 export const CommsContext = createContext<CommsContext>({} as CommsContext);
 
-const CommsProvider: React.FC<CommsProviderProps> = ({ children, refreshToken }) => {
+const CommsProvider: React.FC<CommsProviderProps> = ({ children, token, refreshToken }) => {
   const isMutedDefault = false;
   const isVideoDefault = true;
   const isPageMutedDefault = false;
-  const [token, setToken] = useState<string | null>(null);
   const [micPermissions, setMicPermissions] = useState(Platform.OS !== 'android');
   const [cameraPermissions, setCameraPermissions] = useState(Platform.OS !== 'android');
   const [user, setUser] = useState<CommsContext['user']>(null);
@@ -251,8 +249,6 @@ const CommsProvider: React.FC<CommsProviderProps> = ({ children, refreshToken })
 
   const contextValue: CommsContext = useMemo(
     () => ({
-      token,
-      setToken,
       micPermissions,
       setMicPermissions,
       cameraPermissions,
@@ -278,8 +274,6 @@ const CommsProvider: React.FC<CommsProviderProps> = ({ children, refreshToken })
       toggleMuteParticipants,
     }),
     [
-      token,
-      setToken,
       micPermissions,
       cameraPermissions,
       isInitialized,

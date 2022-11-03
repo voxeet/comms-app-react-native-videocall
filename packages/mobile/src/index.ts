@@ -10,7 +10,6 @@ export { default as useParticipants } from './hooks/useParticipants';
 export { default as useCamera } from './hooks/useCamera';
 export { default as useSpeaker } from './hooks/useSpeaker';
 export { default as useTheme } from './hooks/useTheme';
-export { default as useToken } from './hooks/useToken';
 
 // Components - UI
 export { default as Icon } from './components/ui/Icon/Icon';
@@ -26,7 +25,6 @@ export { default as Icons } from './components/ui/Icon/IconComponents';
 export { default as Pill } from './components/ui/Pill/Pill';
 export { default as Avatar } from './components/ui/Avatar/Avatar';
 export { default as Timer } from './components/ui/Timer/Timer';
-export { default as Spinner } from './components/ui/Spinner/Spinner';
 
 // Components - Conference
 export { default as ActionBar } from './components/conference/ActionBar/ActionBar';
@@ -53,7 +51,6 @@ export { default as Text } from './components/conference/Text/Text';
 export { default as ParticipantsListBottomSheet } from './components/conference/ParticipantsListBottomSheet/ParticipantsListBottomSheet';
 export { default as JoinConferenceButton } from './components/conference/JoinConferenceButton/JoinConferenceButton';
 export { default as RejoinConferenceButton } from './components/conference/RejoinConferenceButton/RejoinConferenceButton';
-export { default as TokenTab } from './components/conference/TokenTab/TokenTab';
 
 // Types
 export type { CustomTextProps as TextProps } from './components/ui/Text/Text';
