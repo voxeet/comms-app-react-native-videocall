@@ -4,7 +4,7 @@ This document serves as a guide on how to build the React Native Video Conferenc
 
 ## Pre-requisites
 
-The setup guide was validated on both Intel/M1-based MacBook Pro running macOS Monterrey 12.6.
+This setup guide is validated on both Intel/M1-based MacBook Pro running macOS Monterey 12.6.
 
 ### iOS
 
@@ -123,4 +123,3 @@ The Dolby.io Communications Sample for React Native and its repository are licen
 Third-party licenses can be found [here](third-party-licenses.json).
 
 &copy; Dolby, 2022
-
