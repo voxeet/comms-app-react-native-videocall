@@ -16,9 +16,11 @@ import lossless from './lossless.svg';
 import microphoneOff from './microphone-off.svg';
 import microphone from './microphone.svg';
 import participants from './participants.svg';
+import paste from './paste-files.svg';
 import pin from './pin.svg';
 import present from './present.svg';
 import record from './record.svg';
+import scan from './scan.svg';
 import sendMessage from './send-message.svg';
 import settings from './settings.svg';
 import speakerOff from './speaker-off.svg';
@@ -52,6 +54,8 @@ const Icons = {
   speakerOff,
   success,
   invite,
+  paste,
+  scan,
 };
 
 export default Icons;

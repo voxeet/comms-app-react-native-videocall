@@ -4,10 +4,10 @@ export enum Routes {
   ConferenceJoin = 'ConferenceJoin',
   ConferenceLeft = 'ConferenceLeft',
   Home = 'Home',
-  Onboarding = 'Onboarding',
+  Loading = 'Loading',
   SelectTheme = 'SelectTheme',
   Setup = 'Setup',
   UserNameInput = 'UserNameInput',
   MeetingNameInput = 'MeetingNameInput',
-  InputToken = 'InputToken',
+  DemoToken = 'DemoToken',
 }

@@ -49,18 +49,18 @@
   },
   "dependencies": {
     "@dolbyio/comms-sdk-react-native": "^3.6.0",
+    "@dolbyio/comms-uikit-common": "1.0.0",
+    "@gorhom/bottom-sheet": "^4",
     "@react-native-async-storage/async-storage": "^1.17.0",
     "@types/color": "3.0.3",
-    "@dolbyio/comms-uikit-common": "1.0.0",
     "color": "4.2.3",
     "lodash.merge": "^4.6.2",
     "lottie-react-native": "^5.0.1",
     "react": "18.2.0",
+    "react-intl": "~6.1.1",
     "react-native": "0.67.2",
     "react-native-linear-gradient": "^2.5.6",
-    "react-native-reanimated": "^2.5.0",
-    "@gorhom/bottom-sheet": "^4",
-    "react-intl": "~6.1.1"
+    "react-native-reanimated": "^2.5.0"
   },
   "devDependencies": {
     "@release-it/conventional-changelog": "^2.0.0",
