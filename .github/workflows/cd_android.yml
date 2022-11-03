@@ -1,7 +1,11 @@
 name: CD Android build and distribution
 
 on:
-  push
+  push:
+    branches:
+    - main
+    tags:
+    - '*'
 
 jobs:
   Android-App-Build:
