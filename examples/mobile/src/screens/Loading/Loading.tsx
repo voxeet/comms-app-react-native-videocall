@@ -1,4 +1,4 @@
-import {Layout, Spinner} from '@dolbyio/comms-uikit-react-native';
+import {Layout, Spinner, useToken} from '@dolbyio/comms-uikit-react-native';
 import React, {useEffect} from 'react';
 import {View} from 'react-native';
 
@@ -8,11 +8,13 @@ import {validateToken} from '../../utils/validation.util';
 
 export const Loading = ({navigation}) => {
   const {retrieveToken} = tokenStorage();
+  const {setToken} = useToken();
 
   useEffect(() => {
     (async () => {
       await retrieveToken().then(tok => {
         if (tok !== null && validateToken(tok)) {
+          setToken(tok);
           navigation.navigate(Routes.Home);
         } else {
           navigation.navigate(Routes.DemoToken);
