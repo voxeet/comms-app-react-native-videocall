@@ -103,12 +103,10 @@ jobs:
           name: android-release-bundle
           path: ./examples/mobile/android/app/build/outputs/bundle/release/
 
-      - name: Setup Play Store publisher credentials
+      - name: Deploy to Play Store
         env:
           ANDROID_PUBLISHER_CREDENTIALS: ${{ secrets.ANDROID_PUBLISHER_CREDENTIALS }}
         run: |
-          echo "export ANDROID_PUBLISHER_CREDENTIALS=$ANDROID_PUBLISHER_CREDENTIALS" > ~/.env_creds
-      - name: Deploy to Play Store
-        run: |
+          echo "ANDROID_PUBLISHER_CREDENTIALS='$ANDROID_PUBLISHER_CREDENTIALS'" > ~/.env_creds
           source ~/.env_creds
           cd examples/mobile/android && chmod +x ./gradlew && ./gradlew publishBundle --artifact-dir ./app/build/outputs/bundle/release/ --stacktrace
