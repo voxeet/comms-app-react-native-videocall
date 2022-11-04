@@ -4,8 +4,6 @@ plugins {
   id "com.github.triplet.play"
 }
 
-apply from: 'plugins.gradle'
-
 import com.android.build.OutputFile
 
 /**
@@ -183,11 +181,14 @@ android {
             signingConfig signingConfigs.release
             minifyEnabled enableProguardInReleaseBuilds
             proguardFiles getDefaultProguardFile("proguard-android.txt"), "proguard-rules.pro"
-            firebaseAppDistribution {
-              artifactType = "APK"
-              releaseNotes = "Release notes"
-              groups = "internal"
-            }
+            // def firebaseAppId = System.env.FIREBASE_APP_ID ?: ""
+            // firebaseAppDistribution {
+            //   artifactType = "APK"
+            //   releaseNotes = "Release notes"
+            //   groups = "internal"
+            //   appId = firebaseAppId
+            //   artifactPath = "app/build/outputs/apk/release/app-release.apk"
+            // }
             play {
               track.set("internal")
             }
