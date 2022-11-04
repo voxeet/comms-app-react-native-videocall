@@ -55,7 +55,9 @@ jobs:
 
       - name: calculate version
         run: |
-          echo "export VERSION_NAME='1.0.'$GITHUB_RUN_NUMBER; export VERSION_CODE=$GITHUB_RUN_NUMBER" > ~/.env_version
+          versionName='1.0.'$GITHUB_RUN_NUMBER
+          versionCode=$(($GITHUB_RUN_NUMBER+33)); echo "versionName: $versionName; versionCode: $versionCode"
+          echo "export VERSION_NAME=$versionName; export VERSION_CODE=$versionCode" > ~/.env_version
 
       - name: Beta Android App Build
         run: |
