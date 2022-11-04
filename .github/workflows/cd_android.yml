@@ -1,12 +1,11 @@
 name: CD Android build and distribution
 
 on:
-  push
-  # push:
-  #   branches:
-  #   - main
-  #   tags:
-  #   - '*'
+  push:
+    branches:
+    - main
+    tags:
+    - '*'
 
 jobs:
   Android-App-Build:
@@ -79,7 +78,7 @@ jobs:
             ./examples/mobile/android/app/build/outputs/bundle/release/app-release.aab
 
   Android-Play-Store-Distribution:
-    # if: github.event_name == 'push' && contains(github.ref, 'refs/tags/')
+    if: github.event_name == 'push' && contains(github.ref, 'refs/tags/')
     needs: Android-App-Build
     runs-on: ubuntu-latest
     steps:
