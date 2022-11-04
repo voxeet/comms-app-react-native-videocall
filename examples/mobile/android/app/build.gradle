@@ -181,14 +181,7 @@ android {
             signingConfig signingConfigs.release
             minifyEnabled enableProguardInReleaseBuilds
             proguardFiles getDefaultProguardFile("proguard-android.txt"), "proguard-rules.pro"
-            // def firebaseAppId = System.env.FIREBASE_APP_ID ?: ""
-            // firebaseAppDistribution {
-            //   artifactType = "APK"
-            //   releaseNotes = "Release notes"
-            //   groups = "internal"
-            //   appId = firebaseAppId
-            //   artifactPath = "app/build/outputs/apk/release/app-release.apk"
-            // }
+
             play {
               track.set("internal")
             }
