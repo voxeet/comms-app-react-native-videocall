@@ -131,6 +131,7 @@ def nativeArchitectures = project.getProperties().get("reactNativeDebugArchitect
 
 def appVersionCode = Integer.valueOf(System.env.VERSION_CODE ?: 1)
 def appVersionName = System.env.VERSION_NAME ?: "1.0"
+def firebaseAppId = System.env.FIREBASE_APP_ID ?: ""
 
 android {
     ndkVersion rootProject.ext.ndkVersion
@@ -182,6 +183,13 @@ android {
             minifyEnabled enableProguardInReleaseBuilds
             proguardFiles getDefaultProguardFile("proguard-android.txt"), "proguard-rules.pro"
 
+            firebaseAppDistribution {
+              artifactType = "APK"
+              releaseNotes = "Release notes"
+              groups = "internal"
+              appId = firebaseAppId
+              artifactPath = "app/build/outputs/apk/release/app-release.apk"
+            }
             play {
               track.set("internal")
             }
