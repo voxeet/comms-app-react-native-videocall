@@ -3,9 +3,9 @@ name: CD Android build and distribution
 on:
   push:
     branches:
-    - main
+      - main
     tags:
-    - '*'
+      - '*'
 
 jobs:
   Android-App-Build:
@@ -27,17 +27,6 @@ jobs:
           path: ~/.gradle/wrapper
           key: ${{ runner.os }}-gradle-wrapper-${{ hashFiles('gradle/wrapper/gradle-wrapper.properties') }}
 
-      - name: create google-services.json
-        env:
-          GOOGLE_SERVICES : ${{secrets.GOOGLE_SERVICES_ANDROID}}
-        run: |
-          echo $GOOGLE_SERVICES >> ./examples/mobile/android/app/google-services.json
-          ls ./examples/mobile/android/app/
-
-      - name: update gradle plugins for google services
-        run: |
-          echo 'apply plugin: "com.google.gms.google-services"' >> examples/mobile/android/app/plugins.gradle
-
       - name: Install the signing certificate 
         env:
           DISTRIBUTION_CERTIFICATE_ANDROID_BASE64: ${{ secrets.RELEASE_KEYSTORE_BASE64 }}
@@ -55,7 +44,7 @@ jobs:
       - name: calculate version
         run: |
           versionName='1.0.'$GITHUB_RUN_NUMBER
-          versionCode=$(($GITHUB_RUN_NUMBER+33)); echo "versionName: $versionName; versionCode: $versionCode"
+          versionCode=$GITHUB_RUN_NUMBER; echo "versionName: $versionName; versionCode: $versionCode"
           echo "export VERSION_NAME=$versionName; export VERSION_CODE=$versionCode" > ~/.env_version
 
       - name: Beta Android App Build
@@ -77,6 +66,58 @@ jobs:
           path: |
             ./examples/mobile/android/app/build/outputs/bundle/release/app-release.aab
 
+  Android-Firebase-Distribution:
+    needs: Android-App-Build
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout source code
+        uses: actions/checkout@v3
+      - uses: actions/setup-node@master
+      - name: Install modules
+        run: yarn install
+      - name: Set up JDK 11
+        uses: actions/setup-java@v3
+        with:
+          distribution: "zulu"
+          java-version: 11
+      - name: Cache Gradle Wrapper
+        uses: actions/cache@v3
+        with:
+          path: ~/.gradle/wrapper
+          key: ${{ runner.os }}-gradle-wrapper-${{ hashFiles('gradle/wrapper/gradle-wrapper.properties') }}
+
+      - name: Download release artifacts
+        uses: actions/download-artifact@v3
+        with:
+          name: android-release-apk
+          path: ./examples/mobile/android/app/build/outputs/apk/release
+
+      - name: 'Export Firebase App Id and Credentials'
+        env: 
+          FIREBASE_APP_ID_ANDROID: ${{secrets.FIREBASE_APP_ID_ANDROID}}
+          GOOGLE_APPLICATION_CREDENTIALS_KEY: ${{secrets.GOOGLE_APPLICATION_CREDENTIALS}}
+        run: |
+          echo $GOOGLE_APPLICATION_CREDENTIALS_KEY >> $GITHUB_WORKSPACE/google-app-creds.json
+          echo "export FIREBASE_APP_ID=$FIREBASE_APP_ID_ANDROID; export GOOGLE_APPLICATION_CREDENTIALS=$GITHUB_WORKSPACE/google-app-creds.json" > ~/.env_creds
+
+      - name: calculate version
+        run: |
+          versionName='1.0.'$GITHUB_RUN_NUMBER
+          versionCode=$GITHUB_RUN_NUMBER;
+          echo "export VERSION_NAME=$versionName; export VERSION_CODE=$versionCode" > ~/.env_version
+
+      - name: create google-services.json
+        env:
+          GOOGLE_SERVICES : ${{secrets.GOOGLE_SERVICES_ANDROID}}
+        run: |
+          echo $GOOGLE_SERVICES >> ./examples/mobile/android/app/google-services.json
+
+      - name: Deploy to Firebase
+        run: |
+          source ~/.env_version
+          source ~/.env_creds
+          cd examples/mobile/android && gradle appDistributionUploadRelease --stacktrace
+          
   Android-Play-Store-Distribution:
     if: github.event_name == 'push' && contains(github.ref, 'refs/tags/')
     needs: Android-App-Build
