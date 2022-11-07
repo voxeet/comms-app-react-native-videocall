@@ -3,10 +3,10 @@ name: Continuous Integration Checks
 on:
   pull_request:
     branches:
-    - main
+      - main
   push:
     branches:
-    - main
+      - main
 
 jobs:
   Run-Checks:
