@@ -12,7 +12,7 @@ export const Footer = () => {
         values={{year: new Date().getFullYear()}}
         type="bodySmall"
         align="center"
-        color="grey.300"
+        color="secondary.200"
       />
     </View>
   );

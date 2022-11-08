@@ -34,5 +34,7 @@
   "moreOptions": "More options",
   "firstToArriveTitle": "You’re the 1st to arrive",
   "firstToArriveSubtitle": "Wait or invite other participants to join.",
-  "conferenceIDHeader": "Conference Title/ID:"
+  "conferenceIDHeader": "Conference Title/ID:",
+  "scan": "Scan",
+  "paste": "Paste"
 }

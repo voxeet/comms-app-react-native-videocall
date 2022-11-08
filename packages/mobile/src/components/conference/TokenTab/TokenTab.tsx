@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { useIntl } from 'react-intl';
 import { View } from 'react-native';
 
 import useTheme from '../../../hooks/useTheme';
@@ -13,6 +14,7 @@ export type TabProps = {
 const Tab = ({ onSelectionChange }: TabProps) => {
   const [toggle, setToggle] = useState<boolean>(true);
   const { colors } = useTheme();
+  const intl = useIntl();
 
   const onPress = (index: number) => {
     setToggle(index === 0);
@@ -22,7 +24,7 @@ const Tab = ({ onSelectionChange }: TabProps) => {
   return (
     <View style={[styles.container, { backgroundColor: colors.grey[100] }]}>
       <TabPill
-        title="Scan"
+        title={intl.formatMessage({ id: 'scan' })}
         icon="scan"
         isFocussed={toggle}
         onPress={() => {
@@ -30,7 +32,7 @@ const Tab = ({ onSelectionChange }: TabProps) => {
         }}
       />
       <TabPill
-        title="Paste"
+        title={intl.formatMessage({ id: 'paste' })}
         icon="paste"
         isFocussed={!toggle}
         onPress={() => {
