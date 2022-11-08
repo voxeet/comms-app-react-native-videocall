@@ -1,3 +1,2 @@
-# Global ownership of the repo belongs to the Mobile UI Kit dev team. There may be granular rules later on. 
-@DolbyIO/mobile-uikit-dev 
-@DolbyIO/mobile-uikit-qa
+# Global ownership of the repo belongs to the dolby io mobile app dev team. There may be granular rules later on. 
+@dolbyio-samples/mobile-app-dev
