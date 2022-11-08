@@ -1,4 +1,5 @@
 import {Layout, Spinner, useToken} from '@dolbyio/comms-uikit-react-native';
+import { StackActions } from '@react-navigation/native';
 import React, {useEffect} from 'react';
 import {View} from 'react-native';
 
@@ -15,9 +16,9 @@ export const Loading = ({navigation}) => {
       await retrieveToken().then(tok => {
         if (tok !== null && validateToken(tok)) {
           setToken(tok);
-          navigation.navigate(Routes.Home);
+          navigation.dispatch(StackActions.replace(Routes.Home));
         } else {
-          navigation.navigate(Routes.DemoToken);
+          navigation.dispatch(StackActions.replace(Routes.DemoToken));
         }
       });
     })();

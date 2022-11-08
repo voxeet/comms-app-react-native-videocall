@@ -4,6 +4,7 @@ import {
   Text,
   useToken,
 } from '@dolbyio/comms-uikit-react-native';
+import { StackActions } from '@react-navigation/native';
 import React, {useState} from 'react';
 import {SafeAreaView, View} from 'react-native';
 
@@ -26,7 +27,7 @@ export const DemoToken = ({navigation}) => {
       setError(false);
       storeToken(token);
       setToken(token);
-      navigation.navigate(Routes.Home);
+      navigation.dispatch(StackActions.replace(Routes.Home));
     } else {
       setError(true);
     }

@@ -4,6 +4,7 @@ import {
   Text,
   useToken,
 } from '@dolbyio/comms-uikit-react-native';
+import { StackActions } from '@react-navigation/native';
 import React from 'react';
 import {useIntl} from 'react-intl';
 import {ScrollView, View} from 'react-native';
@@ -69,7 +70,7 @@ export const Home = ({navigation}) => {
             onPress={() => {
               storeToken('');
               setToken('');
-              navigation.navigate(Routes.DemoToken);
+              navigation.dispatch(StackActions.replace(Routes.DemoToken));
             }}
           />
         </ScrollView>
