@@ -1,6 +1,6 @@
 import MobileSDK from '@dolbyio/comms-sdk-react-native';
 
-export default class ConferenceService {
+export default class Recordingservice {
   public static start() {
     return MobileSDK.recording.start();
   }

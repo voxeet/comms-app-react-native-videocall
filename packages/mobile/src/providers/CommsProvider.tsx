@@ -19,6 +19,7 @@ import { Status } from '../types/status';
 import conferenceService from '../services/conference';
 import sdkService from '../services/sdk';
 import sessionService from '../services/session';
+import recordingService from '../services/recording';
 
 type CommsContext = {
   token: string | null;
