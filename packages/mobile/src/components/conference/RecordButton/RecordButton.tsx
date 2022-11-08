@@ -42,22 +42,21 @@ const RecordButton = ({ type = 'iconButton', testID }: RecordButtonType) => {
   const handleStartRecording = async () => {
     
     const result = await startRecording();
-    if (result) {
-      console.log('***************', result);
+    if (!result) {
+      console.log('Failed to start recordinhg');
     }
   };
 
   const handleStopRecording = async () => {
     
     const result = await stopRecording();
-    if (result) {
-      console.log('>>>>>>>>>>>>>>>', result);
+    if (!result) {
+      console.log('Failed to stop recordinhg');
     }
   };
 
   useEffect(() => {
     if (isError || status === RecordingStatus.Error) {
-      
       setRecordingErrors();
     }
   }, [isError, status]);
