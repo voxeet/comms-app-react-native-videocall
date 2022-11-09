@@ -1,9 +1,9 @@
 const defaultTheme = {
-  // COLORS
+  // COLORS for Dark theme
   colors: {
     black: '#14141A',
     white: '#FFFFFF',
-    background: '#39393F',
+    background: '#14141A',
     infoSuccess: '#17CE55',
     infoInformation: '#1930E5',
     infoWarning: '#F09E00',
@@ -42,7 +42,7 @@ const defaultTheme = {
     },
     secondary: {
       100: '#FCFDFF',
-      200: '#F3F6FC',
+      200: '#B9B9BA',
       300: '#D1DBF4',
       400: '#93B0F4',
       500: '#628EF4',

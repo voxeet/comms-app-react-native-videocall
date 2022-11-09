@@ -51,17 +51,13 @@ export const DemoToken = ({navigation}) => {
     <Layout>
       <SafeAreaView style={{flex: 1}}>
         <ConferenceCreateHeader />
-        <Text
-          type="h2"
-          align="center"
-          color="grey.800"
-          style={{paddingTop: 40}}>
+        <Text type="h2" align="center" color="white" style={{paddingTop: 40}}>
           Provide a demo token
         </Text>
         <Text
           type="paragraph"
           align="center"
-          color="grey.500"
+          color="secondary.200"
           style={{paddingTop: 8, paddingBottom: 24}}>
           In order to use this app you need to provide a token from your Dolby
           IO dashboard.

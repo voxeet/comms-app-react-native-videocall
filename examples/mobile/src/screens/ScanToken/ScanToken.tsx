@@ -28,7 +28,7 @@ export const ScanToken = ({onToken}: InputTokenProps) => {
       <Text
         type="caption"
         align="center"
-        color="grey.300"
+        color="secondary.200"
         style={{paddingTop: gap}}>
         Point the camera at the QR code
       </Text>

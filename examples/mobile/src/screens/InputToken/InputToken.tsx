@@ -1,4 +1,4 @@
-import {Button, Input} from '@dolbyio/comms-uikit-react-native';
+import {Button, Input, useTheme} from '@dolbyio/comms-uikit-react-native';
 import React, {useState} from 'react';
 import {View} from 'react-native';
 
@@ -10,14 +10,16 @@ export type InputTokenProps = {
 
 export const InputToken = ({onToken, onClear, error}: InputTokenProps) => {
   const [newTokenValue, setNewTokenValue] = useState('');
+  const {colors} = useTheme();
 
   return (
     <View>
       <Input
         value={newTokenValue}
         label="Demo token"
-        labelBackground="white"
-        textColor="black"
+        labelColor="white"
+        labelBackground={colors.background}
+        textColor="white"
         onChangeText={value => {
           if (value === '') onClear();
           setNewTokenValue(value);
