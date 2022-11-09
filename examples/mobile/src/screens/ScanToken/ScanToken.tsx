@@ -22,6 +22,8 @@ export const ScanToken = ({onToken}: InputTokenProps) => {
         cameraStyle={{width, height, alignSelf: 'center'}}
         onRead={onSuccess}
         flashMode={RNCamera.Constants.FlashMode.auto}
+        reactivate={true}
+        reactivateTimeout={3000}
       />
       <Text
         type="caption"
