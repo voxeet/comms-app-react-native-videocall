@@ -25,7 +25,7 @@ const TabPill = ({ title, isFocussed, icon, onPress, testID }: TabPillProps) => 
     <Pressable onPress={onPress} style={[styles.container, { backgroundColor: bgColor?.toString() }]} testID={testID}>
       <Icon name={icon} color={fgColor} />
       <View style={{ width: 10 }} />
-      <Text color={fgColor}>{title}</Text>
+      <Text color={fgColor} uppercase={true}>{title}</Text>
     </Pressable>
   );
 };
