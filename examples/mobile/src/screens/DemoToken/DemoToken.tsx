@@ -4,7 +4,7 @@ import {
   Text,
   useToken,
 } from '@dolbyio/comms-uikit-react-native';
-import { StackActions } from '@react-navigation/native';
+import {StackActions} from '@react-navigation/native';
 import React, {useState} from 'react';
 import {SafeAreaView, View} from 'react-native';
 
@@ -23,10 +23,10 @@ export const DemoToken = ({navigation}) => {
   const [showError, setError] = useState<boolean>(false);
 
   const onToken = (token: string) => {
-    if(token === '') {
+    if (token === '') {
       setError(false);
       return;
-    } 
+    }
 
     if (validateToken(token)) {
       setError(false);
@@ -39,8 +39,8 @@ export const DemoToken = ({navigation}) => {
   };
 
   const onClear = () => {
-      setError(false);
-  }
+    setError(false);
+  };
 
   const onTabChange = (index: number) => {
     setError(false);
@@ -71,7 +71,7 @@ export const DemoToken = ({navigation}) => {
         {switchTab ? (
           <ScanToken onToken={onToken} />
         ) : (
-          <InputToken onToken={onToken} onClear = {onClear} error= {showError}/>
+          <InputToken onToken={onToken} onClear={onClear} error={showError} />
         )}
         {showError && (
           <Text

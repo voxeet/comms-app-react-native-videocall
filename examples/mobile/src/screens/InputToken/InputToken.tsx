@@ -19,10 +19,10 @@ export const InputToken = ({onToken, onClear, error}: InputTokenProps) => {
         labelBackground="white"
         textColor="black"
         onChangeText={value => {
-          if(value === '' ) onClear();
+          if (value === '') onClear();
           setNewTokenValue(value);
         }}
-        validation={{valid:!error}}
+        validation={{valid: !error}}
       />
       <View style={{height: 24}} />
       <Button

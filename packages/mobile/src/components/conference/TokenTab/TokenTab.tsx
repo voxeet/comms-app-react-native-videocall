@@ -24,7 +24,7 @@ const Tab = ({ onSelectionChange }: TabProps) => {
   return (
     <View style={[styles.container, { backgroundColor: colors.grey[100] }]}>
       <TabPill
-        title={intl.formatMessage({id: 'scan'})}
+        title={intl.formatMessage({ id: 'scan' })}
         icon="scan"
         isFocussed={toggle}
         onPress={() => {
@@ -32,7 +32,7 @@ const Tab = ({ onSelectionChange }: TabProps) => {
         }}
       />
       <TabPill
-        title={intl.formatMessage({id: 'paste'})}
+        title={intl.formatMessage({ id: 'paste' })}
         icon="paste"
         isFocussed={!toggle}
         onPress={() => {

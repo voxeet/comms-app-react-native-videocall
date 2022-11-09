@@ -4,7 +4,7 @@ import {
   Text,
   useToken,
 } from '@dolbyio/comms-uikit-react-native';
-import { StackActions } from '@react-navigation/native';
+import {StackActions} from '@react-navigation/native';
 import React from 'react';
 import {useIntl} from 'react-intl';
 import {ScrollView, View} from 'react-native';

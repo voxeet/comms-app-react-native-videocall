@@ -1,5 +1,5 @@
 import {Layout, Spinner, useToken} from '@dolbyio/comms-uikit-react-native';
-import { StackActions } from '@react-navigation/native';
+import {StackActions} from '@react-navigation/native';
 import React, {useEffect} from 'react';
 import {View} from 'react-native';
 
