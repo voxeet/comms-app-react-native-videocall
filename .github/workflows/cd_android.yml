@@ -13,7 +13,7 @@ jobs:
     steps:
       - name: Checkout source code
         uses: actions/checkout@v3
-      - uses: actions/setup-node@master
+      - uses: actions/setup-node@v3
       - name: Install modules
         run: yarn install
       - name: Set up JDK 11
@@ -33,13 +33,6 @@ jobs:
         run: |
           CERTIFICATE_PATH=./examples/mobile/android/app/release.keystore
           echo -n "$DISTRIBUTION_CERTIFICATE_ANDROID_BASE64" | base64 --decode > $CERTIFICATE_PATH
-      - name: create keystore passwords
-        env:
-          KEYSTORE_PASSWORD: ${{ secrets.RELEASE_KEYSTORE_STORE_PASSWORD }}
-          KEY_ALIAS: ${{ secrets.RELEASE_KEYSTORE_KEY_ALIAS }}
-          KEY_PASSWORD: ${{ secrets.RELEASE_KEYSTORE_KEY_PASSWORD }}
-        run: |
-          echo "export KEYSTORE_PASSWORD=$KEYSTORE_PASSWORD; export KEY_ALIAS=$KEY_ALIAS; export KEY_PASSWORD=$KEY_PASSWORD" > ~/.env_cert
 
       - name: calculate version
         run: |
@@ -48,9 +41,15 @@ jobs:
           echo "export VERSION_NAME=$versionName; export VERSION_CODE=$versionCode" > ~/.env_version
 
       - name: Beta Android App Build
+        env:
+          KEYSTORE_PASSWORD: ${{ secrets.RELEASE_KEYSTORE_STORE_PASSWORD }}
+          KEY_ALIAS: ${{ secrets.RELEASE_KEYSTORE_KEY_ALIAS }}
+          KEY_PASSWORD: ${{ secrets.RELEASE_KEYSTORE_KEY_PASSWORD }}
         run: |
+          export KEYSTORE_PASSWORD=$KEYSTORE_PASSWORD
+          export KEY_ALIAS=$KEY_ALIAS
+          export KEY_PASSWORD=$KEY_PASSWORD
           source ~/.env_version
-          source ~/.env_cert
           cd examples/mobile/android && gradle assembleRelease bundleRelease
       - name: Archive production apk
         uses: actions/upload-artifact@v3
@@ -72,7 +71,7 @@ jobs:
     steps:
       - name: Checkout source code
         uses: actions/checkout@v3
-      - uses: actions/setup-node@master
+      - uses: actions/setup-node@v3
       - name: Install modules
         run: yarn install
       - name: Set up JDK 11
@@ -92,30 +91,21 @@ jobs:
           name: android-release-apk
           path: ./examples/mobile/android/app/build/outputs/apk/release
 
-      - name: 'Export Firebase App Id and Credentials'
-        env: 
-          FIREBASE_APP_ID_ANDROID: ${{secrets.FIREBASE_APP_ID_ANDROID}}
-          GOOGLE_APPLICATION_CREDENTIALS_KEY: ${{secrets.GOOGLE_APPLICATION_CREDENTIALS}}
-        run: |
-          echo $GOOGLE_APPLICATION_CREDENTIALS_KEY >> $GITHUB_WORKSPACE/google-app-creds.json
-          echo "export FIREBASE_APP_ID=$FIREBASE_APP_ID_ANDROID; export GOOGLE_APPLICATION_CREDENTIALS=$GITHUB_WORKSPACE/google-app-creds.json" > ~/.env_creds
-
       - name: calculate version
         run: |
           versionName='1.0.'$GITHUB_RUN_NUMBER
           versionCode=$GITHUB_RUN_NUMBER;
           echo "export VERSION_NAME=$versionName; export VERSION_CODE=$versionCode" > ~/.env_version
 
-      - name: create google-services.json
-        env:
-          GOOGLE_SERVICES : ${{secrets.GOOGLE_SERVICES_ANDROID}}
-        run: |
-          echo $GOOGLE_SERVICES >> ./examples/mobile/android/app/google-services.json
-
       - name: Deploy to Firebase
+        env: 
+          FIREBASE_APP_ID_ANDROID: ${{secrets.FIREBASE_APP_ID_ANDROID}}
+          GOOGLE_APPLICATION_CREDENTIALS_KEY: ${{secrets.GOOGLE_APPLICATION_CREDENTIALS}}
         run: |
+          echo $GOOGLE_APPLICATION_CREDENTIALS_KEY >> $GITHUB_WORKSPACE/google-app-creds.json
+          export FIREBASE_APP_ID=$FIREBASE_APP_ID_ANDROID
+          export GOOGLE_APPLICATION_CREDENTIALS=$GITHUB_WORKSPACE/google-app-creds.json
           source ~/.env_version
-          source ~/.env_creds
           cd examples/mobile/android && gradle appDistributionUploadRelease --stacktrace
           
   Android-Play-Store-Distribution:
@@ -125,7 +115,7 @@ jobs:
     steps:
       - name: Checkout source code
         uses: actions/checkout@v3
-      - uses: actions/setup-node@master
+      - uses: actions/setup-node@v3
       - name: Install modules
         run: yarn install
       - name: Set up JDK 11
@@ -149,6 +139,5 @@ jobs:
         env:
           ANDROID_PUBLISHER_CREDENTIALS: ${{ secrets.ANDROID_PUBLISHER_CREDENTIALS }}
         run: |
-          echo "ANDROID_PUBLISHER_CREDENTIALS='$ANDROID_PUBLISHER_CREDENTIALS'" > ~/.env_creds
-          source ~/.env_creds
+          export ANDROID_PUBLISHER_CREDENTIALS=$ANDROID_PUBLISHER_CREDENTIALS
           cd examples/mobile/android && chmod +x ./gradlew && ./gradlew publishBundle --artifact-dir ./app/build/outputs/bundle/release/ --stacktrace
