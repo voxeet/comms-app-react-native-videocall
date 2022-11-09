@@ -91,7 +91,7 @@ const Input = ({
             iconColor={getColor(textColor, 'black')}
             size="xxs"
             onPress={() => {
-              textInput.current.clear();
+              textInput?.current?.clear();
               onChangeText('');
             }}
           />

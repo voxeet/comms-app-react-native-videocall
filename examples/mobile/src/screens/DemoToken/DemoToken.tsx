@@ -23,6 +23,11 @@ export const DemoToken = ({navigation}) => {
   const [showError, setError] = useState<boolean>(false);
 
   const onToken = (token: string) => {
+    if(token === '') {
+      setError(false);
+      return;
+    } 
+
     if (validateToken(token)) {
       setError(false);
       storeToken(token);
@@ -32,6 +37,10 @@ export const DemoToken = ({navigation}) => {
       setError(true);
     }
   };
+
+  const onClear = () => {
+      setError(false);
+  }
 
   const onTabChange = (index: number) => {
     setError(false);
@@ -62,7 +71,7 @@ export const DemoToken = ({navigation}) => {
         {switchTab ? (
           <ScanToken onToken={onToken} />
         ) : (
-          <InputToken onToken={onToken} />
+          <InputToken onToken={onToken} onClear = {onClear} error= {showError}/>
         )}
         {showError && (
           <Text

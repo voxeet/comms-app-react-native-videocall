@@ -4,9 +4,11 @@ import {View} from 'react-native';
 
 export type InputTokenProps = {
   onToken: (token: string) => void;
+  onClear: () => void;
+  error: boolean;
 };
 
-export const InputToken = ({onToken}: InputTokenProps) => {
+export const InputToken = ({onToken, onClear, error}: InputTokenProps) => {
   const [newTokenValue, setNewTokenValue] = useState('');
 
   return (
@@ -16,7 +18,11 @@ export const InputToken = ({onToken}: InputTokenProps) => {
         label="Demo token"
         labelBackground="white"
         textColor="black"
-        onChangeText={value => setNewTokenValue(value)}
+        onChangeText={value => {
+          if(value === '' ) onClear();
+          setNewTokenValue(value);
+        }}
+        validation={{valid:!error}}
       />
       <View style={{height: 24}} />
       <Button
