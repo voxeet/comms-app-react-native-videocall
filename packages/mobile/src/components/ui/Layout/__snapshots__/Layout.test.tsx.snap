@@ -10,7 +10,7 @@ exports[`Layout component snapshot should match default param configuration 1`] 
         "paddingVertical": 20,
       },
       Object {
-        "backgroundColor": "#39393F",
+        "backgroundColor": "#14141A",
       },
     ]
   }

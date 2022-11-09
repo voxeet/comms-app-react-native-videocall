@@ -22,11 +22,13 @@ export const ScanToken = ({onToken}: InputTokenProps) => {
         cameraStyle={{width, height, alignSelf: 'center'}}
         onRead={onSuccess}
         flashMode={RNCamera.Constants.FlashMode.auto}
+        reactivate
+        reactivateTimeout={3000}
       />
       <Text
         type="caption"
         align="center"
-        color="grey.300"
+        color="secondary.200"
         style={{paddingTop: gap}}>
         Point the camera at the QR code
       </Text>

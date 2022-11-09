@@ -4,6 +4,7 @@ import {
   Text,
   useToken,
 } from '@dolbyio/comms-uikit-react-native';
+import {StackActions} from '@react-navigation/native';
 import React, {useState} from 'react';
 import {SafeAreaView, View} from 'react-native';
 
@@ -22,14 +23,23 @@ export const DemoToken = ({navigation}) => {
   const [showError, setError] = useState<boolean>(false);
 
   const onToken = (token: string) => {
+    if (token === '') {
+      setError(false);
+      return;
+    }
+
     if (validateToken(token)) {
       setError(false);
       storeToken(token);
       setToken(token);
-      navigation.navigate(Routes.Home);
+      navigation.dispatch(StackActions.replace(Routes.Home));
     } else {
       setError(true);
     }
+  };
+
+  const onClear = () => {
+    setError(false);
   };
 
   const onTabChange = (index: number) => {
@@ -41,17 +51,13 @@ export const DemoToken = ({navigation}) => {
     <Layout>
       <SafeAreaView style={{flex: 1}}>
         <ConferenceCreateHeader />
-        <Text
-          type="h2"
-          align="center"
-          color="grey.800"
-          style={{paddingTop: 40}}>
+        <Text type="h2" align="center" color="white" style={{paddingTop: 40}}>
           Provide a demo token
         </Text>
         <Text
           type="paragraph"
           align="center"
-          color="grey.500"
+          color="secondary.200"
           style={{paddingTop: 8, paddingBottom: 24}}>
           In order to use this app you need to provide a token from your Dolby
           IO dashboard.
@@ -61,7 +67,7 @@ export const DemoToken = ({navigation}) => {
         {switchTab ? (
           <ScanToken onToken={onToken} />
         ) : (
-          <InputToken onToken={onToken} />
+          <InputToken onToken={onToken} onClear={onClear} error={showError} />
         )}
         {showError && (
           <Text
