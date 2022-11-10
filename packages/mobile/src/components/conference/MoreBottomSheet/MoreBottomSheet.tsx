@@ -27,7 +27,7 @@ const MoreBottomSheet = React.forwardRef<BottomSheetModal, MoreBottomSheetProps>
       <View style={styles.row} testID="MoreBottomSheet">
         <ShareConference testID="InviteButton" type="iconButton" url={shareURL} />
         <View style={{ width: 56 }} />
-        <IconButton testID="SettingsButton" icon="settings" onPress={() => navigateTo()} />
+        <IconButton testID="SettingsButton" disabled icon="settings" onPress={() => navigateTo()} />
       </View>
     </BottomSheetWrapper>
   );
