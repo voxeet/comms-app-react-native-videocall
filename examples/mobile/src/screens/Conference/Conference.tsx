@@ -4,6 +4,7 @@ import {
   ActionBar,
   ConferenceContent,
   TopActionBar,
+  useToken,
 } from '@dolbyio/comms-uikit-react-native';
 import {BottomSheetModalProvider} from '@gorhom/bottom-sheet';
 import {useNavigation} from '@react-navigation/native';
@@ -18,11 +19,11 @@ import styles from './Conference.style';
 export const Conference = ({route}) => {
   const {userName, meetingName} = route.params;
   const {navigate} = useNavigation();
-
-  const {conference, micPermissions, cameraPermissions} = useConference();
+  const {token} = useToken();
+  const {conference} = useConference();
 
   const shareURL = useMemo(() => {
-    return getShareURL(conference?.alias ?? '');
+    return getShareURL(conference?.alias ?? '', token ?? '');
   }, [conference]);
 
   return (

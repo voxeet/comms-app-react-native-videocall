@@ -5,6 +5,7 @@ import {
   Input,
   ValidationType,
   JoinConferenceButton,
+  useToken,
 } from '@dolbyio/comms-uikit-react-native';
 import useTheme from '@dolbyio/comms-uikit-react-native/src/hooks/useTheme';
 import React, {useState} from 'react';
@@ -20,14 +21,19 @@ import {ConferenceType} from '../Home/Home';
 import makeStyles from './UserNameInput.style';
 
 export const UserNameInput = ({route, navigation}) => {
-  const meetingName = route.params.id;
+  const {id: meetingName, token} = route.params;
 
+  const {setToken} = useToken();
   const intl = useIntl();
   const MINIMUM_USERNAME_LENGTH = 3;
   const [userName, setUserName] = useState<string>('');
   const [validation, setValidation] = useState<ValidationType>({valid: true});
   const {conferenceType} = route.params;
   const {theme} = useTheme();
+
+  if (token !== undefined && token !== null) {
+    setToken(route.params.token);
+  }
 
   const onChangeText = (text: string) => {
     validateInput(text);

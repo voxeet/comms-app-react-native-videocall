@@ -1,6 +1,6 @@
 import useTheme from '@dolbyio/comms-uikit-react-native/src/hooks/useTheme';
 import {createNativeStackNavigator} from '@react-navigation/native-stack';
-import React, {useEffect} from 'react';
+import React from 'react';
 import {gestureHandlerRootHOC} from 'react-native-gesture-handler';
 
 import {Routes} from '../types/routes.types';
