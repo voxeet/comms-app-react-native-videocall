@@ -83,9 +83,9 @@ const CommsProvider: React.FC<CommsProviderProps> = ({ children, refreshToken })
         await sdkService.initializeToken(token, refreshToken);
         setIsInitialized(true);
       } else {
-        setIsInitialized(true);
         // eslint-disable-next-line no-console
         console.log('No initialization params passed');
+        setIsInitialized(true);
       }
     })();
   }, [token, refreshToken]);
@@ -105,6 +105,10 @@ const CommsProvider: React.FC<CommsProviderProps> = ({ children, refreshToken })
   // SESSION METHODS
 
   const openSession = async (participantInfo: ParticipantInfo) => {
+    if (token && refreshToken) {
+      await sdkService.initializeToken(token, refreshToken);
+    }
+
     const timeoutPromise = setTimeout(async () => {
       await sessionService.close();
     }, 5000);
