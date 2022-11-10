@@ -55,6 +55,7 @@ const JoinConferenceButton = ({ title, type, disabled = false, route, onSuccess 
       setMode(ButtonMode.Done);
       onSuccess();
     } catch (error) {
+      // eslint-disable-next-line no-console
       console.log(`error during joining: ${error}`);
       setMode(ButtonMode.Default);
     }

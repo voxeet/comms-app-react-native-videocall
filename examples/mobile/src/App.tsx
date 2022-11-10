@@ -5,7 +5,7 @@ import {
   TranslationProvider,
 } from '@dolbyio/comms-uikit-react-native';
 import {NavigationContainer} from '@react-navigation/native';
-import React, {useState} from 'react';
+import React from 'react';
 
 import {Navigator} from './screens/Navigator';
 
@@ -21,10 +21,11 @@ const App = () => {
       },
     },
   };
+
   return (
     <TranslationProvider>
       <NavigationContainer linking={linking} fallback={<Text>Loading...</Text>}>
-        <CommsProvider refreshToken={async () => Promise.reject()}>
+        <CommsProvider>
           <ThemeProvider>
             <Navigator />
           </ThemeProvider>
