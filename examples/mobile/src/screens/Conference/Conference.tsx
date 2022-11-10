@@ -20,9 +20,6 @@ export const Conference = ({route}) => {
   const {userName, meetingName} = route.params;
   const {navigate} = useNavigation();
   const {token} = useToken();
-
-  console.log('token >>>>', token);
-
   const {conference} = useConference();
 
   const shareURL = useMemo(() => {
