@@ -19,6 +19,7 @@ const labelBackground = 'grey.800';
 const textColor = 'purple.400';
 
 const onChange = () => {
+  // eslint-disable-next-line no-console
   console.log('test');
 };
 

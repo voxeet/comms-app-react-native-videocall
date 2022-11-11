@@ -24,6 +24,7 @@ const ThemeProvider: React.FC<ThemeProviderProps> = ({ children, theme }) => {
     try {
       await AsyncStorage.setItem('themeMode', value);
     } catch (error) {
+      // eslint-disable-next-line no-console
       console.log(error);
     }
   };
@@ -35,6 +36,7 @@ const ThemeProvider: React.FC<ThemeProviderProps> = ({ children, theme }) => {
         setThemeModeState(value);
       }
     } catch (error) {
+      // eslint-disable-next-line no-console
       console.log(error);
     }
   };

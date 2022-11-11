@@ -13,6 +13,7 @@ import Button, { ButtonMode } from './Button';
 const { colors } = theme;
 
 const handlePress = () => {
+  // eslint-disable-next-line no-console
   console.log('test');
 };
 const testID = 'testID';

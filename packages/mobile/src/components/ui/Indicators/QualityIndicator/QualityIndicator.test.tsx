@@ -47,7 +47,6 @@ describe('QualityIndicator component', () => {
     expect(styles5.backgroundColor).toBe(qualityLevel >= 5 ? colors.secondary[500] : colors.primary[500]);
   });
   test('Should use whiteAlpha as backgroundColor in absence of backgroundColor prop', () => {
-    const level = 5;
     const expStyles = {
       boxSizing: 'border-box',
       width: 26,
