@@ -18,6 +18,7 @@ const badgeTestWrapperID = 'IconButtonBadge';
 const { colors } = theme;
 
 const onPress = () => {
+  // eslint-disable-next-line no-console
   console.log('test');
 };
 

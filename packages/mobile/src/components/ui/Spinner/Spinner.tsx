@@ -1,6 +1,6 @@
 import type { ColorKey } from '@dolbyio/comms-uikit-common';
-import React, { useState } from 'react';
-import { Animated, View } from 'react-native';
+import React from 'react';
+import { Animated } from 'react-native';
 
 import Icon, { IconSize } from '../Icon/Icon';
 

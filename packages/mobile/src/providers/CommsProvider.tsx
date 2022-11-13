@@ -49,12 +49,11 @@ type CommsContext = {
 
 type CommsProviderProps = {
   children: ReactElement;
-  refreshToken: () => Promise<string>;
 };
 
 export const CommsContext = createContext<CommsContext>({} as CommsContext);
 
-const CommsProvider: React.FC<CommsProviderProps> = ({ children, refreshToken }) => {
+const CommsProvider: React.FC<CommsProviderProps> = ({ children }) => {
   const isMutedDefault = false;
   const isVideoDefault = true;
   const isPageMutedDefault = false;
@@ -79,16 +78,25 @@ const CommsProvider: React.FC<CommsProviderProps> = ({ children, refreshToken })
 
   useEffect(() => {
     (async () => {
-      if (token && refreshToken) {
+      if (token) {
         await sdkService.initializeToken(token, refreshToken);
-        setIsInitialized(true);
       } else {
-        setIsInitialized(true);
         // eslint-disable-next-line no-console
         console.log('No initialization params passed');
       }
+      setIsInitialized(true);
     })();
-  }, [token, refreshToken]);
+  }, [token]);
+
+  const refreshToken = async () => {
+    if (token && token.length > 0) {
+      return Promise.resolve(token);
+    }
+
+    // eslint-disable-next-line no-console
+    console.log('ERROR - Failed to refresh the token');
+    return Promise.reject();
+  };
 
   // CHECK INIT MUTED STATE
 
@@ -195,6 +203,7 @@ const CommsProvider: React.FC<CommsProviderProps> = ({ children, refreshToken })
       );
       setIsPageMuted((prevState) => !prevState);
     } catch (e) {
+      // eslint-disable-next-line no-console
       console.log('Error muting all participants', e);
     }
   };
