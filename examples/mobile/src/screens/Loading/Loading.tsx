@@ -12,16 +12,20 @@ export const Loading = ({navigation}) => {
   const {setToken} = useToken();
 
   useEffect(() => {
-    (async () => {
-      await retrieveToken().then(tok => {
+    let ignore = false;
+    retrieveToken().then(tok => {
+      if (!ignore) {
         if (tok !== null && validateToken(tok)) {
           setToken(tok);
           navigation.dispatch(StackActions.replace(Routes.Home));
         } else {
           navigation.dispatch(StackActions.replace(Routes.DemoToken));
         }
-      });
-    })();
+      }
+    });
+    return () => {
+      ignore = true;
+    };
   }, []);
 
   return (
