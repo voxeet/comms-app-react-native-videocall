@@ -72,9 +72,9 @@
     "babel-plugin-module-resolver": "^4.0.0",
     "jest": "^27.5.1",
     "pod-install": "^0.1.0",
-    "react-native-builder-bob": "^0.17.1",
+    "react-native-builder-bob": "^0.20.0",
     "react-test-renderer": "18.2.0",
-    "release-it": "^14.2.2"
+    "release-it": "^15.5.0"
   },
   "release-it": {
     "git": {
