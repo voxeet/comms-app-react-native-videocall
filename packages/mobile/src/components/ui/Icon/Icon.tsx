@@ -24,7 +24,7 @@ const IconSizes: { [key in IconSize]: { width: number; height: number } } = {
   xs: { width: 16, height: 16 },
   s: { width: 18, height: 18 },
   m: { width: 24, height: 24 },
-  l: { width: 24, height: 24 }, // FIXME: Replace with the correct size for `large` icon
+  l: { width: 172, height: 172 },
 };
 
 const Icon = ({ name, color, colorTone = 'default', size = 'm', testID, path }: IconProps) => {

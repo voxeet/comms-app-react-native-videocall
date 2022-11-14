@@ -9,11 +9,11 @@ import Conference from './Conference';
 import ConferenceLeft from './ConferenceLeft';
 import DemoToken from './DemoToken';
 import Home from './Home';
-import Onboarding from './Loading';
 import MeetingNameInput from './MeetingNameInput';
 import SelectTheme from './SelectTheme';
 import Setup from './Setup';
 import UserNameInput from './UserNameInput';
+import Welcome from './Welcome';
 
 const Stack = createNativeStackNavigator();
 
@@ -22,7 +22,7 @@ export const Navigator = () => {
 
   const content = (
     <Stack.Navigator
-      initialRouteName={Routes.Loading}
+      initialRouteName={Routes.Welcome}
       screenOptions={{
         headerStyle: {
           backgroundColor: theme.colors.background,
@@ -30,6 +30,11 @@ export const Navigator = () => {
         headerTintColor: theme.colors.white, // FIXME: Use a different color defined in the themes
         headerBackTitleVisible: false,
       }}>
+      <Stack.Screen
+        name={Routes.Welcome}
+        component={gestureHandlerRootHOC(Welcome)}
+        options={{headerShown: false}}
+      />
       <Stack.Screen
         name={Routes.DemoToken}
         component={gestureHandlerRootHOC(DemoToken)}
@@ -51,13 +56,6 @@ export const Navigator = () => {
         name={Routes.ConferenceLeft}
         component={gestureHandlerRootHOC(ConferenceLeft)}
         options={{headerShown: false}}
-      />
-      <Stack.Screen
-        name={Routes.Loading}
-        component={gestureHandlerRootHOC(Onboarding)}
-        options={{
-          headerShown: false,
-        }}
       />
       <Stack.Screen
         name={Routes.SelectTheme}
