@@ -75,7 +75,7 @@ export type Errors = {
 };
 
 export enum ErrorCodes {
-  'GenericError' = 'Something went wrong',
+  GenericError = 'Something went wrong',
 }
 
 export const errorMapper = (error: unknown) => {
@@ -279,6 +279,7 @@ const CommsProvider: React.FC<CommsProviderProps> = ({ children }) => {
       return true;
     } catch (error) {
       if (error instanceof Error) {
+        // eslint-disable-next-line no-console
         console.log(error.message);
       }
       const message = errorMapper(error);
@@ -310,6 +311,7 @@ const CommsProvider: React.FC<CommsProviderProps> = ({ children }) => {
       }));
       return true;
     } catch (error) {
+      // eslint-disable-next-line no-console
       console.log(error);
       return false;
     }

@@ -33,7 +33,8 @@ export const Conference = ({route}) => {
   const handleStopRecording = async () => {
     const result = await stopRecording();
     if (!result) {
-      console.log('Failed to stop recordinhg');
+      // eslint-disable-next-line no-console
+      console.log('Failed to stop recording');
     }
   };
 

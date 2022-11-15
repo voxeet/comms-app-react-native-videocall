@@ -46,14 +46,16 @@ const RecordButton = ({ type = 'iconButton', testID }: RecordButtonType) => {
   const handleStartRecording = async () => {
     const result = await startRecording();
     if (!result) {
-      console.log('Failed to start recordinhg');
+      // eslint-disable-next-line no-console
+      console.log('Failed to start recording');
     }
   };
 
   const handleStopRecording = async () => {
     const result = await stopRecording();
     if (!result) {
-      console.log('Failed to stop recordinhg');
+      // eslint-disable-next-line no-console
+      console.log('Failed to stop recording');
     }
   };
 
