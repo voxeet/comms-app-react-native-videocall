@@ -127,7 +127,7 @@ const makeButtonStyles = (colors: Colors) =>
       textAlign: 'center',
       marginHorizontal: 4,
     },
-    
+
     textUppercase: {
       textTransform: 'uppercase',
     },

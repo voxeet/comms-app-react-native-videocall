@@ -5,7 +5,6 @@ const styles = StyleSheet.create({
     flexDirection: 'column',
     justifyContent: 'center',
   },
-
 });
 
 export default styles;

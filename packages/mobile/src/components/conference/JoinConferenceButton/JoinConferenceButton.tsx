@@ -41,7 +41,7 @@ const JoinConferenceButton = ({ title, type, disabled = false, route, onSuccess 
 
       const newConference = await createConference({
         alias: route.meetingName,
-        params: {liveRecording:true}
+        params: { liveRecording: true },
       });
 
       const joinOptions: ConferenceJoinOptions = {

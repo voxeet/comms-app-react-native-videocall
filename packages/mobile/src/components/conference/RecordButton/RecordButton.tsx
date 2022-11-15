@@ -1,11 +1,12 @@
 import type { BottomSheetModal } from '@gorhom/bottom-sheet';
 import React, { useCallback, useEffect, useMemo, useRef } from 'react';
-import Button from '../../ui/Button/Button';
+import { useIntl } from 'react-intl';
+
 import useRecording from '../../../hooks/useRecording';
 import { Status as RecordingStatus } from '../../../types/status';
+import Button from '../../ui/Button/Button';
 import IconButton from '../../ui/IconButton/IconButton';
 import RecordBottomSheet from '../RecordBottomSheet/RecordBottomSheet';
-import { useIntl } from 'react-intl';
 
 type RecordButtonType = {
   type: 'button' | 'iconButton';
@@ -28,19 +29,18 @@ const RecordButton = ({ type = 'iconButton', testID }: RecordButtonType) => {
   const closeBottomSheet = () => recordBottomSheetRef.current?.close();
 
   const intl = useIntl();
-  
+
   const toggleRecording = useCallback(async () => {
     if (status === RecordingStatus.Active && isLocalUserRecordingOwner) {
       closeBottomSheet();
-        handleStopRecording();
+      handleStopRecording();
     } else if (status === RecordingStatus.Other) {
       closeBottomSheet();
-        handleStartRecording();
+      handleStartRecording();
     }
   }, [status, isLocalUserRecordingOwner]);
 
   const handleStartRecording = async () => {
-    
     const result = await startRecording();
     if (!result) {
       console.log('Failed to start recordinhg');
@@ -48,7 +48,6 @@ const RecordButton = ({ type = 'iconButton', testID }: RecordButtonType) => {
   };
 
   const handleStopRecording = async () => {
-    
     const result = await stopRecording();
     if (!result) {
       console.log('Failed to stop recordinhg');
@@ -69,33 +68,37 @@ const RecordButton = ({ type = 'iconButton', testID }: RecordButtonType) => {
     } else {
       isActive = false;
     }
-    
+
     return isActive;
   }, [isLocalUserRecordingOwner, status, isRecordingModeActive]);
 
-
-  return (
-    type === 'iconButton' ?
-    (<>
-    <IconButton
-      disabled={status === RecordingStatus.Active && !isLocalUserRecordingOwner}
-      testID="ToggleRecordButton"
-      backgroundColor={isRecordingOn ? 'white': 'grey.600'}
-      iconColor={isRecordingOn ? 'primary.500': 'white'}
-      icon={'record'}
-      onPress={showBottomSheet}
-    />
-    <RecordBottomSheet ref={recordBottomSheetRef} 
-    isRecording={isRecordingOn}
-    confirm = {toggleRecording}
-    cancel= {closeBottomSheet}/>
-    </>) : (<>
-    <Button title={intl.formatMessage({ id: 'stop' })} type={'primary'} size='xs' onPress={showBottomSheet }/>
-    <RecordBottomSheet ref={recordBottomSheetRef} 
-    isRecording={isRecordingOn}
-    confirm = {toggleRecording}
-    cancel= {closeBottomSheet}/>
-    </>)
+  return type === 'iconButton' ? (
+    <>
+      <IconButton
+        disabled={status === RecordingStatus.Active && !isLocalUserRecordingOwner}
+        testID="ToggleRecordButton"
+        backgroundColor={isRecordingOn ? 'white' : 'grey.600'}
+        iconColor={isRecordingOn ? 'primary.500' : 'white'}
+        icon="record"
+        onPress={showBottomSheet}
+      />
+      <RecordBottomSheet
+        ref={recordBottomSheetRef}
+        isRecording={isRecordingOn}
+        confirm={toggleRecording}
+        cancel={closeBottomSheet}
+      />
+    </>
+  ) : (
+    <>
+      <Button title={intl.formatMessage({ id: 'stop' })} type="primary" size="xs" onPress={showBottomSheet} />
+      <RecordBottomSheet
+        ref={recordBottomSheetRef}
+        isRecording={isRecordingOn}
+        confirm={toggleRecording}
+        cancel={closeBottomSheet}
+      />
+    </>
   );
 };
 

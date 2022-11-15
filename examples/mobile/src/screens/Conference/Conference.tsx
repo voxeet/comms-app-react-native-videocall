@@ -7,7 +7,7 @@ import {
   useToken,
   RecordingActionBar,
   useRecording,
-  InfoModal
+  InfoModal,
 } from '@dolbyio/comms-uikit-react-native';
 import {BottomSheetModalProvider} from '@gorhom/bottom-sheet';
 import {useNavigation} from '@react-navigation/native';
@@ -24,7 +24,7 @@ export const Conference = ({route}) => {
   const {navigate} = useNavigation();
   const {token} = useToken();
   const {conference} = useConference();
-  const { isLocalUserRecordingOwner, isRecordingModeActive } = useRecording();
+  const {isLocalUserRecordingOwner, isRecordingModeActive} = useRecording();
 
   const shareURL = useMemo(() => {
     return getShareURL(conference?.alias ?? '', token ?? '');
@@ -39,7 +39,7 @@ export const Conference = ({route}) => {
               {conference && (
                 <>
                   <TopActionBar title={conference.alias ?? ''} />
-                  {isRecordingModeActive && <RecordingActionBar/>}
+                  {isRecordingModeActive && <RecordingActionBar />}
                   <View style={styles.wrapper}>
                     <ConferenceContent shareURL={shareURL} />
                   </View>

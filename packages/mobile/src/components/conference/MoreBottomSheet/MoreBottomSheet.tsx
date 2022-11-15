@@ -4,8 +4,8 @@ import { View } from 'react-native';
 
 import IconButton from '../../ui/IconButton/IconButton';
 import BottomSheetWrapper from '../BottomSheetWrapper/BottomSheetWrapper';
-import ShareConference from '../ShareConference/ShareConference';
 import RecordButton from '../RecordButton/RecordButton';
+import ShareConference from '../ShareConference/ShareConference';
 import Text from '../Text/Text';
 
 import styles from './MoreBottomSheet.style';
@@ -28,7 +28,7 @@ const MoreBottomSheet = React.forwardRef<BottomSheetModal, MoreBottomSheetProps>
       <View style={styles.row} testID="MoreBottomSheet">
         <ShareConference testID="InviteButton" type="iconButton" url={shareURL} />
         <View style={{ width: 40 }} />
-        <RecordButton type={'iconButton'} />
+        <RecordButton type="iconButton" />
         <View style={{ width: 40 }} />
         <IconButton testID="SettingsButton" icon="settings" onPress={() => navigateTo()} />
       </View>

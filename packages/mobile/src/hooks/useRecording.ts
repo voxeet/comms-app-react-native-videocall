@@ -1,8 +1,8 @@
-import { useContext } from 'react';
-import { useMemo } from 'react';
+import { useContext, useMemo } from 'react';
 
-import type { UseRecording } from '../types/recording';
 import { CommsContext } from '../providers/CommsProvider';
+import type { UseRecording } from '../types/recording';
+
 import useSession from './useSession';
 
 const useRecording: UseRecording = () => {

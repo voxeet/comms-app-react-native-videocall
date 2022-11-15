@@ -18,7 +18,7 @@ export enum ButtonMode {
 export type ButtonProps = {
   title: string;
   type: 'primary' | 'secondary' | 'secondaryDark';
-  size?: Extract<Sizes, 'xs' |'s' | 'm' | 'l'>;
+  size?: Extract<Sizes, 'xs' | 's' | 'm' | 'l'>;
   danger?: boolean;
   disabled?: boolean;
   uppercase?: boolean;
@@ -46,7 +46,7 @@ const Button = ({
   const styles = makeButtonStyles(colors);
 
   const buttonStyles: any[] = [styles.button];
-  const textStyles: any[] = [size=== 'xs'? styles.xsText: styles.text];
+  const textStyles: any[] = [size === 'xs' ? styles.xsText : styles.text];
 
   const pressedButtonStyles: any[] = [styles.button];
   const pressedTextStyles: any[] = [styles.text];

@@ -9,6 +9,6 @@ export default StyleSheet.create({
     paddingBottom: 8,
     borderRadius: 6,
     height: 67,
-    justifyContent:'space-evenly'
+    justifyContent: 'space-evenly',
   },
 });
