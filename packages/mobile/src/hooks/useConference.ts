@@ -1,3 +1,4 @@
+import type { ConferenceCreateOptions } from '@dolbyio/comms-sdk-react-native/lib/typescript/services/conference/models';
 import { useCallback, useContext } from 'react';
 import { PermissionsAndroid, Platform } from 'react-native';
 
@@ -6,6 +7,7 @@ import conferenceService from '../services/conference';
 
 const useConference = () => {
   const {
+    createConference,
     joinConference,
     conference,
     leaveConference,
@@ -15,11 +17,9 @@ const useConference = () => {
     setCameraPermissions,
     isPageMuted,
     toggleMuteParticipants,
+    isConferenceOwner,
+    setIsConferenceOwner,
   } = useContext(CommsContext);
-
-  const createConference = useCallback(async (conferenceOptions) => {
-    return conferenceService.create(conferenceOptions);
-  }, []);
 
   const requestPermissions = async () => {
     try {
@@ -54,6 +54,8 @@ const useConference = () => {
     initialize,
     isPageMuted,
     toggleMuteParticipants,
+    isConferenceOwner,
+    setIsConferenceOwner,
   };
 };
 

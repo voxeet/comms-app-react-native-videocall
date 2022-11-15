@@ -20,15 +20,24 @@ import {getShareURL} from '../../utils/share.util';
 import styles from './Conference.style';
 
 export const Conference = ({route}) => {
-  const {userName, meetingName} = route.params;
+  const {userName, meetingName, meetingOwner} = route.params;
   const {navigate} = useNavigation();
   const {token} = useToken();
-  const {conference} = useConference();
-  const {isLocalUserRecordingOwner, isRecordingModeActive} = useRecording();
+  const {conference, setIsConferenceOwner} = useConference();
+  const {isRecordingModeActive, stopRecording} = useRecording();
 
   const shareURL = useMemo(() => {
     return getShareURL(conference?.alias ?? '', token ?? '');
   }, [conference]);
+
+  const handleStopRecording = async () => {
+    const result = await stopRecording();
+    if (!result) {
+      console.log('Failed to stop recordinhg');
+    }
+  };
+
+  setIsConferenceOwner(meetingOwner);
 
   return (
     <BottomSheetModalProvider>
@@ -45,6 +54,7 @@ export const Conference = ({route}) => {
                   </View>
                   <ActionBar
                     leaveConferenceNav={() => {
+                      if (isRecordingModeActive) handleStopRecording();
                       navigate(Routes.ConferenceLeft, {
                         userName,
                         meetingName,

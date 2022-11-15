@@ -2,6 +2,7 @@ import type { BottomSheetModal } from '@gorhom/bottom-sheet';
 import React, { useCallback, useEffect, useMemo, useRef } from 'react';
 import { useIntl } from 'react-intl';
 
+import useConference from '../../../hooks/useConference';
 import useRecording from '../../../hooks/useRecording';
 import { Status as RecordingStatus } from '../../../types/status';
 import Button from '../../ui/Button/Button';
@@ -23,6 +24,9 @@ const RecordButton = ({ type = 'iconButton', testID }: RecordButtonType) => {
     setRecordingErrors,
     isRecordingModeActive,
   } = useRecording();
+
+  const { isConferenceOwner } = useConference();
+  console.log(">>>>>>>>>>>>>>>>", isConferenceOwner);
 
   const recordBottomSheetRef = useRef<BottomSheetModal>(null);
   const showBottomSheet = () => recordBottomSheetRef.current?.present();
@@ -75,7 +79,7 @@ const RecordButton = ({ type = 'iconButton', testID }: RecordButtonType) => {
   return type === 'iconButton' ? (
     <>
       <IconButton
-        disabled={status === RecordingStatus.Active && !isLocalUserRecordingOwner}
+        disabled={!isConferenceOwner}
         testID="ToggleRecordButton"
         backgroundColor={isRecordingOn ? 'white' : 'grey.600'}
         iconColor={isRecordingOn ? 'primary.500' : 'white'}
