@@ -11,6 +11,7 @@ export { default as useCamera } from './hooks/useCamera';
 export { default as useSpeaker } from './hooks/useSpeaker';
 export { default as useTheme } from './hooks/useTheme';
 export { default as useToken } from './hooks/useToken';
+export { default as useRecording } from './hooks/useRecording';
 
 // Components - UI
 export { default as Icon } from './components/ui/Icon/Icon';
@@ -27,6 +28,7 @@ export { default as Pill } from './components/ui/Pill/Pill';
 export { default as Avatar } from './components/ui/Avatar/Avatar';
 export { default as Timer } from './components/ui/Timer/Timer';
 export { default as Spinner } from './components/ui/Spinner/Spinner';
+export { default as InfoModal} from './components/ui/InfoModal/InfoModal';
 
 // Components - Conference
 export { default as ActionBar } from './components/conference/ActionBar/ActionBar';
@@ -54,6 +56,9 @@ export { default as ParticipantsListBottomSheet } from './components/conference/
 export { default as JoinConferenceButton } from './components/conference/JoinConferenceButton/JoinConferenceButton';
 export { default as RejoinConferenceButton } from './components/conference/RejoinConferenceButton/RejoinConferenceButton';
 export { default as TokenTab } from './components/conference/TokenTab/TokenTab';
+export {default as RecordButton } from './components/conference/RecordButton/RecordButton';
+export {default as RecordBottomSheet } from './components/conference/RecordBottomSheet/RecordBottomSheet';
+export {default as RecordingActionBar } from './components/conference/RecordingActionBar/RecordingActionBar';
 
 // Types
 export type { CustomTextProps as TextProps } from './components/ui/Text/Text';

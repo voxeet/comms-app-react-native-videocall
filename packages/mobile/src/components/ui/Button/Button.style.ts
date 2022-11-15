@@ -21,13 +21,19 @@ const makeButtonStyles = (colors: Colors) =>
       paddingHorizontal: 20,
     },
 
+    xs: {
+      width: 68,
+      height: 40,
+      paddingHorizontal: 12,
+    },
+
     /** Generic button styles */
     button: {
       justifyContent: 'center',
       alignItems: 'center',
       borderRadius: 6,
       minHeight: 40,
-      minWidth: 146,
+      minWidth: 68,
     },
 
     /** Primary button styles */
@@ -111,6 +117,17 @@ const makeButtonStyles = (colors: Colors) =>
       textAlign: 'center',
       marginHorizontal: 4,
     },
+
+    xsText: {
+      fontSize: 12,
+      fontFamily: 'Avenir Next',
+      fontWeight: 'bold',
+      lineHeight: 20,
+      letterSpacing: 0.1,
+      textAlign: 'center',
+      marginHorizontal: 4,
+    },
+    
     textUppercase: {
       textTransform: 'uppercase',
     },
