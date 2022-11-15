@@ -114,7 +114,7 @@ PODS:
   - GoogleUtilities/UserDefaults (6.7.2):
     - GoogleUtilities/Logger
   - libevent (2.1.12)
-  - lottie-ios (3.4.2)
+  - lottie-ios (3.4.3)
   - lottie-react-native (5.1.4):
     - lottie-ios (~> 3.4.0)
     - React-Core
@@ -336,9 +336,9 @@ PODS:
   - react-native-comms-sdk (3.6.0):
     - React-Core
     - VoxeetSDK (~> 3.6)
-  - react-native-encrypted-storage (4.0.2):
+  - react-native-encrypted-storage (4.0.3):
     - React-Core
-  - react-native-safe-area-context (4.3.3):
+  - react-native-safe-area-context (4.4.1):
     - RCT-Folly
     - RCTRequired
     - RCTTypeSafety
@@ -409,9 +409,9 @@ PODS:
     - React-jsi (= 0.67.2)
     - React-logger (= 0.67.2)
     - React-perflogger (= 0.67.2)
-  - RNCAsyncStorage (1.17.10):
+  - RNCAsyncStorage (1.17.11):
     - React-Core
-  - RNGestureHandler (2.6.1):
+  - RNGestureHandler (2.8.0):
     - React-Core
   - RNPermissions (3.6.1):
     - React-Core
@@ -442,12 +442,12 @@ PODS:
     - React-RCTText
     - ReactCommon/turbomodule/core
     - Yoga
-  - RNScreens (3.17.0):
+  - RNScreens (3.18.2):
     - React-Core
     - React-RCTImage
   - RNSVG (12.4.4):
     - React-Core
-  - VoxeetSDK (3.6.0)
+  - VoxeetSDK (3.7.0)
   - Yoga (1.14.0)
   - YogaKit (1.18.1):
     - Yoga (~> 1.14)
@@ -662,7 +662,7 @@ SPEC CHECKSUMS:
   GoogleDataTransport: f56af7caa4ed338dc8e138a5d7c5973e66440833
   GoogleUtilities: 7f2f5a07f888cdb145101d6042bc4422f57e70b3
   libevent: 4049cae6c81cdb3654a443be001fb9bdceff7913
-  lottie-ios: 6bbc53eef6957e4744a50321507015fba72d8ca6
+  lottie-ios: 9ae750cdc7820fecbd3c2f0cfc493038208fcdc4
   lottie-react-native: b702fab740cdb952a8e2354713d3beda63ff97b0
   nanopb: 59317e09cf1f1a0af72f12af412d54edf52603fc
   OpenSSL-Universal: 1aa4f6a6ee7256b83db99ec1ccdaa80d10f9af9b
@@ -682,8 +682,8 @@ SPEC CHECKSUMS:
   React-logger: 23de8ea0f44fa00ee77e96060273225607fd4d78
   react-native-camera: 3eae183c1d111103963f3dd913b65d01aef8110f
   react-native-comms-sdk: b908385edf21e68f99b880c3bf4c3a5438b55f26
-  react-native-encrypted-storage: e78d848ce0fb663c2ce306e37921d026809322e6
-  react-native-safe-area-context: b456e1c40ec86f5593d58b275bd0e9603169daca
+  react-native-encrypted-storage: db300a3f2f0aba1e818417c1c0a6be549038deb7
+  react-native-safe-area-context: 99b24a0c5acd0d5dcac2b1a7f18c49ea317be99a
   React-perflogger: 3c9bb7372493e49036f07a82c44c8cf65cbe88db
   React-RCTActionSheet: 052606483045a408693aa7e864410b4a052f541a
   React-RCTAnimation: 08d4cac13222bb1348c687a0158dfd3b577cdb63
@@ -696,13 +696,13 @@ SPEC CHECKSUMS:
   React-RCTVibration: 99c7f67fba7a5ade46e98e870c6ff2444484f995
   React-runtimeexecutor: 2450b43df7ffe8e805a0b3dcb2abd4282f1f1836
   ReactCommon: d98c6c96b567f9b3a15f9fd4cc302c1eda8e3cf2
-  RNCAsyncStorage: 0c357f3156fcb16c8589ede67cc036330b6698ca
-  RNGestureHandler: 28ad20bf02257791f7f137b31beef34b9549f54b
+  RNCAsyncStorage: 8616bd5a58af409453ea4e1b246521bb76578d60
+  RNGestureHandler: 62232ba8f562f7dea5ba1b3383494eb5bf97a4d3
   RNPermissions: dcdb7b99796bbeda6975a6e79ad519c41b251b1c
   RNReanimated: 3dd02d6e115cb20bb999a07cd1ce19369c59afb8
-  RNScreens: 0df01424e9e0ed7827200d6ed1087ddd06c493f9
+  RNScreens: 34cc502acf1b916c582c60003dc3089fa01dc66d
   RNSVG: ecd661f380a07ba690c9c5929c475a44f432d674
-  VoxeetSDK: 1d4e4ad0b2c67b1b49607834d212283e126f7c32
+  VoxeetSDK: 697c5b240f29344bd72053a647ea5c59b45cda85
   Yoga: 9b6696970c3289e8dea34b3eda93f23e61fb8121
   YogaKit: f782866e155069a2cca2517aafea43200b01fd5a
 
