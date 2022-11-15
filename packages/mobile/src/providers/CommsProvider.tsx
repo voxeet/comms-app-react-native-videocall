@@ -115,7 +115,7 @@ const CommsProvider: React.FC<CommsProviderProps> = ({ children }) => {
   const [errors, setErrors] = useState<Errors>({
     recordingErrors: [],
   });
-  const[isConferenceOwner, setIsConferenceOwner] = useState<CommsContext['isConferenceOwner']>(false);
+  const [isConferenceOwner, setIsConferenceOwner] = useState<CommsContext['isConferenceOwner']>(false);
 
   // INITIALIZATION
 

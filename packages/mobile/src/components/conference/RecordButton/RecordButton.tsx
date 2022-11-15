@@ -26,7 +26,6 @@ const RecordButton = ({ type = 'iconButton', testID }: RecordButtonType) => {
   } = useRecording();
 
   const { isConferenceOwner } = useConference();
-  console.log(">>>>>>>>>>>>>>>>", isConferenceOwner);
 
   const recordBottomSheetRef = useRef<BottomSheetModal>(null);
   const showBottomSheet = () => recordBottomSheetRef.current?.present();
