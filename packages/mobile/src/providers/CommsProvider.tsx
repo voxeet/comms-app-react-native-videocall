@@ -73,7 +73,7 @@ export type Errors = {
 
 export enum ErrorCodes {
   'GenericError' = 'Something went wrong',
-};
+}
 
 export const errorMapper = (error: unknown) => {
   const { message } = (error as Error) || { message: '' };
@@ -247,18 +247,18 @@ const CommsProvider: React.FC<CommsProviderProps> = ({ children }) => {
     }
   };
 
-  // Recording 
+  // Recording
   const startRecording = async () => {
     setRecordingData((prev) => ({
       ...prev,
       status: Status.Loading,
     }));
-    
+
     setErrors((prev) => ({ ...prev, recordingErrors: [] }));
 
     try {
       await recordingService.start();
-      
+
       if (user) {
         setRecordingData((prev) => ({
           ...prev,
@@ -267,7 +267,7 @@ const CommsProvider: React.FC<CommsProviderProps> = ({ children }) => {
           status: Status.Active,
         }));
       }
-      
+
       return true;
     } catch (error) {
       if (error instanceof Error) {
