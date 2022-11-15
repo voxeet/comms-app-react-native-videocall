@@ -32,7 +32,7 @@ describe('Button component - Primary', () => {
       <Button title="Primary Default" type={type} testID={testID} onPress={handlePress} />,
     );
     const element = getByTestId(testID);
-    expect(element).toHaveStyle({ minWidth: 146 });
+    expect(element).toHaveStyle({ minWidth: 68 });
     expect(element).toHaveStyle({ minHeight: 40 });
     expect(element).toHaveStyle({ paddingHorizontal: 44 });
     expect(element).toHaveStyle({ justifyContent: 'center' });
@@ -254,7 +254,7 @@ describe('Button component - type not given', () => {
   test('Passes given styles', () => {
     const { getByTestId } = render(<Button title="No Type" testID={testID} onPress={handlePress} />);
     const element = getByTestId(testID);
-    expect(element).toHaveStyle({ minWidth: 146 });
+    expect(element).toHaveStyle({ minWidth: 68 });
     expect(element).toHaveStyle({ minHeight: 40 });
     expect(element).toHaveStyle({ paddingHorizontal: 44 });
     expect(element).toHaveStyle({ justifyContent: 'center' });

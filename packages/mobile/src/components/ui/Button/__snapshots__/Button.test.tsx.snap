@@ -27,7 +27,7 @@ exports[`Button component snapshot should match Primary Done button type 1`] = `
           "borderRadius": 6,
           "justifyContent": "center",
           "minHeight": 40,
-          "minWidth": 146,
+          "minWidth": 68,
         },
         Object {
           "backgroundColor": "#AA33FF",
@@ -37,6 +37,7 @@ exports[`Button component snapshot should match Primary Done button type 1`] = `
         "height": 48,
         "paddingHorizontal": 44,
       },
+      false,
       false,
       false,
     ]
@@ -79,7 +80,7 @@ exports[`Button component snapshot should match Primary Loading button type 1`] 
           "borderRadius": 6,
           "justifyContent": "center",
           "minHeight": 40,
-          "minWidth": 146,
+          "minWidth": 68,
         },
         Object {
           "backgroundColor": "#AA33FF",
@@ -89,6 +90,7 @@ exports[`Button component snapshot should match Primary Loading button type 1`] 
         "height": 48,
         "paddingHorizontal": 44,
       },
+      false,
       false,
       false,
     ]
@@ -145,7 +147,7 @@ exports[`Button component snapshot should match Primary button - size medium 1`]
           "borderRadius": 6,
           "justifyContent": "center",
           "minHeight": 40,
-          "minWidth": 146,
+          "minWidth": 68,
         },
         Object {
           "backgroundColor": "#AA33FF",
@@ -157,6 +159,7 @@ exports[`Button component snapshot should match Primary button - size medium 1`]
         "paddingHorizontal": 20,
         "width": 272,
       },
+      false,
       false,
     ]
   }
@@ -223,7 +226,7 @@ exports[`Button component snapshot should match Primary button - size small 1`] 
           "borderRadius": 6,
           "justifyContent": "center",
           "minHeight": 40,
-          "minWidth": 146,
+          "minWidth": 68,
         },
         Object {
           "backgroundColor": "#AA33FF",
@@ -236,6 +239,7 @@ exports[`Button component snapshot should match Primary button - size small 1`] 
         "paddingHorizontal": 20,
         "width": 146,
       },
+      false,
     ]
   }
   testID="testID"
@@ -301,7 +305,7 @@ exports[`Button component snapshot should match Primary button with left and rig
           "borderRadius": 6,
           "justifyContent": "center",
           "minHeight": 40,
-          "minWidth": 146,
+          "minWidth": 68,
         },
         Object {
           "backgroundColor": "#AA33FF",
@@ -311,6 +315,7 @@ exports[`Button component snapshot should match Primary button with left and rig
         "height": 48,
         "paddingHorizontal": 44,
       },
+      false,
       false,
       false,
     ]
@@ -390,7 +395,7 @@ exports[`Button component snapshot should match Primary button with left icon 1`
           "borderRadius": 6,
           "justifyContent": "center",
           "minHeight": 40,
-          "minWidth": 146,
+          "minWidth": 68,
         },
         Object {
           "backgroundColor": "#AA33FF",
@@ -400,6 +405,7 @@ exports[`Button component snapshot should match Primary button with left icon 1`
         "height": 48,
         "paddingHorizontal": 44,
       },
+      false,
       false,
       false,
     ]
@@ -473,7 +479,7 @@ exports[`Button component snapshot should match Primary button with right icon 1
           "borderRadius": 6,
           "justifyContent": "center",
           "minHeight": 40,
-          "minWidth": 146,
+          "minWidth": 68,
         },
         Object {
           "backgroundColor": "#AA33FF",
@@ -483,6 +489,7 @@ exports[`Button component snapshot should match Primary button with right icon 1
         "height": 48,
         "paddingHorizontal": 44,
       },
+      false,
       false,
       false,
     ]
@@ -556,7 +563,7 @@ exports[`Button component snapshot should match Primary danger type 1`] = `
           "borderRadius": 6,
           "justifyContent": "center",
           "minHeight": 40,
-          "minWidth": 146,
+          "minWidth": 68,
         },
         Object {
           "backgroundColor": "#E52222",
@@ -566,6 +573,7 @@ exports[`Button component snapshot should match Primary danger type 1`] = `
         "height": 48,
         "paddingHorizontal": 44,
       },
+      false,
       false,
       false,
     ]
@@ -633,7 +641,7 @@ exports[`Button component snapshot should match Primary default type 1`] = `
           "borderRadius": 6,
           "justifyContent": "center",
           "minHeight": 40,
-          "minWidth": 146,
+          "minWidth": 68,
         },
         Object {
           "backgroundColor": "#AA33FF",
@@ -643,6 +651,7 @@ exports[`Button component snapshot should match Primary default type 1`] = `
         "height": 48,
         "paddingHorizontal": 44,
       },
+      false,
       false,
       false,
     ]
@@ -710,7 +719,7 @@ exports[`Button component snapshot should match Primary disabled type 1`] = `
           "borderRadius": 6,
           "justifyContent": "center",
           "minHeight": 40,
-          "minWidth": 146,
+          "minWidth": 68,
         },
         Object {
           "backgroundColor": "#BBBBBF",
@@ -720,6 +729,7 @@ exports[`Button component snapshot should match Primary disabled type 1`] = `
         "height": 48,
         "paddingHorizontal": 44,
       },
+      false,
       false,
       false,
     ]
@@ -784,7 +794,7 @@ exports[`Button component snapshot should match Secondary Done button type 1`] =
           "borderRadius": 6,
           "justifyContent": "center",
           "minHeight": 40,
-          "minWidth": 146,
+          "minWidth": 68,
         },
         Object {
           "backgroundColor": "#FFFFFF",
@@ -796,6 +806,7 @@ exports[`Button component snapshot should match Secondary Done button type 1`] =
         "height": 48,
         "paddingHorizontal": 44,
       },
+      false,
       false,
       false,
     ]
@@ -838,7 +849,7 @@ exports[`Button component snapshot should match Secondary Loading button type 1`
           "borderRadius": 6,
           "justifyContent": "center",
           "minHeight": 40,
-          "minWidth": 146,
+          "minWidth": 68,
         },
         Object {
           "backgroundColor": "#FFFFFF",
@@ -850,6 +861,7 @@ exports[`Button component snapshot should match Secondary Loading button type 1`
         "height": 48,
         "paddingHorizontal": 44,
       },
+      false,
       false,
       false,
     ]
@@ -906,7 +918,7 @@ exports[`Button component snapshot should match Secondary danger type 1`] = `
           "borderRadius": 6,
           "justifyContent": "center",
           "minHeight": 40,
-          "minWidth": 146,
+          "minWidth": 68,
         },
         Object {
           "backgroundColor": "#FFFFFF",
@@ -918,6 +930,7 @@ exports[`Button component snapshot should match Secondary danger type 1`] = `
         "height": 48,
         "paddingHorizontal": 44,
       },
+      false,
       false,
       false,
     ]
@@ -982,7 +995,7 @@ exports[`Button component snapshot should match Secondary default type 1`] = `
           "borderRadius": 6,
           "justifyContent": "center",
           "minHeight": 40,
-          "minWidth": 146,
+          "minWidth": 68,
         },
         Object {
           "backgroundColor": "#FFFFFF",
@@ -994,6 +1007,7 @@ exports[`Button component snapshot should match Secondary default type 1`] = `
         "height": 48,
         "paddingHorizontal": 44,
       },
+      false,
       false,
       false,
     ]
@@ -1061,7 +1075,7 @@ exports[`Button component snapshot should match Secondary disabled type 1`] = `
           "borderRadius": 6,
           "justifyContent": "center",
           "minHeight": 40,
-          "minWidth": 146,
+          "minWidth": 68,
         },
         Object {
           "backgroundColor": "#FFFFFF",
@@ -1073,6 +1087,7 @@ exports[`Button component snapshot should match Secondary disabled type 1`] = `
         "height": 48,
         "paddingHorizontal": 44,
       },
+      false,
       false,
       false,
     ]
@@ -1140,7 +1155,7 @@ exports[`Button component snapshot should match SecondaryDark Done button type 1
           "borderRadius": 6,
           "justifyContent": "center",
           "minHeight": 40,
-          "minWidth": 146,
+          "minWidth": 68,
         },
         Object {
           "backgroundColor": "#14141A",
@@ -1152,6 +1167,7 @@ exports[`Button component snapshot should match SecondaryDark Done button type 1
         "height": 48,
         "paddingHorizontal": 44,
       },
+      false,
       false,
       false,
     ]
@@ -1194,7 +1210,7 @@ exports[`Button component snapshot should match SecondaryDark Loading button typ
           "borderRadius": 6,
           "justifyContent": "center",
           "minHeight": 40,
-          "minWidth": 146,
+          "minWidth": 68,
         },
         Object {
           "backgroundColor": "#14141A",
@@ -1206,6 +1222,7 @@ exports[`Button component snapshot should match SecondaryDark Loading button typ
         "height": 48,
         "paddingHorizontal": 44,
       },
+      false,
       false,
       false,
     ]
@@ -1262,7 +1279,7 @@ exports[`Button component snapshot should match SecondaryDark danger type 1`] = 
           "borderRadius": 6,
           "justifyContent": "center",
           "minHeight": 40,
-          "minWidth": 146,
+          "minWidth": 68,
         },
         Object {
           "backgroundColor": "#14141A",
@@ -1274,6 +1291,7 @@ exports[`Button component snapshot should match SecondaryDark danger type 1`] = 
         "height": 48,
         "paddingHorizontal": 44,
       },
+      false,
       false,
       false,
     ]
@@ -1341,7 +1359,7 @@ exports[`Button component snapshot should match SecondaryDark default type 1`] =
           "borderRadius": 6,
           "justifyContent": "center",
           "minHeight": 40,
-          "minWidth": 146,
+          "minWidth": 68,
         },
         Object {
           "backgroundColor": "#14141A",
@@ -1353,6 +1371,7 @@ exports[`Button component snapshot should match SecondaryDark default type 1`] =
         "height": 48,
         "paddingHorizontal": 44,
       },
+      false,
       false,
       false,
     ]
@@ -1417,7 +1436,7 @@ exports[`Button component snapshot should match SecondaryDark disabled type 1`] 
           "borderRadius": 6,
           "justifyContent": "center",
           "minHeight": 40,
-          "minWidth": 146,
+          "minWidth": 68,
         },
         Object {
           "backgroundColor": "#535359",
@@ -1429,6 +1448,7 @@ exports[`Button component snapshot should match SecondaryDark disabled type 1`] 
         "height": 48,
         "paddingHorizontal": 44,
       },
+      false,
       false,
       false,
     ]
@@ -1496,13 +1516,14 @@ exports[`Button component snapshot should match default type 1`] = `
           "borderRadius": 6,
           "justifyContent": "center",
           "minHeight": 40,
-          "minWidth": 146,
+          "minWidth": 68,
         },
       ],
       Object {
         "height": 48,
         "paddingHorizontal": 44,
       },
+      false,
       false,
       false,
     ]

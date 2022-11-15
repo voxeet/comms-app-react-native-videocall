@@ -26,6 +26,7 @@ import settings from './settings.svg';
 import speakerOff from './speaker-off.svg';
 import speaker from './speaker.svg';
 import success from './success.svg';
+import warning from './warning.svg';
 
 const Icons = {
   arrowLeft,
@@ -56,6 +57,7 @@ const Icons = {
   invite,
   paste,
   scan,
+  warning,
 };
 
 export default Icons;

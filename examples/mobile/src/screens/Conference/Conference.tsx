@@ -5,6 +5,9 @@ import {
   ConferenceContent,
   TopActionBar,
   useToken,
+  RecordingActionBar,
+  useRecording,
+  InfoModal,
 } from '@dolbyio/comms-uikit-react-native';
 import {BottomSheetModalProvider} from '@gorhom/bottom-sheet';
 import {useNavigation} from '@react-navigation/native';
@@ -17,14 +20,25 @@ import {getShareURL} from '../../utils/share.util';
 import styles from './Conference.style';
 
 export const Conference = ({route}) => {
-  const {userName, meetingName} = route.params;
+  const {userName, meetingName, meetingOwner} = route.params;
   const {navigate} = useNavigation();
   const {token} = useToken();
-  const {conference} = useConference();
+  const {conference, setIsConferenceOwner} = useConference();
+  const {isRecordingModeActive, stopRecording} = useRecording();
 
   const shareURL = useMemo(() => {
     return getShareURL(conference?.alias ?? '', token ?? '');
   }, [conference]);
+
+  const handleStopRecording = async () => {
+    const result = await stopRecording();
+    if (!result) {
+      // eslint-disable-next-line no-console
+      console.log('Failed to stop recording');
+    }
+  };
+
+  setIsConferenceOwner(meetingOwner);
 
   return (
     <BottomSheetModalProvider>
@@ -35,11 +49,13 @@ export const Conference = ({route}) => {
               {conference && (
                 <>
                   <TopActionBar title={conference.alias ?? ''} />
+                  {isRecordingModeActive && <RecordingActionBar />}
                   <View style={styles.wrapper}>
                     <ConferenceContent shareURL={shareURL} />
                   </View>
                   <ActionBar
                     leaveConferenceNav={() => {
+                      if (isRecordingModeActive) handleStopRecording();
                       navigate(Routes.ConferenceLeft, {
                         userName,
                         meetingName,
