@@ -5,6 +5,7 @@ export const tokenStorage = () => {
     try {
       await EncryptedStorage.setItem('access_token', tokenValue);
     } catch (error) {
+      // eslint-disable-next-line no-console
       console.log(`error during saving token: ${error}`);
     }
   }
@@ -14,6 +15,7 @@ export const tokenStorage = () => {
       const savedToken = await EncryptedStorage.getItem('access_token');
       return savedToken;
     } catch (error) {
+      // eslint-disable-next-line no-console
       console.log(`error during retrieving token: ${error}`);
     }
     return '';

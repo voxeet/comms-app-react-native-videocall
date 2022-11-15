@@ -60,6 +60,8 @@ export const MeetingNameInput = ({route, navigation}) => {
     withAudio: true,
     withVideo: true,
   };
+  const meetingOwner = conferenceType === ConferenceType.Create;
+
   return (
     <Layout testID="MeetingNameInput">
       <SafeAreaView style={styles.wrapper}>
@@ -99,7 +101,11 @@ export const MeetingNameInput = ({route, navigation}) => {
               )
             }
             onSuccess={() => {
-              navigation.navigate(Routes.Conference, {userName, meetingName});
+              navigation.navigate(Routes.Conference, {
+                userName,
+                meetingName,
+                meetingOwner,
+              });
             }}
             route={joinConferenceRoute}
           />

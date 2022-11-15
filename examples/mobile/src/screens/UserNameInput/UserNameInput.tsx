@@ -59,6 +59,7 @@ export const UserNameInput = ({route, navigation}) => {
       ? navigation.navigate(Routes.Conference, {
           userName,
           meetingName,
+          meetingOwner: false,
         })
       : navigation.navigate(Routes.MeetingNameInput, {
           userName,

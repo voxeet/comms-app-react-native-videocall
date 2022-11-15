@@ -114,7 +114,7 @@ PODS:
   - GoogleUtilities/UserDefaults (6.7.2):
     - GoogleUtilities/Logger
   - libevent (2.1.12)
-  - lottie-ios (3.4.2)
+  - lottie-ios (3.4.3)
   - lottie-react-native (5.1.4):
     - lottie-ios (~> 3.4.0)
     - React-Core
@@ -447,7 +447,7 @@ PODS:
     - React-RCTImage
   - RNSVG (12.4.4):
     - React-Core
-  - VoxeetSDK (3.6.0)
+  - VoxeetSDK (3.7.0)
   - Yoga (1.14.0)
   - YogaKit (1.18.1):
     - Yoga (~> 1.14)
@@ -662,7 +662,7 @@ SPEC CHECKSUMS:
   GoogleDataTransport: f56af7caa4ed338dc8e138a5d7c5973e66440833
   GoogleUtilities: 7f2f5a07f888cdb145101d6042bc4422f57e70b3
   libevent: 4049cae6c81cdb3654a443be001fb9bdceff7913
-  lottie-ios: 6bbc53eef6957e4744a50321507015fba72d8ca6
+  lottie-ios: 9ae750cdc7820fecbd3c2f0cfc493038208fcdc4
   lottie-react-native: b702fab740cdb952a8e2354713d3beda63ff97b0
   nanopb: 59317e09cf1f1a0af72f12af412d54edf52603fc
   OpenSSL-Universal: 1aa4f6a6ee7256b83db99ec1ccdaa80d10f9af9b
@@ -702,7 +702,7 @@ SPEC CHECKSUMS:
   RNReanimated: 3dd02d6e115cb20bb999a07cd1ce19369c59afb8
   RNScreens: 34cc502acf1b916c582c60003dc3089fa01dc66d
   RNSVG: ecd661f380a07ba690c9c5929c475a44f432d674
-  VoxeetSDK: 1d4e4ad0b2c67b1b49607834d212283e126f7c32
+  VoxeetSDK: 697c5b240f29344bd72053a647ea5c59b45cda85
   Yoga: 9b6696970c3289e8dea34b3eda93f23e61fb8121
   YogaKit: f782866e155069a2cca2517aafea43200b01fd5a
 

@@ -36,5 +36,17 @@
   "firstToArriveSubtitle": "Wait or invite other participants to join.",
   "conferenceIDHeader": "Conference Title/ID:",
   "scan": "Scan",
-  "paste": "Paste"
+  "paste": "Paste",
+  "welcome": "Welcome",
+  "welcomeDescription": "To use the Video Call app, a Dolby.io \naccount and access token are required.",
+  "letsBegin": "Let's begin",
+  "disclaimer": "By clicking \"Let's begin\", you agree \nto our Terms of Services and Privacy Policy",
+  "startRecordingTitle": "Record your video call",
+  "startRecording": "Start recording",
+  "startRecordingHint": "After the recording is complete, you can access it from the dolby.io dashboard.",
+  "stopRecording": "Stop recording",
+  "stopRecordingHint": "After the recording is complete, you can access it from the dolby.io dashboard.",
+  "cancel": "Cancel",
+  "recording": "Recording",
+  "stop": "Stop"
 }

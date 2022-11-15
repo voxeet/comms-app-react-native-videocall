@@ -11,13 +11,16 @@ import type {
   Participant,
   UnsubscribeFunction,
   ConferenceStatus,
+  ConferenceCreateOptions,
 } from '@dolbyio/comms-sdk-react-native/lib/typescript/services/conference/models';
 import React, { createContext, useState, useEffect, useMemo, ReactElement, useCallback } from 'react';
 import { Platform } from 'react-native';
 
 import conferenceService from '../services/conference';
+import recordingService from '../services/recording';
 import sdkService from '../services/sdk';
 import sessionService from '../services/session';
+import { Status } from '../types/status';
 
 type CommsContext = {
   token: string | null;
@@ -26,6 +29,7 @@ type CommsContext = {
   setCameraPermissions: React.Dispatch<React.SetStateAction<boolean>>;
   openSession: (participantInfo: ParticipantInfo) => Promise<void>;
   closeSession: () => void;
+  createConference: (conference: ConferenceCreateOptions) => Promise<void>;
   joinConference: (conference: Conference, options: ConferenceJoinOptions) => Promise<void>;
   leaveConference: () => Promise<void>;
   toggleMute: () => void;
@@ -45,13 +49,42 @@ type CommsContext = {
   conferenceStatus: ConferenceStatus | null;
   isPageMuted: boolean;
   toggleMuteParticipants: () => void;
+  recordingData: RecordingDataType;
+  stopRecording: () => Promise<boolean>;
+  startRecording: () => Promise<boolean>;
+  resetRecordingData: () => void;
+  setRecordingErrors: (error?: ErrorCodes) => void;
+  recordingErrorMessages: ErrorCodes[];
+  isConferenceOwner: boolean;
 };
 
 type CommsProviderProps = {
   children: ReactElement;
 };
 
+type RecordingDataType = {
+  ownerId: string | null;
+  timestamp: number | null;
+  status: Status;
+  isRecordingModeActive: boolean;
+};
 export const CommsContext = createContext<CommsContext>({} as CommsContext);
+
+export type Errors = {
+  recordingErrors: ErrorCodes[];
+};
+
+export enum ErrorCodes {
+  GenericError = 'Something went wrong',
+}
+
+export const errorMapper = (error: unknown) => {
+  const { message } = (error as Error) || { message: '' };
+  switch (message) {
+    default:
+      return ErrorCodes.GenericError;
+  }
+};
 
 const CommsProvider: React.FC<CommsProviderProps> = ({ children }) => {
   const isMutedDefault = false;
@@ -73,6 +106,16 @@ const CommsProvider: React.FC<CommsProviderProps> = ({ children }) => {
   const [participants, setParticipants] = useState<Map<string, Participant>>(new Map());
   const [isInitialized, setIsInitialized] = useState(false);
   const [isPageMuted, setIsPageMuted] = useState(isPageMutedDefault);
+  const [recordingData, setRecordingData] = useState<RecordingDataType>({
+    ownerId: null,
+    timestamp: null,
+    status: Status.Other,
+    isRecordingModeActive: false,
+  });
+  const [errors, setErrors] = useState<Errors>({
+    recordingErrors: [],
+  });
+  const [isConferenceOwner, setIsConferenceOwner] = useState<CommsContext['isConferenceOwner']>(false);
 
   // INITIALIZATION
 
@@ -135,6 +178,10 @@ const CommsProvider: React.FC<CommsProviderProps> = ({ children }) => {
   };
 
   // CONFERENCE METHODS
+
+  const createConference = useCallback(async (conferenceOptions: ConferenceCreateOptions) => {
+    return conferenceService.create(conferenceOptions);
+  }, []);
 
   const joinConference = useCallback(async (conference: Conference, joinOptions: ConferenceJoinOptions) => {
     const joinedConference = await conferenceService.join(conference, joinOptions);
@@ -208,6 +255,81 @@ const CommsProvider: React.FC<CommsProviderProps> = ({ children }) => {
     }
   };
 
+  // Recording
+  const startRecording = async () => {
+    setRecordingData((prev) => ({
+      ...prev,
+      status: Status.Loading,
+    }));
+
+    setErrors((prev) => ({ ...prev, recordingErrors: [] }));
+
+    try {
+      await recordingService.start();
+
+      if (user) {
+        setRecordingData((prev) => ({
+          ...prev,
+          ownerId: user.id,
+          isRecordingModeActive: true,
+          status: Status.Active,
+        }));
+      }
+
+      return true;
+    } catch (error) {
+      if (error instanceof Error) {
+        // eslint-disable-next-line no-console
+        console.log(error.message);
+      }
+      const message = errorMapper(error);
+      if (message) {
+        setRecordingErrors(errorMapper(message));
+      }
+
+      if (user) {
+        setRecordingData((prev) => ({
+          ...prev,
+          ownerId: user.id,
+          status: Status.Error,
+          isRecordingModeActive: true,
+        }));
+      }
+      return false;
+    }
+  };
+
+  const stopRecording = async () => {
+    try {
+      await recordingService.stop();
+      setRecordingData((prev) => ({
+        ...prev,
+        ownerId: null,
+        timestamp: null,
+        status: Status.Other,
+        isRecordingModeActive: false,
+      }));
+      return true;
+    } catch (error) {
+      // eslint-disable-next-line no-console
+      console.log(error);
+      return false;
+    }
+  };
+
+  const resetRecordingData = () => {
+    setRecordingData((prev) => ({
+      ...prev,
+      ownerId: null,
+      timestamp: null,
+      status: Status.Other,
+      isRecordingModeActive: false,
+    }));
+  };
+
+  const setRecordingErrors = (errorCode?: ErrorCodes) => {
+    setErrors((prev) => ({ ...prev, recordingErrors: errorCode ? [errorCode, ...prev.recordingErrors] : [] }));
+  };
   // ADDING EVENT HANDLERS
 
   const onConferenceStatusChange = (data: ConferenceStatusUpdatedEventType) => {
@@ -268,6 +390,7 @@ const CommsProvider: React.FC<CommsProviderProps> = ({ children }) => {
       setCameraPermissions,
       openSession,
       closeSession,
+      createConference,
       joinConference,
       leaveConference,
       user,
@@ -285,6 +408,14 @@ const CommsProvider: React.FC<CommsProviderProps> = ({ children }) => {
       toggleVideo,
       isPageMuted,
       toggleMuteParticipants,
+      recordingData,
+      resetRecordingData,
+      startRecording,
+      stopRecording,
+      setRecordingErrors,
+      recordingErrorMessages: errors.recordingErrors,
+      isConferenceOwner,
+      setIsConferenceOwner,
     }),
     [
       token,
@@ -303,6 +434,9 @@ const CommsProvider: React.FC<CommsProviderProps> = ({ children }) => {
       toggleVideo,
       isPageMuted,
       toggleMuteParticipants,
+      recordingData,
+      isConferenceOwner,
+      setIsConferenceOwner,
     ],
   );
 
