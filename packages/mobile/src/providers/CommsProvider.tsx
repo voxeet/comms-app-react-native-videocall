@@ -14,12 +14,12 @@ import type {
 } from '@dolbyio/comms-sdk-react-native/lib/typescript/services/conference/models';
 import React, { createContext, useState, useEffect, useMemo, ReactElement, useCallback } from 'react';
 import { Platform } from 'react-native';
-import { Status } from '../types/status';
 
 import conferenceService from '../services/conference';
+import recordingService from '../services/recording';
 import sdkService from '../services/sdk';
 import sessionService from '../services/session';
-import recordingService from '../services/recording';
+import { Status } from '../types/status';
 
 type CommsContext = {
   token: string | null;
