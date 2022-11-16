@@ -7,24 +7,45 @@ import {
   useToken,
   RecordingActionBar,
   useRecording,
-  InfoModal,
+  Toast,
 } from '@dolbyio/comms-uikit-react-native';
 import {BottomSheetModalProvider} from '@gorhom/bottom-sheet';
 import {useNavigation} from '@react-navigation/native';
-import React, {useMemo} from 'react';
+import React, {useEffect, useMemo, useState} from 'react';
 import {SafeAreaView, View} from 'react-native';
+import {useIntl} from 'react-intl';
 
 import {Routes} from '../../types/routes.types';
 import {getShareURL} from '../../utils/share.util';
 
 import styles from './Conference.style';
+import {Status} from '@dolbyio/comms-uikit-react-native/src/types/status';
 
 export const Conference = ({route}) => {
   const {userName, meetingName, meetingOwner} = route.params;
   const {navigate} = useNavigation();
   const {token} = useToken();
   const {conference, setIsConferenceOwner} = useConference();
-  const {isRecordingModeActive, stopRecording} = useRecording();
+  const {isRecordingModeActive, stopRecording, isError, status} =
+    useRecording();
+  const [toastVisible, setToastVisible] = useState(false);
+  const [isListeningRecordCompletion, setIsListeningRecordCompletion] =
+    useState(false);
+  const intl = useIntl();
+
+  useEffect(() => {
+    switch (status) {
+      case Status.Loading:
+        setIsListeningRecordCompletion(true);
+        break;
+      default:
+        break;
+    }
+    if (isRecordingModeActive === false && isListeningRecordCompletion) {
+      setToastVisible(true);
+      setIsListeningRecordCompletion(false);
+    }
+  }, [isRecordingModeActive, status]);
 
   const shareURL = useMemo(() => {
     return getShareURL(conference?.alias ?? '', token ?? '');
@@ -66,6 +87,19 @@ export const Conference = ({route}) => {
                   />
                 </>
               )}
+              <Toast
+                variant={isError ? 'error' : 'success'}
+                text={
+                  isError
+                    ? intl.formatMessage({id: 'messageRecordingFailed'})
+                    : intl.formatMessage({id: 'messageRecordingSuccessful'})
+                }
+                visible={toastVisible}
+                offset={120}
+                onClose={() => {
+                  setToastVisible(false);
+                }}
+              />
             </SafeAreaView>
           ) as any
         }

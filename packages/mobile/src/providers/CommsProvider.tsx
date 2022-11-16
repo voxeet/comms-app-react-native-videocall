@@ -292,7 +292,7 @@ const CommsProvider: React.FC<CommsProviderProps> = ({ children }) => {
           ...prev,
           ownerId: user.id,
           status: Status.Error,
-          isRecordingModeActive: true,
+          isRecordingModeActive: false,
         }));
       }
       return false;
@@ -437,6 +437,7 @@ const CommsProvider: React.FC<CommsProviderProps> = ({ children }) => {
       recordingData,
       isConferenceOwner,
       setIsConferenceOwner,
+      errors,
     ],
   );
 

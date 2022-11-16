@@ -7,6 +7,7 @@ import close from './close.svg';
 import copy from './copy.svg';
 import dotsHorizontal from './dots-horizontal.svg';
 import dotsVertical from './dots-vertical.svg';
+import error from './error.svg';
 import handset from './handset.svg';
 import headphones from './headphones.svg';
 import info from './info.svg';
@@ -26,7 +27,9 @@ import settings from './settings.svg';
 import speakerOff from './speaker-off.svg';
 import speaker from './speaker.svg';
 import success from './success.svg';
+import successStatus from './successStatus.svg';
 import warning from './warning.svg';
+import warningStatus from './warningStatus.svg';
 
 const Icons = {
   arrowLeft,
@@ -38,6 +41,7 @@ const Icons = {
   copy,
   dotsHorizontal,
   dotsVertical,
+  error,
   handset,
   headphones,
   info,
@@ -54,10 +58,12 @@ const Icons = {
   speaker,
   speakerOff,
   success,
+  successStatus,
   invite,
   paste,
   scan,
   warning,
+  warningStatus,
 };
 
 export default Icons;

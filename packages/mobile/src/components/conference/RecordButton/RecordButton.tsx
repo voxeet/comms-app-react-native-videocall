@@ -1,5 +1,5 @@
 import type { BottomSheetModal } from '@gorhom/bottom-sheet';
-import React, { useCallback, useEffect, useMemo, useRef } from 'react';
+import React, { useCallback, useMemo, useRef } from 'react';
 import { useIntl } from 'react-intl';
 
 import useConference from '../../../hooks/useConference';
@@ -15,15 +15,7 @@ type RecordButtonType = {
 };
 
 const RecordButton = ({ type = 'iconButton', testID }: RecordButtonType) => {
-  const {
-    startRecording,
-    stopRecording,
-    status,
-    isLocalUserRecordingOwner,
-    isError,
-    setRecordingErrors,
-    isRecordingModeActive,
-  } = useRecording();
+  const { startRecording, stopRecording, status, isLocalUserRecordingOwner, isRecordingModeActive } = useRecording();
 
   const { isConferenceOwner } = useConference();
 
@@ -58,12 +50,6 @@ const RecordButton = ({ type = 'iconButton', testID }: RecordButtonType) => {
       console.log('Failed to stop recording');
     }
   };
-
-  useEffect(() => {
-    if (isError || status === RecordingStatus.Error) {
-      setRecordingErrors();
-    }
-  }, [isError, status]);
 
   const isRecordingOn = useMemo(() => {
     let isActive;

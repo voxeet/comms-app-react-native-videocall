@@ -11,6 +11,10 @@ const customThemes: CustomThemes = {
       infoInformation: '#1930E5',
       infoWarning: '#FCB91A',
       infoError: '#E52222',
+      successBackground: '#179934',
+      infoBackground: '#2288E5',
+      warningBackground: '#FCB91A',
+      errorBackground: '#E52222',
       purple: {
         25: '#FDFAFF',
         50: '#F4E5FF',
@@ -102,6 +106,10 @@ const customThemes: CustomThemes = {
       infoInformation: '#1930E5',
       infoWarning: '#F09E00',
       infoError: '#E31A1A',
+      successBackground: '#179934', // FIXME: Check whether the newly added colours are as expected for this theme
+      infoBackground: '#2288E5',
+      warningBackground: '#FCB91A',
+      errorBackground: '#E52222',
       primary: {
         100: '#F1E6FF',
         200: '#DCBFFF',
