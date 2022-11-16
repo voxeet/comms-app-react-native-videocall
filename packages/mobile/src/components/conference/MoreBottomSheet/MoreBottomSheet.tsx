@@ -30,7 +30,7 @@ const MoreBottomSheet = React.forwardRef<BottomSheetModal, MoreBottomSheetProps>
         <View style={{ width: 40 }} />
         <RecordButton type="iconButton" />
         <View style={{ width: 40 }} />
-        <IconButton testID="SettingsButton" icon="settings" onPress={() => navigateTo()} />
+        <IconButton testID="SettingsButton" disabled icon="settings" onPress={() => navigateTo()} />
       </View>
     </BottomSheetWrapper>
   );
