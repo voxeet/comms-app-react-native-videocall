@@ -48,5 +48,7 @@
   "stopRecordingHint": "After the recording is complete, you can access it from the dolby.io dashboard.",
   "cancel": "Cancel",
   "recording": "Recording",
-  "stop": "Stop"
+  "stop": "Stop",
+  "messageRecordingSuccessful": "Your recording has been saved. You can download it from the dolby.io dashboard.",
+  "messageRecordingFailed": "A recording error has occurred."
 }
