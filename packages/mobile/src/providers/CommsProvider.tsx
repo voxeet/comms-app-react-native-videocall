@@ -192,9 +192,9 @@ const CommsProvider: React.FC<CommsProviderProps> = ({ children }) => {
     if (user) {
       setIsVideo(!isVideo);
       if (isVideo) {
-        await conferenceService.stopVideo(user);
+        await conferenceService.stopLocalVideo();
       } else {
-        await conferenceService.startVideo(user);
+        await conferenceService.startLocalVideo();
       }
     }
   };
@@ -206,7 +206,7 @@ const CommsProvider: React.FC<CommsProviderProps> = ({ children }) => {
     }));
 
     // For Dolby Voice use startAudio/stopAudio to mute/unmute a participant.
-    return mute ? conferenceService.stopAudio(participant) : conferenceService.startAudio(participant);
+    return mute ? conferenceService.stopRemoteAudio(participant) : conferenceService.startRemoteAudio(participant);
   };
 
   const participantsArray = useMemo(() => {
