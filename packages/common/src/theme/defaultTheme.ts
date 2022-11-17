@@ -8,6 +8,10 @@ const defaultTheme = {
     infoInformation: '#1930E5',
     infoWarning: '#F09E00',
     infoError: '#E52222',
+    successBackground: '#179934',
+    infoBackground: '#2288E5',
+    warningBackground: '#FCB91A',
+    errorBackground: '#E52222',
     transparent: 'transparent',
     blue: {
       300: '#D1DBF4',

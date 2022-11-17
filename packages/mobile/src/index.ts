@@ -28,7 +28,7 @@ export { default as Pill } from './components/ui/Pill/Pill';
 export { default as Avatar } from './components/ui/Avatar/Avatar';
 export { default as Timer } from './components/ui/Timer/Timer';
 export { default as Spinner } from './components/ui/Spinner/Spinner';
-export { default as InfoModal } from './components/ui/InfoModal/InfoModal';
+export { default as Toast } from './components/ui/Toast/Toast';
 
 // Components - Conference
 export { default as ActionBar } from './components/conference/ActionBar/ActionBar';
