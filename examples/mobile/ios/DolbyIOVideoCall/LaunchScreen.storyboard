@@ -17,7 +17,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Launch" translatesAutoresizingMaskIntoConstraints="NO" id="ZKd-h8-2Wt">
+                            <imageView clipsSubviews="YES" clearsContextBeforeDrawing="NO" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="LaunchIcon" translatesAutoresizingMaskIntoConstraints="NO" id="ZKd-h8-2Wt">
                                 <rect key="frame" x="43.5" y="189.5" width="288" height="288"/>
                             </imageView>
                         </subviews>
@@ -35,7 +35,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="Launch" width="288" height="288"/>
+        <image name="LaunchIcon" width="288" height="288"/>
         <namedColor name="Launch">
             <color red="0.078431372549019607" green="0.078431372549019607" blue="0.10196078431372549" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
