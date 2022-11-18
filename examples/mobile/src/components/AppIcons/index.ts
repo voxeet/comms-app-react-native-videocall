@@ -1,6 +1,6 @@
 import dolby from '../../../assets/images/dolby.svg';
-import welcomeLight from '../../../assets/images/welcomeLight.svg';
 import welcomeDark from '../../../assets/images/welcomeDark.svg';
+import welcomeLight from '../../../assets/images/welcomeLight.svg';
 
 const AppIcons = {
   dolby,

@@ -5,7 +5,7 @@ import {
   useToken,
   Icon,
 } from '@dolbyio/comms-uikit-react-native';
-import { StackActions } from '@react-navigation/native';
+import {StackActions} from '@react-navigation/native';
 import React, {useEffect} from 'react';
 import {useIntl} from 'react-intl';
 import {ScrollView, View} from 'react-native';
