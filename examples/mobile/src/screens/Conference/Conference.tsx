@@ -9,21 +9,20 @@ import {
   useRecording,
   Toast,
 } from '@dolbyio/comms-uikit-react-native';
+import {Status} from '@dolbyio/comms-uikit-react-native/src/types/status';
 import {BottomSheetModalProvider} from '@gorhom/bottom-sheet';
-import {useNavigation} from '@react-navigation/native';
+import {StackActions, useNavigation} from '@react-navigation/native';
 import React, {useEffect, useMemo, useState} from 'react';
-import {SafeAreaView, View} from 'react-native';
 import {useIntl} from 'react-intl';
+import {SafeAreaView, View} from 'react-native';
 
 import {Routes} from '../../types/routes.types';
 import {getShareURL} from '../../utils/share.util';
 
 import styles from './Conference.style';
-import {Status} from '@dolbyio/comms-uikit-react-native/src/types/status';
 
-export const Conference = ({route}) => {
+export const Conference = ({route, navigation}) => {
   const {userName, meetingName, meetingOwner} = route.params;
-  const {navigate} = useNavigation();
   const {token} = useToken();
   const {conference, setIsConferenceOwner} = useConference();
   const {isRecordingModeActive, stopRecording, isError, status} =
@@ -77,12 +76,16 @@ export const Conference = ({route}) => {
                   <ActionBar
                     leaveConferenceNav={() => {
                       if (isRecordingModeActive) handleStopRecording();
-                      navigate(Routes.ConferenceLeft, {
-                        userName,
-                        meetingName,
-                      });
+                      navigation.dispatch(
+                        StackActions.replace(Routes.ConferenceLeft, {
+                          userName,
+                          meetingName,
+                        }),
+                      );
                     }}
-                    moreOptionsNav={() => navigate(Routes.SelectTheme)}
+                    moreOptionsNav={() =>
+                      navigation.navigate(Routes.SelectTheme)
+                    }
                     shareURL={shareURL}
                   />
                 </>

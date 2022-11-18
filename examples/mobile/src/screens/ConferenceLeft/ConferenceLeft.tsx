@@ -5,7 +5,7 @@ import {
   Text,
   useSession,
 } from '@dolbyio/comms-uikit-react-native';
-import {useNavigation} from '@react-navigation/native';
+import {StackActions, useNavigation} from '@react-navigation/native';
 import React from 'react';
 import {useIntl} from 'react-intl';
 import {View} from 'react-native';
@@ -15,15 +15,14 @@ import {Routes} from '../../types/routes.types';
 
 import styles from './ConferenceLeft.style';
 
-export const ConferenceLeft = ({route}) => {
+export const ConferenceLeft = ({route, navigation}) => {
   const {userName, meetingName} = route.params;
-  const {navigate} = useNavigation();
   const {closeSession} = useSession();
   const intl = useIntl();
 
   const handleGoToHome = async () => {
     closeSession();
-    navigate(Routes.Home);
+    navigation.dispatch(StackActions.replace(Routes.Home));
   };
   return (
     <Layout testID="ConferenceLeftScreen">
@@ -51,7 +50,14 @@ export const ConferenceLeft = ({route}) => {
           meetingName={meetingName}
           testID="RejoinButton"
           type="secondary"
-          onSuccess={() => navigate(Routes.Conference, {userName, meetingName})}
+          onSuccess={() =>
+            navigation.dispatch(
+              StackActions.replace(Routes.Conference, {
+                userName,
+                meetingName,
+              }),
+            )
+          }
         />
       </SafeAreaView>
     </Layout>

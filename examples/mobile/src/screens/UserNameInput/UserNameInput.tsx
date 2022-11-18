@@ -8,6 +8,7 @@ import {
   useToken,
 } from '@dolbyio/comms-uikit-react-native';
 import useTheme from '@dolbyio/comms-uikit-react-native/src/hooks/useTheme';
+import {StackActions} from '@react-navigation/native';
 import React, {useState} from 'react';
 import {useIntl} from 'react-intl';
 import {ScrollView, View} from 'react-native';
@@ -56,11 +57,13 @@ export const UserNameInput = ({route, navigation}) => {
 
   const handleClick = () => {
     return meetingName
-      ? navigation.navigate(Routes.Conference, {
-          userName,
-          meetingName,
-          meetingOwner: false,
-        })
+      ? navigation.dispatch(
+          StackActions.replace(Routes.Conference, {
+            userName,
+            meetingName,
+            meetingOwner: false,
+          }),
+        )
       : navigation.navigate(Routes.MeetingNameInput, {
           userName,
           conferenceType,
