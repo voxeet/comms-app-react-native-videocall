@@ -55,5 +55,10 @@
   "messageRecordingSuccessful": "Your recording has been saved. You can download it from the dolby.io dashboard.",
   "messageRecordingFailed": "A recording error has occurred.",
   "provideTokenDescription": "In order to use this app you need to provide a token from the ",
-  "dolbyIODashboard": " Dolby.io dashboard"
+  "dolbyIODashboard": " Dolby.io dashboard",
+  "tokenInfoHeader": "How to retrieve a token:",
+  "tokenInfoStep1Title": "1.",
+  "tokenInfoStep1Value": "Navigate to the Dolby.io dashboard Demo page.",
+  "tokenInfoStep2Title": "2.",
+  "tokenInfoStep2Value": "Retrieve your token by selecting the QR Code button then scan the code. You can also copy the Client access token directly, then paste it into the paste tab below."
 }
