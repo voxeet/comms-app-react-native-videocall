@@ -7,6 +7,7 @@ import {
   JoinConferenceRoute,
 } from '@dolbyio/comms-uikit-react-native';
 import useTheme from '@dolbyio/comms-uikit-react-native/src/hooks/useTheme';
+import {StackActions} from '@react-navigation/native';
 import React, {useState} from 'react';
 import {useIntl} from 'react-intl';
 import {ScrollView, View} from 'react-native';
@@ -101,11 +102,13 @@ export const MeetingNameInput = ({route, navigation}) => {
               )
             }
             onSuccess={() => {
-              navigation.navigate(Routes.Conference, {
-                userName,
-                meetingName,
-                meetingOwner,
-              });
+              navigation.dispatch(
+                StackActions.replace(Routes.Conference, {
+                  userName,
+                  meetingName,
+                  meetingOwner,
+                }),
+              );
             }}
             route={joinConferenceRoute}
           />
