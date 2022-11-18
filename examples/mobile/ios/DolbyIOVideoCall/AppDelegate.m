@@ -37,11 +37,7 @@ static void InitializeFlipper(UIApplication *application) {
                                                    moduleName:@"mobile"
                                             initialProperties:nil];
 
-  if (@available(iOS 13.0, *)) {
-      rootView.backgroundColor = [UIColor systemBackgroundColor];
-  } else {
-      rootView.backgroundColor = [UIColor whiteColor];
-  }
+  rootView.backgroundColor = [UIColor colorWithRed:0.078431372549019607 green:0.078431372549019607 blue:0.10196078431372549 alpha:1];
 
   self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
   UIViewController *rootViewController = [UIViewController new];
