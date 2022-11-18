@@ -102,6 +102,7 @@ export const MeetingNameInput = ({route, navigation}) => {
               )
             }
             onSuccess={() => {
+              navigation.popToTop();
               navigation.dispatch(
                 StackActions.replace(Routes.Conference, {
                   userName,
