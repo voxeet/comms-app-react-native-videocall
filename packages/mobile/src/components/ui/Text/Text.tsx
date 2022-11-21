@@ -83,8 +83,10 @@ const CustomText = ({
     themeStyles,
   ];
 
+  const onPressed = props.onPress;
+
   return (
-    <Text testID={testID} style={stylesGroup} numberOfLines={props.numberOfLines}>
+    <Text testID={testID} style={stylesGroup} numberOfLines={props.numberOfLines} onPress={onPressed}>
       {children}
     </Text>
   );
