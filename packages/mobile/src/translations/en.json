@@ -40,7 +40,10 @@
   "welcome": "Welcome",
   "welcomeDescription": "To use the Video Call app, a Dolby.io \naccount and access token are required.",
   "letsBegin": "Let's begin",
-  "disclaimer": "By clicking \"Let's begin\", you agree \nto our Terms of Services and Privacy Policy",
+  "disclaimer": "By clicking \"Let's begin\", you agree \nto our ",
+  "termsOfServices": "Terms of Services",
+  "and": " and ",
+  "privacyPolicy": "Privacy Policy",
   "startRecordingTitle": "Record your video call",
   "startRecording": "Start recording",
   "startRecordingHint": "After the recording is complete, you can access it from the dolby.io dashboard.",
@@ -50,5 +53,7 @@
   "recording": "Recording",
   "stop": "Stop",
   "messageRecordingSuccessful": "Your recording has been saved. You can download it from the dolby.io dashboard.",
-  "messageRecordingFailed": "A recording error has occurred."
+  "messageRecordingFailed": "A recording error has occurred.",
+  "provideTokenDescription": "In order to use this app you need to provide a token from the ",
+  "dolbyIODashboard": " Dolby.io dashboard"
 }
