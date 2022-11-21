@@ -6,21 +6,25 @@ import {
 } from '@dolbyio/comms-uikit-react-native';
 import {StackActions} from '@react-navigation/native';
 import React, {useState} from 'react';
-import {Linking, SafeAreaView, View} from 'react-native';
+import {LayoutChangeEvent, Linking, SafeAreaView, View} from 'react-native';
 
 import {ConferenceCreateHeader} from '../../components/ConferenceCreateHeader/ConferenceCreateHeader';
 import Footer from '../../components/Footer';
+import {TokenInfo} from '../../components/TokenInfo/TokenInfo';
 import {Routes} from '../../types/routes.types';
 import tokenStorage from '../../utils/tokenStorage.util';
 import {validateToken} from '../../utils/validation.util';
 import InputToken from '../InputToken';
 import ScanToken from '../ScanToken';
+import styles from './DemoToken.style';
 
 export const DemoToken = ({navigation}) => {
   const {storeToken} = tokenStorage();
   const {setToken} = useToken();
   const [switchTab, setSwtichTab] = useState<boolean>(true);
   const [showError, setError] = useState<boolean>(false);
+  const [topBarHeight, setTopBarHeight] = useState(0);
+  const [infoIconHeight, setInfoIconHeight] = useState(0);
 
   const onToken = (token: string) => {
     if (token === '') {
@@ -47,10 +51,30 @@ export const DemoToken = ({navigation}) => {
     setSwtichTab(index === 0);
   };
 
+  const onTapBarLayout = (event: LayoutChangeEvent) => {
+    const {height} = event.nativeEvent.layout;
+    setTopBarHeight(height);
+  };
+
+  const onInfoIconLayout = (event: LayoutChangeEvent) => {
+    const {height} = event.nativeEvent.layout;
+    setInfoIconHeight(height);
+  };
+
   return (
     <Layout>
-      <SafeAreaView style={{flex: 1}}>
-        <ConferenceCreateHeader />
+      <SafeAreaView style={styles.wrapper}>
+        <View onLayout={onTapBarLayout}>
+          <ConferenceCreateHeader />
+          <View
+            style={[
+              styles.infoIconWrapper,
+              {top: (topBarHeight - infoIconHeight) / 2},
+            ]}
+            onLayout={onInfoIconLayout}>
+            <TokenInfo />
+          </View>
+        </View>
         <Text type="h2" align="center" color="white" style={{paddingTop: 40}}>
           Provide a demo token
         </Text>
