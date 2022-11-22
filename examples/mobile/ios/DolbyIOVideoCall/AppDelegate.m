@@ -28,6 +28,8 @@ static void InitializeFlipper(UIApplication *application) {
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
+  [self clearKeychainIfNecessary];
+  
 #ifdef FB_SONARKIT_ENABLED
   InitializeFlipper(application);
 #endif
@@ -63,4 +65,31 @@ static void InitializeFlipper(UIApplication *application) {
 {
   return [RCTLinkingManager application:application openURL:url options:options];
 }
+
+// MARK: Keychain Utility
+
+/// Deletes all Keychain items accessible by this app if this is the first time the user launches the app
+- (void)clearKeychainIfNecessary
+{
+  // Checks wether or not this is the first time the app is run
+  if ([[NSUserDefaults standardUserDefaults] boolForKey:@"FIRST_RUN"] == NO) {
+    // Set the appropriate value so we don't clear next time the app is launched
+    [[NSUserDefaults standardUserDefaults] setBool:YES forKey:@"FIRST_RUN"];
+    
+    NSArray *secItemClasses = @[
+      (__bridge id)kSecClassGenericPassword,
+      (__bridge id)kSecClassInternetPassword,
+      (__bridge id)kSecClassCertificate,
+      (__bridge id)kSecClassKey,
+      (__bridge id)kSecClassIdentity
+    ];
+    
+    // Maps through all Keychain classes and deletes all items that match
+    for (id secItemClass in secItemClasses) {
+      NSDictionary *spec = @{(__bridge id)kSecClass: secItemClass};
+      SecItemDelete((__bridge CFDictionaryRef)spec);
+    }
+  }
+}
+
 @end
