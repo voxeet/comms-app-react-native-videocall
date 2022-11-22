@@ -66,7 +66,7 @@ export const MeetingNameInput = ({route, navigation}) => {
   return (
     <Layout testID="MeetingNameInput">
       <SafeAreaView style={styles.wrapper}>
-        <ScrollView>
+        <ScrollView keyboardShouldPersistTaps="handled">
           <View style={{paddingTop: 48}} />
           <Text
             id="enterMeetingNameWelcomeFormat"
