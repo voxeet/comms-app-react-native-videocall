@@ -1,5 +1,5 @@
 import React, { useEffect, useRef, useState } from 'react';
-import { Animated, Dimensions, LayoutChangeEvent, View } from 'react-native';
+import { Animated, LayoutChangeEvent, View } from 'react-native';
 
 import useTheme from '../../../hooks/useTheme';
 import Icon from '../Icon/Icon';
@@ -18,10 +18,9 @@ export type ToastProps = {
 };
 
 const Toast = ({ variant, text, visible, offset, onClose, testID }: ToastProps) => {
-  const windowHeight = Dimensions.get('window').height;
-  const toastAnimation = useRef(new Animated.Value(windowHeight)).current;
   const { colors } = useTheme();
   const [componentHeight, setComponentHeight] = useState(0);
+  const toastAnimation = useRef(new Animated.Value(0));
 
   useEffect(() => {
     if (visible === true) {
@@ -32,16 +31,16 @@ const Toast = ({ variant, text, visible, offset, onClose, testID }: ToastProps) 
   }, [visible]);
 
   const animateIn = () => {
-    Animated.timing(toastAnimation, {
-      toValue: windowHeight - componentHeight - offset,
+    Animated.timing(toastAnimation.current, {
+      toValue: -offset - componentHeight,
       duration: 200,
       useNativeDriver: true,
     }).start();
   };
 
   const animateOut = () => {
-    Animated.timing(toastAnimation, {
-      toValue: windowHeight,
+    Animated.timing(toastAnimation.current, {
+      toValue: 0,
       duration: 200,
       useNativeDriver: true,
     }).start();
@@ -84,7 +83,8 @@ const Toast = ({ variant, text, visible, offset, onClose, testID }: ToastProps) 
       style={[
         styles.container,
         {
-          transform: [{ translateY: toastAnimation }],
+          bottom: -componentHeight,
+          transform: [{ translateY: toastAnimation.current }],
           backgroundColor: getBackgroundColor().toString(),
         },
       ]}
