@@ -16,6 +16,7 @@ import tokenStorage from '../../utils/tokenStorage.util';
 import {validateToken} from '../../utils/validation.util';
 import InputToken from '../InputToken';
 import ScanToken from '../ScanToken';
+
 import styles from './DemoToken.style';
 
 export const DemoToken = ({navigation}) => {
