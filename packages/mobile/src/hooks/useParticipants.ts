@@ -20,7 +20,9 @@ const useParticipants = () => {
   } = useContext(CommsContext);
 
   const participants = useMemo(() => {
-    return rawParticipants.filter((p) => p.status && DISPLAYED_STATUSES.includes(p.status));
+    return rawParticipants.filter(
+      (p) => p.status && DISPLAYED_STATUSES.includes(p.status) && p.type?.toUpperCase() !== 'MIXER',
+    );
   }, [rawParticipants]);
 
   return {

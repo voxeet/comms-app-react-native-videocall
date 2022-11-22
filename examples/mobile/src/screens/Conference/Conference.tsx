@@ -11,7 +11,7 @@ import {
 } from '@dolbyio/comms-uikit-react-native';
 import {Status} from '@dolbyio/comms-uikit-react-native/src/types/status';
 import {BottomSheetModalProvider} from '@gorhom/bottom-sheet';
-import {StackActions, useNavigation} from '@react-navigation/native';
+import {StackActions} from '@react-navigation/native';
 import React, {useEffect, useMemo, useState} from 'react';
 import {useIntl} from 'react-intl';
 import {SafeAreaView, View, LayoutChangeEvent} from 'react-native';
@@ -25,8 +25,7 @@ export const Conference = ({route, navigation}) => {
   const {userName, meetingName, meetingOwner} = route.params;
   const {token} = useToken();
   const {conference, setIsConferenceOwner} = useConference();
-  const {isRecordingModeActive, stopRecording, isError, status} =
-    useRecording();
+  const {isRecordingModeActive, isError, status} = useRecording();
   const [toastVisible, setToastVisible] = useState(false);
   const [isListeningRecordCompletion, setIsListeningRecordCompletion] =
     useState(false);
@@ -54,14 +53,6 @@ export const Conference = ({route, navigation}) => {
   const shareURL = useMemo(() => {
     return getShareURL(conference?.alias ?? '', token ?? '');
   }, [conference]);
-
-  const handleStopRecording = async () => {
-    const result = await stopRecording();
-    if (!result) {
-      // eslint-disable-next-line no-console
-      console.log('Failed to stop recording');
-    }
-  };
 
   setIsConferenceOwner(meetingOwner);
 
@@ -99,7 +90,6 @@ export const Conference = ({route, navigation}) => {
                     </View>
                     <ActionBar
                       leaveConferenceNav={() => {
-                        if (isRecordingModeActive) handleStopRecording();
                         navigation.dispatch(
                           StackActions.replace(Routes.ConferenceLeft, {
                             userName,
