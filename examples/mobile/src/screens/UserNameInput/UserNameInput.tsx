@@ -87,7 +87,7 @@ export const UserNameInput = ({route, navigation}) => {
   return (
     <Layout testID="UserNameInput">
       <SafeAreaView style={styles.wrapper}>
-        <ScrollView>
+        <ScrollView keyboardShouldPersistTaps="handled">
           <View style={{paddingTop: 48}} />
           <Text id="enterUserName" type="h2" align="center" />
           <View style={{paddingTop: 8}} />
