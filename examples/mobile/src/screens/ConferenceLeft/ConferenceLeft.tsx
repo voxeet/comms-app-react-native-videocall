@@ -55,6 +55,7 @@ export const ConferenceLeft = ({route, navigation}) => {
               StackActions.replace(Routes.Conference, {
                 userName,
                 meetingName,
+                meetingOwner: false,
               }),
             )
           }

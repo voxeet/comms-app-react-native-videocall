@@ -78,20 +78,20 @@ export const DemoToken = ({navigation}) => {
         <Text type="h2" align="center" color="white" style={{paddingTop: 40}}>
           Provide a demo token
         </Text>
-        <Text align="center">
+        <Text align="center" style={{paddingTop: 8, paddingBottom: 24}}>
           <Text
             id="provideTokenDescription"
             type="paragraph"
             align="center"
             color="secondary.200"
-            style={{paddingTop: 8, paddingBottom: 24}}
+            style={{paddingTop: 8}}
           />
           <Text
             id="dolbyIODashboard"
             type="paragraph"
             align="center"
             color="purple.400"
-            style={{paddingTop: 8, paddingBottom: 24}}
+            style={{paddingTop: 8}}
             onPress={() => {
               return Linking.openURL('https://dashboard.dolby.io/');
             }}
