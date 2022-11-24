@@ -1,7 +1,10 @@
 // Provider
 export { default as CommsProvider } from './providers/CommsProvider';
 export { default as ThemeProvider } from './providers/ThemeProvider';
+export { default as TokenProvider } from './providers/TokenProvider';
 export { default as TranslationProvider } from './providers/TranslationProvider';
+
+export { default as tokenStorage } from './utils/tokenStorage.util';
 
 // Hooks
 export { default as useSession } from './hooks/useSession';

@@ -21,7 +21,7 @@ export const tokenStorage = () => {
     return '';
   }
 
-  return {storeToken, retrieveToken};
+  return { storeToken, retrieveToken };
 };
 
 export default tokenStorage;

@@ -18,7 +18,6 @@ import { Platform } from 'react-native';
 
 import conferenceService from '../services/conference';
 import recordingService from '../services/recording';
-import sdkService from '../services/sdk';
 import sessionService from '../services/session';
 import { Status } from '../types/status';
 
@@ -90,7 +89,6 @@ const CommsProvider: React.FC<CommsProviderProps> = ({ children }) => {
   const isMutedDefault = false;
   const isVideoDefault = true;
   const isPageMutedDefault = false;
-  const [token, setToken] = useState<string | null>(null);
   const [micPermissions, setMicPermissions] = useState(Platform.OS !== 'android');
   const [cameraPermissions, setCameraPermissions] = useState(Platform.OS !== 'android');
   const [user, setUser] = useState<CommsContext['user']>(null);
@@ -104,7 +102,6 @@ const CommsProvider: React.FC<CommsProviderProps> = ({ children }) => {
   const [isVideo, setIsVideo] = useState<CommsContext['isVideo']>(isVideoDefault);
   const [conferenceStatus, setConferenceStatus] = useState<CommsContext['conferenceStatus']>(null);
   const [participants, setParticipants] = useState<Map<string, Participant>>(new Map());
-  const [isInitialized, setIsInitialized] = useState(false);
   const [isPageMuted, setIsPageMuted] = useState(isPageMutedDefault);
   const [recordingData, setRecordingData] = useState<RecordingDataType>({
     ownerId: null,
@@ -116,30 +113,6 @@ const CommsProvider: React.FC<CommsProviderProps> = ({ children }) => {
     recordingErrors: [],
   });
   const [isConferenceOwner, setIsConferenceOwner] = useState<CommsContext['isConferenceOwner']>(false);
-
-  // INITIALIZATION
-
-  useEffect(() => {
-    (async () => {
-      if (token) {
-        await sdkService.initializeToken(token, refreshToken);
-      } else {
-        // eslint-disable-next-line no-console
-        console.log('No initialization params passed');
-      }
-      setIsInitialized(true);
-    })();
-  }, [token]);
-
-  const refreshToken = async () => {
-    if (token && token.length > 0) {
-      return Promise.resolve(token);
-    }
-
-    // eslint-disable-next-line no-console
-    console.log('ERROR - Failed to refresh the token');
-    return Promise.reject();
-  };
 
   // CHECK INIT MUTED STATE
 
@@ -382,8 +355,6 @@ const CommsProvider: React.FC<CommsProviderProps> = ({ children }) => {
 
   const contextValue: CommsContext = useMemo(
     () => ({
-      token,
-      setToken,
       micPermissions,
       setMicPermissions,
       cameraPermissions,
@@ -418,11 +389,8 @@ const CommsProvider: React.FC<CommsProviderProps> = ({ children }) => {
       setIsConferenceOwner,
     }),
     [
-      token,
-      setToken,
       micPermissions,
       cameraPermissions,
-      isInitialized,
       user,
       conference,
       participants,
@@ -441,7 +409,7 @@ const CommsProvider: React.FC<CommsProviderProps> = ({ children }) => {
     ],
   );
 
-  return <CommsContext.Provider value={contextValue}>{isInitialized ? children : null}</CommsContext.Provider>;
+  return <CommsContext.Provider value={contextValue}>{children}</CommsContext.Provider>;
 };
 
 export default CommsProvider;

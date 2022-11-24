@@ -3,6 +3,7 @@ import {
   Button,
   Text,
   useToken,
+  tokenStorage,
 } from '@dolbyio/comms-uikit-react-native';
 import {StackActions} from '@react-navigation/native';
 import React from 'react';
@@ -13,7 +14,6 @@ import {SafeAreaView} from 'react-native-safe-area-context';
 import ConferenceCreateHeader from '../../components/ConferenceCreateHeader';
 import ConferenceCreateFooter from '../../components/Footer';
 import {Routes} from '../../types/routes.types';
-import tokenStorage from '../../utils/tokenStorage.util';
 
 import makeStyles from './Home.style';
 
