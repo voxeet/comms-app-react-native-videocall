@@ -74,6 +74,7 @@
 		E8343E43290F877E008FDB2C /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		E8343E44290F877E008FDB2C /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		E8343E45290F877E008FDB2C /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E843E390292EF9AA00F8AEA5 /* InternalReleaseSettings.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = InternalReleaseSettings.xcconfig; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
@@ -195,6 +196,7 @@
 			isa = PBXGroup;
 			children = (
 				E818D986290F8A17003BEF35 /* ReleaseSettings.xcconfig */,
+				E843E390292EF9AA00F8AEA5 /* InternalReleaseSettings.xcconfig */,
 				E818D987290F8A17003BEF35 /* DebugSettings.xcconfig */,
 				E818D988290F8A17003BEF35 /* EnterpriseReleaseSettings.xcconfig */,
 			);
