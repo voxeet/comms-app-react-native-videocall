@@ -3,6 +3,7 @@ import {
   TokenTab,
   Text,
   useToken,
+  tokenStorage,
 } from '@dolbyio/comms-uikit-react-native';
 import {StackActions} from '@react-navigation/native';
 import React, {useState} from 'react';
@@ -12,7 +13,6 @@ import {ConferenceCreateHeader} from '../../components/ConferenceCreateHeader/Co
 import Footer from '../../components/Footer';
 import {TokenInfo} from '../../components/TokenInfo/TokenInfo';
 import {Routes} from '../../types/routes.types';
-import tokenStorage from '../../utils/tokenStorage.util';
 import {validateToken} from '../../utils/validation.util';
 import InputToken from '../InputToken';
 import ScanToken from '../ScanToken';

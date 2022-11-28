@@ -1,9 +1,9 @@
 import { useContext } from 'react';
 
-import { CommsContext } from '../providers/CommsProvider';
+import { TokenContext } from '../providers/TokenProvider';
 
 const useToken = () => {
-  const { token, setToken } = useContext(CommsContext);
+  const { token, setToken } = useContext(TokenContext);
 
   return { token, setToken };
 };
