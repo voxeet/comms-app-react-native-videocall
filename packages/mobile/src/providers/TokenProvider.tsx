@@ -16,7 +16,9 @@ type TokenContext = {
 type TokenProviderProps = {
   children: ReactElement;
   validateToken: (token: string) => boolean;
-  fetch: any;
+  fetch: {
+    get(url: string): Promise<never>;
+  };
 };
 
 export const TokenContext = createContext<TokenContext>({
