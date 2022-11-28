@@ -44,6 +44,7 @@ jobs:
           bundle exec fastlane build_and_deploy_to_firebase --env enterprise build_number:$GITHUB_RUN_NUMBER
 
   Build-And-Deploy-To-TestFlight-InternalTest:
+    if: github.event_name == 'push' && contains(github.ref, 'refs/tags/')
     runs-on: macos-12
     steps:
       - name: Checkout source code
@@ -62,6 +63,12 @@ jobs:
         uses: actions/setup-ruby@v1
         with:
           ruby-version: 3.1.2
+
+      - name: Assign internal environment
+        env:
+          INTERNAL_RELEASE_TOKEN_URLS: ${{secrets.INTERNAL_RELEASE_TOKEN_URLS}}
+        run: |
+          echo $INTERNAL_RELEASE_TOKEN_URLS > packages/mobile/src/providers/TokenUrl.tsx
 
       - name: Build App and Upload to Appstore
         env:
