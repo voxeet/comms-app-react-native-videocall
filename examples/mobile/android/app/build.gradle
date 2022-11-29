@@ -188,11 +188,22 @@ android {
               releaseNotes = "Release notes"
               groups = "internal"
               appId = firebaseAppId
-              artifactPath = "app/build/outputs/apk/release/app-release.apk"
+              artifactPath = "app/build/outputs/apk/prod/release/app-prod-release.apk"
             }
             play {
               track.set("internal")
             }
+        }
+    }
+
+    flavorDimensions "environment"
+    productFlavors {
+        prod {
+          dimension "environment"
+        }
+        internal {
+          dimension "environment"
+          applicationIdSuffix ".internal"
         }
     }
 
