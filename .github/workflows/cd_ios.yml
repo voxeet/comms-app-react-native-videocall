@@ -66,6 +66,9 @@ jobs:
 
       - name: Assign internal environment
         env:
+          # `INTERNAL_RELEASE_TOKEN_URLS` are used just in Internal Test Builds only.
+          # Writes Test Server URL's into the source files which on runtime is used for fetching test Access Token's in the App.
+          # Targeted users for the build - Business stakeholders within the Organisation
           INTERNAL_RELEASE_TOKEN_URLS: ${{secrets.INTERNAL_RELEASE_TOKEN_URLS}}
         run: |
           echo $INTERNAL_RELEASE_TOKEN_URLS > packages/mobile/src/providers/TokenUrl.tsx
