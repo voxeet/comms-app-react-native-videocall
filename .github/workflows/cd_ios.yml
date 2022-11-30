@@ -59,8 +59,8 @@ jobs:
       - name: Install modules
         run: yarn install
 
-      - name: Setup bundler
-        uses: actions/setup-ruby@v1
+      - name: Setup Ruby
+        uses: ruby/setup-ruby@v1
         with:
           ruby-version: 3.1.2
 
