@@ -8,7 +8,7 @@ The issues are mainly in the following areas
 
 Not all the issues are listed there.
 
-* Individual device or model-specified issues
+* Individual device or model-specific issues
 * Minor and edge case issues
 
 | **Title**                                               | **Description**                                                                                                   | **Comment**                                                                                              |
