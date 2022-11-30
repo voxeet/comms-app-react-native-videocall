@@ -6,7 +6,7 @@ The issues are mainly in the following areas
 * Edges cases are not handled properly, such as mic/camera permission and no network.
 * Sometimes camera and mic do not work after re-joining the meeting.
 
-Not all the issues are listed there. They include
+Not all the issues are listed there.
 
 * Individual device or model-specified issues
 * Minor and edge case issues
