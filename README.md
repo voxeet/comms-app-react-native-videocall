@@ -1,4 +1,6 @@
-# ReadMe
+# Dolby.io Communications Video Call - React Native Mobile App
+
+## Readme
 
 This document serves as a guide on how to build the React Native Video Conference sample app for mobile from the source.
 
