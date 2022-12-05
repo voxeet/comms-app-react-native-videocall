@@ -50,20 +50,20 @@ jobs:
           export KEY_ALIAS=$KEY_ALIAS
           export KEY_PASSWORD=$KEY_PASSWORD
           source ~/.env_version
-          cd examples/mobile/android && gradle assembleRelease bundleRelease
+          cd examples/mobile/android && gradle assembleProdRelease bundleProdRelease
       - name: Archive production apk
         uses: actions/upload-artifact@v3
         with:
           name: android-release-apk
           path: |
-            ./examples/mobile/android/app/build/outputs/apk/release
+            ./examples/mobile/android/app/build/outputs/apk/prod/release
           retention-days: 3
       - name: Archive production bundle
         uses: actions/upload-artifact@v3
         with:
           name: android-release-bundle
           path: |
-            ./examples/mobile/android/app/build/outputs/bundle/release/app-release.aab
+            ./examples/mobile/android/app/build/outputs/bundle/prodRelease/app-prod-release.aab
 
   Android-Firebase-Distribution:
     needs: Android-App-Build
@@ -89,7 +89,7 @@ jobs:
         uses: actions/download-artifact@v3
         with:
           name: android-release-apk
-          path: ./examples/mobile/android/app/build/outputs/apk/release
+          path: ./examples/mobile/android/app/build/outputs/apk/prod/release
 
       - name: calculate version
         run: |
@@ -106,7 +106,7 @@ jobs:
           export FIREBASE_APP_ID=$FIREBASE_APP_ID_ANDROID
           export GOOGLE_APPLICATION_CREDENTIALS=$GITHUB_WORKSPACE/google-app-creds.json
           source ~/.env_version
-          cd examples/mobile/android && gradle appDistributionUploadRelease --stacktrace
+          cd examples/mobile/android && gradle appDistributionUploadProdRelease --stacktrace
 
   Android-Play-Store-Distribution:
     if: github.event_name == 'push' && contains(github.ref, 'refs/tags/')
@@ -133,16 +133,16 @@ jobs:
         uses: actions/download-artifact@v3
         with:
           name: android-release-bundle
-          path: ./examples/mobile/android/app/build/outputs/bundle/release/
+          path: ./examples/mobile/android/app/build/outputs/bundle/prodRelease/
 
       - name: Deploy to Play Store
         env:
           ANDROID_PUBLISHER_CREDENTIALS: ${{ secrets.ANDROID_PUBLISHER_CREDENTIALS }}
         run: |
           export ANDROID_PUBLISHER_CREDENTIALS=$ANDROID_PUBLISHER_CREDENTIALS
-          cd examples/mobile/android && chmod +x ./gradlew && ./gradlew publishBundle --artifact-dir ./app/build/outputs/bundle/release/ --stacktrace
+          cd examples/mobile/android && chmod +x ./gradlew && ./gradlew publishProdReleaseBundle --artifact-dir ./app/build/outputs/bundle/release/ --stacktrace
 
-  Android-App-Internal-Build:
+  Android-App-Internal-Build-And-Distribute-To-Play-Store:
     if: github.event_name == 'push' && contains(github.ref, 'refs/tags/')
     runs-on: ubuntu-latest
     steps:
@@ -177,10 +177,12 @@ jobs:
 
       - name: Assign internal environment
         env:
+          # `INTERNAL_RELEASE_TOKEN_URLS` are used just in Internal Test Builds only.
+          # Writes Test Server URL's into the source files which on runtime is used for fetching test Access Token's in the App.
+          # Targeted users for the build - Business stakeholders within the Organisation
           INTERNAL_RELEASE_TOKEN_URLS: ${{secrets.INTERNAL_RELEASE_TOKEN_URLS}}
         run: |
-          truncate -s 0 packages/mobile/src/providers/TokenUrl.tsx
-          echo $INTERNAL_RELEASE_TOKEN_URLS >> packages/mobile/src/providers/TokenUrl.tsx
+          echo $INTERNAL_RELEASE_TOKEN_URLS > packages/mobile/src/providers/TokenUrl.tsx
 
       - name: Internal Android App Build
         env:
@@ -192,4 +194,11 @@ jobs:
           export KEY_ALIAS=$KEY_ALIAS
           export KEY_PASSWORD=$KEY_PASSWORD
           source ~/.env_version
-          cd examples/mobile/android && ENVFILE=.env && gradle assembleRelease bundleRelease --stacktrace
+          cd examples/mobile/android && gradle assembleInternalRelease bundleInternalRelease --stacktrace
+
+      - name: Deploy to Play Store
+        env:
+          ANDROID_PUBLISHER_CREDENTIALS: ${{ secrets.ANDROID_PUBLISHER_CREDENTIALS }}
+        run: |
+          export ANDROID_PUBLISHER_CREDENTIALS=$ANDROID_PUBLISHER_CREDENTIALS
+          cd examples/mobile/android && chmod +x ./gradlew && ./gradlew publishInternalReleaseBundle --artifact-dir ./app/build/outputs/bundle/internalRelease/ --stacktrace
