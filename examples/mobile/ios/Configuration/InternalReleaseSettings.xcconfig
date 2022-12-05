@@ -1,5 +1,6 @@
 PRODUCT_BUNDLE_IDENTIFIER = io.dolby.videocall-internal
 ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon-Internal
+INFOPLIST_KEY_CFBundleDisplayName = Video Call Internal
 
 DEVELOPMENT_TEAM = B5PH3RUUX8
 CODE_SIGN_STYLE = Manual
