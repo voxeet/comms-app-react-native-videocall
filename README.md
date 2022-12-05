@@ -118,6 +118,30 @@ In the other window, run this command - This can automatically trigger the step 
 yarn workspace comms-app-react-native-videoconference android
 ```
 
+## Features
+
+The major features of this example app.
+
+* Allow participants to scan a QR code or enter an authentication token from Dolby.io Dashboard to login
+* Logout from the video calling app
+* Create/Join/Re-join/Leave a video conference call
+* Share a meeting link
+* Mute the mic
+* Mute all remote participants
+* Turn on/off the camera
+* Switch between the cameras
+* Show participants list and count
+* Show who is speaking
+* Show the video grid with 6 active speakers (if participants count <= 6)
+* Replace the least active speaker with a new active speaker, when the new active speaker turns on the camera or speaks without a camera
+* The participant who creates the meeting can record the meeting
+* Participants joining the meeting cannot start a recording
+* Meeting recordings can be accessed from the Dolby.io Dashboard
+
+## Known Issues
+
+The known issues of this example app can be found [here](KNOWN-ISSUES.md).
+
 ## License
 
 The Dolby.io Communications Sample for React Native and its repository are licensed under the MIT License.
