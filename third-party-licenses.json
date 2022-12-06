@@ -983,8 +983,8 @@
     "repository": "https://dolby.io",
     "publisher": "Dolby.io",
     "url": "https://dolby.io/",
-    "path": "node_modules/comms-app-react-native-videoconference/node_modules/@dolbyio/comms-sdk-react-native",
-    "licenseFile": "node_modules/comms-app-react-native-videoconference/node_modules/@dolbyio/comms-sdk-react-native/LICENSE"
+    "path": "node_modules/comms-app-react-native-videocall/node_modules/@dolbyio/comms-sdk-react-native",
+    "licenseFile": "node_modules/comms-app-react-native-videocall/node_modules/@dolbyio/comms-sdk-react-native/LICENSE"
   },
   "@dolbyio/comms-uikit-common@1.0.0": {
     "licenses": "LicenseRef-LICENSE",
@@ -1000,8 +1000,8 @@
   "@egjs/hammerjs@2.0.17": {
     "licenses": "MIT",
     "repository": "https://github.com/naver/hammer.js",
-    "path": "node_modules/comms-app-react-native-videoconference/node_modules/@egjs/hammerjs",
-    "licenseFile": "node_modules/comms-app-react-native-videoconference/node_modules/@egjs/hammerjs/LICENSE.md"
+    "path": "node_modules/comms-app-react-native-videocall/node_modules/@egjs/hammerjs",
+    "licenseFile": "node_modules/comms-app-react-native-videocall/node_modules/@egjs/hammerjs/LICENSE.md"
   },
   "@eslint/eslintrc@1.3.2": {
     "licenses": "MIT",
@@ -1466,32 +1466,32 @@
   "@react-navigation/core@6.4.0": {
     "licenses": "MIT",
     "repository": "https://github.com/react-navigation/react-navigation",
-    "path": "node_modules/comms-app-react-native-videoconference/node_modules/@react-navigation/core",
-    "licenseFile": "node_modules/comms-app-react-native-videoconference/node_modules/@react-navigation/core/LICENSE"
+    "path": "node_modules/comms-app-react-native-videocall/node_modules/@react-navigation/core",
+    "licenseFile": "node_modules/comms-app-react-native-videocall/node_modules/@react-navigation/core/LICENSE"
   },
   "@react-navigation/elements@1.3.6": {
     "licenses": "MIT",
     "repository": "https://github.com/react-navigation/react-navigation",
-    "path": "node_modules/comms-app-react-native-videoconference/node_modules/@react-navigation/elements",
-    "licenseFile": "node_modules/comms-app-react-native-videoconference/node_modules/@react-navigation/elements/LICENSE"
+    "path": "node_modules/comms-app-react-native-videocall/node_modules/@react-navigation/elements",
+    "licenseFile": "node_modules/comms-app-react-native-videocall/node_modules/@react-navigation/elements/LICENSE"
   },
   "@react-navigation/native-stack@6.9.0": {
     "licenses": "MIT",
     "repository": "https://github.com/react-navigation/react-navigation",
-    "path": "node_modules/comms-app-react-native-videoconference/node_modules/@react-navigation/native-stack",
-    "licenseFile": "node_modules/comms-app-react-native-videoconference/node_modules/@react-navigation/native-stack/LICENSE"
+    "path": "node_modules/comms-app-react-native-videocall/node_modules/@react-navigation/native-stack",
+    "licenseFile": "node_modules/comms-app-react-native-videocall/node_modules/@react-navigation/native-stack/LICENSE"
   },
   "@react-navigation/native@6.0.13": {
     "licenses": "MIT",
     "repository": "https://github.com/react-navigation/react-navigation",
-    "path": "node_modules/comms-app-react-native-videoconference/node_modules/@react-navigation/native",
-    "licenseFile": "node_modules/comms-app-react-native-videoconference/node_modules/@react-navigation/native/LICENSE"
+    "path": "node_modules/comms-app-react-native-videocall/node_modules/@react-navigation/native",
+    "licenseFile": "node_modules/comms-app-react-native-videocall/node_modules/@react-navigation/native/LICENSE"
   },
   "@react-navigation/routers@6.1.3": {
     "licenses": "MIT",
     "repository": "https://github.com/react-navigation/react-navigation",
-    "path": "node_modules/comms-app-react-native-videoconference/node_modules/@react-navigation/routers",
-    "licenseFile": "node_modules/comms-app-react-native-videoconference/node_modules/@react-navigation/routers/LICENSE"
+    "path": "node_modules/comms-app-react-native-videocall/node_modules/@react-navigation/routers",
+    "licenseFile": "node_modules/comms-app-react-native-videocall/node_modules/@react-navigation/routers/LICENSE"
   },
   "@release-it/conventional-changelog@2.0.1": {
     "licenses": "MIT",
@@ -1554,104 +1554,104 @@
     "repository": "https://github.com/gregberge/svgr/tree/master/packages/babel-plugin-add-jsx-attribute",
     "publisher": "Greg Bergé",
     "email": "berge.greg@gmail.com",
-    "path": "node_modules/comms-app-react-native-videoconference/node_modules/@svgr/babel-plugin-add-jsx-attribute",
-    "licenseFile": "node_modules/comms-app-react-native-videoconference/node_modules/@svgr/babel-plugin-add-jsx-attribute/LICENSE"
+    "path": "node_modules/comms-app-react-native-videocall/node_modules/@svgr/babel-plugin-add-jsx-attribute",
+    "licenseFile": "node_modules/comms-app-react-native-videocall/node_modules/@svgr/babel-plugin-add-jsx-attribute/LICENSE"
   },
   "@svgr/babel-plugin-remove-jsx-attribute@6.3.1": {
     "licenses": "MIT",
     "repository": "https://github.com/gregberge/svgr/tree/master/packages/babel-plugin-remove-jsx-attribute",
     "publisher": "Greg Bergé",
     "email": "berge.greg@gmail.com",
-    "path": "node_modules/comms-app-react-native-videoconference/node_modules/@svgr/babel-plugin-remove-jsx-attribute",
-    "licenseFile": "node_modules/comms-app-react-native-videoconference/node_modules/@svgr/babel-plugin-remove-jsx-attribute/LICENSE"
+    "path": "node_modules/comms-app-react-native-videocall/node_modules/@svgr/babel-plugin-remove-jsx-attribute",
+    "licenseFile": "node_modules/comms-app-react-native-videocall/node_modules/@svgr/babel-plugin-remove-jsx-attribute/LICENSE"
   },
   "@svgr/babel-plugin-remove-jsx-empty-expression@6.3.1": {
     "licenses": "MIT",
     "repository": "https://github.com/gregberge/svgr/tree/master/packages/babel-plugin-remove-jsx-empty-expression",
     "publisher": "Greg Bergé",
     "email": "berge.greg@gmail.com",
-    "path": "node_modules/comms-app-react-native-videoconference/node_modules/@svgr/babel-plugin-remove-jsx-empty-expression",
-    "licenseFile": "node_modules/comms-app-react-native-videoconference/node_modules/@svgr/babel-plugin-remove-jsx-empty-expression/LICENSE"
+    "path": "node_modules/comms-app-react-native-videocall/node_modules/@svgr/babel-plugin-remove-jsx-empty-expression",
+    "licenseFile": "node_modules/comms-app-react-native-videocall/node_modules/@svgr/babel-plugin-remove-jsx-empty-expression/LICENSE"
   },
   "@svgr/babel-plugin-replace-jsx-attribute-value@6.3.1": {
     "licenses": "MIT",
     "repository": "https://github.com/gregberge/svgr/tree/master/packages/babel-plugin-replace-jsx-attribute-value",
     "publisher": "Greg Bergé",
     "email": "berge.greg@gmail.com",
-    "path": "node_modules/comms-app-react-native-videoconference/node_modules/@svgr/babel-plugin-replace-jsx-attribute-value",
-    "licenseFile": "node_modules/comms-app-react-native-videoconference/node_modules/@svgr/babel-plugin-replace-jsx-attribute-value/LICENSE"
+    "path": "node_modules/comms-app-react-native-videocall/node_modules/@svgr/babel-plugin-replace-jsx-attribute-value",
+    "licenseFile": "node_modules/comms-app-react-native-videocall/node_modules/@svgr/babel-plugin-replace-jsx-attribute-value/LICENSE"
   },
   "@svgr/babel-plugin-svg-dynamic-title@6.3.1": {
     "licenses": "MIT",
     "repository": "https://github.com/gregberge/svgr/tree/master/packages/babel-plugin-svg-dynamic-title",
     "publisher": "Greg Bergé",
     "email": "berge.greg@gmail.com",
-    "path": "node_modules/comms-app-react-native-videoconference/node_modules/@svgr/babel-plugin-svg-dynamic-title",
-    "licenseFile": "node_modules/comms-app-react-native-videoconference/node_modules/@svgr/babel-plugin-svg-dynamic-title/LICENSE"
+    "path": "node_modules/comms-app-react-native-videocall/node_modules/@svgr/babel-plugin-svg-dynamic-title",
+    "licenseFile": "node_modules/comms-app-react-native-videocall/node_modules/@svgr/babel-plugin-svg-dynamic-title/LICENSE"
   },
   "@svgr/babel-plugin-svg-em-dimensions@6.3.1": {
     "licenses": "MIT",
     "repository": "https://github.com/gregberge/svgr/tree/master/packages/babel-plugin-svg-em-dimensions",
     "publisher": "Greg Bergé",
     "email": "berge.greg@gmail.com",
-    "path": "node_modules/comms-app-react-native-videoconference/node_modules/@svgr/babel-plugin-svg-em-dimensions",
-    "licenseFile": "node_modules/comms-app-react-native-videoconference/node_modules/@svgr/babel-plugin-svg-em-dimensions/LICENSE"
+    "path": "node_modules/comms-app-react-native-videocall/node_modules/@svgr/babel-plugin-svg-em-dimensions",
+    "licenseFile": "node_modules/comms-app-react-native-videocall/node_modules/@svgr/babel-plugin-svg-em-dimensions/LICENSE"
   },
   "@svgr/babel-plugin-transform-react-native-svg@6.3.1": {
     "licenses": "MIT",
     "repository": "https://github.com/gregberge/svgr/tree/master/packages/babel-plugin-transform-react-native-svg",
     "publisher": "Greg Bergé",
     "email": "berge.greg@gmail.com",
-    "path": "node_modules/comms-app-react-native-videoconference/node_modules/@svgr/babel-plugin-transform-react-native-svg",
-    "licenseFile": "node_modules/comms-app-react-native-videoconference/node_modules/@svgr/babel-plugin-transform-react-native-svg/LICENSE"
+    "path": "node_modules/comms-app-react-native-videocall/node_modules/@svgr/babel-plugin-transform-react-native-svg",
+    "licenseFile": "node_modules/comms-app-react-native-videocall/node_modules/@svgr/babel-plugin-transform-react-native-svg/LICENSE"
   },
   "@svgr/babel-plugin-transform-svg-component@6.3.1": {
     "licenses": "MIT",
     "repository": "https://github.com/gregberge/svgr/tree/master/packages/babel-plugin-transform-svg-component",
     "publisher": "Greg Bergé",
     "email": "berge.greg@gmail.com",
-    "path": "node_modules/comms-app-react-native-videoconference/node_modules/@svgr/babel-plugin-transform-svg-component",
-    "licenseFile": "node_modules/comms-app-react-native-videoconference/node_modules/@svgr/babel-plugin-transform-svg-component/LICENSE"
+    "path": "node_modules/comms-app-react-native-videocall/node_modules/@svgr/babel-plugin-transform-svg-component",
+    "licenseFile": "node_modules/comms-app-react-native-videocall/node_modules/@svgr/babel-plugin-transform-svg-component/LICENSE"
   },
   "@svgr/babel-preset@6.3.1": {
     "licenses": "MIT",
     "repository": "https://github.com/gregberge/svgr/tree/master/packages/babel-preset",
     "publisher": "Greg Bergé",
     "email": "berge.greg@gmail.com",
-    "path": "node_modules/comms-app-react-native-videoconference/node_modules/@svgr/babel-preset",
-    "licenseFile": "node_modules/comms-app-react-native-videoconference/node_modules/@svgr/babel-preset/LICENSE"
+    "path": "node_modules/comms-app-react-native-videocall/node_modules/@svgr/babel-preset",
+    "licenseFile": "node_modules/comms-app-react-native-videocall/node_modules/@svgr/babel-preset/LICENSE"
   },
   "@svgr/core@6.3.1": {
     "licenses": "MIT",
     "repository": "https://github.com/gregberge/svgr/tree/master/packages/core",
     "publisher": "Greg Bergé",
     "email": "berge.greg@gmail.com",
-    "path": "node_modules/comms-app-react-native-videoconference/node_modules/@svgr/core",
-    "licenseFile": "node_modules/comms-app-react-native-videoconference/node_modules/@svgr/core/LICENSE"
+    "path": "node_modules/comms-app-react-native-videocall/node_modules/@svgr/core",
+    "licenseFile": "node_modules/comms-app-react-native-videocall/node_modules/@svgr/core/LICENSE"
   },
   "@svgr/hast-util-to-babel-ast@6.3.1": {
     "licenses": "MIT",
     "repository": "https://github.com/gregberge/svgr/tree/master/packages/hast-util-to-babel-ast",
     "publisher": "Greg Bergé",
     "email": "berge.greg@gmail.com",
-    "path": "node_modules/comms-app-react-native-videoconference/node_modules/@svgr/hast-util-to-babel-ast",
-    "licenseFile": "node_modules/comms-app-react-native-videoconference/node_modules/@svgr/hast-util-to-babel-ast/LICENSE"
+    "path": "node_modules/comms-app-react-native-videocall/node_modules/@svgr/hast-util-to-babel-ast",
+    "licenseFile": "node_modules/comms-app-react-native-videocall/node_modules/@svgr/hast-util-to-babel-ast/LICENSE"
   },
   "@svgr/plugin-jsx@6.3.1": {
     "licenses": "MIT",
     "repository": "https://github.com/gregberge/svgr/tree/master/packages/plugin-jsx",
     "publisher": "Greg Bergé",
     "email": "berge.greg@gmail.com",
-    "path": "node_modules/comms-app-react-native-videoconference/node_modules/@svgr/plugin-jsx",
-    "licenseFile": "node_modules/comms-app-react-native-videoconference/node_modules/@svgr/plugin-jsx/LICENSE"
+    "path": "node_modules/comms-app-react-native-videocall/node_modules/@svgr/plugin-jsx",
+    "licenseFile": "node_modules/comms-app-react-native-videocall/node_modules/@svgr/plugin-jsx/LICENSE"
   },
   "@svgr/plugin-svgo@6.3.1": {
     "licenses": "MIT",
     "repository": "https://github.com/gregberge/svgr/tree/master/packages/plugin-svgo",
     "publisher": "Greg Bergé",
     "email": "berge.greg@gmail.com",
-    "path": "node_modules/comms-app-react-native-videoconference/node_modules/@svgr/plugin-svgo",
-    "licenseFile": "node_modules/comms-app-react-native-videoconference/node_modules/@svgr/plugin-svgo/LICENSE"
+    "path": "node_modules/comms-app-react-native-videocall/node_modules/@svgr/plugin-svgo",
+    "licenseFile": "node_modules/comms-app-react-native-videocall/node_modules/@svgr/plugin-svgo/LICENSE"
   },
   "@szmarczak/http-timer@1.1.2": {
     "licenses": "MIT",
@@ -1689,8 +1689,8 @@
     "publisher": "Isaac Z. Schlueter",
     "email": "i@izs.me",
     "url": "http://blog.izs.me/",
-    "path": "node_modules/comms-app-react-native-videoconference/node_modules/@trysound/sax",
-    "licenseFile": "node_modules/comms-app-react-native-videoconference/node_modules/@trysound/sax/LICENSE"
+    "path": "node_modules/comms-app-react-native-videocall/node_modules/@trysound/sax",
+    "licenseFile": "node_modules/comms-app-react-native-videocall/node_modules/@trysound/sax/LICENSE"
   },
   "@types/babel__core@7.1.19": {
     "licenses": "MIT",
@@ -1743,8 +1743,8 @@
   "@types/hammerjs@2.0.41": {
     "licenses": "MIT",
     "repository": "https://github.com/DefinitelyTyped/DefinitelyTyped",
-    "path": "node_modules/comms-app-react-native-videoconference/node_modules/@types/hammerjs",
-    "licenseFile": "node_modules/comms-app-react-native-videoconference/node_modules/@types/hammerjs/LICENSE"
+    "path": "node_modules/comms-app-react-native-videocall/node_modules/@types/hammerjs",
+    "licenseFile": "node_modules/comms-app-react-native-videocall/node_modules/@types/hammerjs/LICENSE"
   },
   "@types/hoist-non-react-statics@3.3.1": {
     "licenses": "MIT",
@@ -1847,8 +1847,8 @@
   "@types/react-native@0.64.1": {
     "licenses": "MIT",
     "repository": "https://github.com/DefinitelyTyped/DefinitelyTyped",
-    "path": "node_modules/comms-app-react-native-videoconference/node_modules/@types/react-native",
-    "licenseFile": "node_modules/comms-app-react-native-videoconference/node_modules/@types/react-native/LICENSE"
+    "path": "node_modules/comms-app-react-native-videocall/node_modules/@types/react-native",
+    "licenseFile": "node_modules/comms-app-react-native-videocall/node_modules/@types/react-native/LICENSE"
   },
   "@types/react-native@0.67.2": {
     "licenses": "MIT",
@@ -2393,8 +2393,8 @@
     "licenses": "MIT",
     "repository": "https://github.com/axios/axios",
     "publisher": "Matt Zabriskie",
-    "path": "node_modules/comms-app-react-native-videoconference/node_modules/axios",
-    "licenseFile": "node_modules/comms-app-react-native-videoconference/node_modules/axios/LICENSE"
+    "path": "node_modules/comms-app-react-native-videocall/node_modules/axios",
+    "licenseFile": "node_modules/comms-app-react-native-videocall/node_modules/axios/LICENSE"
   },
   "axobject-query@2.2.0": {
     "licenses": "Apache-2.0",
@@ -2542,8 +2542,8 @@
     "repository": "https://github.com/fb55/boolbase",
     "publisher": "Felix Boehm",
     "email": "me@feedic.com",
-    "path": "node_modules/comms-app-react-native-videoconference/node_modules/boolbase",
-    "licenseFile": "node_modules/comms-app-react-native-videoconference/node_modules/boolbase/README.md"
+    "path": "node_modules/comms-app-react-native-videocall/node_modules/boolbase",
+    "licenseFile": "node_modules/comms-app-react-native-videocall/node_modules/boolbase/README.md"
   },
   "boxen@5.1.2": {
     "licenses": "MIT",
@@ -3052,8 +3052,8 @@
     "repository": "https://github.com/tj/commander.js",
     "publisher": "TJ Holowaychuk",
     "email": "tj@vision-media.ca",
-    "path": "node_modules/comms-app-react-native-videoconference/node_modules/svgo/node_modules/commander",
-    "licenseFile": "node_modules/comms-app-react-native-videoconference/node_modules/svgo/node_modules/commander/LICENSE"
+    "path": "node_modules/comms-app-react-native-videocall/node_modules/svgo/node_modules/commander",
+    "licenseFile": "node_modules/comms-app-react-native-videocall/node_modules/svgo/node_modules/commander/LICENSE"
   },
   "commondir@1.0.1": {
     "licenses": "MIT",
@@ -3064,10 +3064,10 @@
     "path": "node_modules/@dolbyio/comms-uikit-react-native/node_modules/commondir",
     "licenseFile": "node_modules/@dolbyio/comms-uikit-react-native/node_modules/commondir/LICENSE"
   },
-  "comms-app-react-native-videoconference@0.0.1": {
+  "comms-app-react-native-videocall@0.0.1": {
     "licenses": "UNLICENSED",
     "private": true,
-    "path": "node_modules/comms-app-react-native-videoconference"
+    "path": "node_modules/comms-app-react-native-videocall"
   },
   "comms-sdk-react-native-showcase@1.0.0": {
     "licenses": "UNLICENSED",
@@ -3346,16 +3346,16 @@
     "repository": "https://github.com/fb55/css-select",
     "publisher": "Felix Boehm",
     "email": "me@feedic.com",
-    "path": "node_modules/comms-app-react-native-videoconference/node_modules/svgo/node_modules/css-select",
-    "licenseFile": "node_modules/comms-app-react-native-videoconference/node_modules/svgo/node_modules/css-select/LICENSE"
+    "path": "node_modules/comms-app-react-native-videocall/node_modules/svgo/node_modules/css-select",
+    "licenseFile": "node_modules/comms-app-react-native-videocall/node_modules/svgo/node_modules/css-select/LICENSE"
   },
   "css-select@5.1.0": {
     "licenses": "BSD-2-Clause",
     "repository": "https://github.com/fb55/css-select",
     "publisher": "Felix Boehm",
     "email": "me@feedic.com",
-    "path": "node_modules/comms-app-react-native-videoconference/node_modules/css-select",
-    "licenseFile": "node_modules/comms-app-react-native-videoconference/node_modules/css-select/LICENSE"
+    "path": "node_modules/comms-app-react-native-videocall/node_modules/css-select",
+    "licenseFile": "node_modules/comms-app-react-native-videocall/node_modules/css-select/LICENSE"
   },
   "css-tree@1.1.3": {
     "licenses": "MIT",
@@ -3363,8 +3363,8 @@
     "publisher": "Roman Dvornov",
     "email": "rdvornov@gmail.com",
     "url": "https://github.com/lahmatiy",
-    "path": "node_modules/comms-app-react-native-videoconference/node_modules/css-tree",
-    "licenseFile": "node_modules/comms-app-react-native-videoconference/node_modules/css-tree/LICENSE"
+    "path": "node_modules/comms-app-react-native-videocall/node_modules/css-tree",
+    "licenseFile": "node_modules/comms-app-react-native-videocall/node_modules/css-tree/LICENSE"
   },
   "css-what@6.1.0": {
     "licenses": "BSD-2-Clause",
@@ -3372,8 +3372,8 @@
     "publisher": "Felix Böhm",
     "email": "me@feedic.com",
     "url": "http://feedic.com",
-    "path": "node_modules/comms-app-react-native-videoconference/node_modules/css-what",
-    "licenseFile": "node_modules/comms-app-react-native-videoconference/node_modules/css-what/LICENSE"
+    "path": "node_modules/comms-app-react-native-videocall/node_modules/css-what",
+    "licenseFile": "node_modules/comms-app-react-native-videocall/node_modules/css-what/LICENSE"
   },
   "csso@4.2.0": {
     "licenses": "MIT",
@@ -3381,8 +3381,8 @@
     "publisher": "Sergey Kryzhanovsky",
     "email": "skryzhanovsky@ya.ru",
     "url": "https://github.com/afelix",
-    "path": "node_modules/comms-app-react-native-videoconference/node_modules/csso",
-    "licenseFile": "node_modules/comms-app-react-native-videoconference/node_modules/csso/LICENSE"
+    "path": "node_modules/comms-app-react-native-videocall/node_modules/csso",
+    "licenseFile": "node_modules/comms-app-react-native-videocall/node_modules/csso/LICENSE"
   },
   "cssom@0.3.8": {
     "licenses": "MIT",
@@ -3742,24 +3742,24 @@
     "repository": "https://github.com/cheeriojs/dom-renderer",
     "publisher": "Felix Boehm",
     "email": "me@feedic.com",
-    "path": "node_modules/comms-app-react-native-videoconference/node_modules/svgo/node_modules/dom-serializer",
-    "licenseFile": "node_modules/comms-app-react-native-videoconference/node_modules/svgo/node_modules/dom-serializer/LICENSE"
+    "path": "node_modules/comms-app-react-native-videocall/node_modules/svgo/node_modules/dom-serializer",
+    "licenseFile": "node_modules/comms-app-react-native-videocall/node_modules/svgo/node_modules/dom-serializer/LICENSE"
   },
   "dom-serializer@2.0.0": {
     "licenses": "MIT",
     "repository": "https://github.com/cheeriojs/dom-serializer",
     "publisher": "Felix Boehm",
     "email": "me@feedic.com",
-    "path": "node_modules/comms-app-react-native-videoconference/node_modules/dom-serializer",
-    "licenseFile": "node_modules/comms-app-react-native-videoconference/node_modules/dom-serializer/LICENSE"
+    "path": "node_modules/comms-app-react-native-videocall/node_modules/dom-serializer",
+    "licenseFile": "node_modules/comms-app-react-native-videocall/node_modules/dom-serializer/LICENSE"
   },
   "domelementtype@2.3.0": {
     "licenses": "BSD-2-Clause",
     "repository": "https://github.com/fb55/domelementtype",
     "publisher": "Felix Boehm",
     "email": "me@feedic.com",
-    "path": "node_modules/comms-app-react-native-videoconference/node_modules/domelementtype",
-    "licenseFile": "node_modules/comms-app-react-native-videoconference/node_modules/domelementtype/LICENSE"
+    "path": "node_modules/comms-app-react-native-videocall/node_modules/domelementtype",
+    "licenseFile": "node_modules/comms-app-react-native-videocall/node_modules/domelementtype/LICENSE"
   },
   "domexception@2.0.1": {
     "licenses": "MIT",
@@ -3775,32 +3775,32 @@
     "repository": "https://github.com/fb55/domhandler",
     "publisher": "Felix Boehm",
     "email": "me@feedic.com",
-    "path": "node_modules/comms-app-react-native-videoconference/node_modules/svgo/node_modules/domhandler",
-    "licenseFile": "node_modules/comms-app-react-native-videoconference/node_modules/svgo/node_modules/domhandler/LICENSE"
+    "path": "node_modules/comms-app-react-native-videocall/node_modules/svgo/node_modules/domhandler",
+    "licenseFile": "node_modules/comms-app-react-native-videocall/node_modules/svgo/node_modules/domhandler/LICENSE"
   },
   "domhandler@5.0.3": {
     "licenses": "BSD-2-Clause",
     "repository": "https://github.com/fb55/domhandler",
     "publisher": "Felix Boehm",
     "email": "me@feedic.com",
-    "path": "node_modules/comms-app-react-native-videoconference/node_modules/domhandler",
-    "licenseFile": "node_modules/comms-app-react-native-videoconference/node_modules/domhandler/LICENSE"
+    "path": "node_modules/comms-app-react-native-videocall/node_modules/domhandler",
+    "licenseFile": "node_modules/comms-app-react-native-videocall/node_modules/domhandler/LICENSE"
   },
   "domutils@2.8.0": {
     "licenses": "BSD-2-Clause",
     "repository": "https://github.com/fb55/domutils",
     "publisher": "Felix Boehm",
     "email": "me@feedic.com",
-    "path": "node_modules/comms-app-react-native-videoconference/node_modules/svgo/node_modules/domutils",
-    "licenseFile": "node_modules/comms-app-react-native-videoconference/node_modules/svgo/node_modules/domutils/LICENSE"
+    "path": "node_modules/comms-app-react-native-videocall/node_modules/svgo/node_modules/domutils",
+    "licenseFile": "node_modules/comms-app-react-native-videocall/node_modules/svgo/node_modules/domutils/LICENSE"
   },
   "domutils@3.0.1": {
     "licenses": "BSD-2-Clause",
     "repository": "https://github.com/fb55/domutils",
     "publisher": "Felix Boehm",
     "email": "me@feedic.com",
-    "path": "node_modules/comms-app-react-native-videoconference/node_modules/domutils",
-    "licenseFile": "node_modules/comms-app-react-native-videoconference/node_modules/domutils/LICENSE"
+    "path": "node_modules/comms-app-react-native-videocall/node_modules/domutils",
+    "licenseFile": "node_modules/comms-app-react-native-videocall/node_modules/domutils/LICENSE"
   },
   "dot-prop@5.3.0": {
     "licenses": "MIT",
@@ -3886,16 +3886,16 @@
     "repository": "https://github.com/fb55/entities",
     "publisher": "Felix Boehm",
     "email": "me@feedic.com",
-    "path": "node_modules/comms-app-react-native-videoconference/node_modules/svgo/node_modules/entities",
-    "licenseFile": "node_modules/comms-app-react-native-videoconference/node_modules/svgo/node_modules/entities/LICENSE"
+    "path": "node_modules/comms-app-react-native-videocall/node_modules/svgo/node_modules/entities",
+    "licenseFile": "node_modules/comms-app-react-native-videocall/node_modules/svgo/node_modules/entities/LICENSE"
   },
   "entities@4.4.0": {
     "licenses": "BSD-2-Clause",
     "repository": "https://github.com/fb55/entities",
     "publisher": "Felix Boehm",
     "email": "me@feedic.com",
-    "path": "node_modules/comms-app-react-native-videoconference/node_modules/entities",
-    "licenseFile": "node_modules/comms-app-react-native-videoconference/node_modules/entities/LICENSE"
+    "path": "node_modules/comms-app-react-native-videocall/node_modules/entities",
+    "licenseFile": "node_modules/comms-app-react-native-videocall/node_modules/entities/LICENSE"
   },
   "envinfo@7.8.1": {
     "licenses": "MIT",
@@ -4518,8 +4518,8 @@
     "publisher": "Ruben Verborgh",
     "email": "ruben@verborgh.org",
     "url": "https://ruben.verborgh.org/",
-    "path": "node_modules/comms-app-react-native-videoconference/node_modules/follow-redirects",
-    "licenseFile": "node_modules/comms-app-react-native-videoconference/node_modules/follow-redirects/LICENSE"
+    "path": "node_modules/comms-app-react-native-videocall/node_modules/follow-redirects",
+    "licenseFile": "node_modules/comms-app-react-native-videocall/node_modules/follow-redirects/LICENSE"
   },
   "for-in@1.0.2": {
     "licenses": "MIT",
@@ -6781,8 +6781,8 @@
     "licenses": "CC0-1.0",
     "repository": "https://github.com/mdn/data",
     "publisher": "Mozilla Developer Network",
-    "path": "node_modules/comms-app-react-native-videoconference/node_modules/mdn-data",
-    "licenseFile": "node_modules/comms-app-react-native-videoconference/node_modules/mdn-data/LICENSE"
+    "path": "node_modules/comms-app-react-native-videocall/node_modules/mdn-data",
+    "licenseFile": "node_modules/comms-app-react-native-videocall/node_modules/mdn-data/LICENSE"
   },
   "meow@8.1.2": {
     "licenses": "MIT",
@@ -7282,8 +7282,8 @@
     "repository": "https://github.com/fb55/nth-check",
     "publisher": "Felix Boehm",
     "email": "me@feedic.com",
-    "path": "node_modules/comms-app-react-native-videoconference/node_modules/nth-check",
-    "licenseFile": "node_modules/comms-app-react-native-videoconference/node_modules/nth-check/LICENSE"
+    "path": "node_modules/comms-app-react-native-videocall/node_modules/nth-check",
+    "licenseFile": "node_modules/comms-app-react-native-videocall/node_modules/nth-check/LICENSE"
   },
   "nullthrows@1.1.1": {
     "licenses": "MIT",
@@ -7748,8 +7748,8 @@
     "licenses": "MIT",
     "repository": "https://github.com/es128/path-dirname",
     "publisher": "Elan Shanker",
-    "path": "node_modules/comms-app-react-native-videoconference/node_modules/path-dirname",
-    "licenseFile": "node_modules/comms-app-react-native-videoconference/node_modules/path-dirname/license"
+    "path": "node_modules/comms-app-react-native-videocall/node_modules/path-dirname",
+    "licenseFile": "node_modules/comms-app-react-native-videocall/node_modules/path-dirname/license"
   },
   "path-exists@3.0.0": {
     "licenses": "MIT",
@@ -8131,8 +8131,8 @@
     "publisher": "Sindre Sorhus",
     "email": "sindresorhus@gmail.com",
     "url": "https://sindresorhus.com",
-    "path": "node_modules/comms-app-react-native-videoconference/node_modules/query-string",
-    "licenseFile": "node_modules/comms-app-react-native-videoconference/node_modules/query-string/license"
+    "path": "node_modules/comms-app-react-native-videocall/node_modules/query-string",
+    "licenseFile": "node_modules/comms-app-react-native-videocall/node_modules/query-string/license"
   },
   "querystringify@2.2.0": {
     "licenses": "MIT",
@@ -8201,8 +8201,8 @@
   "react-freeze@1.0.3": {
     "licenses": "MIT",
     "repository": "https://github.com/software-mansion/react-freeze",
-    "path": "node_modules/comms-app-react-native-videoconference/node_modules/react-freeze",
-    "licenseFile": "node_modules/comms-app-react-native-videoconference/node_modules/react-freeze/LICENSE"
+    "path": "node_modules/comms-app-react-native-videocall/node_modules/react-freeze",
+    "licenseFile": "node_modules/comms-app-react-native-videocall/node_modules/react-freeze/LICENSE"
   },
   "react-intl@6.1.1": {
     "licenses": "BSD-3-Clause",
@@ -8244,8 +8244,8 @@
     "publisher": "Lochlan Wansbrough",
     "email": "lochie@live.com",
     "url": "http://lwansbrough.com",
-    "path": "node_modules/comms-app-react-native-videoconference/node_modules/react-native-camera",
-    "licenseFile": "node_modules/comms-app-react-native-videoconference/node_modules/react-native-camera/LICENSE"
+    "path": "node_modules/comms-app-react-native-videocall/node_modules/react-native-camera",
+    "licenseFile": "node_modules/comms-app-react-native-videocall/node_modules/react-native-camera/LICENSE"
   },
   "react-native-codegen@0.0.8": {
     "licenses": "MIT",
@@ -8258,8 +8258,8 @@
     "repository": "https://github.com/software-mansion/react-native-gesture-handler",
     "publisher": "Krzysztof Magiera",
     "email": "krzys.magiera@gmail.com",
-    "path": "node_modules/comms-app-react-native-videoconference/node_modules/react-native-gesture-handler",
-    "licenseFile": "node_modules/comms-app-react-native-videoconference/node_modules/react-native-gesture-handler/LICENSE"
+    "path": "node_modules/comms-app-react-native-videocall/node_modules/react-native-gesture-handler",
+    "licenseFile": "node_modules/comms-app-react-native-videocall/node_modules/react-native-gesture-handler/LICENSE"
   },
   "react-native-linear-gradient@2.6.2": {
     "licenses": "MIT",
@@ -8275,23 +8275,23 @@
     "repository": "https://github.com/react-native-community/react-native-permissions",
     "publisher": "Mathieu Acthernoene",
     "email": "zoontek@gmail.com",
-    "path": "node_modules/comms-app-react-native-videoconference/node_modules/react-native-qrcode-scanner/node_modules/react-native-permissions",
-    "licenseFile": "node_modules/comms-app-react-native-videoconference/node_modules/react-native-qrcode-scanner/node_modules/react-native-permissions/LICENSE"
+    "path": "node_modules/comms-app-react-native-videocall/node_modules/react-native-qrcode-scanner/node_modules/react-native-permissions",
+    "licenseFile": "node_modules/comms-app-react-native-videocall/node_modules/react-native-qrcode-scanner/node_modules/react-native-permissions/LICENSE"
   },
   "react-native-permissions@3.6.1": {
     "licenses": "MIT",
     "repository": "https://github.com/zoontek/react-native-permissions",
     "publisher": "Mathieu Acthernoene",
     "email": "zoontek@gmail.com",
-    "path": "node_modules/comms-app-react-native-videoconference/node_modules/react-native-permissions",
-    "licenseFile": "node_modules/comms-app-react-native-videoconference/node_modules/react-native-permissions/LICENSE"
+    "path": "node_modules/comms-app-react-native-videocall/node_modules/react-native-permissions",
+    "licenseFile": "node_modules/comms-app-react-native-videocall/node_modules/react-native-permissions/LICENSE"
   },
   "react-native-qrcode-scanner@1.5.5": {
     "licenses": "MIT",
     "repository": "https://github.com/moaazsidat/react-native-qrcode-scanner",
     "publisher": "Moaaz Sidat",
-    "path": "node_modules/comms-app-react-native-videoconference/node_modules/react-native-qrcode-scanner",
-    "licenseFile": "node_modules/comms-app-react-native-videoconference/node_modules/react-native-qrcode-scanner/LICENSE.md"
+    "path": "node_modules/comms-app-react-native-videocall/node_modules/react-native-qrcode-scanner",
+    "licenseFile": "node_modules/comms-app-react-native-videocall/node_modules/react-native-qrcode-scanner/LICENSE.md"
   },
   "react-native-reanimated@2.10.0": {
     "licenses": "MIT",
@@ -8306,8 +8306,8 @@
     "repository": "https://github.com/th3rdwave/react-native-safe-area-context",
     "publisher": "Janic Duplessis",
     "email": "janicduplessis@gmail.com",
-    "path": "node_modules/comms-app-react-native-videoconference/node_modules/react-native-safe-area-context",
-    "licenseFile": "node_modules/comms-app-react-native-videoconference/node_modules/react-native-safe-area-context/LICENSE"
+    "path": "node_modules/comms-app-react-native-videocall/node_modules/react-native-safe-area-context",
+    "licenseFile": "node_modules/comms-app-react-native-videocall/node_modules/react-native-safe-area-context/LICENSE"
   },
   "react-native-safe-modules@1.0.3": {
     "licenses": "MIT",
@@ -8322,21 +8322,21 @@
     "repository": "https://github.com/software-mansion/react-native-screens",
     "publisher": "Krzysztof Magiera",
     "email": "krzys.magiera@gmail.com",
-    "path": "node_modules/comms-app-react-native-videoconference/node_modules/react-native-screens",
-    "licenseFile": "node_modules/comms-app-react-native-videoconference/node_modules/react-native-screens/LICENSE"
+    "path": "node_modules/comms-app-react-native-videocall/node_modules/react-native-screens",
+    "licenseFile": "node_modules/comms-app-react-native-videocall/node_modules/react-native-screens/LICENSE"
   },
   "react-native-svg-transformer@1.0.0": {
     "licenses": "MIT",
     "repository": "https://github.com/kristerkari/react-native-svg-transformer",
     "publisher": "Krister Kari",
-    "path": "node_modules/comms-app-react-native-videoconference/node_modules/react-native-svg-transformer",
-    "licenseFile": "node_modules/comms-app-react-native-videoconference/node_modules/react-native-svg-transformer/LICENSE"
+    "path": "node_modules/comms-app-react-native-videocall/node_modules/react-native-svg-transformer",
+    "licenseFile": "node_modules/comms-app-react-native-videocall/node_modules/react-native-svg-transformer/LICENSE"
   },
   "react-native-svg@12.4.4": {
     "licenses": "MIT",
     "repository": "https://github.com/react-native-community/react-native-svg",
-    "path": "node_modules/comms-app-react-native-videoconference/node_modules/react-native-svg",
-    "licenseFile": "node_modules/comms-app-react-native-videoconference/node_modules/react-native-svg/LICENSE"
+    "path": "node_modules/comms-app-react-native-videocall/node_modules/react-native-svg",
+    "licenseFile": "node_modules/comms-app-react-native-videocall/node_modules/react-native-svg/LICENSE"
   },
   "react-native@0.67.2": {
     "licenses": "MIT",
@@ -9340,8 +9340,8 @@
     "repository": "https://github.com/Two-Screen/stable",
     "publisher": "Angry Bytes",
     "email": "info@angrybytes.com",
-    "path": "node_modules/comms-app-react-native-videoconference/node_modules/stable",
-    "licenseFile": "node_modules/comms-app-react-native-videoconference/node_modules/stable/README.md"
+    "path": "node_modules/comms-app-react-native-videocall/node_modules/stable",
+    "licenseFile": "node_modules/comms-app-react-native-videocall/node_modules/stable/README.md"
   },
   "stack-utils@2.0.5": {
     "licenses": "MIT",
@@ -9608,8 +9608,8 @@
     "licenses": "MIT",
     "repository": "https://github.com/Rich-Harris/svg-parser",
     "publisher": "Rich Harris",
-    "path": "node_modules/comms-app-react-native-videoconference/node_modules/svg-parser",
-    "licenseFile": "node_modules/comms-app-react-native-videoconference/node_modules/svg-parser/README.md"
+    "path": "node_modules/comms-app-react-native-videocall/node_modules/svg-parser",
+    "licenseFile": "node_modules/comms-app-react-native-videocall/node_modules/svg-parser/README.md"
   },
   "svgo@2.8.0": {
     "licenses": "MIT",
@@ -9617,8 +9617,8 @@
     "publisher": "Kir Belevich",
     "email": "kir@belevi.ch",
     "url": "https://github.com/deepsweet",
-    "path": "node_modules/comms-app-react-native-videoconference/node_modules/svgo",
-    "licenseFile": "node_modules/comms-app-react-native-videoconference/node_modules/svgo/LICENSE"
+    "path": "node_modules/comms-app-react-native-videocall/node_modules/svgo",
+    "licenseFile": "node_modules/comms-app-react-native-videocall/node_modules/svgo/LICENSE"
   },
   "symbol-tree@3.2.4": {
     "licenses": "MIT",
@@ -10210,8 +10210,8 @@
     "repository": "https://github.com/satya164/use-latest-callback",
     "publisher": "Satyajit Sahoo",
     "email": "satyajit.happy@gmail.com",
-    "path": "node_modules/comms-app-react-native-videoconference/node_modules/use-latest-callback",
-    "licenseFile": "node_modules/comms-app-react-native-videoconference/node_modules/use-latest-callback/README.md"
+    "path": "node_modules/comms-app-react-native-videocall/node_modules/use-latest-callback",
+    "licenseFile": "node_modules/comms-app-react-native-videocall/node_modules/use-latest-callback/README.md"
   },
   "use-subscription@1.8.0": {
     "licenses": "MIT",
@@ -10343,8 +10343,8 @@
     "repository": "https://github.com/satya164/warn-once",
     "publisher": "Satyajit Sahoo",
     "email": "satyajit.happy@gmail.com",
-    "path": "node_modules/comms-app-react-native-videoconference/node_modules/warn-once",
-    "licenseFile": "node_modules/comms-app-react-native-videoconference/node_modules/warn-once/LICENSE"
+    "path": "node_modules/comms-app-react-native-videocall/node_modules/warn-once",
+    "licenseFile": "node_modules/comms-app-react-native-videocall/node_modules/warn-once/LICENSE"
   },
   "wcwidth@1.0.1": {
     "licenses": "MIT",
