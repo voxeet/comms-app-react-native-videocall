@@ -36,30 +36,34 @@ The React Native example app is hosted in a yarn-based mono-repo. There are shar
 
 Get the code by cloning this repo using git.
 
-``` bash
+```bash
 git clone git@github.com:dolbyio-samples/comms-app-react-native-videocall.git
-
 ```
 
-Once cloned, open a terminal in the project directory, and install dependencies with yarn.
+Go to the project directory, and install the dependencies with yarn.
 
-``` bash
+```bash
 cd comms-app-react-native-videocall
 yarn install
-
 ```
 
-## Building the iOS App
+If you do not have it already, install `ios-deploy` globally on your machine.
+
+```bash
+npm install -g ios-deploy
+```
+
+## Building the iOS app
 
 To build the iOS app, we install the additional iOS dependencies with Cocoapod. Perform the following steps
 
-``` bash
+```bash
 cd examples/mobile/ios
 pod install
 cd ../../../
 ```
 
-If you get this error - **xcrun: error: SDK "iphoneos" cannot be located**,  follow the steps in the selected answer [here](https://stackoverflow.com/questions/68565356/xcrun-error-sdk-iphoneos-cannot-be-located)
+> Note: If you get this error - `xcrun: error: SDK "iphoneos" cannot be located`, follow the steps in the selected answer [here](https://stackoverflow.com/questions/68565356/xcrun-error-sdk-iphoneos-cannot-be-located).
 
 ### Running the app
 
@@ -69,23 +73,25 @@ The first terminal window is required to run the Metro JS bundler.
 
 In that window, run the following command
 
-``` bash
-yarn workspace comms-app-react-native-videoconference start 
+```bash
+yarn workspace comms-app-react-native-videocall start 
 ```
 
 In the other window, run this command for the iOS simulator
 
-``` bash
-yarn workspace comms-app-react-native-videoconference ios
+```bash
+yarn workspace comms-app-react-native-videocall ios
 ```
 
 Or run this command for the iOS device
 
-``` bash
-yarn workspace comms-app-react-native-videoconference ios --device
+```bash
+yarn workspace comms-app-react-native-videocall ios --device
 ```
 
 You will see the following screen after the app compiles. This process should take a few minutes. If you see a blank screen, please wait before reloading the app through the metro interface (by pressing `r` on the first terminal window you opened).
+
+> Note: If you encounter the error `DolbyIOVideoCall.xcodeproj: error: No profile for team 'XYZ' matching 'Dolby IO Video Call Development'`, open the workspace `examples/mobile/ios/DolbyIOVideoCall.xcworkspace` in Xcode. Open the project **DolbyIOVideoCall** and click on the tab **Signing and Capabilities**. From there, change the *Bundle Identifier* as well as the *Provisioning Profiles* for both Debug and Release modes.
 
 ## Building the Android App
 
@@ -95,7 +101,7 @@ The `local.properties` file needs to be located at `examples/mobile/android/loca
 
 The file must contain the following contents
 
-``` properties
+```properties
 sdk.dir=/path/to/Android/sdk
 ```
 
@@ -107,15 +113,14 @@ The first terminal window is required to run the Metro JS bundler.
 
 In that window, run the following command - This is optional since it is auto-run on Android.
 
-``` bash
-yarn workspace comms-app-react-native-videoconference start 
-
+```bash
+yarn workspace comms-app-react-native-videocall start
 ```
 
 In the other window, run this command - This can automatically trigger the step above if it hasn't run.
 
-``` bash
-yarn workspace comms-app-react-native-videoconference android
+```bash
+yarn workspace comms-app-react-native-videocall android
 ```
 
 ## Features
@@ -147,5 +152,3 @@ The known issues of this example app can be found [here](KNOWN-ISSUES.md).
 The Dolby.io Communications Sample for React Native and its repository are licensed under the MIT License.
 
 Third-party licenses can be found [here](third-party-licenses.json).
-
-&copy; Dolby, 2022
