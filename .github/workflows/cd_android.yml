@@ -140,7 +140,7 @@ jobs:
           ANDROID_PUBLISHER_CREDENTIALS: ${{ secrets.ANDROID_PUBLISHER_CREDENTIALS }}
         run: |
           export ANDROID_PUBLISHER_CREDENTIALS=$ANDROID_PUBLISHER_CREDENTIALS
-          cd examples/mobile/android && chmod +x ./gradlew && ./gradlew publishProdReleaseBundle --artifact-dir ./app/build/outputs/bundle/release/ --stacktrace
+          cd examples/mobile/android && chmod +x ./gradlew && ./gradlew publishProdReleaseBundle --artifact-dir ./app/build/outputs/bundle/prodRelease/ --stacktrace
 
   Android-App-Internal-Build-And-Distribute-To-Play-Store:
     if: github.event_name == 'push' && contains(github.ref, 'refs/tags/')
