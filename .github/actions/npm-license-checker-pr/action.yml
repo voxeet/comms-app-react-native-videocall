@@ -1,0 +1,103 @@
+name: "Update dependency license file"
+
+description: "license-checker generates third-party-license.json"
+
+inputs:
+  NODE_VERSION:
+    description: "Provide node version"
+    required: false
+    default: "18"
+  GITHUB_TOKEN:
+    description: "Provide access token"
+    required: false
+    default: ${{ github.token }}
+  GITHUB_REPOSITORY:
+    description: "e.g. dolbyio-samples/hello-world"
+    required: false
+    default: ${{ github.repository }}
+  GITHUB_HEAD_REF:
+    description: "Name of the branch"
+    required: false
+    default: ${{ github.head_ref }}
+  REPOSITORY_NAME:
+    description: "Name of repository - e.g. hello-world"
+    required: false
+    default: ${{ github.event.repository.name }}
+  REPOSITORY_OWNER:
+    description: "Name of owner, e.g. dolbyio-samples"
+    required: false
+    default: ${{ github.repository_owner }}
+  DOLBYIO_GH_BOT_GPG_PRIVATE_KEY:
+    description: "Commit verification is mandatory: provide gpg private key - base64"
+    required: true
+  DOLBYIO_GH_BOT_USER_SIGNING_KEY_ID:
+    description: "Commit verfication is mandatory: provide gpg signing key id"
+    required: true
+  LICENSE_FILE:
+    description: "Name of the licenses-checker output file, e.g. third-party-licenses.json"
+    required: false
+    default: 'third-party-licenses.json'
+  COMMIT_MESSAGE:
+    description: "Commit description."
+    required: false
+    default: 'Update 3rd party license file'
+  USER_NAME:
+    description: "Name of commiter"
+    required: true
+  USER_EMAIL:
+    description: "Email of commiter"
+    required: true
+  YARN_INSTALL:
+    description: "Use yarn install instead npm install - TRUE|FALSE"
+    required: false
+    default: "FALSE"
+  WORKDIR_TMP:
+    description: "Define workspace for license checker"
+    required: false
+    default: "tmp_"
+runs:
+  using: "composite"
+  steps:
+    - name: Setup Node
+      uses: actions/setup-node@v3
+      with:
+        node-version: ${{ inputs.NODE_VERSION }}
+    - name: Checkout of the code
+      run: >
+        git clone https://x-access-token:${{ inputs.GITHUB_TOKEN }}@github.com/${{ inputs.GITHUB_REPOSITORY }} ${{ inputs.WORKDIR_TMP }}
+        && cd ${{ inputs.WORKDIR_TMP }}
+        && git checkout ${{ inputs.GITHUB_HEAD_REF }}
+        && ls -la; echo "Checkout of the code - READY"
+      shell: bash
+    - name: Install dependencies and generate license-checker output file
+      run: |
+        cd ${{ inputs.WORKDIR_TMP }}
+        if [[ ${{ inputs.YARN_INSTALL }} == "TRUE" ]]; then
+          yarn install
+        else
+          npm install
+        fi
+        npm install -g license-checker \
+        && echo "license-checker ver: $(license-checker --version)" || true \
+        && license-checker --json > ${{ inputs.LICENSE_FILE }} \
+        && echo "${{ inputs.LICENSE_FILE }} is generated" \
+        && git clean -fd -e ${{ inputs.LICENSE_FILE }}
+      shell: bash
+    - name: Check license and do update if diff detected
+      run: |
+        cd ${{ inputs.WORKDIR_TMP }}
+        if [[ $(git status --porcelain) ]]; then
+          gpg --version || apt-get install gnupg
+          echo -e ${{ inputs.DOLBYIO_GH_BOT_GPG_PRIVATE_KEY }} | base64 --decode | gpg --import
+          git config --global user.signingkey ${{ inputs.DOLBYIO_GH_BOT_USER_SIGNING_KEY_ID }}
+          git config --global user.email ${{ inputs.USER_EMAIL }} \
+          && git config --global user.name ${{ inputs.USER_NAME }} \
+          && git remote set-url origin https://x-access-token:${{ inputs.GITHUB_TOKEN }}@github.com/${{ inputs.GITHUB_REPOSITORY }} \
+          && git add ${{ inputs.LICENSE_FILE }} \
+          && git commit -S -m "Update ${{ inputs.LICENSE_FILE }}" \
+          && git push origin ${{ inputs.GITHUB_HEAD_REF }} \
+          && echo "${{ inputs.LICENSE_FILE }} updated."
+        else
+          echo "${{ inputs.LICENSE_FILE }} - no update needed."
+        fi
+      shell: bash
