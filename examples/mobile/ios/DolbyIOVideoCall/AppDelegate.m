@@ -66,6 +66,11 @@ static void InitializeFlipper(UIApplication *application) {
   return [RCTLinkingManager application:application openURL:url options:options];
 }
 
+- (BOOL)application:(UIApplication *)application continueUserActivity:(NSUserActivity *)userActivity restorationHandler:(void (^)(NSArray<id<UIUserActivityRestoring>> * _Nullable))restorationHandler
+{
+  return [RCTLinkingManager application:application continueUserActivity:userActivity restorationHandler:restorationHandler];
+}
+
 // MARK: Keychain Utility
 
 /// Deletes all Keychain items accessible by this app if this is the first time the user launches the app
