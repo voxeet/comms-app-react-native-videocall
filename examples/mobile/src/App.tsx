@@ -10,12 +10,12 @@ import React from 'react';
 
 import {Navigator} from './screens/Navigator';
 import fetch from './utils/fetch.util';
-import {SHARE_LINK, SHARE_PATH, SHARE_SCHEME} from './utils/share.util';
+import {SHARE_LINK, SHARE_PATH} from './utils/share.util';
 import {validateToken} from './utils/validation.util';
 
 const App = () => {
   const linking = {
-    prefixes: [SHARE_SCHEME, SHARE_LINK],
+    prefixes: [SHARE_LINK],
     config: {
       screens: {
         UserNameInput: SHARE_PATH,
