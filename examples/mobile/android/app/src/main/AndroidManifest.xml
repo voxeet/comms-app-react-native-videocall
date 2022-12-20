@@ -3,8 +3,9 @@
   package="io.dolby.videocall">
 
   <uses-permission android:name="android.permission.INTERNET" />
-  <uses-permission android:name="android.permission.VIBRATE"/>
-  <uses-permission android:name="android.permission.CAMERA"/>
+  <uses-permission android:name="android.permission.VIBRATE" />
+  <uses-permission android:name="android.permission.CAMERA" />
+
   <application
     android:name=".MainApplication"
     android:allowBackup="false"
@@ -24,13 +25,16 @@
         <action android:name="android.intent.action.MAIN" />
         <category android:name="android.intent.category.LAUNCHER" />
       </intent-filter>
-      <intent-filter>
+      <intent-filter
+        android:autoVerify="true"
+        tools:targetApi="m">
         <action android:name="android.intent.action.VIEW" />
-
         <category android:name="android.intent.category.DEFAULT" />
         <category android:name="android.intent.category.BROWSABLE" />
-
-        <data android:scheme="dolbyio" />
+        <data
+          android:host="experience.dolby.io"
+          android:pathPrefix="/videocall"
+          android:scheme="https" />
       </intent-filter>
     </activity>
   </application>

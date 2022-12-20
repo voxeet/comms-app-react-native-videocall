@@ -10,14 +10,12 @@ import React from 'react';
 
 import {Navigator} from './screens/Navigator';
 import fetch from './utils/fetch.util';
+import {SHARE_LINK, SHARE_PATH} from './utils/share.util';
 import {validateToken} from './utils/validation.util';
-
-export const SHARE_SCHEME = 'dolbyio://';
-export const SHARE_PATH = 'conference';
 
 const App = () => {
   const linking = {
-    prefixes: [SHARE_SCHEME],
+    prefixes: [SHARE_LINK],
     config: {
       screens: {
         UserNameInput: SHARE_PATH,
