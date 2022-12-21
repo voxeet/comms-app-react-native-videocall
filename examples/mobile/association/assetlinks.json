@@ -1,0 +1,20 @@
+[
+  {
+    "relation": ["delegate_permission/common.handle_all_urls"],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "io.dolby.videocall",
+      "sha256_cert_fingerprints":
+        ["58:A4:FB:0B:52:5B:9F:92:B4:25:00:E3:E4:E1:9A:18:61:47:92:04:37:94:A1:5A:B6:DB:0E:B8:3C:D7:78:62"]
+    }
+  },
+  {
+      "relation": ["delegate_permission/common.handle_all_urls"],
+      "target": {
+        "namespace": "android_app",
+        "package_name": "io.dolby.videocall.internal",
+        "sha256_cert_fingerprints":
+          ["2E:E2:1E:A4:6F:F5:C1:C7:44:6C:9E:E8:6B:70:F9:E8:89:9D:C9:84:C2:73:2F:A4:D6:25:A3:0E:FE:31:B6:14"]
+      }
+    }
+]
