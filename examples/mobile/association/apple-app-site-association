@@ -1,0 +1,19 @@
+{
+  "applinks": {
+    "details": [
+      {
+        "appIDs": [
+          "B5PH3RUUX8.io.dolby.videocall",
+          "B5PH3RUUX8.io.dolby.videocall-internal",
+          "E4A6TDH44W.io.dolby.videocall-staging"
+        ],
+        "components": [
+          {
+            "/": "/videocall/*",
+            "comment": "Matches any URL with a path that starts with /videocall/."
+          }
+        ]
+      }
+    ]
+  }
+}
