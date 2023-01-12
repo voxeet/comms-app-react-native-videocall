@@ -61,19 +61,35 @@ export default class ConferenceService {
     return MobileSDK.conference.leave();
   }
 
-  public static stopVideo(participant: Participant) {
-    return MobileSDK.conference.stopVideo(participant);
+  public static stopRemoteVideo(participant: Participant) {
+    return MobileSDK.video.getRemote().stop(participant);
   }
 
-  public static startVideo(participant: Participant) {
-    return MobileSDK.conference.startVideo(participant);
+  public static startRemoteVideo(participant: Participant) {
+    return MobileSDK.video.getRemote().start(participant);
   }
 
-  public static stopAudio(participant: Participant) {
-    return MobileSDK.conference.stopAudio(participant);
+  public static stopRemoteAudio(participant: Participant) {
+    return MobileSDK.audio.getRemote().stop(participant);
   }
 
-  public static startAudio(participant: Participant) {
-    return MobileSDK.conference.startAudio(participant);
+  public static startRemoteAudio(participant: Participant) {
+    return MobileSDK.audio.getRemote().start(participant);
+  }
+
+  public static stopLocalVideo() {
+    return MobileSDK.video.getLocal().stop();
+  }
+
+  public static startLocalVideo() {
+    return MobileSDK.video.getLocal().start();
+  }
+
+  public static stopLocalAudio() {
+    return MobileSDK.audio.getLocal().stop();
+  }
+
+  public static startLocalAudio() {
+    return MobileSDK.audio.getLocal().start();
   }
 }
