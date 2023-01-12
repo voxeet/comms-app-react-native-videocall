@@ -333,7 +333,7 @@ PODS:
     - React-Core
   - react-native-camera/RN (4.2.1):
     - React-Core
-  - react-native-comms-sdk (3.7.0-beta.1):
+  - react-native-comms-sdk (3.7.0):
     - React-Core
     - VoxeetSDK (~> 3.7.0)
   - react-native-encrypted-storage (4.0.3):
@@ -681,7 +681,7 @@ SPEC CHECKSUMS:
   React-jsinspector: 595f76eba2176ebd8817a1fffd47b84fbdab9383
   React-logger: 23de8ea0f44fa00ee77e96060273225607fd4d78
   react-native-camera: 3eae183c1d111103963f3dd913b65d01aef8110f
-  react-native-comms-sdk: fa5f95d5a112e7de847f663e876674eaa25e3b4b
+  react-native-comms-sdk: 1774bb60cb7cdee7f585675518355710ea29e0bf
   react-native-encrypted-storage: db300a3f2f0aba1e818417c1c0a6be549038deb7
   react-native-safe-area-context: 99b24a0c5acd0d5dcac2b1a7f18c49ea317be99a
   React-perflogger: 3c9bb7372493e49036f07a82c44c8cf65cbe88db

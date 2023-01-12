@@ -1068,10 +1068,10 @@
     exec-sh "^0.3.2"
     minimist "^1.2.0"
 
-"@dolbyio/comms-sdk-react-native@^3.7.0-beta.1":
-  version "3.7.0-beta.1"
-  resolved "https://registry.yarnpkg.com/@dolbyio/comms-sdk-react-native/-/comms-sdk-react-native-3.7.0-beta.1.tgz#6029ff0bd53ac69b0bbe1eb2dee1c3bbfeade7d3"
-  integrity sha512-8Xb7AwFqxPwvYmCtAgVVKZZqwzOJ0rXMP96fUD1ZOO7DZiTeo7B1aQwrHYR9O6eF5LHjtiaORW7PfTZaj+GOhg==
+"@dolbyio/comms-sdk-react-native@^3.7.0":
+  version "3.7.0"
+  resolved "https://registry.yarnpkg.com/@dolbyio/comms-sdk-react-native/-/comms-sdk-react-native-3.7.0.tgz#409ec84e565ec3699e65233fa44129a84d251dfe"
+  integrity sha512-PIcKgRAA0h8+SokNhYuloflSyGMHaj22QshqSJXPcfLKjhWfU7tEo9q6ZdQZTAq9r7nmez55GFTC1uKJsCcZ7A==
 
 "@egjs/hammerjs@^2.0.17":
   version "2.0.17"

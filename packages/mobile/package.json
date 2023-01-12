@@ -48,7 +48,7 @@
     "registry": "https://registry.npmjs.org/"
   },
   "dependencies": {
-    "@dolbyio/comms-sdk-react-native": "^3.7.0-beta.1",
+    "@dolbyio/comms-sdk-react-native": "^3.7.0",
     "@dolbyio/comms-uikit-common": "1.0.0",
     "@gorhom/bottom-sheet": "^4",
     "@react-native-async-storage/async-storage": "^1.17.0",
