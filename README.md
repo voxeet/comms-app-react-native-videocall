@@ -40,6 +40,7 @@ This setup guide is validated on both Intel/M1-based MacBook Pro running macOS M
 * Yarn version 1.22.19
 * Node version 16.17.1
 * Npm version 8.19.2
+* A Dolby.io account
 
 ### How to get a Dolby.io account
 
