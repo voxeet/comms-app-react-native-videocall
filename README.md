@@ -4,16 +4,17 @@
 
 This project demonstrates what a simple video meeting experience is like when built for a mobile device using React Native and TypeScript. 
 
-| Use cases          | Features                                             | Tech Stack   |
-| ------------------ | ---------------------------------------------------- | ------------ |
-| 1:1 calls          | Creating or joining a conference                     | TypeScript   |
-| Group calls        | Changing camera and mic settings                     | React Native |
-| Video Conferencing | Mute and unmute participants                         | iOS          |
-|                    | Participant Lists                                    | Android      |
-|                    | Detecting if a participant is speaking               |              |
-|                    | Displaying participants in a grid (<=6 participants) |              |
-|                    | Dynamically re-ordering participants                 |              |
-|                    | Creating a shareable link                            |              |
+| Use cases          | Features                                                   | Tech Stack   |
+| ------------------ | ---------------------------------------------------------- | ------------ |
+| 1:1 calls          | Login via QR code                                          | TypeScript   |
+| Group calls        | Create, join, leave or re-join a conference                | React Native |
+| Video Conferencing | Change camera and mic settings                             | iOS          |
+|                    | Mute and unmute local or remote participants               | Android      |
+|                    | Participant Lists                                          |              |
+|                    | Detect if a participant is speaking                        |              |
+|                    | Display participants in a grid (<=6 participants)          |              |
+|                    | Dynamically re-order participants based on who is speaking |              |
+|                    | Creating a shareable link                                  |              |
 
 Want to learn more? Check out our [React Native Sample App gallery page](https://docs.dolby.io/communications-apis/docs/sample-apps-react-native)!
 
