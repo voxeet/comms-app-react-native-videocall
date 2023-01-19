@@ -1,6 +1,10 @@
 # Dolby.io Communications Video Call - React Native Mobile App
 
-![banner image](documentation/assets/banner%20image.png)
+<div style="text-align:center">
+    <img src="documentation/assets/banner%20image.png" width="175px" />
+</div>
+
+## Overview
 
 This project demonstrates what a simple video meeting experience is like when built for a mobile device using React Native and TypeScript. 
 
@@ -18,17 +22,19 @@ This project demonstrates what a simple video meeting experience is like when bu
 
 Want to learn more? Check out our [React Native Sample App gallery page](https://docs.dolby.io/communications-apis/docs/sample-apps-react-native)!
 
-## Pre-requisites
+## Getting Started
+
+### Pre-requisites
 
 This setup guide is validated on both Intel/M1-based MacBook Pro running macOS Monterey 12.6.
 
-### iOS
+#### iOS
 
 * XCode Version 14.0.1 (14A400)
 * iOS Simulator running iOS 15.5
 * Ruby Gems version 3.0.3.1
 
-### Android
+#### Android
 
 * Android studio chipmunk (2021.2.1)
 * JDK version 11
@@ -36,18 +42,18 @@ This setup guide is validated on both Intel/M1-based MacBook Pro running macOS M
 * Android emulator running API 29 or greater
 * CMake 3.18.1
 
-### Other
+#### Other
 
 * Yarn version 1.22.19
 * Node version 16.17.1
 * Npm version 8.19.2
 * A Dolby.io account
 
-### How to get a Dolby.io account
+#### How to get a Dolby.io account
 
 To setup your Dolby.io account, go to the [Dolby.io dashboard](https://dashboard.dolby.io/signup/) and complete the form. After confirming your email address, you will be logged in.  
 
-## Cloning the repo and installing the dependencies
+### Cloning the repo and installing the dependencies
 
 The React Native example app is hosted in a yarn-based mono-repo. There are shared components and libraries at the root of the project and then there are React Native-specific ones under the `example/mobile/` directory.
 
@@ -70,7 +76,7 @@ If you do not have it already, install `ios-deploy` globally on your machine.
 npm install -g ios-deploy
 ```
 
-## Building the iOS app
+### Building the iOS app
 
 To build the iOS app, we install the additional iOS dependencies with Cocoapod. Perform the following steps
 
@@ -110,7 +116,7 @@ You will see the following screen after the app compiles. This process should ta
 
 > Note: If you encounter the error `DolbyIOVideoCall.xcodeproj: error: No profile for team 'XYZ' matching 'Dolby IO Video Call Development'`, open the workspace `examples/mobile/ios/DolbyIOVideoCall.xcworkspace` in Xcode. Open the project **DolbyIOVideoCall** and click on the tab **Signing and Capabilities**. From there, change the *Bundle Identifier* as well as the *Provisioning Profiles* for both Debug and Release modes.
 
-## Building the Android app
+### Building the Android app
 
 The path to the Android SDK shall be defined either as an ENV variable or in the `local.properties` file.
 
