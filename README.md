@@ -6,7 +6,7 @@
 
 ## Overview
 
-This project demonstrates what a simple video meeting experience is like when built for a mobile device using React Native and TypeScript. 
+Build a one-to-one or small-group live video conferencing app with features like recording, a/v controls and more.
 
 | Use cases          | Features                                                   | Tech Stack   |
 | ------------------ | ---------------------------------------------------------- | ------------ |
@@ -20,7 +20,7 @@ This project demonstrates what a simple video meeting experience is like when bu
 |                    | Dynamically re-order participants based on who is speaking |              |
 |                    | Creating a shareable link                                  |              |
 
-Want to learn more? Check out our [React Native Sample App gallery page](https://docs.dolby.io/communications-apis/docs/sample-apps-react-native)!
+Want to learn more? Check out our [React Native Sample App gallery page](https://docs.dolby.io/communications-apis/docs/video-call)!
 
 ## Getting Started
 
@@ -57,13 +57,7 @@ To setup your Dolby.io account, go to the [Dolby.io dashboard](https://dashboard
 
 The React Native example app is hosted in a yarn-based mono-repo. There are shared components and libraries at the root of the project and then there are React Native-specific ones under the `example/mobile/` directory.
 
-Get the code by cloning this repo using git.
-
-```bash
-git clone git@github.com:dolbyio-samples/comms-app-react-native-videocall.git
-```
-
-Go to the project directory, and install the dependencies with yarn.
+After cloning the project repo, go to the project directory and install the dependencies with yarn.
 
 ```bash
 cd comms-app-react-native-videocall
