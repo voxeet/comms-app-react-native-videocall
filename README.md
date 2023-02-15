@@ -1,7 +1,7 @@
 # Dolby.io Communications Video Call - React Native Mobile App
 
 <p align="center">
-<img src="documentation/assets/banner%20image.png" width="175px" />
+    <img src="documentation/assets/banner%20image.png" width="175px" />
 </p>
 
 ## Overview
