@@ -3,7 +3,7 @@ name: CD Android build and distribution
 on:
   push:
     branches:
-      - main
+      - features/sdk-update-test-build
     tags:
       - '*'
 
