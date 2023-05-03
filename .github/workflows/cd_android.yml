@@ -24,8 +24,8 @@ jobs:
       - name: Cache Gradle Wrapper
         uses: actions/cache@v3
         with:
-          path: ~/.gradle/wrapper
-          key: ${{ runner.os }}-gradle-wrapper-${{ hashFiles('gradle/wrapper/gradle-wrapper.properties') }} --gradle-version 7.6.0
+          path: ~/.gradle/wrapper --gradle-version 7.6.0
+          key: ${{ runner.os }}-gradle-wrapper-${{ hashFiles('gradle/wrapper/gradle-wrapper.properties') }}
 
       - name: Install the signing certificate
         env:
@@ -82,8 +82,8 @@ jobs:
       - name: Cache Gradle Wrapper
         uses: actions/cache@v3
         with:
-          path: ~/.gradle/wrapper
-          key: ${{ runner.os }}-gradle-wrapper-${{ hashFiles('gradle/wrapper/gradle-wrapper.properties') }} --gradle-version 7.6.0
+          path: ~/.gradle/wrapper --gradle-version 7.6.0
+          key: ${{ runner.os }}-gradle-wrapper-${{ hashFiles('gradle/wrapper/gradle-wrapper.properties') }}
 
       - name: Download release artifacts
         uses: actions/download-artifact@v3
@@ -126,8 +126,8 @@ jobs:
       - name: Cache Gradle Wrapper
         uses: actions/cache@v3
         with:
-          path: ~/.gradle/wrapper
-          key: ${{ runner.os }}-gradle-wrapper-${{ hashFiles('gradle/wrapper/gradle-wrapper.properties') }} --gradle-version 7.6.0
+          path: ~/.gradle/wrapper --gradle-version 7.6.0
+          key: ${{ runner.os }}-gradle-wrapper-${{ hashFiles('gradle/wrapper/gradle-wrapper.properties') }}
 
       - name: Download release artifacts
         uses: actions/download-artifact@v3
@@ -159,8 +159,8 @@ jobs:
       - name: Cache Gradle Wrapper
         uses: actions/cache@v3
         with:
-          path: ~/.gradle/wrapper
-          key: ${{ runner.os }}-gradle-wrapper-${{ hashFiles('gradle/wrapper/gradle-wrapper.properties') }} --gradle-version 7.6.0
+          path: ~/.gradle/wrapper --gradle-version 7.6.0
+          key: ${{ runner.os }}-gradle-wrapper-${{ hashFiles('gradle/wrapper/gradle-wrapper.properties') }}
 
       - name: Install the signing certificate
         env:
