@@ -3,7 +3,7 @@ name: iOS Build and Distribution
 on:
   push:
     branches:
-      - features/test-jest-29.5.0
+      - main
     tags:
       - '*'
 

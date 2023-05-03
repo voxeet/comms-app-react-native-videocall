@@ -161,7 +161,7 @@ jobs:
         with:
           path: ~/.gradle/wrapper
           key: ${{ runner.os }}-gradle-wrapper-${{ hashFiles('gradle/wrapper/gradle-wrapper.properties') }}
-          gradle-version: 7.6
+          gradle-version: 7.6.0
 
       - name: Install the signing certificate
         env:
