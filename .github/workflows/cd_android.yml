@@ -24,7 +24,7 @@ jobs:
       - name: Cache Gradle Wrapper
         uses: actions/cache@v3
         with:
-          path: ~/.gradle/wrapper
+          path: ~/.gradle/wrapper --gradle-version=7.6
           key: ${{ runner.os }}-gradle-wrapper-${{ hashFiles('gradle/wrapper/gradle-wrapper.properties') }}
 
       - name: Install the signing certificate
@@ -82,7 +82,7 @@ jobs:
       - name: Cache Gradle Wrapper
         uses: actions/cache@v3
         with:
-          path: ~/.gradle/wrapper
+          path: ~/.gradle/wrapper --gradle-version=7.6
           key: ${{ runner.os }}-gradle-wrapper-${{ hashFiles('gradle/wrapper/gradle-wrapper.properties') }}
 
       - name: Download release artifacts
@@ -126,7 +126,7 @@ jobs:
       - name: Cache Gradle Wrapper
         uses: actions/cache@v3
         with:
-          path: ~/.gradle/wrapper
+          path: ~/.gradle/wrapper --gradle-version=7.6
           key: ${{ runner.os }}-gradle-wrapper-${{ hashFiles('gradle/wrapper/gradle-wrapper.properties') }}
 
       - name: Download release artifacts
@@ -159,7 +159,7 @@ jobs:
       - name: Cache Gradle Wrapper
         uses: actions/cache@v3
         with:
-          path: ~/.gradle/wrapper
+          path: ~/.gradle/wrapper --gradle-version=7.6
           key: ${{ runner.os }}-gradle-wrapper-${{ hashFiles('gradle/wrapper/gradle-wrapper.properties') }}
 
       - name: Install the signing certificate
