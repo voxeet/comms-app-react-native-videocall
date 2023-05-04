@@ -14,6 +14,8 @@ jobs:
       - name: Checkout source code
         uses: actions/checkout@v3
       - uses: actions/setup-node@v3
+        with:
+          node-version: '16.16.0'
       - name: Install modules
         run: yarn install
       - name: Set up JDK 11
@@ -106,7 +108,6 @@ jobs:
           export FIREBASE_APP_ID=$FIREBASE_APP_ID_ANDROID
           export GOOGLE_APPLICATION_CREDENTIALS=$GITHUB_WORKSPACE/google-app-creds.json
           source ~/.env_version
-          npm_config_yes=true npx yarn-audit-fix
           cd examples/mobile/android && chmod +x ./gradlew && ./gradlew appDistributionUploadProdRelease --stacktrace
 
   Android-Play-Store-Distribution:
