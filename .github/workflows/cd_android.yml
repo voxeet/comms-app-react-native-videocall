@@ -14,6 +14,8 @@ jobs:
       - name: Checkout source code
         uses: actions/checkout@v3
       - uses: actions/setup-node@v3
+        with:
+          node-version: 16
       - name: Install modules
         run: yarn install
       - name: Set up JDK 11
@@ -50,7 +52,7 @@ jobs:
           export KEY_ALIAS=$KEY_ALIAS
           export KEY_PASSWORD=$KEY_PASSWORD
           source ~/.env_version
-          cd examples/mobile/android && gradle assembleProdRelease bundleProdRelease
+          cd examples/mobile/android && chmod +x ./gradlew && ./gradlew assembleProdRelease bundleProdRelease
       - name: Archive production apk
         uses: actions/upload-artifact@v3
         with:
@@ -72,6 +74,8 @@ jobs:
       - name: Checkout source code
         uses: actions/checkout@v3
       - uses: actions/setup-node@v3
+        with:
+          node-version: 16
       - name: Install modules
         run: yarn install
       - name: Set up JDK 11
@@ -106,7 +110,7 @@ jobs:
           export FIREBASE_APP_ID=$FIREBASE_APP_ID_ANDROID
           export GOOGLE_APPLICATION_CREDENTIALS=$GITHUB_WORKSPACE/google-app-creds.json
           source ~/.env_version
-          cd examples/mobile/android && gradle appDistributionUploadProdRelease --stacktrace
+          cd examples/mobile/android && chmod +x ./gradlew && ./gradlew appDistributionUploadProdRelease --stacktrace
 
   Android-Play-Store-Distribution:
     if: github.event_name == 'push' && contains(github.ref, 'refs/tags/')
@@ -116,6 +120,8 @@ jobs:
       - name: Checkout source code
         uses: actions/checkout@v3
       - uses: actions/setup-node@v3
+        with:
+          node-version: 16
       - name: Install modules
         run: yarn install
       - name: Set up JDK 11
@@ -149,6 +155,8 @@ jobs:
       - name: Checkout source code
         uses: actions/checkout@v3
       - uses: actions/setup-node@v3
+        with:
+          node-version: 16
       - name: Install modules
         run: yarn install
       - name: Set up JDK 11
@@ -194,7 +202,7 @@ jobs:
           export KEY_ALIAS=$KEY_ALIAS
           export KEY_PASSWORD=$KEY_PASSWORD
           source ~/.env_version
-          cd examples/mobile/android && gradle assembleInternalRelease bundleInternalRelease --stacktrace
+          cd examples/mobile/android && chmod +x ./gradle && ./gradlew assembleInternalRelease bundleInternalRelease --stacktrace
 
       - name: Deploy to Play Store
         env:
