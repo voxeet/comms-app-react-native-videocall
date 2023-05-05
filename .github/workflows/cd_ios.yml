@@ -3,7 +3,7 @@ name: iOS Build and Distribution
 on:
   push:
     branches:
-      - main
+      - features/sdk-3.8.0-update-cd-test
     tags:
       - '*'
 
