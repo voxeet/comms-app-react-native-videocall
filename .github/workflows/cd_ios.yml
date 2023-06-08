@@ -59,6 +59,11 @@ jobs:
       - name: Install modules
         run: yarn install
 
+      # https://github.com/zoontek/react-native-permissions/issues/759
+      - name: Workaround to remove old RN permissions
+        run: |
+          rm -r node_modules/comms-app-react-native-videocall/node_modules/react-native-qrcode-scanner/node_modules/react-native-permissions
+
       - name: Setup Ruby
         uses: ruby/setup-ruby@v1.126.0
         with:
@@ -104,6 +109,11 @@ jobs:
 
       - name: Install modules
         run: yarn install
+
+      # https://github.com/zoontek/react-native-permissions/issues/759
+      - name: Workaround to remove old RN permissions
+        run: |
+          rm -r node_modules/comms-app-react-native-videocall/node_modules/react-native-qrcode-scanner/node_modules/react-native-permissions
 
       - name: Setup Ruby
         uses: ruby/setup-ruby@v1.126.0
