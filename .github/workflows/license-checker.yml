@@ -2,6 +2,9 @@ name: 'Check 3rd party licenses'
 
 on:
   pull_request:
+  push:
+    branches:
+      - android-target-api33
 
 permissions:
   contents: write
