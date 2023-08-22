@@ -6935,8 +6935,8 @@
     "publisher": "Lupo Montero",
     "email": "lupomontero@gmail.com",
     "url": "https://lupomontero.com/",
-    "path": "/home/runner/work/comms-app-react-native-videocall/comms-app-react-native-videocall/tmp_/node_modules/@dolbyio/comms-uikit-common/node_modules/psl",
-    "licenseFile": "/home/runner/work/comms-app-react-native-videocall/comms-app-react-native-videocall/tmp_/node_modules/@dolbyio/comms-uikit-common/node_modules/psl/LICENSE"
+    "path": "/home/runner/work/comms-app-react-native-videocall/comms-app-react-native-videocall/tmp_/node_modules/tough-cookie/node_modules/psl",
+    "licenseFile": "/home/runner/work/comms-app-react-native-videocall/comms-app-react-native-videocall/tmp_/node_modules/tough-cookie/node_modules/psl/LICENSE"
   },
   "pump@3.0.0": {
     "licenses": "MIT",
@@ -6951,8 +6951,8 @@
     "repository": "https://github.com/bestiejs/punycode.js",
     "publisher": "Mathias Bynens",
     "url": "https://mathiasbynens.be/",
-    "path": "/home/runner/work/comms-app-react-native-videocall/comms-app-react-native-videocall/tmp_/node_modules/eslint-plugin-jsx-a11y/node_modules/punycode",
-    "licenseFile": "/home/runner/work/comms-app-react-native-videocall/comms-app-react-native-videocall/tmp_/node_modules/eslint-plugin-jsx-a11y/node_modules/punycode/LICENSE-MIT.txt"
+    "path": "/home/runner/work/comms-app-react-native-videocall/comms-app-react-native-videocall/tmp_/node_modules/tough-cookie/node_modules/punycode",
+    "licenseFile": "/home/runner/work/comms-app-react-native-videocall/comms-app-react-native-videocall/tmp_/node_modules/tough-cookie/node_modules/punycode/LICENSE-MIT.txt"
   },
   "q@1.5.1": {
     "licenses": "MIT",
@@ -6976,8 +6976,8 @@
     "licenses": "MIT",
     "repository": "https://github.com/unshiftio/querystringify",
     "publisher": "Arnout Kazemier",
-    "path": "/home/runner/work/comms-app-react-native-videocall/comms-app-react-native-videocall/tmp_/node_modules/@dolbyio/comms-uikit-common/node_modules/querystringify",
-    "licenseFile": "/home/runner/work/comms-app-react-native-videocall/comms-app-react-native-videocall/tmp_/node_modules/@dolbyio/comms-uikit-common/node_modules/querystringify/LICENSE"
+    "path": "/home/runner/work/comms-app-react-native-videocall/comms-app-react-native-videocall/tmp_/node_modules/tough-cookie/node_modules/querystringify",
+    "licenseFile": "/home/runner/work/comms-app-react-native-videocall/comms-app-react-native-videocall/tmp_/node_modules/tough-cookie/node_modules/querystringify/LICENSE"
   },
   "queue-microtask@1.2.3": {
     "licenses": "MIT",
@@ -7412,8 +7412,8 @@
     "licenses": "MIT",
     "repository": "https://github.com/unshiftio/requires-port",
     "publisher": "Arnout Kazemier",
-    "path": "/home/runner/work/comms-app-react-native-videocall/comms-app-react-native-videocall/tmp_/node_modules/@dolbyio/comms-uikit-common/node_modules/requires-port",
-    "licenseFile": "/home/runner/work/comms-app-react-native-videocall/comms-app-react-native-videocall/tmp_/node_modules/@dolbyio/comms-uikit-common/node_modules/requires-port/LICENSE"
+    "path": "/home/runner/work/comms-app-react-native-videocall/comms-app-react-native-videocall/tmp_/node_modules/tough-cookie/node_modules/requires-port",
+    "licenseFile": "/home/runner/work/comms-app-react-native-videocall/comms-app-react-native-videocall/tmp_/node_modules/tough-cookie/node_modules/requires-port/LICENSE"
   },
   "reselect@4.1.7": {
     "licenses": "MIT",
@@ -8491,13 +8491,21 @@
     "path": "/home/runner/work/comms-app-react-native-videocall/comms-app-react-native-videocall/tmp_/node_modules/@dolbyio/comms-uikit-react-native/node_modules/toidentifier",
     "licenseFile": "/home/runner/work/comms-app-react-native-videocall/comms-app-react-native-videocall/tmp_/node_modules/@dolbyio/comms-uikit-react-native/node_modules/toidentifier/LICENSE"
   },
-  "tough-cookie@4.1.3": {
+  "tough-cookie@4.1.2": {
     "licenses": "BSD-3-Clause",
     "repository": "https://github.com/salesforce/tough-cookie",
     "publisher": "Jeremy Stashewsky",
     "email": "jstash@gmail.com",
     "path": "/home/runner/work/comms-app-react-native-videocall/comms-app-react-native-videocall/tmp_/node_modules/@dolbyio/comms-uikit-common/node_modules/tough-cookie",
     "licenseFile": "/home/runner/work/comms-app-react-native-videocall/comms-app-react-native-videocall/tmp_/node_modules/@dolbyio/comms-uikit-common/node_modules/tough-cookie/LICENSE"
+  },
+  "tough-cookie@4.1.3": {
+    "licenses": "BSD-3-Clause",
+    "repository": "https://github.com/salesforce/tough-cookie",
+    "publisher": "Jeremy Stashewsky",
+    "email": "jstash@gmail.com",
+    "path": "/home/runner/work/comms-app-react-native-videocall/comms-app-react-native-videocall/tmp_/node_modules/tough-cookie",
+    "licenseFile": "/home/runner/work/comms-app-react-native-videocall/comms-app-react-native-videocall/tmp_/node_modules/tough-cookie/LICENSE"
   },
   "tr46@0.0.3": {
     "licenses": "MIT",
@@ -8765,8 +8773,8 @@
     "repository": "https://github.com/RyanZim/universalify",
     "publisher": "Ryan Zimmerman",
     "email": "opensrc@ryanzim.com",
-    "path": "/home/runner/work/comms-app-react-native-videocall/comms-app-react-native-videocall/tmp_/node_modules/@dolbyio/comms-uikit-common/node_modules/universalify",
-    "licenseFile": "/home/runner/work/comms-app-react-native-videocall/comms-app-react-native-videocall/tmp_/node_modules/@dolbyio/comms-uikit-common/node_modules/universalify/LICENSE"
+    "path": "/home/runner/work/comms-app-react-native-videocall/comms-app-react-native-videocall/tmp_/node_modules/tough-cookie/node_modules/universalify",
+    "licenseFile": "/home/runner/work/comms-app-react-native-videocall/comms-app-react-native-videocall/tmp_/node_modules/tough-cookie/node_modules/universalify/LICENSE"
   },
   "unpipe@1.0.0": {
     "licenses": "MIT",
@@ -8811,8 +8819,8 @@
     "licenses": "MIT",
     "repository": "https://github.com/unshiftio/url-parse",
     "publisher": "Arnout Kazemier",
-    "path": "/home/runner/work/comms-app-react-native-videocall/comms-app-react-native-videocall/tmp_/node_modules/@dolbyio/comms-uikit-common/node_modules/url-parse",
-    "licenseFile": "/home/runner/work/comms-app-react-native-videocall/comms-app-react-native-videocall/tmp_/node_modules/@dolbyio/comms-uikit-common/node_modules/url-parse/LICENSE"
+    "path": "/home/runner/work/comms-app-react-native-videocall/comms-app-react-native-videocall/tmp_/node_modules/tough-cookie/node_modules/url-parse",
+    "licenseFile": "/home/runner/work/comms-app-react-native-videocall/comms-app-react-native-videocall/tmp_/node_modules/tough-cookie/node_modules/url-parse/LICENSE"
   },
   "use-latest-callback@0.1.5": {
     "licenses": "MIT",
