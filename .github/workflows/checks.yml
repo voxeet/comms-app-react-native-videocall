@@ -7,6 +7,7 @@ on:
   push:
     branches:
       - main
+      - android-target-api33
 
 jobs:
   Run-Checks:
