@@ -8491,7 +8491,7 @@
     "path": "/home/runner/work/comms-app-react-native-videocall/comms-app-react-native-videocall/tmp_/node_modules/@dolbyio/comms-uikit-react-native/node_modules/toidentifier",
     "licenseFile": "/home/runner/work/comms-app-react-native-videocall/comms-app-react-native-videocall/tmp_/node_modules/@dolbyio/comms-uikit-react-native/node_modules/toidentifier/LICENSE"
   },
-  "tough-cookie@4.1.2": {
+  "tough-cookie@4.1.3": {
     "licenses": "BSD-3-Clause",
     "repository": "https://github.com/salesforce/tough-cookie",
     "publisher": "Jeremy Stashewsky",
