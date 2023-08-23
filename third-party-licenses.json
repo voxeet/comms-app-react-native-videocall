@@ -4,8 +4,8 @@
     "repository": "https://github.com/aashutoshrathi/word-wrap",
     "publisher": "Jon Schlinkert",
     "url": "https://github.com/jonschlinkert",
-    "path": "/home/runner/work/comms-app-react-native-videocall/comms-app-react-native-videocall/tmp_/node_modules/eslint-plugin-jsx-a11y/node_modules/@aashutoshrathi/word-wrap",
-    "licenseFile": "/home/runner/work/comms-app-react-native-videocall/comms-app-react-native-videocall/tmp_/node_modules/eslint-plugin-jsx-a11y/node_modules/@aashutoshrathi/word-wrap/LICENSE"
+    "path": "/home/runner/work/comms-app-react-native-videocall/comms-app-react-native-videocall/tmp_/node_modules/eslint-plugin-prettier/node_modules/@aashutoshrathi/word-wrap",
+    "licenseFile": "/home/runner/work/comms-app-react-native-videocall/comms-app-react-native-videocall/tmp_/node_modules/eslint-plugin-prettier/node_modules/@aashutoshrathi/word-wrap/LICENSE"
   },
   "@ampproject/remapping@2.2.1": {
     "licenses": "Apache-2.0",
@@ -1055,28 +1055,28 @@
     "licenses": "MIT",
     "repository": "https://github.com/eslint-community/eslint-utils",
     "publisher": "Toru Nagashima",
-    "path": "/home/runner/work/comms-app-react-native-videocall/comms-app-react-native-videocall/tmp_/node_modules/eslint-plugin-jsx-a11y/node_modules/@eslint-community/eslint-utils",
-    "licenseFile": "/home/runner/work/comms-app-react-native-videocall/comms-app-react-native-videocall/tmp_/node_modules/eslint-plugin-jsx-a11y/node_modules/@eslint-community/eslint-utils/LICENSE"
+    "path": "/home/runner/work/comms-app-react-native-videocall/comms-app-react-native-videocall/tmp_/node_modules/eslint-plugin-prettier/node_modules/@eslint-community/eslint-utils",
+    "licenseFile": "/home/runner/work/comms-app-react-native-videocall/comms-app-react-native-videocall/tmp_/node_modules/eslint-plugin-prettier/node_modules/@eslint-community/eslint-utils/LICENSE"
   },
   "@eslint-community/regexpp@4.7.0": {
     "licenses": "MIT",
     "repository": "https://github.com/eslint-community/regexpp",
     "publisher": "Toru Nagashima",
-    "path": "/home/runner/work/comms-app-react-native-videocall/comms-app-react-native-videocall/tmp_/node_modules/eslint-plugin-jsx-a11y/node_modules/@eslint-community/regexpp",
-    "licenseFile": "/home/runner/work/comms-app-react-native-videocall/comms-app-react-native-videocall/tmp_/node_modules/eslint-plugin-jsx-a11y/node_modules/@eslint-community/regexpp/LICENSE"
+    "path": "/home/runner/work/comms-app-react-native-videocall/comms-app-react-native-videocall/tmp_/node_modules/eslint-plugin-prettier/node_modules/@eslint-community/regexpp",
+    "licenseFile": "/home/runner/work/comms-app-react-native-videocall/comms-app-react-native-videocall/tmp_/node_modules/eslint-plugin-prettier/node_modules/@eslint-community/regexpp/LICENSE"
   },
   "@eslint/eslintrc@2.1.2": {
     "licenses": "MIT",
     "repository": "https://github.com/eslint/eslintrc",
     "publisher": "Nicholas C. Zakas",
-    "path": "/home/runner/work/comms-app-react-native-videocall/comms-app-react-native-videocall/tmp_/node_modules/eslint-plugin-jsx-a11y/node_modules/@eslint/eslintrc",
-    "licenseFile": "/home/runner/work/comms-app-react-native-videocall/comms-app-react-native-videocall/tmp_/node_modules/eslint-plugin-jsx-a11y/node_modules/@eslint/eslintrc/LICENSE"
+    "path": "/home/runner/work/comms-app-react-native-videocall/comms-app-react-native-videocall/tmp_/node_modules/eslint-plugin-prettier/node_modules/@eslint/eslintrc",
+    "licenseFile": "/home/runner/work/comms-app-react-native-videocall/comms-app-react-native-videocall/tmp_/node_modules/eslint-plugin-prettier/node_modules/@eslint/eslintrc/LICENSE"
   },
   "@eslint/js@8.47.0": {
     "licenses": "MIT",
     "repository": "https://github.com/eslint/eslint",
-    "path": "/home/runner/work/comms-app-react-native-videocall/comms-app-react-native-videocall/tmp_/node_modules/eslint-plugin-jsx-a11y/node_modules/@eslint/js",
-    "licenseFile": "/home/runner/work/comms-app-react-native-videocall/comms-app-react-native-videocall/tmp_/node_modules/eslint-plugin-jsx-a11y/node_modules/@eslint/js/LICENSE"
+    "path": "/home/runner/work/comms-app-react-native-videocall/comms-app-react-native-videocall/tmp_/node_modules/eslint-plugin-prettier/node_modules/@eslint/js",
+    "licenseFile": "/home/runner/work/comms-app-react-native-videocall/comms-app-react-native-videocall/tmp_/node_modules/eslint-plugin-prettier/node_modules/@eslint/js/LICENSE"
   },
   "@formatjs/ecma402-abstract@1.12.0": {
     "licenses": "MIT",
@@ -1169,22 +1169,22 @@
     "licenses": "Apache-2.0",
     "repository": "https://github.com/humanwhocodes/config-array",
     "publisher": "Nicholas C. Zakas",
-    "path": "/home/runner/work/comms-app-react-native-videocall/comms-app-react-native-videocall/tmp_/node_modules/eslint-plugin-jsx-a11y/node_modules/@humanwhocodes/config-array",
-    "licenseFile": "/home/runner/work/comms-app-react-native-videocall/comms-app-react-native-videocall/tmp_/node_modules/eslint-plugin-jsx-a11y/node_modules/@humanwhocodes/config-array/LICENSE"
+    "path": "/home/runner/work/comms-app-react-native-videocall/comms-app-react-native-videocall/tmp_/node_modules/eslint-plugin-prettier/node_modules/@humanwhocodes/config-array",
+    "licenseFile": "/home/runner/work/comms-app-react-native-videocall/comms-app-react-native-videocall/tmp_/node_modules/eslint-plugin-prettier/node_modules/@humanwhocodes/config-array/LICENSE"
   },
   "@humanwhocodes/module-importer@1.0.1": {
     "licenses": "Apache-2.0",
     "repository": "https://github.com/humanwhocodes/module-importer",
     "publisher": "Nicholas C. Zaks",
-    "path": "/home/runner/work/comms-app-react-native-videocall/comms-app-react-native-videocall/tmp_/node_modules/eslint-plugin-jsx-a11y/node_modules/@humanwhocodes/module-importer",
-    "licenseFile": "/home/runner/work/comms-app-react-native-videocall/comms-app-react-native-videocall/tmp_/node_modules/eslint-plugin-jsx-a11y/node_modules/@humanwhocodes/module-importer/LICENSE"
+    "path": "/home/runner/work/comms-app-react-native-videocall/comms-app-react-native-videocall/tmp_/node_modules/eslint-plugin-prettier/node_modules/@humanwhocodes/module-importer",
+    "licenseFile": "/home/runner/work/comms-app-react-native-videocall/comms-app-react-native-videocall/tmp_/node_modules/eslint-plugin-prettier/node_modules/@humanwhocodes/module-importer/LICENSE"
   },
   "@humanwhocodes/object-schema@1.2.1": {
     "licenses": "BSD-3-Clause",
     "repository": "https://github.com/humanwhocodes/object-schema",
     "publisher": "Nicholas C. Zakas",
-    "path": "/home/runner/work/comms-app-react-native-videocall/comms-app-react-native-videocall/tmp_/node_modules/eslint-plugin-jsx-a11y/node_modules/@humanwhocodes/object-schema",
-    "licenseFile": "/home/runner/work/comms-app-react-native-videocall/comms-app-react-native-videocall/tmp_/node_modules/eslint-plugin-jsx-a11y/node_modules/@humanwhocodes/object-schema/LICENSE"
+    "path": "/home/runner/work/comms-app-react-native-videocall/comms-app-react-native-videocall/tmp_/node_modules/eslint-plugin-prettier/node_modules/@humanwhocodes/object-schema",
+    "licenseFile": "/home/runner/work/comms-app-react-native-videocall/comms-app-react-native-videocall/tmp_/node_modules/eslint-plugin-prettier/node_modules/@humanwhocodes/object-schema/LICENSE"
   },
   "@hutson/parse-repository-url@3.0.2": {
     "licenses": "Apache-2.0",
@@ -1342,20 +1342,20 @@
   "@nodelib/fs.scandir@2.1.5": {
     "licenses": "MIT",
     "repository": "https://github.com/nodelib/nodelib/tree/master/packages/fs/fs.scandir",
-    "path": "/home/runner/work/comms-app-react-native-videocall/comms-app-react-native-videocall/tmp_/node_modules/eslint-plugin-jsx-a11y/node_modules/@nodelib/fs.scandir",
-    "licenseFile": "/home/runner/work/comms-app-react-native-videocall/comms-app-react-native-videocall/tmp_/node_modules/eslint-plugin-jsx-a11y/node_modules/@nodelib/fs.scandir/LICENSE"
+    "path": "/home/runner/work/comms-app-react-native-videocall/comms-app-react-native-videocall/tmp_/node_modules/eslint-plugin-prettier/node_modules/@nodelib/fs.scandir",
+    "licenseFile": "/home/runner/work/comms-app-react-native-videocall/comms-app-react-native-videocall/tmp_/node_modules/eslint-plugin-prettier/node_modules/@nodelib/fs.scandir/LICENSE"
   },
   "@nodelib/fs.stat@2.0.5": {
     "licenses": "MIT",
     "repository": "https://github.com/nodelib/nodelib/tree/master/packages/fs/fs.stat",
-    "path": "/home/runner/work/comms-app-react-native-videocall/comms-app-react-native-videocall/tmp_/node_modules/eslint-plugin-jsx-a11y/node_modules/@nodelib/fs.stat",
-    "licenseFile": "/home/runner/work/comms-app-react-native-videocall/comms-app-react-native-videocall/tmp_/node_modules/eslint-plugin-jsx-a11y/node_modules/@nodelib/fs.stat/LICENSE"
+    "path": "/home/runner/work/comms-app-react-native-videocall/comms-app-react-native-videocall/tmp_/node_modules/eslint-plugin-prettier/node_modules/@nodelib/fs.stat",
+    "licenseFile": "/home/runner/work/comms-app-react-native-videocall/comms-app-react-native-videocall/tmp_/node_modules/eslint-plugin-prettier/node_modules/@nodelib/fs.stat/LICENSE"
   },
   "@nodelib/fs.walk@1.2.8": {
     "licenses": "MIT",
     "repository": "https://github.com/nodelib/nodelib/tree/master/packages/fs/fs.walk",
-    "path": "/home/runner/work/comms-app-react-native-videocall/comms-app-react-native-videocall/tmp_/node_modules/eslint-plugin-jsx-a11y/node_modules/@nodelib/fs.walk",
-    "licenseFile": "/home/runner/work/comms-app-react-native-videocall/comms-app-react-native-videocall/tmp_/node_modules/eslint-plugin-jsx-a11y/node_modules/@nodelib/fs.walk/LICENSE"
+    "path": "/home/runner/work/comms-app-react-native-videocall/comms-app-react-native-videocall/tmp_/node_modules/eslint-plugin-prettier/node_modules/@nodelib/fs.walk",
+    "licenseFile": "/home/runner/work/comms-app-react-native-videocall/comms-app-react-native-videocall/tmp_/node_modules/eslint-plugin-prettier/node_modules/@nodelib/fs.walk/LICENSE"
   },
   "@react-native-async-storage/async-storage@1.19.2": {
     "licenses": "MIT",
@@ -1956,8 +1956,8 @@
   "acorn-jsx@5.3.2": {
     "licenses": "MIT",
     "repository": "https://github.com/acornjs/acorn-jsx",
-    "path": "/home/runner/work/comms-app-react-native-videocall/comms-app-react-native-videocall/tmp_/node_modules/eslint-plugin-jsx-a11y/node_modules/acorn-jsx",
-    "licenseFile": "/home/runner/work/comms-app-react-native-videocall/comms-app-react-native-videocall/tmp_/node_modules/eslint-plugin-jsx-a11y/node_modules/acorn-jsx/LICENSE"
+    "path": "/home/runner/work/comms-app-react-native-videocall/comms-app-react-native-videocall/tmp_/node_modules/eslint-plugin-prettier/node_modules/acorn-jsx",
+    "licenseFile": "/home/runner/work/comms-app-react-native-videocall/comms-app-react-native-videocall/tmp_/node_modules/eslint-plugin-prettier/node_modules/acorn-jsx/LICENSE"
   },
   "acorn-walk@7.2.0": {
     "licenses": "MIT",
@@ -1974,8 +1974,8 @@
   "acorn@8.10.0": {
     "licenses": "MIT",
     "repository": "https://github.com/acornjs/acorn",
-    "path": "/home/runner/work/comms-app-react-native-videocall/comms-app-react-native-videocall/tmp_/node_modules/eslint-plugin-jsx-a11y/node_modules/acorn",
-    "licenseFile": "/home/runner/work/comms-app-react-native-videocall/comms-app-react-native-videocall/tmp_/node_modules/eslint-plugin-jsx-a11y/node_modules/acorn/LICENSE"
+    "path": "/home/runner/work/comms-app-react-native-videocall/comms-app-react-native-videocall/tmp_/node_modules/eslint-plugin-prettier/node_modules/acorn",
+    "licenseFile": "/home/runner/work/comms-app-react-native-videocall/comms-app-react-native-videocall/tmp_/node_modules/eslint-plugin-prettier/node_modules/acorn/LICENSE"
   },
   "add-stream@1.0.0": {
     "licenses": "MIT",
@@ -1998,8 +1998,8 @@
     "licenses": "MIT",
     "repository": "https://github.com/ajv-validator/ajv",
     "publisher": "Evgeny Poberezkin",
-    "path": "/home/runner/work/comms-app-react-native-videocall/comms-app-react-native-videocall/tmp_/node_modules/eslint-plugin-jsx-a11y/node_modules/ajv",
-    "licenseFile": "/home/runner/work/comms-app-react-native-videocall/comms-app-react-native-videocall/tmp_/node_modules/eslint-plugin-jsx-a11y/node_modules/ajv/LICENSE"
+    "path": "/home/runner/work/comms-app-react-native-videocall/comms-app-react-native-videocall/tmp_/node_modules/eslint-plugin-prettier/node_modules/ajv",
+    "licenseFile": "/home/runner/work/comms-app-react-native-videocall/comms-app-react-native-videocall/tmp_/node_modules/eslint-plugin-prettier/node_modules/ajv/LICENSE"
   },
   "anser@1.4.10": {
     "licenses": "MIT",
@@ -2042,8 +2042,8 @@
     "publisher": "Sindre Sorhus",
     "email": "sindresorhus@gmail.com",
     "url": "sindresorhus.com",
-    "path": "/home/runner/work/comms-app-react-native-videocall/comms-app-react-native-videocall/tmp_/node_modules/eslint-plugin-jsx-a11y/node_modules/ansi-regex",
-    "licenseFile": "/home/runner/work/comms-app-react-native-videocall/comms-app-react-native-videocall/tmp_/node_modules/eslint-plugin-jsx-a11y/node_modules/ansi-regex/license"
+    "path": "/home/runner/work/comms-app-react-native-videocall/comms-app-react-native-videocall/tmp_/node_modules/eslint-plugin-prettier/node_modules/ansi-regex",
+    "licenseFile": "/home/runner/work/comms-app-react-native-videocall/comms-app-react-native-videocall/tmp_/node_modules/eslint-plugin-prettier/node_modules/ansi-regex/license"
   },
   "ansi-styles@3.2.1": {
     "licenses": "MIT",
@@ -2060,8 +2060,8 @@
     "publisher": "Sindre Sorhus",
     "email": "sindresorhus@gmail.com",
     "url": "sindresorhus.com",
-    "path": "/home/runner/work/comms-app-react-native-videocall/comms-app-react-native-videocall/tmp_/node_modules/eslint-plugin-jsx-a11y/node_modules/ansi-styles",
-    "licenseFile": "/home/runner/work/comms-app-react-native-videocall/comms-app-react-native-videocall/tmp_/node_modules/eslint-plugin-jsx-a11y/node_modules/ansi-styles/license"
+    "path": "/home/runner/work/comms-app-react-native-videocall/comms-app-react-native-videocall/tmp_/node_modules/eslint-plugin-prettier/node_modules/ansi-styles",
+    "licenseFile": "/home/runner/work/comms-app-react-native-videocall/comms-app-react-native-videocall/tmp_/node_modules/eslint-plugin-prettier/node_modules/ansi-styles/license"
   },
   "ansi-styles@5.2.0": {
     "licenses": "MIT",
@@ -2103,8 +2103,8 @@
   "argparse@2.0.1": {
     "licenses": "Python-2.0",
     "repository": "https://github.com/nodeca/argparse",
-    "path": "/home/runner/work/comms-app-react-native-videocall/comms-app-react-native-videocall/tmp_/node_modules/eslint-plugin-jsx-a11y/node_modules/argparse",
-    "licenseFile": "/home/runner/work/comms-app-react-native-videocall/comms-app-react-native-videocall/tmp_/node_modules/eslint-plugin-jsx-a11y/node_modules/argparse/LICENSE"
+    "path": "/home/runner/work/comms-app-react-native-videocall/comms-app-react-native-videocall/tmp_/node_modules/eslint-plugin-prettier/node_modules/argparse",
+    "licenseFile": "/home/runner/work/comms-app-react-native-videocall/comms-app-react-native-videocall/tmp_/node_modules/eslint-plugin-prettier/node_modules/argparse/LICENSE"
   },
   "aria-query@5.3.0": {
     "licenses": "Apache-2.0",
@@ -2604,8 +2604,8 @@
     "publisher": "Sindre Sorhus",
     "email": "sindresorhus@gmail.com",
     "url": "sindresorhus.com",
-    "path": "/home/runner/work/comms-app-react-native-videocall/comms-app-react-native-videocall/tmp_/node_modules/eslint-plugin-jsx-a11y/node_modules/callsites",
-    "licenseFile": "/home/runner/work/comms-app-react-native-videocall/comms-app-react-native-videocall/tmp_/node_modules/eslint-plugin-jsx-a11y/node_modules/callsites/license"
+    "path": "/home/runner/work/comms-app-react-native-videocall/comms-app-react-native-videocall/tmp_/node_modules/eslint-plugin-prettier/node_modules/callsites",
+    "licenseFile": "/home/runner/work/comms-app-react-native-videocall/comms-app-react-native-videocall/tmp_/node_modules/eslint-plugin-prettier/node_modules/callsites/license"
   },
   "camelcase-keys@6.2.2": {
     "licenses": "MIT",
@@ -2660,8 +2660,8 @@
   "chalk@4.1.2": {
     "licenses": "MIT",
     "repository": "https://github.com/chalk/chalk",
-    "path": "/home/runner/work/comms-app-react-native-videocall/comms-app-react-native-videocall/tmp_/node_modules/eslint-plugin-jsx-a11y/node_modules/chalk",
-    "licenseFile": "/home/runner/work/comms-app-react-native-videocall/comms-app-react-native-videocall/tmp_/node_modules/eslint-plugin-jsx-a11y/node_modules/chalk/license"
+    "path": "/home/runner/work/comms-app-react-native-videocall/comms-app-react-native-videocall/tmp_/node_modules/eslint-plugin-prettier/node_modules/chalk",
+    "licenseFile": "/home/runner/work/comms-app-react-native-videocall/comms-app-react-native-videocall/tmp_/node_modules/eslint-plugin-prettier/node_modules/chalk/license"
   },
   "char-regex@1.0.2": {
     "licenses": "MIT",
@@ -2788,8 +2788,8 @@
     "repository": "https://github.com/Qix-/color-convert",
     "publisher": "Heather Arthur",
     "email": "fayearthur@gmail.com",
-    "path": "/home/runner/work/comms-app-react-native-videocall/comms-app-react-native-videocall/tmp_/node_modules/eslint-plugin-jsx-a11y/node_modules/color-convert",
-    "licenseFile": "/home/runner/work/comms-app-react-native-videocall/comms-app-react-native-videocall/tmp_/node_modules/eslint-plugin-jsx-a11y/node_modules/color-convert/LICENSE"
+    "path": "/home/runner/work/comms-app-react-native-videocall/comms-app-react-native-videocall/tmp_/node_modules/eslint-plugin-prettier/node_modules/color-convert",
+    "licenseFile": "/home/runner/work/comms-app-react-native-videocall/comms-app-react-native-videocall/tmp_/node_modules/eslint-plugin-prettier/node_modules/color-convert/LICENSE"
   },
   "color-name@1.1.3": {
     "licenses": "MIT",
@@ -2804,8 +2804,8 @@
     "repository": "https://github.com/colorjs/color-name",
     "publisher": "DY",
     "email": "dfcreative@gmail.com",
-    "path": "/home/runner/work/comms-app-react-native-videocall/comms-app-react-native-videocall/tmp_/node_modules/eslint-plugin-jsx-a11y/node_modules/color-name",
-    "licenseFile": "/home/runner/work/comms-app-react-native-videocall/comms-app-react-native-videocall/tmp_/node_modules/eslint-plugin-jsx-a11y/node_modules/color-name/LICENSE"
+    "path": "/home/runner/work/comms-app-react-native-videocall/comms-app-react-native-videocall/tmp_/node_modules/eslint-plugin-prettier/node_modules/color-name",
+    "licenseFile": "/home/runner/work/comms-app-react-native-videocall/comms-app-react-native-videocall/tmp_/node_modules/eslint-plugin-prettier/node_modules/color-name/LICENSE"
   },
   "color-string@1.9.1": {
     "licenses": "MIT",
@@ -3137,8 +3137,8 @@
     "repository": "https://github.com/moxystudio/node-cross-spawn",
     "publisher": "André Cruz",
     "email": "andre@moxy.studio",
-    "path": "/home/runner/work/comms-app-react-native-videocall/comms-app-react-native-videocall/tmp_/node_modules/eslint-plugin-jsx-a11y/node_modules/cross-spawn",
-    "licenseFile": "/home/runner/work/comms-app-react-native-videocall/comms-app-react-native-videocall/tmp_/node_modules/eslint-plugin-jsx-a11y/node_modules/cross-spawn/LICENSE"
+    "path": "/home/runner/work/comms-app-react-native-videocall/comms-app-react-native-videocall/tmp_/node_modules/eslint-plugin-prettier/node_modules/cross-spawn",
+    "licenseFile": "/home/runner/work/comms-app-react-native-videocall/comms-app-react-native-videocall/tmp_/node_modules/eslint-plugin-prettier/node_modules/cross-spawn/LICENSE"
   },
   "css-select@5.1.0": {
     "licenses": "BSD-2-Clause",
@@ -3283,8 +3283,8 @@
     "repository": "https://github.com/debug-js/debug",
     "publisher": "Josh Junon",
     "email": "josh.junon@protonmail.com",
-    "path": "/home/runner/work/comms-app-react-native-videocall/comms-app-react-native-videocall/tmp_/node_modules/eslint-plugin-jsx-a11y/node_modules/debug",
-    "licenseFile": "/home/runner/work/comms-app-react-native-videocall/comms-app-react-native-videocall/tmp_/node_modules/eslint-plugin-jsx-a11y/node_modules/debug/LICENSE"
+    "path": "/home/runner/work/comms-app-react-native-videocall/comms-app-react-native-videocall/tmp_/node_modules/eslint-plugin-prettier/node_modules/debug",
+    "licenseFile": "/home/runner/work/comms-app-react-native-videocall/comms-app-react-native-videocall/tmp_/node_modules/eslint-plugin-prettier/node_modules/debug/LICENSE"
   },
   "debuglog@1.0.1": {
     "licenses": "MIT",
@@ -3353,8 +3353,8 @@
     "publisher": "Thorsten Lorenz",
     "email": "thlorenz@gmx.de",
     "url": "http://thlorenz.com",
-    "path": "/home/runner/work/comms-app-react-native-videocall/comms-app-react-native-videocall/tmp_/node_modules/eslint-plugin-jsx-a11y/node_modules/deep-is",
-    "licenseFile": "/home/runner/work/comms-app-react-native-videocall/comms-app-react-native-videocall/tmp_/node_modules/eslint-plugin-jsx-a11y/node_modules/deep-is/LICENSE"
+    "path": "/home/runner/work/comms-app-react-native-videocall/comms-app-react-native-videocall/tmp_/node_modules/eslint-plugin-prettier/node_modules/deep-is",
+    "licenseFile": "/home/runner/work/comms-app-react-native-videocall/comms-app-react-native-videocall/tmp_/node_modules/eslint-plugin-prettier/node_modules/deep-is/LICENSE"
   },
   "deepmerge@3.3.0": {
     "licenses": "MIT",
@@ -3498,8 +3498,8 @@
   "doctrine@3.0.0": {
     "licenses": "Apache-2.0",
     "repository": "https://github.com/eslint/doctrine",
-    "path": "/home/runner/work/comms-app-react-native-videocall/comms-app-react-native-videocall/tmp_/node_modules/eslint-plugin-jsx-a11y/node_modules/doctrine",
-    "licenseFile": "/home/runner/work/comms-app-react-native-videocall/comms-app-react-native-videocall/tmp_/node_modules/eslint-plugin-jsx-a11y/node_modules/doctrine/LICENSE"
+    "path": "/home/runner/work/comms-app-react-native-videocall/comms-app-react-native-videocall/tmp_/node_modules/eslint-plugin-prettier/node_modules/doctrine",
+    "licenseFile": "/home/runner/work/comms-app-react-native-videocall/comms-app-react-native-videocall/tmp_/node_modules/eslint-plugin-prettier/node_modules/doctrine/LICENSE"
   },
   "dom-serializer@2.0.0": {
     "licenses": "MIT",
@@ -3728,8 +3728,8 @@
     "publisher": "Sindre Sorhus",
     "email": "sindresorhus@gmail.com",
     "url": "https://sindresorhus.com",
-    "path": "/home/runner/work/comms-app-react-native-videocall/comms-app-react-native-videocall/tmp_/node_modules/eslint-plugin-jsx-a11y/node_modules/escape-string-regexp",
-    "licenseFile": "/home/runner/work/comms-app-react-native-videocall/comms-app-react-native-videocall/tmp_/node_modules/eslint-plugin-jsx-a11y/node_modules/escape-string-regexp/license"
+    "path": "/home/runner/work/comms-app-react-native-videocall/comms-app-react-native-videocall/tmp_/node_modules/eslint-plugin-prettier/node_modules/escape-string-regexp",
+    "licenseFile": "/home/runner/work/comms-app-react-native-videocall/comms-app-react-native-videocall/tmp_/node_modules/eslint-plugin-prettier/node_modules/escape-string-regexp/license"
   },
   "escodegen@2.1.0": {
     "licenses": "BSD-2-Clause",
@@ -3830,32 +3830,32 @@
   "eslint-scope@7.2.2": {
     "licenses": "BSD-2-Clause",
     "repository": "https://github.com/eslint/eslint-scope",
-    "path": "/home/runner/work/comms-app-react-native-videocall/comms-app-react-native-videocall/tmp_/node_modules/eslint-plugin-jsx-a11y/node_modules/eslint-scope",
-    "licenseFile": "/home/runner/work/comms-app-react-native-videocall/comms-app-react-native-videocall/tmp_/node_modules/eslint-plugin-jsx-a11y/node_modules/eslint-scope/LICENSE"
+    "path": "/home/runner/work/comms-app-react-native-videocall/comms-app-react-native-videocall/tmp_/node_modules/eslint-plugin-prettier/node_modules/eslint-scope",
+    "licenseFile": "/home/runner/work/comms-app-react-native-videocall/comms-app-react-native-videocall/tmp_/node_modules/eslint-plugin-prettier/node_modules/eslint-scope/LICENSE"
   },
   "eslint-visitor-keys@3.4.3": {
     "licenses": "Apache-2.0",
     "repository": "https://github.com/eslint/eslint-visitor-keys",
     "publisher": "Toru Nagashima",
     "url": "https://github.com/mysticatea",
-    "path": "/home/runner/work/comms-app-react-native-videocall/comms-app-react-native-videocall/tmp_/node_modules/eslint-plugin-jsx-a11y/node_modules/eslint-visitor-keys",
-    "licenseFile": "/home/runner/work/comms-app-react-native-videocall/comms-app-react-native-videocall/tmp_/node_modules/eslint-plugin-jsx-a11y/node_modules/eslint-visitor-keys/LICENSE"
+    "path": "/home/runner/work/comms-app-react-native-videocall/comms-app-react-native-videocall/tmp_/node_modules/eslint-plugin-prettier/node_modules/eslint-visitor-keys",
+    "licenseFile": "/home/runner/work/comms-app-react-native-videocall/comms-app-react-native-videocall/tmp_/node_modules/eslint-plugin-prettier/node_modules/eslint-visitor-keys/LICENSE"
   },
   "eslint@8.47.0": {
     "licenses": "MIT",
     "repository": "https://github.com/eslint/eslint",
     "publisher": "Nicholas C. Zakas",
     "email": "nicholas+npm@nczconsulting.com",
-    "path": "/home/runner/work/comms-app-react-native-videocall/comms-app-react-native-videocall/tmp_/node_modules/eslint-plugin-jsx-a11y/node_modules/eslint",
-    "licenseFile": "/home/runner/work/comms-app-react-native-videocall/comms-app-react-native-videocall/tmp_/node_modules/eslint-plugin-jsx-a11y/node_modules/eslint/LICENSE"
+    "path": "/home/runner/work/comms-app-react-native-videocall/comms-app-react-native-videocall/tmp_/node_modules/eslint-plugin-prettier/node_modules/eslint",
+    "licenseFile": "/home/runner/work/comms-app-react-native-videocall/comms-app-react-native-videocall/tmp_/node_modules/eslint-plugin-prettier/node_modules/eslint/LICENSE"
   },
   "espree@9.6.1": {
     "licenses": "BSD-2-Clause",
     "repository": "https://github.com/eslint/espree",
     "publisher": "Nicholas C. Zakas",
     "email": "nicholas+npm@nczconsulting.com",
-    "path": "/home/runner/work/comms-app-react-native-videocall/comms-app-react-native-videocall/tmp_/node_modules/eslint-plugin-jsx-a11y/node_modules/espree",
-    "licenseFile": "/home/runner/work/comms-app-react-native-videocall/comms-app-react-native-videocall/tmp_/node_modules/eslint-plugin-jsx-a11y/node_modules/espree/LICENSE"
+    "path": "/home/runner/work/comms-app-react-native-videocall/comms-app-react-native-videocall/tmp_/node_modules/eslint-plugin-prettier/node_modules/espree",
+    "licenseFile": "/home/runner/work/comms-app-react-native-videocall/comms-app-react-native-videocall/tmp_/node_modules/eslint-plugin-prettier/node_modules/espree/LICENSE"
   },
   "esprima@4.0.1": {
     "licenses": "BSD-2-Clause",
@@ -3870,14 +3870,14 @@
     "repository": "https://github.com/estools/esquery",
     "publisher": "Joel Feenstra",
     "email": "jrfeenst+esquery@gmail.com",
-    "path": "/home/runner/work/comms-app-react-native-videocall/comms-app-react-native-videocall/tmp_/node_modules/eslint-plugin-jsx-a11y/node_modules/esquery",
-    "licenseFile": "/home/runner/work/comms-app-react-native-videocall/comms-app-react-native-videocall/tmp_/node_modules/eslint-plugin-jsx-a11y/node_modules/esquery/license.txt"
+    "path": "/home/runner/work/comms-app-react-native-videocall/comms-app-react-native-videocall/tmp_/node_modules/eslint-plugin-prettier/node_modules/esquery",
+    "licenseFile": "/home/runner/work/comms-app-react-native-videocall/comms-app-react-native-videocall/tmp_/node_modules/eslint-plugin-prettier/node_modules/esquery/license.txt"
   },
   "esrecurse@4.3.0": {
     "licenses": "BSD-2-Clause",
     "repository": "https://github.com/estools/esrecurse",
-    "path": "/home/runner/work/comms-app-react-native-videocall/comms-app-react-native-videocall/tmp_/node_modules/eslint-plugin-jsx-a11y/node_modules/esrecurse",
-    "licenseFile": "/home/runner/work/comms-app-react-native-videocall/comms-app-react-native-videocall/tmp_/node_modules/eslint-plugin-jsx-a11y/node_modules/esrecurse/README.md"
+    "path": "/home/runner/work/comms-app-react-native-videocall/comms-app-react-native-videocall/tmp_/node_modules/eslint-plugin-prettier/node_modules/esrecurse",
+    "licenseFile": "/home/runner/work/comms-app-react-native-videocall/comms-app-react-native-videocall/tmp_/node_modules/eslint-plugin-prettier/node_modules/esrecurse/README.md"
   },
   "estraverse@4.3.0": {
     "licenses": "BSD-2-Clause",
@@ -3888,14 +3888,14 @@
   "estraverse@5.3.0": {
     "licenses": "BSD-2-Clause",
     "repository": "https://github.com/estools/estraverse",
-    "path": "/home/runner/work/comms-app-react-native-videocall/comms-app-react-native-videocall/tmp_/node_modules/eslint-plugin-jsx-a11y/node_modules/estraverse",
-    "licenseFile": "/home/runner/work/comms-app-react-native-videocall/comms-app-react-native-videocall/tmp_/node_modules/eslint-plugin-jsx-a11y/node_modules/estraverse/LICENSE.BSD"
+    "path": "/home/runner/work/comms-app-react-native-videocall/comms-app-react-native-videocall/tmp_/node_modules/eslint-plugin-prettier/node_modules/estraverse",
+    "licenseFile": "/home/runner/work/comms-app-react-native-videocall/comms-app-react-native-videocall/tmp_/node_modules/eslint-plugin-prettier/node_modules/estraverse/LICENSE.BSD"
   },
   "esutils@2.0.3": {
     "licenses": "BSD-2-Clause",
     "repository": "https://github.com/estools/esutils",
-    "path": "/home/runner/work/comms-app-react-native-videocall/comms-app-react-native-videocall/tmp_/node_modules/eslint-plugin-jsx-a11y/node_modules/esutils",
-    "licenseFile": "/home/runner/work/comms-app-react-native-videocall/comms-app-react-native-videocall/tmp_/node_modules/eslint-plugin-jsx-a11y/node_modules/esutils/LICENSE.BSD"
+    "path": "/home/runner/work/comms-app-react-native-videocall/comms-app-react-native-videocall/tmp_/node_modules/eslint-plugin-prettier/node_modules/esutils",
+    "licenseFile": "/home/runner/work/comms-app-react-native-videocall/comms-app-react-native-videocall/tmp_/node_modules/eslint-plugin-prettier/node_modules/esutils/LICENSE.BSD"
   },
   "etag@1.8.1": {
     "licenses": "MIT",
@@ -3986,8 +3986,8 @@
     "licenses": "MIT",
     "repository": "https://github.com/epoberezkin/fast-deep-equal",
     "publisher": "Evgeny Poberezkin",
-    "path": "/home/runner/work/comms-app-react-native-videocall/comms-app-react-native-videocall/tmp_/node_modules/eslint-plugin-jsx-a11y/node_modules/fast-deep-equal",
-    "licenseFile": "/home/runner/work/comms-app-react-native-videocall/comms-app-react-native-videocall/tmp_/node_modules/eslint-plugin-jsx-a11y/node_modules/fast-deep-equal/LICENSE"
+    "path": "/home/runner/work/comms-app-react-native-videocall/comms-app-react-native-videocall/tmp_/node_modules/eslint-plugin-prettier/node_modules/fast-deep-equal",
+    "licenseFile": "/home/runner/work/comms-app-react-native-videocall/comms-app-react-native-videocall/tmp_/node_modules/eslint-plugin-prettier/node_modules/fast-deep-equal/LICENSE"
   },
   "fast-diff@1.3.0": {
     "licenses": "Apache-2.0",
@@ -4011,8 +4011,8 @@
     "publisher": "James Halliday",
     "email": "mail@substack.net",
     "url": "http://substack.net",
-    "path": "/home/runner/work/comms-app-react-native-videocall/comms-app-react-native-videocall/tmp_/node_modules/eslint-plugin-jsx-a11y/node_modules/fast-json-stable-stringify",
-    "licenseFile": "/home/runner/work/comms-app-react-native-videocall/comms-app-react-native-videocall/tmp_/node_modules/eslint-plugin-jsx-a11y/node_modules/fast-json-stable-stringify/LICENSE"
+    "path": "/home/runner/work/comms-app-react-native-videocall/comms-app-react-native-videocall/tmp_/node_modules/eslint-plugin-prettier/node_modules/fast-json-stable-stringify",
+    "licenseFile": "/home/runner/work/comms-app-react-native-videocall/comms-app-react-native-videocall/tmp_/node_modules/eslint-plugin-prettier/node_modules/fast-json-stable-stringify/LICENSE"
   },
   "fast-levenshtein@2.0.6": {
     "licenses": "MIT",
@@ -4020,16 +4020,16 @@
     "publisher": "Ramesh Nair",
     "email": "ram@hiddentao.com",
     "url": "http://www.hiddentao.com/",
-    "path": "/home/runner/work/comms-app-react-native-videocall/comms-app-react-native-videocall/tmp_/node_modules/eslint-plugin-jsx-a11y/node_modules/fast-levenshtein",
-    "licenseFile": "/home/runner/work/comms-app-react-native-videocall/comms-app-react-native-videocall/tmp_/node_modules/eslint-plugin-jsx-a11y/node_modules/fast-levenshtein/LICENSE.md"
+    "path": "/home/runner/work/comms-app-react-native-videocall/comms-app-react-native-videocall/tmp_/node_modules/eslint-plugin-prettier/node_modules/fast-levenshtein",
+    "licenseFile": "/home/runner/work/comms-app-react-native-videocall/comms-app-react-native-videocall/tmp_/node_modules/eslint-plugin-prettier/node_modules/fast-levenshtein/LICENSE.md"
   },
   "fastq@1.15.0": {
     "licenses": "ISC",
     "repository": "https://github.com/mcollina/fastq",
     "publisher": "Matteo Collina",
     "email": "hello@matteocollina.com",
-    "path": "/home/runner/work/comms-app-react-native-videocall/comms-app-react-native-videocall/tmp_/node_modules/eslint-plugin-jsx-a11y/node_modules/fastq",
-    "licenseFile": "/home/runner/work/comms-app-react-native-videocall/comms-app-react-native-videocall/tmp_/node_modules/eslint-plugin-jsx-a11y/node_modules/fastq/LICENSE"
+    "path": "/home/runner/work/comms-app-react-native-videocall/comms-app-react-native-videocall/tmp_/node_modules/eslint-plugin-prettier/node_modules/fastq",
+    "licenseFile": "/home/runner/work/comms-app-react-native-videocall/comms-app-react-native-videocall/tmp_/node_modules/eslint-plugin-prettier/node_modules/fastq/LICENSE"
   },
   "fb-watchman@2.0.2": {
     "licenses": "Apache-2.0",
@@ -4045,8 +4045,8 @@
     "repository": "https://github.com/royriojas/file-entry-cache",
     "publisher": "Roy Riojas",
     "url": "http://royriojas.com",
-    "path": "/home/runner/work/comms-app-react-native-videocall/comms-app-react-native-videocall/tmp_/node_modules/eslint-plugin-jsx-a11y/node_modules/file-entry-cache",
-    "licenseFile": "/home/runner/work/comms-app-react-native-videocall/comms-app-react-native-videocall/tmp_/node_modules/eslint-plugin-jsx-a11y/node_modules/file-entry-cache/LICENSE"
+    "path": "/home/runner/work/comms-app-react-native-videocall/comms-app-react-native-videocall/tmp_/node_modules/eslint-plugin-prettier/node_modules/file-entry-cache",
+    "licenseFile": "/home/runner/work/comms-app-react-native-videocall/comms-app-react-native-videocall/tmp_/node_modules/eslint-plugin-prettier/node_modules/file-entry-cache/LICENSE"
   },
   "fill-range@4.0.0": {
     "licenses": "MIT",
@@ -4129,23 +4129,23 @@
     "publisher": "Sindre Sorhus",
     "email": "sindresorhus@gmail.com",
     "url": "https://sindresorhus.com",
-    "path": "/home/runner/work/comms-app-react-native-videocall/comms-app-react-native-videocall/tmp_/node_modules/eslint-plugin-jsx-a11y/node_modules/find-up",
-    "licenseFile": "/home/runner/work/comms-app-react-native-videocall/comms-app-react-native-videocall/tmp_/node_modules/eslint-plugin-jsx-a11y/node_modules/find-up/license"
+    "path": "/home/runner/work/comms-app-react-native-videocall/comms-app-react-native-videocall/tmp_/node_modules/eslint-plugin-prettier/node_modules/find-up",
+    "licenseFile": "/home/runner/work/comms-app-react-native-videocall/comms-app-react-native-videocall/tmp_/node_modules/eslint-plugin-prettier/node_modules/find-up/license"
   },
   "flat-cache@3.0.4": {
     "licenses": "MIT",
     "repository": "https://github.com/royriojas/flat-cache",
     "publisher": "Roy Riojas",
     "url": "http://royriojas.com",
-    "path": "/home/runner/work/comms-app-react-native-videocall/comms-app-react-native-videocall/tmp_/node_modules/eslint-plugin-jsx-a11y/node_modules/flat-cache",
-    "licenseFile": "/home/runner/work/comms-app-react-native-videocall/comms-app-react-native-videocall/tmp_/node_modules/eslint-plugin-jsx-a11y/node_modules/flat-cache/LICENSE"
+    "path": "/home/runner/work/comms-app-react-native-videocall/comms-app-react-native-videocall/tmp_/node_modules/eslint-plugin-prettier/node_modules/flat-cache",
+    "licenseFile": "/home/runner/work/comms-app-react-native-videocall/comms-app-react-native-videocall/tmp_/node_modules/eslint-plugin-prettier/node_modules/flat-cache/LICENSE"
   },
   "flatted@3.2.7": {
     "licenses": "ISC",
     "repository": "https://github.com/WebReflection/flatted",
     "publisher": "Andrea Giammarchi",
-    "path": "/home/runner/work/comms-app-react-native-videocall/comms-app-react-native-videocall/tmp_/node_modules/eslint-plugin-jsx-a11y/node_modules/flatted",
-    "licenseFile": "/home/runner/work/comms-app-react-native-videocall/comms-app-react-native-videocall/tmp_/node_modules/eslint-plugin-jsx-a11y/node_modules/flatted/LICENSE"
+    "path": "/home/runner/work/comms-app-react-native-videocall/comms-app-react-native-videocall/tmp_/node_modules/eslint-plugin-prettier/node_modules/flatted",
+    "licenseFile": "/home/runner/work/comms-app-react-native-videocall/comms-app-react-native-videocall/tmp_/node_modules/eslint-plugin-prettier/node_modules/flatted/LICENSE"
   },
   "flow-parser@0.121.0": {
     "licenses": "MIT",
@@ -4394,8 +4394,8 @@
     "publisher": "Gulp Team",
     "email": "team@gulpjs.com",
     "url": "https://gulpjs.com/",
-    "path": "/home/runner/work/comms-app-react-native-videocall/comms-app-react-native-videocall/tmp_/node_modules/eslint-plugin-jsx-a11y/node_modules/glob-parent",
-    "licenseFile": "/home/runner/work/comms-app-react-native-videocall/comms-app-react-native-videocall/tmp_/node_modules/eslint-plugin-jsx-a11y/node_modules/glob-parent/LICENSE"
+    "path": "/home/runner/work/comms-app-react-native-videocall/comms-app-react-native-videocall/tmp_/node_modules/eslint-plugin-prettier/node_modules/glob-parent",
+    "licenseFile": "/home/runner/work/comms-app-react-native-videocall/comms-app-react-native-videocall/tmp_/node_modules/eslint-plugin-prettier/node_modules/glob-parent/LICENSE"
   },
   "glob@7.2.3": {
     "licenses": "ISC",
@@ -4421,8 +4421,8 @@
     "publisher": "Sindre Sorhus",
     "email": "sindresorhus@gmail.com",
     "url": "https://sindresorhus.com",
-    "path": "/home/runner/work/comms-app-react-native-videocall/comms-app-react-native-videocall/tmp_/node_modules/eslint-plugin-jsx-a11y/node_modules/globals",
-    "licenseFile": "/home/runner/work/comms-app-react-native-videocall/comms-app-react-native-videocall/tmp_/node_modules/eslint-plugin-jsx-a11y/node_modules/globals/license"
+    "path": "/home/runner/work/comms-app-react-native-videocall/comms-app-react-native-videocall/tmp_/node_modules/eslint-plugin-prettier/node_modules/globals",
+    "licenseFile": "/home/runner/work/comms-app-react-native-videocall/comms-app-react-native-videocall/tmp_/node_modules/eslint-plugin-prettier/node_modules/globals/license"
   },
   "globalthis@1.0.3": {
     "licenses": "MIT",
@@ -4461,8 +4461,8 @@
     "publisher": "Matt Davies",
     "email": "matt@filament.so",
     "url": "https://github.com/mattpauldavies",
-    "path": "/home/runner/work/comms-app-react-native-videocall/comms-app-react-native-videocall/tmp_/node_modules/eslint-plugin-jsx-a11y/node_modules/graphemer",
-    "licenseFile": "/home/runner/work/comms-app-react-native-videocall/comms-app-react-native-videocall/tmp_/node_modules/eslint-plugin-jsx-a11y/node_modules/graphemer/LICENSE"
+    "path": "/home/runner/work/comms-app-react-native-videocall/comms-app-react-native-videocall/tmp_/node_modules/eslint-plugin-prettier/node_modules/graphemer",
+    "licenseFile": "/home/runner/work/comms-app-react-native-videocall/comms-app-react-native-videocall/tmp_/node_modules/eslint-plugin-prettier/node_modules/graphemer/LICENSE"
   },
   "handlebars@4.7.8": {
     "licenses": "MIT",
@@ -4503,8 +4503,8 @@
     "publisher": "Sindre Sorhus",
     "email": "sindresorhus@gmail.com",
     "url": "sindresorhus.com",
-    "path": "/home/runner/work/comms-app-react-native-videocall/comms-app-react-native-videocall/tmp_/node_modules/eslint-plugin-jsx-a11y/node_modules/has-flag",
-    "licenseFile": "/home/runner/work/comms-app-react-native-videocall/comms-app-react-native-videocall/tmp_/node_modules/eslint-plugin-jsx-a11y/node_modules/has-flag/license"
+    "path": "/home/runner/work/comms-app-react-native-videocall/comms-app-react-native-videocall/tmp_/node_modules/eslint-plugin-prettier/node_modules/has-flag",
+    "licenseFile": "/home/runner/work/comms-app-react-native-videocall/comms-app-react-native-videocall/tmp_/node_modules/eslint-plugin-prettier/node_modules/has-flag/license"
   },
   "has-property-descriptors@1.0.0": {
     "licenses": "MIT",
@@ -4691,8 +4691,8 @@
     "licenses": "MIT",
     "repository": "https://github.com/kaelzhang/node-ignore",
     "publisher": "kael",
-    "path": "/home/runner/work/comms-app-react-native-videocall/comms-app-react-native-videocall/tmp_/node_modules/eslint-plugin-jsx-a11y/node_modules/ignore",
-    "licenseFile": "/home/runner/work/comms-app-react-native-videocall/comms-app-react-native-videocall/tmp_/node_modules/eslint-plugin-jsx-a11y/node_modules/ignore/LICENSE-MIT"
+    "path": "/home/runner/work/comms-app-react-native-videocall/comms-app-react-native-videocall/tmp_/node_modules/eslint-plugin-prettier/node_modules/ignore",
+    "licenseFile": "/home/runner/work/comms-app-react-native-videocall/comms-app-react-native-videocall/tmp_/node_modules/eslint-plugin-prettier/node_modules/ignore/LICENSE-MIT"
   },
   "image-size@0.6.3": {
     "licenses": "MIT",
@@ -4718,8 +4718,8 @@
     "publisher": "Sindre Sorhus",
     "email": "sindresorhus@gmail.com",
     "url": "https://sindresorhus.com",
-    "path": "/home/runner/work/comms-app-react-native-videocall/comms-app-react-native-videocall/tmp_/node_modules/eslint-plugin-jsx-a11y/node_modules/import-fresh",
-    "licenseFile": "/home/runner/work/comms-app-react-native-videocall/comms-app-react-native-videocall/tmp_/node_modules/eslint-plugin-jsx-a11y/node_modules/import-fresh/license"
+    "path": "/home/runner/work/comms-app-react-native-videocall/comms-app-react-native-videocall/tmp_/node_modules/eslint-plugin-prettier/node_modules/import-fresh",
+    "licenseFile": "/home/runner/work/comms-app-react-native-videocall/comms-app-react-native-videocall/tmp_/node_modules/eslint-plugin-prettier/node_modules/import-fresh/license"
   },
   "import-local@3.1.0": {
     "licenses": "MIT",
@@ -4736,8 +4736,8 @@
     "publisher": "Jens Taylor",
     "email": "jensyt@gmail.com",
     "url": "https://github.com/homebrewing",
-    "path": "/home/runner/work/comms-app-react-native-videocall/comms-app-react-native-videocall/tmp_/node_modules/eslint-plugin-jsx-a11y/node_modules/imurmurhash",
-    "licenseFile": "/home/runner/work/comms-app-react-native-videocall/comms-app-react-native-videocall/tmp_/node_modules/eslint-plugin-jsx-a11y/node_modules/imurmurhash/README.md"
+    "path": "/home/runner/work/comms-app-react-native-videocall/comms-app-react-native-videocall/tmp_/node_modules/eslint-plugin-prettier/node_modules/imurmurhash",
+    "licenseFile": "/home/runner/work/comms-app-react-native-videocall/comms-app-react-native-videocall/tmp_/node_modules/eslint-plugin-prettier/node_modules/imurmurhash/README.md"
   },
   "indent-string@4.0.0": {
     "licenses": "MIT",
@@ -4971,8 +4971,8 @@
     "repository": "https://github.com/jonschlinkert/is-extglob",
     "publisher": "Jon Schlinkert",
     "url": "https://github.com/jonschlinkert",
-    "path": "/home/runner/work/comms-app-react-native-videocall/comms-app-react-native-videocall/tmp_/node_modules/eslint-plugin-jsx-a11y/node_modules/is-extglob",
-    "licenseFile": "/home/runner/work/comms-app-react-native-videocall/comms-app-react-native-videocall/tmp_/node_modules/eslint-plugin-jsx-a11y/node_modules/is-extglob/LICENSE"
+    "path": "/home/runner/work/comms-app-react-native-videocall/comms-app-react-native-videocall/tmp_/node_modules/eslint-plugin-prettier/node_modules/is-extglob",
+    "licenseFile": "/home/runner/work/comms-app-react-native-videocall/comms-app-react-native-videocall/tmp_/node_modules/eslint-plugin-prettier/node_modules/is-extglob/LICENSE"
   },
   "is-finalizationregistry@1.0.2": {
     "licenses": "MIT",
@@ -5022,8 +5022,8 @@
     "repository": "https://github.com/micromatch/is-glob",
     "publisher": "Jon Schlinkert",
     "url": "https://github.com/jonschlinkert",
-    "path": "/home/runner/work/comms-app-react-native-videocall/comms-app-react-native-videocall/tmp_/node_modules/eslint-plugin-jsx-a11y/node_modules/is-glob",
-    "licenseFile": "/home/runner/work/comms-app-react-native-videocall/comms-app-react-native-videocall/tmp_/node_modules/eslint-plugin-jsx-a11y/node_modules/is-glob/LICENSE"
+    "path": "/home/runner/work/comms-app-react-native-videocall/comms-app-react-native-videocall/tmp_/node_modules/eslint-plugin-prettier/node_modules/is-glob",
+    "licenseFile": "/home/runner/work/comms-app-react-native-videocall/comms-app-react-native-videocall/tmp_/node_modules/eslint-plugin-prettier/node_modules/is-glob/LICENSE"
   },
   "is-map@2.0.2": {
     "licenses": "MIT",
@@ -5080,8 +5080,8 @@
     "publisher": "Sindre Sorhus",
     "email": "sindresorhus@gmail.com",
     "url": "sindresorhus.com",
-    "path": "/home/runner/work/comms-app-react-native-videocall/comms-app-react-native-videocall/tmp_/node_modules/eslint-plugin-jsx-a11y/node_modules/is-path-inside",
-    "licenseFile": "/home/runner/work/comms-app-react-native-videocall/comms-app-react-native-videocall/tmp_/node_modules/eslint-plugin-jsx-a11y/node_modules/is-path-inside/license"
+    "path": "/home/runner/work/comms-app-react-native-videocall/comms-app-react-native-videocall/tmp_/node_modules/eslint-plugin-prettier/node_modules/is-path-inside",
+    "licenseFile": "/home/runner/work/comms-app-react-native-videocall/comms-app-react-native-videocall/tmp_/node_modules/eslint-plugin-prettier/node_modules/is-path-inside/license"
   },
   "is-plain-obj@1.1.0": {
     "licenses": "MIT",
@@ -5268,8 +5268,8 @@
     "publisher": "Isaac Z. Schlueter",
     "email": "i@izs.me",
     "url": "http://blog.izs.me/",
-    "path": "/home/runner/work/comms-app-react-native-videocall/comms-app-react-native-videocall/tmp_/node_modules/eslint-plugin-jsx-a11y/node_modules/isexe",
-    "licenseFile": "/home/runner/work/comms-app-react-native-videocall/comms-app-react-native-videocall/tmp_/node_modules/eslint-plugin-jsx-a11y/node_modules/isexe/LICENSE"
+    "path": "/home/runner/work/comms-app-react-native-videocall/comms-app-react-native-videocall/tmp_/node_modules/eslint-plugin-prettier/node_modules/isexe",
+    "licenseFile": "/home/runner/work/comms-app-react-native-videocall/comms-app-react-native-videocall/tmp_/node_modules/eslint-plugin-prettier/node_modules/isexe/LICENSE"
   },
   "isobject@2.1.0": {
     "licenses": "MIT",
@@ -5605,8 +5605,8 @@
     "repository": "https://github.com/nodeca/js-yaml",
     "publisher": "Vladimir Zapparov",
     "email": "dervus.grim@gmail.com",
-    "path": "/home/runner/work/comms-app-react-native-videocall/comms-app-react-native-videocall/tmp_/node_modules/eslint-plugin-jsx-a11y/node_modules/js-yaml",
-    "licenseFile": "/home/runner/work/comms-app-react-native-videocall/comms-app-react-native-videocall/tmp_/node_modules/eslint-plugin-jsx-a11y/node_modules/js-yaml/LICENSE"
+    "path": "/home/runner/work/comms-app-react-native-videocall/comms-app-react-native-videocall/tmp_/node_modules/eslint-plugin-prettier/node_modules/js-yaml",
+    "licenseFile": "/home/runner/work/comms-app-react-native-videocall/comms-app-react-native-videocall/tmp_/node_modules/eslint-plugin-prettier/node_modules/js-yaml/LICENSE"
   },
   "jsc-android@250230.2.1": {
     "licenses": "BSD-2-Clause",
@@ -5663,8 +5663,8 @@
     "licenses": "MIT",
     "repository": "https://github.com/epoberezkin/json-schema-traverse",
     "publisher": "Evgeny Poberezkin",
-    "path": "/home/runner/work/comms-app-react-native-videocall/comms-app-react-native-videocall/tmp_/node_modules/eslint-plugin-jsx-a11y/node_modules/json-schema-traverse",
-    "licenseFile": "/home/runner/work/comms-app-react-native-videocall/comms-app-react-native-videocall/tmp_/node_modules/eslint-plugin-jsx-a11y/node_modules/json-schema-traverse/LICENSE"
+    "path": "/home/runner/work/comms-app-react-native-videocall/comms-app-react-native-videocall/tmp_/node_modules/eslint-plugin-prettier/node_modules/json-schema-traverse",
+    "licenseFile": "/home/runner/work/comms-app-react-native-videocall/comms-app-react-native-videocall/tmp_/node_modules/eslint-plugin-prettier/node_modules/json-schema-traverse/LICENSE"
   },
   "json-stable-stringify-without-jsonify@1.0.1": {
     "licenses": "MIT",
@@ -5672,8 +5672,8 @@
     "publisher": "James Halliday",
     "email": "mail@substack.net",
     "url": "http://substack.net",
-    "path": "/home/runner/work/comms-app-react-native-videocall/comms-app-react-native-videocall/tmp_/node_modules/eslint-plugin-jsx-a11y/node_modules/json-stable-stringify-without-jsonify",
-    "licenseFile": "/home/runner/work/comms-app-react-native-videocall/comms-app-react-native-videocall/tmp_/node_modules/eslint-plugin-jsx-a11y/node_modules/json-stable-stringify-without-jsonify/LICENSE"
+    "path": "/home/runner/work/comms-app-react-native-videocall/comms-app-react-native-videocall/tmp_/node_modules/eslint-plugin-prettier/node_modules/json-stable-stringify-without-jsonify",
+    "licenseFile": "/home/runner/work/comms-app-react-native-videocall/comms-app-react-native-videocall/tmp_/node_modules/eslint-plugin-prettier/node_modules/json-stable-stringify-without-jsonify/LICENSE"
   },
   "json-stringify-safe@5.0.1": {
     "licenses": "ISC",
@@ -5824,8 +5824,8 @@
     "repository": "https://github.com/gkz/levn",
     "publisher": "George Zahariev",
     "email": "z@georgezahariev.com",
-    "path": "/home/runner/work/comms-app-react-native-videocall/comms-app-react-native-videocall/tmp_/node_modules/eslint-plugin-jsx-a11y/node_modules/levn",
-    "licenseFile": "/home/runner/work/comms-app-react-native-videocall/comms-app-react-native-videocall/tmp_/node_modules/eslint-plugin-jsx-a11y/node_modules/levn/LICENSE"
+    "path": "/home/runner/work/comms-app-react-native-videocall/comms-app-react-native-videocall/tmp_/node_modules/eslint-plugin-prettier/node_modules/levn",
+    "licenseFile": "/home/runner/work/comms-app-react-native-videocall/comms-app-react-native-videocall/tmp_/node_modules/eslint-plugin-prettier/node_modules/levn/LICENSE"
   },
   "license-checker@25.0.1": {
     "licenses": "BSD-3-Clause",
@@ -5885,8 +5885,8 @@
     "publisher": "Sindre Sorhus",
     "email": "sindresorhus@gmail.com",
     "url": "https://sindresorhus.com",
-    "path": "/home/runner/work/comms-app-react-native-videocall/comms-app-react-native-videocall/tmp_/node_modules/eslint-plugin-jsx-a11y/node_modules/locate-path",
-    "licenseFile": "/home/runner/work/comms-app-react-native-videocall/comms-app-react-native-videocall/tmp_/node_modules/eslint-plugin-jsx-a11y/node_modules/locate-path/license"
+    "path": "/home/runner/work/comms-app-react-native-videocall/comms-app-react-native-videocall/tmp_/node_modules/eslint-plugin-prettier/node_modules/locate-path",
+    "licenseFile": "/home/runner/work/comms-app-react-native-videocall/comms-app-react-native-videocall/tmp_/node_modules/eslint-plugin-prettier/node_modules/locate-path/license"
   },
   "lodash.debounce@4.0.8": {
     "licenses": "MIT",
@@ -5929,8 +5929,8 @@
     "repository": "https://github.com/lodash/lodash",
     "publisher": "John-David Dalton",
     "email": "john.david.dalton@gmail.com",
-    "path": "/home/runner/work/comms-app-react-native-videocall/comms-app-react-native-videocall/tmp_/node_modules/eslint-plugin-jsx-a11y/node_modules/lodash.merge",
-    "licenseFile": "/home/runner/work/comms-app-react-native-videocall/comms-app-react-native-videocall/tmp_/node_modules/eslint-plugin-jsx-a11y/node_modules/lodash.merge/LICENSE"
+    "path": "/home/runner/work/comms-app-react-native-videocall/comms-app-react-native-videocall/tmp_/node_modules/eslint-plugin-prettier/node_modules/lodash.merge",
+    "licenseFile": "/home/runner/work/comms-app-react-native-videocall/comms-app-react-native-videocall/tmp_/node_modules/eslint-plugin-prettier/node_modules/lodash.merge/LICENSE"
   },
   "lodash.throttle@4.1.1": {
     "licenses": "MIT",
@@ -6367,8 +6367,8 @@
   "ms@2.1.2": {
     "licenses": "MIT",
     "repository": "https://github.com/zeit/ms",
-    "path": "/home/runner/work/comms-app-react-native-videocall/comms-app-react-native-videocall/tmp_/node_modules/eslint-plugin-jsx-a11y/node_modules/ms",
-    "licenseFile": "/home/runner/work/comms-app-react-native-videocall/comms-app-react-native-videocall/tmp_/node_modules/eslint-plugin-jsx-a11y/node_modules/ms/license.md"
+    "path": "/home/runner/work/comms-app-react-native-videocall/comms-app-react-native-videocall/tmp_/node_modules/eslint-plugin-prettier/node_modules/ms",
+    "licenseFile": "/home/runner/work/comms-app-react-native-videocall/comms-app-react-native-videocall/tmp_/node_modules/eslint-plugin-prettier/node_modules/ms/license.md"
   },
   "ms@2.1.3": {
     "licenses": "MIT",
@@ -6405,8 +6405,8 @@
     "repository": "https://github.com/litejs/natural-compare-lite",
     "publisher": "Lauri Rooden",
     "url": "https://github.com/litejs/natural-compare-lite",
-    "path": "/home/runner/work/comms-app-react-native-videocall/comms-app-react-native-videocall/tmp_/node_modules/eslint-plugin-jsx-a11y/node_modules/natural-compare",
-    "licenseFile": "/home/runner/work/comms-app-react-native-videocall/comms-app-react-native-videocall/tmp_/node_modules/eslint-plugin-jsx-a11y/node_modules/natural-compare/README.md"
+    "path": "/home/runner/work/comms-app-react-native-videocall/comms-app-react-native-videocall/tmp_/node_modules/eslint-plugin-prettier/node_modules/natural-compare",
+    "licenseFile": "/home/runner/work/comms-app-react-native-videocall/comms-app-react-native-videocall/tmp_/node_modules/eslint-plugin-prettier/node_modules/natural-compare/README.md"
   },
   "negotiator@0.6.3": {
     "licenses": "MIT",
@@ -6742,8 +6742,8 @@
     "repository": "https://github.com/gkz/optionator",
     "publisher": "George Zahariev",
     "email": "z@georgezahariev.com",
-    "path": "/home/runner/work/comms-app-react-native-videocall/comms-app-react-native-videocall/tmp_/node_modules/eslint-plugin-jsx-a11y/node_modules/optionator",
-    "licenseFile": "/home/runner/work/comms-app-react-native-videocall/comms-app-react-native-videocall/tmp_/node_modules/eslint-plugin-jsx-a11y/node_modules/optionator/LICENSE"
+    "path": "/home/runner/work/comms-app-react-native-videocall/comms-app-react-native-videocall/tmp_/node_modules/eslint-plugin-prettier/node_modules/optionator",
+    "licenseFile": "/home/runner/work/comms-app-react-native-videocall/comms-app-react-native-videocall/tmp_/node_modules/eslint-plugin-prettier/node_modules/optionator/LICENSE"
   },
   "options@0.0.6": {
     "licenses": "MIT*",
@@ -6823,8 +6823,8 @@
     "publisher": "Sindre Sorhus",
     "email": "sindresorhus@gmail.com",
     "url": "https://sindresorhus.com",
-    "path": "/home/runner/work/comms-app-react-native-videocall/comms-app-react-native-videocall/tmp_/node_modules/eslint-plugin-jsx-a11y/node_modules/p-limit",
-    "licenseFile": "/home/runner/work/comms-app-react-native-videocall/comms-app-react-native-videocall/tmp_/node_modules/eslint-plugin-jsx-a11y/node_modules/p-limit/license"
+    "path": "/home/runner/work/comms-app-react-native-videocall/comms-app-react-native-videocall/tmp_/node_modules/eslint-plugin-prettier/node_modules/p-limit",
+    "licenseFile": "/home/runner/work/comms-app-react-native-videocall/comms-app-react-native-videocall/tmp_/node_modules/eslint-plugin-prettier/node_modules/p-limit/license"
   },
   "p-locate@2.0.0": {
     "licenses": "MIT",
@@ -6859,8 +6859,8 @@
     "publisher": "Sindre Sorhus",
     "email": "sindresorhus@gmail.com",
     "url": "https://sindresorhus.com",
-    "path": "/home/runner/work/comms-app-react-native-videocall/comms-app-react-native-videocall/tmp_/node_modules/eslint-plugin-jsx-a11y/node_modules/p-locate",
-    "licenseFile": "/home/runner/work/comms-app-react-native-videocall/comms-app-react-native-videocall/tmp_/node_modules/eslint-plugin-jsx-a11y/node_modules/p-locate/license"
+    "path": "/home/runner/work/comms-app-react-native-videocall/comms-app-react-native-videocall/tmp_/node_modules/eslint-plugin-prettier/node_modules/p-locate",
+    "licenseFile": "/home/runner/work/comms-app-react-native-videocall/comms-app-react-native-videocall/tmp_/node_modules/eslint-plugin-prettier/node_modules/p-locate/license"
   },
   "p-try@1.0.0": {
     "licenses": "MIT",
@@ -6886,8 +6886,8 @@
     "publisher": "Sindre Sorhus",
     "email": "sindresorhus@gmail.com",
     "url": "sindresorhus.com",
-    "path": "/home/runner/work/comms-app-react-native-videocall/comms-app-react-native-videocall/tmp_/node_modules/eslint-plugin-jsx-a11y/node_modules/parent-module",
-    "licenseFile": "/home/runner/work/comms-app-react-native-videocall/comms-app-react-native-videocall/tmp_/node_modules/eslint-plugin-jsx-a11y/node_modules/parent-module/license"
+    "path": "/home/runner/work/comms-app-react-native-videocall/comms-app-react-native-videocall/tmp_/node_modules/eslint-plugin-prettier/node_modules/parent-module",
+    "licenseFile": "/home/runner/work/comms-app-react-native-videocall/comms-app-react-native-videocall/tmp_/node_modules/eslint-plugin-prettier/node_modules/parent-module/license"
   },
   "parse-json@4.0.0": {
     "licenses": "MIT",
@@ -6952,8 +6952,8 @@
     "publisher": "Sindre Sorhus",
     "email": "sindresorhus@gmail.com",
     "url": "sindresorhus.com",
-    "path": "/home/runner/work/comms-app-react-native-videocall/comms-app-react-native-videocall/tmp_/node_modules/eslint-plugin-jsx-a11y/node_modules/path-exists",
-    "licenseFile": "/home/runner/work/comms-app-react-native-videocall/comms-app-react-native-videocall/tmp_/node_modules/eslint-plugin-jsx-a11y/node_modules/path-exists/license"
+    "path": "/home/runner/work/comms-app-react-native-videocall/comms-app-react-native-videocall/tmp_/node_modules/eslint-plugin-prettier/node_modules/path-exists",
+    "licenseFile": "/home/runner/work/comms-app-react-native-videocall/comms-app-react-native-videocall/tmp_/node_modules/eslint-plugin-prettier/node_modules/path-exists/license"
   },
   "path-is-absolute@1.0.1": {
     "licenses": "MIT",
@@ -6979,8 +6979,8 @@
     "publisher": "Sindre Sorhus",
     "email": "sindresorhus@gmail.com",
     "url": "sindresorhus.com",
-    "path": "/home/runner/work/comms-app-react-native-videocall/comms-app-react-native-videocall/tmp_/node_modules/eslint-plugin-jsx-a11y/node_modules/path-key",
-    "licenseFile": "/home/runner/work/comms-app-react-native-videocall/comms-app-react-native-videocall/tmp_/node_modules/eslint-plugin-jsx-a11y/node_modules/path-key/license"
+    "path": "/home/runner/work/comms-app-react-native-videocall/comms-app-react-native-videocall/tmp_/node_modules/eslint-plugin-prettier/node_modules/path-key",
+    "licenseFile": "/home/runner/work/comms-app-react-native-videocall/comms-app-react-native-videocall/tmp_/node_modules/eslint-plugin-prettier/node_modules/path-key/license"
   },
   "path-parse@1.0.7": {
     "licenses": "MIT",
@@ -7124,8 +7124,8 @@
     "repository": "https://github.com/gkz/prelude-ls",
     "publisher": "George Zahariev",
     "email": "z@georgezahariev.com",
-    "path": "/home/runner/work/comms-app-react-native-videocall/comms-app-react-native-videocall/tmp_/node_modules/eslint-plugin-jsx-a11y/node_modules/prelude-ls",
-    "licenseFile": "/home/runner/work/comms-app-react-native-videocall/comms-app-react-native-videocall/tmp_/node_modules/eslint-plugin-jsx-a11y/node_modules/prelude-ls/LICENSE"
+    "path": "/home/runner/work/comms-app-react-native-videocall/comms-app-react-native-videocall/tmp_/node_modules/eslint-plugin-prettier/node_modules/prelude-ls",
+    "licenseFile": "/home/runner/work/comms-app-react-native-videocall/comms-app-react-native-videocall/tmp_/node_modules/eslint-plugin-prettier/node_modules/prelude-ls/LICENSE"
   },
   "prepend-file@2.0.1": {
     "licenses": "MIT",
@@ -7223,8 +7223,8 @@
     "repository": "https://github.com/mathiasbynens/punycode.js",
     "publisher": "Mathias Bynens",
     "url": "https://mathiasbynens.be/",
-    "path": "/home/runner/work/comms-app-react-native-videocall/comms-app-react-native-videocall/tmp_/node_modules/eslint-plugin-jsx-a11y/node_modules/punycode",
-    "licenseFile": "/home/runner/work/comms-app-react-native-videocall/comms-app-react-native-videocall/tmp_/node_modules/eslint-plugin-jsx-a11y/node_modules/punycode/LICENSE-MIT.txt"
+    "path": "/home/runner/work/comms-app-react-native-videocall/comms-app-react-native-videocall/tmp_/node_modules/eslint-plugin-prettier/node_modules/punycode",
+    "licenseFile": "/home/runner/work/comms-app-react-native-videocall/comms-app-react-native-videocall/tmp_/node_modules/eslint-plugin-prettier/node_modules/punycode/LICENSE-MIT.txt"
   },
   "q@1.5.1": {
     "licenses": "MIT",
@@ -7257,8 +7257,8 @@
     "publisher": "Feross Aboukhadijeh",
     "email": "feross@feross.org",
     "url": "https://feross.org",
-    "path": "/home/runner/work/comms-app-react-native-videocall/comms-app-react-native-videocall/tmp_/node_modules/eslint-plugin-jsx-a11y/node_modules/queue-microtask",
-    "licenseFile": "/home/runner/work/comms-app-react-native-videocall/comms-app-react-native-videocall/tmp_/node_modules/eslint-plugin-jsx-a11y/node_modules/queue-microtask/LICENSE"
+    "path": "/home/runner/work/comms-app-react-native-videocall/comms-app-react-native-videocall/tmp_/node_modules/eslint-plugin-prettier/node_modules/queue-microtask",
+    "licenseFile": "/home/runner/work/comms-app-react-native-videocall/comms-app-react-native-videocall/tmp_/node_modules/eslint-plugin-prettier/node_modules/queue-microtask/LICENSE"
   },
   "quick-lru@4.0.1": {
     "licenses": "MIT",
@@ -7717,8 +7717,8 @@
     "publisher": "Sindre Sorhus",
     "email": "sindresorhus@gmail.com",
     "url": "sindresorhus.com",
-    "path": "/home/runner/work/comms-app-react-native-videocall/comms-app-react-native-videocall/tmp_/node_modules/eslint-plugin-jsx-a11y/node_modules/resolve-from",
-    "licenseFile": "/home/runner/work/comms-app-react-native-videocall/comms-app-react-native-videocall/tmp_/node_modules/eslint-plugin-jsx-a11y/node_modules/resolve-from/license"
+    "path": "/home/runner/work/comms-app-react-native-videocall/comms-app-react-native-videocall/tmp_/node_modules/eslint-plugin-prettier/node_modules/resolve-from",
+    "licenseFile": "/home/runner/work/comms-app-react-native-videocall/comms-app-react-native-videocall/tmp_/node_modules/eslint-plugin-prettier/node_modules/resolve-from/license"
   },
   "resolve-from@5.0.0": {
     "licenses": "MIT",
@@ -7785,8 +7785,8 @@
     "repository": "https://github.com/mcollina/reusify",
     "publisher": "Matteo Collina",
     "email": "hello@matteocollina.com",
-    "path": "/home/runner/work/comms-app-react-native-videocall/comms-app-react-native-videocall/tmp_/node_modules/eslint-plugin-jsx-a11y/node_modules/reusify",
-    "licenseFile": "/home/runner/work/comms-app-react-native-videocall/comms-app-react-native-videocall/tmp_/node_modules/eslint-plugin-jsx-a11y/node_modules/reusify/LICENSE"
+    "path": "/home/runner/work/comms-app-react-native-videocall/comms-app-react-native-videocall/tmp_/node_modules/eslint-plugin-prettier/node_modules/reusify",
+    "licenseFile": "/home/runner/work/comms-app-react-native-videocall/comms-app-react-native-videocall/tmp_/node_modules/eslint-plugin-prettier/node_modules/reusify/LICENSE"
   },
   "rimraf@2.2.8": {
     "licenses": "MIT",
@@ -7821,8 +7821,8 @@
     "publisher": "Isaac Z. Schlueter",
     "email": "i@izs.me",
     "url": "http://blog.izs.me/",
-    "path": "/home/runner/work/comms-app-react-native-videocall/comms-app-react-native-videocall/tmp_/node_modules/eslint-plugin-jsx-a11y/node_modules/rimraf",
-    "licenseFile": "/home/runner/work/comms-app-react-native-videocall/comms-app-react-native-videocall/tmp_/node_modules/eslint-plugin-jsx-a11y/node_modules/rimraf/LICENSE"
+    "path": "/home/runner/work/comms-app-react-native-videocall/comms-app-react-native-videocall/tmp_/node_modules/eslint-plugin-prettier/node_modules/rimraf",
+    "licenseFile": "/home/runner/work/comms-app-react-native-videocall/comms-app-react-native-videocall/tmp_/node_modules/eslint-plugin-prettier/node_modules/rimraf/LICENSE"
   },
   "rollup-plugin-peer-deps-external@2.2.4": {
     "licenses": "MIT",
@@ -7858,8 +7858,8 @@
     "publisher": "Feross Aboukhadijeh",
     "email": "feross@feross.org",
     "url": "https://feross.org",
-    "path": "/home/runner/work/comms-app-react-native-videocall/comms-app-react-native-videocall/tmp_/node_modules/eslint-plugin-jsx-a11y/node_modules/run-parallel",
-    "licenseFile": "/home/runner/work/comms-app-react-native-videocall/comms-app-react-native-videocall/tmp_/node_modules/eslint-plugin-jsx-a11y/node_modules/run-parallel/LICENSE"
+    "path": "/home/runner/work/comms-app-react-native-videocall/comms-app-react-native-videocall/tmp_/node_modules/eslint-plugin-prettier/node_modules/run-parallel",
+    "licenseFile": "/home/runner/work/comms-app-react-native-videocall/comms-app-react-native-videocall/tmp_/node_modules/eslint-plugin-prettier/node_modules/run-parallel/LICENSE"
   },
   "safe-array-concat@1.0.0": {
     "licenses": "MIT",
@@ -8056,8 +8056,8 @@
     "publisher": "Kevin Mårtensson",
     "email": "kevinmartensson@gmail.com",
     "url": "github.com/kevva",
-    "path": "/home/runner/work/comms-app-react-native-videocall/comms-app-react-native-videocall/tmp_/node_modules/eslint-plugin-jsx-a11y/node_modules/shebang-command",
-    "licenseFile": "/home/runner/work/comms-app-react-native-videocall/comms-app-react-native-videocall/tmp_/node_modules/eslint-plugin-jsx-a11y/node_modules/shebang-command/license"
+    "path": "/home/runner/work/comms-app-react-native-videocall/comms-app-react-native-videocall/tmp_/node_modules/eslint-plugin-prettier/node_modules/shebang-command",
+    "licenseFile": "/home/runner/work/comms-app-react-native-videocall/comms-app-react-native-videocall/tmp_/node_modules/eslint-plugin-prettier/node_modules/shebang-command/license"
   },
   "shebang-regex@1.0.0": {
     "licenses": "MIT",
@@ -8074,8 +8074,8 @@
     "publisher": "Sindre Sorhus",
     "email": "sindresorhus@gmail.com",
     "url": "sindresorhus.com",
-    "path": "/home/runner/work/comms-app-react-native-videocall/comms-app-react-native-videocall/tmp_/node_modules/eslint-plugin-jsx-a11y/node_modules/shebang-regex",
-    "licenseFile": "/home/runner/work/comms-app-react-native-videocall/comms-app-react-native-videocall/tmp_/node_modules/eslint-plugin-jsx-a11y/node_modules/shebang-regex/license"
+    "path": "/home/runner/work/comms-app-react-native-videocall/comms-app-react-native-videocall/tmp_/node_modules/eslint-plugin-prettier/node_modules/shebang-regex",
+    "licenseFile": "/home/runner/work/comms-app-react-native-videocall/comms-app-react-native-videocall/tmp_/node_modules/eslint-plugin-prettier/node_modules/shebang-regex/license"
   },
   "shell-quote@1.8.1": {
     "licenses": "MIT",
@@ -8480,8 +8480,8 @@
     "publisher": "Sindre Sorhus",
     "email": "sindresorhus@gmail.com",
     "url": "sindresorhus.com",
-    "path": "/home/runner/work/comms-app-react-native-videocall/comms-app-react-native-videocall/tmp_/node_modules/eslint-plugin-jsx-a11y/node_modules/strip-ansi",
-    "licenseFile": "/home/runner/work/comms-app-react-native-videocall/comms-app-react-native-videocall/tmp_/node_modules/eslint-plugin-jsx-a11y/node_modules/strip-ansi/license"
+    "path": "/home/runner/work/comms-app-react-native-videocall/comms-app-react-native-videocall/tmp_/node_modules/eslint-plugin-prettier/node_modules/strip-ansi",
+    "licenseFile": "/home/runner/work/comms-app-react-native-videocall/comms-app-react-native-videocall/tmp_/node_modules/eslint-plugin-prettier/node_modules/strip-ansi/license"
   },
   "strip-bom@3.0.0": {
     "licenses": "MIT",
@@ -8534,8 +8534,8 @@
     "publisher": "Sindre Sorhus",
     "email": "sindresorhus@gmail.com",
     "url": "https://sindresorhus.com",
-    "path": "/home/runner/work/comms-app-react-native-videocall/comms-app-react-native-videocall/tmp_/node_modules/eslint-plugin-jsx-a11y/node_modules/strip-json-comments",
-    "licenseFile": "/home/runner/work/comms-app-react-native-videocall/comms-app-react-native-videocall/tmp_/node_modules/eslint-plugin-jsx-a11y/node_modules/strip-json-comments/license"
+    "path": "/home/runner/work/comms-app-react-native-videocall/comms-app-react-native-videocall/tmp_/node_modules/eslint-plugin-prettier/node_modules/strip-json-comments",
+    "licenseFile": "/home/runner/work/comms-app-react-native-videocall/comms-app-react-native-videocall/tmp_/node_modules/eslint-plugin-prettier/node_modules/strip-json-comments/license"
   },
   "sudo-prompt@9.2.1": {
     "licenses": "MIT",
@@ -8559,8 +8559,8 @@
     "publisher": "Sindre Sorhus",
     "email": "sindresorhus@gmail.com",
     "url": "sindresorhus.com",
-    "path": "/home/runner/work/comms-app-react-native-videocall/comms-app-react-native-videocall/tmp_/node_modules/eslint-plugin-jsx-a11y/node_modules/supports-color",
-    "licenseFile": "/home/runner/work/comms-app-react-native-videocall/comms-app-react-native-videocall/tmp_/node_modules/eslint-plugin-jsx-a11y/node_modules/supports-color/license"
+    "path": "/home/runner/work/comms-app-react-native-videocall/comms-app-react-native-videocall/tmp_/node_modules/eslint-plugin-prettier/node_modules/supports-color",
+    "licenseFile": "/home/runner/work/comms-app-react-native-videocall/comms-app-react-native-videocall/tmp_/node_modules/eslint-plugin-prettier/node_modules/supports-color/license"
   },
   "supports-color@8.1.1": {
     "licenses": "MIT",
@@ -8687,8 +8687,8 @@
     "publisher": "James Halliday",
     "email": "mail@substack.net",
     "url": "http://substack.net",
-    "path": "/home/runner/work/comms-app-react-native-videocall/comms-app-react-native-videocall/tmp_/node_modules/eslint-plugin-jsx-a11y/node_modules/text-table",
-    "licenseFile": "/home/runner/work/comms-app-react-native-videocall/comms-app-react-native-videocall/tmp_/node_modules/eslint-plugin-jsx-a11y/node_modules/text-table/LICENSE"
+    "path": "/home/runner/work/comms-app-react-native-videocall/comms-app-react-native-videocall/tmp_/node_modules/eslint-plugin-prettier/node_modules/text-table",
+    "licenseFile": "/home/runner/work/comms-app-react-native-videocall/comms-app-react-native-videocall/tmp_/node_modules/eslint-plugin-prettier/node_modules/text-table/LICENSE"
   },
   "throat@5.0.0": {
     "licenses": "MIT",
@@ -8877,8 +8877,8 @@
     "repository": "https://github.com/gkz/type-check",
     "publisher": "George Zahariev",
     "email": "z@georgezahariev.com",
-    "path": "/home/runner/work/comms-app-react-native-videocall/comms-app-react-native-videocall/tmp_/node_modules/eslint-plugin-jsx-a11y/node_modules/type-check",
-    "licenseFile": "/home/runner/work/comms-app-react-native-videocall/comms-app-react-native-videocall/tmp_/node_modules/eslint-plugin-jsx-a11y/node_modules/type-check/LICENSE"
+    "path": "/home/runner/work/comms-app-react-native-videocall/comms-app-react-native-videocall/tmp_/node_modules/eslint-plugin-prettier/node_modules/type-check",
+    "licenseFile": "/home/runner/work/comms-app-react-native-videocall/comms-app-react-native-videocall/tmp_/node_modules/eslint-plugin-prettier/node_modules/type-check/LICENSE"
   },
   "type-detect@4.0.8": {
     "licenses": "MIT",
@@ -8904,8 +8904,8 @@
     "publisher": "Sindre Sorhus",
     "email": "sindresorhus@gmail.com",
     "url": "https://sindresorhus.com",
-    "path": "/home/runner/work/comms-app-react-native-videocall/comms-app-react-native-videocall/tmp_/node_modules/eslint-plugin-jsx-a11y/node_modules/type-fest",
-    "licenseFile": "/home/runner/work/comms-app-react-native-videocall/comms-app-react-native-videocall/tmp_/node_modules/eslint-plugin-jsx-a11y/node_modules/type-fest/license"
+    "path": "/home/runner/work/comms-app-react-native-videocall/comms-app-react-native-videocall/tmp_/node_modules/eslint-plugin-prettier/node_modules/type-fest",
+    "licenseFile": "/home/runner/work/comms-app-react-native-videocall/comms-app-react-native-videocall/tmp_/node_modules/eslint-plugin-prettier/node_modules/type-fest/license"
   },
   "type-fest@0.21.3": {
     "licenses": "(MIT OR CC0-1.0)",
@@ -9118,8 +9118,8 @@
     "repository": "https://github.com/garycourt/uri-js",
     "publisher": "Gary Court",
     "email": "gary.court@gmail.com",
-    "path": "/home/runner/work/comms-app-react-native-videocall/comms-app-react-native-videocall/tmp_/node_modules/eslint-plugin-jsx-a11y/node_modules/uri-js",
-    "licenseFile": "/home/runner/work/comms-app-react-native-videocall/comms-app-react-native-videocall/tmp_/node_modules/eslint-plugin-jsx-a11y/node_modules/uri-js/LICENSE"
+    "path": "/home/runner/work/comms-app-react-native-videocall/comms-app-react-native-videocall/tmp_/node_modules/eslint-plugin-prettier/node_modules/uri-js",
+    "licenseFile": "/home/runner/work/comms-app-react-native-videocall/comms-app-react-native-videocall/tmp_/node_modules/eslint-plugin-prettier/node_modules/uri-js/LICENSE"
   },
   "urix@0.1.0": {
     "licenses": "MIT",
@@ -9384,8 +9384,8 @@
     "publisher": "Isaac Z. Schlueter",
     "email": "i@izs.me",
     "url": "http://blog.izs.me",
-    "path": "/home/runner/work/comms-app-react-native-videocall/comms-app-react-native-videocall/tmp_/node_modules/eslint-plugin-jsx-a11y/node_modules/which",
-    "licenseFile": "/home/runner/work/comms-app-react-native-videocall/comms-app-react-native-videocall/tmp_/node_modules/eslint-plugin-jsx-a11y/node_modules/which/LICENSE"
+    "path": "/home/runner/work/comms-app-react-native-videocall/comms-app-react-native-videocall/tmp_/node_modules/eslint-plugin-prettier/node_modules/which",
+    "licenseFile": "/home/runner/work/comms-app-react-native-videocall/comms-app-react-native-videocall/tmp_/node_modules/eslint-plugin-prettier/node_modules/which/LICENSE"
   },
   "wordwrap@1.0.0": {
     "licenses": "MIT",
@@ -9585,8 +9585,8 @@
     "publisher": "Sindre Sorhus",
     "email": "sindresorhus@gmail.com",
     "url": "https://sindresorhus.com",
-    "path": "/home/runner/work/comms-app-react-native-videocall/comms-app-react-native-videocall/tmp_/node_modules/eslint-plugin-jsx-a11y/node_modules/yocto-queue",
-    "licenseFile": "/home/runner/work/comms-app-react-native-videocall/comms-app-react-native-videocall/tmp_/node_modules/eslint-plugin-jsx-a11y/node_modules/yocto-queue/license"
+    "path": "/home/runner/work/comms-app-react-native-videocall/comms-app-react-native-videocall/tmp_/node_modules/eslint-plugin-prettier/node_modules/yocto-queue",
+    "licenseFile": "/home/runner/work/comms-app-react-native-videocall/comms-app-react-native-videocall/tmp_/node_modules/eslint-plugin-prettier/node_modules/yocto-queue/license"
   }
 }
 
