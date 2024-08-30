@@ -1,3 +1,5 @@
+# :warning: This repository is no longer maintained :warning:
+
 # Dolby.io Communications Video Call - React Native Mobile App
 
 ![banner image](documentation/assets/banner%20image.png)
